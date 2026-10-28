@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WordsMemory — тренажёр слов</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=12">
+  <!-- v=2: при изменении js/css повышайте версию — это сбрасывает кеш браузера -->
+  <script src="js/icons.js?v=3" defer></script>
+  <script src="js/storage.js?v=8" defer></script>
+  <script src="js/tts.js?v=5" defer></script>
+  <script src="js/images.js?v=3" defer></script>
+  <script src="js/io.js?v=3" defer></script>
+  <script src="js/data-it.js?v=3" defer></script>
+  <script src="js/data-en.js?v=3" defer></script>
+  <script src="js/groups-data.js?v=7" defer></script>
+  <script src="js/words.js?v=9" defer></script>
+  <script src="js/games.js?v=3" defer></script>
+  <script src="js/groups.js?v=16" defer></script>
+  <script src="js/app.js?v=6" defer></script>
+</head>
+<body>
+
+  <!-- ======== ЭКРАН ВХОДА ======== -->
+  <div id="view-auth" class="view auth-view hidden">
+    <div class="auth-card">
+      <div class="brand auth-brand">
+        <span class="brand-logo">📚</span>
+        <span class="brand-name">WordsMemory</span>
+      </div>
+      <p class="auth-subtitle">Тренажёр слов: итальянский и английский → русский</p>
+
+      <div id="auth-users" class="auth-users"></div>
+
+      <div class="auth-divider"><span>новый профиль</span></div>
+
+      <form id="auth-create" class="auth-form">
+        <input type="text" id="auth-name" placeholder="Ваше имя" maxlength="30" autocomplete="off">
+        <input type="password" id="auth-pin" placeholder="PIN (необязательно)" maxlength="12" inputmode="numeric">
+        <button type="submit" class="btn btn-primary">Создать профиль</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ======== ОСНОВНОЙ ЭКРАН ======== -->
+  <div id="view-app" class="view hidden">
+    <header class="header">
+      <div class="header-inner">
+        <div class="brand"><span class="brand-logo">📚</span><span class="brand-name">WordsMemory</span></div>
+
+        <nav class="pages-nav">
+          <button class="page-tab active" id="nav-words" data-page="words">📖 Словарь</button>
+          <button class="page-tab" id="nav-groups" data-page="groups">🗂️ Группы</button>
+        </nav>
+
+        <nav class="tabs" role="tablist">
+          <button class="tab" id="tab-it" data-lang="it" role="tab">🇮🇹 Italiano</button>
+          <button class="tab" id="tab-en" data-lang="en" role="tab">🇬🇧 English</button>
+        </nav>
+
+        <div class="header-actions">
+          <button class="icon-btn" id="btn-stats" aria-label="Статистика" title="Статистика"></button>
+          <button class="icon-btn" id="btn-theme" aria-label="Сменить тему" title="Сменить тему"></button>
+          <button class="user-chip" id="btn-profile" title="Сменить профиль"></button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section id="page-words">
+        <div class="toolbar">
+        <div class="search-wrap">
+          <input type="search" id="inp-search" placeholder="Поиск по слову или переводу…" autocomplete="off">
+        </div>
+        <select id="sel-tag" class="select" aria-label="Фильтр по тегу">
+          <option value="">Все теги</option>
+        </select>
+        <button class="btn btn-primary" id="btn-add-word"><span id="ic-add"></span>Добавить слово</button>
+        <button class="btn btn-accent" id="btn-train"><span id="ic-play"></span>Тренировка</button>
+        <button class="icon-btn" id="btn-export" aria-label="Экспорт JSON" title="Экспорт в JSON"></button>
+        <button class="icon-btn" id="btn-import" aria-label="Импорт JSON" title="Импорт из JSON"></button>
+        <input type="file" id="file-import" accept=".json,application/json" hidden>
+      </div>
+
+      <div id="words-grid" class="words-grid"></div>
+
+      <div id="empty-state" class="empty-state hidden">
+        <div class="empty-emoji">📗</div>
+        <h2>Здесь пока пусто</h2>
+        <p>Добавьте первое слово — картинка, перевод и примеры подтянутся автоматически.</p>
+        <button class="btn btn-primary" id="btn-add-first">Добавить первое слово</button>
+      </div>
+      </section>
+
+      <section id="page-groups" class="hidden"></section>
+    </main>
+  </div>
+
+  <!-- ======== ЭКРАН ИГРЫ ======== -->
+  <div id="view-game" class="view game-view hidden">
+    <div class="game-top">
+      <button class="icon-btn" id="btn-game-exit" aria-label="Выйти из тренировки" title="Выйти"></button>
+      <div class="progress-wrap"><div class="progress-bar" id="game-progress"></div></div>
+      <div class="game-counter" id="game-counter">0 / 0</div>
+    </div>
+    <div class="game-area" id="game-area"></div>
+  </div>
+
+  <!-- ======== ЭКРАН РЕЗУЛЬТАТОВ ======== -->
+  <div id="view-results" class="view results-view hidden">
+    <div class="results-card">
+      <div class="results-emoji" id="res-emoji">🎉</div>
+      <div class="results-percent" id="res-percent">100%</div>
+      <div class="results-line" id="res-line">Верно 10 из 10</div>
+      <div id="res-mistakes" class="res-mistakes"></div>
+      <div class="results-actions">
+        <button class="btn btn-accent" id="btn-again">Пройти ещё раз</button>
+        <button class="btn btn-ghost" id="btn-finish">Закончить</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======== МОДАЛКА: СЛОВО ======== -->
+  <dialog id="modal-word" class="modal">
+    <form method="dialog" class="modal-body" id="form-word">
+      <div class="modal-head">
+        <h3 id="word-modal-title">Новое слово</h3>
+        <button type="button" class="icon-btn" data-close aria-label="Закрыть"></button>
+      </div>
+
+      <div class="field">
+        <label for="w-word">Слово</label>
+        <input type="text" id="w-word" required maxlength="60" autocomplete="off">
+      </div>
+      <div class="field">
+        <label for="w-transcription">Транскрипция (МФА)</label>
+        <input type="text" id="w-transcription" placeholder="/ˈpaːne/" maxlength="60" autocomplete="off">
+      </div>
+      <div class="field">
+        <label for="w-translation">Перевод (русский)</label>
+        <input type="text" id="w-translation" required maxlength="80" autocomplete="off">
+      </div>
+
+      <div class="field">
+        <label>Примеры</label>
+        <div id="w-examples"></div>
+        <button type="button" class="btn btn-ghost btn-sm" id="btn-add-example">+ Добавить пример</button>
+      </div>
+
+      <div class="field">
+        <label for="w-tags">Теги (через запятую)</label>
+        <input type="text" id="w-tags" placeholder="еда, глаголы…" maxlength="120" autocomplete="off">
+      </div>
+
+      <div class="field">
+        <label>Картинка</label>
+        <div class="image-row">
+          <div class="image-preview" id="w-image-preview"><span class="image-emoji">📘</span></div>
+          <div class="image-actions">
+            <span class="hint">По умолчанию картинка подберётся автоматически после сохранения.</span>
+            <div class="image-btns">
+              <button type="button" class="btn btn-ghost btn-sm" id="btn-image-upload">Загрузить свою</button>
+              <button type="button" class="btn btn-ghost btn-sm" id="btn-image-remove">Убрать</button>
+            </div>
+            <input type="file" id="file-image" accept="image/*" hidden>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-actions">
+        <button type="button" class="btn btn-ghost" data-close>Отмена</button>
+        <button type="submit" class="btn btn-primary">Сохранить</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- ======== МОДАЛКА: ДОБАВИТЬ СПИСКОМ ======== -->
+  <dialog id="modal-bulk" class="modal">
+    <form method="dialog" class="modal-body" id="form-bulk">
+      <div class="modal-head">
+        <h3>Добавить списком</h3>
+        <button type="button" class="icon-btn" data-close aria-label="Закрыть"></button>
+      </div>
+      <p class="hint">Одно слово в строке. Формат: <code>слово | перевод</code> или
+        <code>слово | перевод | пример | перевод примера</code>. Разделитель — <code>|</code> или <code> - </code>.</p>
+      <textarea id="bulk-text" rows="10" placeholder="mela | яблоко
+Mangio una mela. | Я ем яблоко."></textarea>
+      <div class="modal-actions">
+        <button type="button" class="btn btn-ghost" data-close>Отмена</button>
+        <button type="submit" class="btn btn-primary">Добавить</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- ======== МОДАЛКА: НОВЫЙ НАБОР ======== -->
+  <dialog id="modal-new-group" class="modal">
+    <form method="dialog" class="modal-body" id="form-new-group">
+      <div class="modal-head">
+        <h3>Новый набор</h3>
+        <button type="button" class="icon-btn" data-close aria-label="Закрыть"></button>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="ng-lang">Язык</label>
+          <select id="ng-lang" class="select">
+            <option value="it">🇮🇹 Italiano</option>
+            <option value="en">🇬🇧 English</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="ng-icon">Иконка</label>
+          <select id="ng-icon" class="select">
+            <option value="📗" selected>📗</option>
+            <option value="📘">📘</option>
+            <option value="📙">📙</option>
+            <option value="📚">📚</option>
+            <option value="🗣️">🗣️</option>
+            <option value="🧠">🧠</option>
+            <option value="⭐">⭐</option>
+            <option value="🧳">🧳</option>
+            <option value="✈️">✈️</option>
+            <option value="🏖️">🏖️</option>
+            <option value="🏠">🏠</option>
+            <option value="🍎">🍎</option>
+            <option value="🍕">🍕</option>
+            <option value="🍝">🍝</option>
+            <option value="🌿">🌿</option>
+            <option value="🐾">🐾</option>
+            <option value="⚽">⚽</option>
+            <option value="🎨">🎨</option>
+            <option value="🎵">🎵</option>
+            <option value="🎬">🎬</option>
+            <option value="💼">💼</option>
+            <option value="💻">💻</option>
+            <option value="❤️">❤️</option>
+          </select>
+        </div>
+      </div>
+      <div class="field">
+        <label for="ng-name">Название</label>
+        <input type="text" id="ng-name" required maxlength="60" placeholder="Фразы для путешествий" autocomplete="off">
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="ng-tag">Тег (в словаре)</label>
+          <input type="text" id="ng-tag" maxlength="30" placeholder="путешествия" autocomplete="off">
+        </div>
+        <div class="field">
+          <label for="ng-desc">Описание</label>
+          <input type="text" id="ng-desc" maxlength="120" placeholder="необязательно" autocomplete="off">
+        </div>
+      </div>
+      <div class="field">
+        <label for="ng-words">Слова</label>
+        <textarea id="ng-words" rows="8" placeholder="ciao | привет
+biglietto | билет | Compro un biglietto. | Я покупаю билет."></textarea>
+        <p class="hint">Одно слово в строке: <code>слово | перевод</code> или
+          <code>слово | перевод | пример | перевод примера</code>.</p>
+      </div>
+      <div class="modal-actions">
+        <button type="button" class="btn btn-ghost" data-close>Отмена</button>
+        <button type="submit" class="btn btn-primary">Создать набор</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- ======== МОДАЛКА: СЛОВО В НАБОРЕ ======== -->
+  <dialog id="modal-group-word" class="modal">
+    <form method="dialog" class="modal-body" id="form-group-word">
+      <div class="modal-head">
+        <h3>Слово в наборе</h3>
+        <button type="button" class="icon-btn" data-close aria-label="Закрыть"></button>
+      </div>
+      <div class="field">
+        <label for="gw-word">Слово</label>
+        <input type="text" id="gw-word" required maxlength="60" autocomplete="off">
+      </div>
+      <div class="field">
+        <label for="gw-transcription">Транскрипция (МФА)</label>
+        <input type="text" id="gw-transcription" maxlength="40" autocomplete="off">
+      </div>
+      <div class="field">
+        <label for="gw-translation">Перевод (русский)</label>
+        <input type="text" id="gw-translation" required maxlength="80" autocomplete="off">
+      </div>
+      <div class="field">
+        <label>Примеры</label>
+        <div id="gw-examples-list"></div>
+        <button type="button" class="btn btn-ghost btn-sm" id="btn-gw-add-example">+ Добавить пример</button>
+      </div>
+      <div class="field">
+        <label for="gw-tags">Теги (через запятую)</label>
+        <input type="text" id="gw-tags" maxlength="120" placeholder="еда, глаголы…" autocomplete="off">
+      </div>
+      <div class="field">
+        <label>Картинка</label>
+        <div class="image-row">
+          <div class="image-preview" id="gw-image-preview"><span class="image-emoji">📘</span></div>
+          <div class="image-actions">
+            <span class="hint">Без своей картинки она подберётся автоматически.</span>
+            <div class="image-btns">
+              <button type="button" class="btn btn-ghost btn-sm" id="btn-gw-image-upload">Загрузить свою</button>
+              <button type="button" class="btn btn-ghost btn-sm" id="btn-gw-image-remove">Убрать</button>
+            </div>
+            <input type="file" id="gw-file-image" accept="image/*" hidden>
+          </div>
+        </div>
+      </div>
+      <div class="modal-actions">
+        <button type="button" class="btn btn-ghost" data-close>Отмена</button>
+        <button type="submit" class="btn btn-primary">Сохранить</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- ======== МОДАЛКА: НАСТРОЙКА ТРЕНИРОВКИ ======== -->
+  <dialog id="modal-train" class="modal">
+    <div class="modal-body">
+      <div class="modal-head">
+        <h3>Тренировка</h3>
+        <button type="button" class="icon-btn" data-close aria-label="Закрыть"></button>
+      </div>
+      <div class="field">
+        <label>Режим</label>
+        <div class="mode-list" id="train-modes"></div>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="train-count">Количество слов</label>
+          <select id="train-count" class="select">
+            <option value="5">5</option>
+            <option value="10" selected>10</option>
+            <option value="15">15</option>
+            <option value="30">30</option>
+            <option value="50">50</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="train-tag">Тег (необязательно)</label>
+          <select id="train-tag" class="select"><option value="">Все слова</option></select>
+        </div>
+      </div>
+      <p class="hint" id="train-available"></p>
+      <div class="modal-actions">
+        <button class="btn btn-ghost" data-close>Отмена</button>
+        <button class="btn btn-accent" id="btn-train-start"><span id="ic-play2"></span>Начать</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- ======== МОДАЛКА: СТАТИСТИКА ======== -->
+  <dialog id="modal-stats" class="modal">
+    <div class="modal-body">
+      <div class="modal-head">
+        <h3>Статистика</h3>
+        <button type="button" class="icon-btn" data-close aria-label="Закрыть"></button>
+      </div>
+      <div id="stats-content"></div>
+    </div>
+  </dialog>
+
+  <!-- ======== МОДАЛКА: ПОДТВЕРЖДЕНИЕ ======== -->
+  <dialog id="modal-confirm" class="modal modal-sm">
+    <div class="modal-body">
+      <p id="confirm-text" class="confirm-text"></p>
+      <div class="modal-actions">
+        <button class="btn btn-ghost" id="confirm-no">Отмена</button>
+        <button class="btn btn-danger" id="confirm-yes">Удалить</button>
+      </div>
+    </div>
+  </dialog>
+
+  <div id="toast" class="toast hidden"></div>
+
+</body>
+</html>
