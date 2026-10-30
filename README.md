@@ -14,6 +14,16 @@ python3 -m http.server 8080
 # → http://localhost:8080
 ```
 
+## Деплой
+
+Проект деплоится на GitHub Pages и доступен по адресу:
+
+**https://kebikov95.github.io/words-memory/**
+
+Ветка для публикации — `main` (Settings → Pages → Source: Deploy from a branch
+→ `main` / `/ (root)`). Обновление страницы происходит автоматически при
+каждом пуше в `main`.
+
 ## Возможности
 
 - **Профили** — несколько пользователей, у каждого свой словарь (опциональный PIN)
