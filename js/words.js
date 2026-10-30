@@ -270,6 +270,19 @@ WM.words = (() => {
       drawImagePreview();
     });
 
+    // очистка всего словаря
+    $('#btn-clear-words').innerHTML = ICONS.trash;
+    $('#btn-clear-words').addEventListener('click', async () => {
+      const { uid: U } = WM.app.state;
+      const total = WM.storage.getWords(U).length;
+      if (!total) { WM.app.toast('Словарь уже пуст', true); return; }
+      const ok = await WM.app.confirm(`Удалить все слова (${total}, оба языка)? Действие необратимо.`);
+      if (!ok) return;
+      WM.storage.setWords(U, []);
+      render();
+      WM.app.toast('Словарь очищен');
+    });
+
     // кнопка «списком» — добавим в тулбар вторую маленькую кнопку через JS,
     // чтобы не раздувать index.html
     const bulk = document.createElement('button');
