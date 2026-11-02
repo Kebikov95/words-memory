@@ -1,0 +1,23 @@
+{
+  "name": "wordsmemory",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Тренажёр иностранных слов (итальянский/английский → русский). E2E-тесты — Playwright.",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --headed",
+    "coverage": "COVERAGE=1 playwright test",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "monocart-reporter": "^2.5.0"
+  },
+  "allowScripts": {
+    "playwright": true,
+    "playwright-core": true,
+    "@playwright/test": true,
+    "esbuild": true
+  }
+}
