@@ -114,7 +114,8 @@ WM.app = (() => {
     WM.storage.setCurrentUser(user.id);
 
     $('#btn-profile').innerHTML =
-      `<span class="auth-user-ava" style="width:26px;height:26px;font-size:12px">${esc(user.name[0].toUpperCase())}</span>${esc(user.name)}`;
+      `<span class="auth-user-ava" style="width:26px;height:26px;font-size:12px">${esc(user.name[0].toUpperCase())}</span><span class="user-chip-name">${esc(user.name)}</span>`;
+    $('#btn-profile').title = `Сменить профиль (${user.name})`;
 
     if (!modulesBound) {
       bindApp();

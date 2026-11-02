@@ -143,8 +143,8 @@ WM.groups = (() => {
           Каждое слово получит тег набора автоматически.</p>
         <div class="lang-chips">
           <button class="tag chip-btn${langFilter === '' ? ' active-chip' : ''}" data-lf="">Все языки</button>
-          <button class="tag chip-btn${langFilter === 'it' ? ' active-chip' : ''}" data-lf="it">🇮🇹 Italiano</button>
-          <button class="tag chip-btn${langFilter === 'en' ? ' active-chip' : ''}" data-lf="en">🇬🇧 English</button>
+          <button class="tag chip-btn${langFilter === 'it' ? ' active-chip' : ''}" data-lf="it" aria-label="Italiano" title="Italiano">🇮🇹</button>
+          <button class="tag chip-btn${langFilter === 'en' ? ' active-chip' : ''}" data-lf="en" aria-label="English" title="English">🇬🇧</button>
         </div>
       </div>
       <div class="groups-grid">
@@ -237,10 +237,10 @@ WM.groups = (() => {
         </button>
         <button class="btn btn-ghost btn-sm" id="g-add-all">Добавить все</button>
         <span class="toolbar-sep"></span>
-        <button class="btn btn-accent btn-sm" id="g-train-selected" ${selection.size ? '' : 'disabled'}>
-          ${ICONS.play} Тренировать выбранные (${selection.size})
+        <button class="btn btn-accent btn-sm" id="g-train-selected" aria-label="Тренировать выбранные (${selection.size})" title="Тренировать выбранные (${selection.size})" ${selection.size ? '' : 'disabled'}>
+          ${ICONS.play}
         </button>
-        <button class="btn btn-ghost btn-sm" id="g-train-all">${ICONS.play} Тренировать набор</button>
+        <button class="btn btn-ghost btn-sm" id="g-train-all" aria-label="Тренировать набор" title="Тренировать набор">${ICONS.play}</button>
       </div>
       <div class="g-list">${rowsHTML || '<p class="hint" style="padding:20px 0">Ничего не найдено</p>'}</div>`;
 
@@ -261,7 +261,9 @@ WM.groups = (() => {
         const train = $('#g-train-selected');
         add.textContent = `Добавить выбранные (${selection.size})`;
         add.disabled = selection.size === 0;
-        train.innerHTML = `${ICONS.play} Тренировать выбранные (${selection.size})`;
+        train.innerHTML = ICONS.play;
+        train.setAttribute('aria-label', `Тренировать выбранные (${selection.size})`);
+        train.title = `Тренировать выбранные (${selection.size})`;
         train.disabled = selection.size === 0;
       }));
 

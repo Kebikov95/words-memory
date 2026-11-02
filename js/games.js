@@ -21,6 +21,10 @@ WM.games = (() => {
     .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
     .replace(/\s+/g, ' ');
 
+  // у наборов форм («be — was/were — been», «essere — sono, sei…») игра тренирует
+  // инфинитив: собирать/писать всю строку форм невозможно и бессмысленно
+  const headForm = word => (word.word || '').split(' — ')[0].trim() || (word.word || '');
+
   const shuffle = arr => {
     const a = [...arr];
     for (let i = a.length - 1; i > 0; i--) {
@@ -168,8 +172,9 @@ WM.games = (() => {
   // 1. Собери слово
   function renderAssemble(t) {
     const { word } = t;
-    let letters = shuffle(word.word.split(''));
-    if (word.word.length > 1 && letters.join('') === word.word) letters = shuffle(letters);
+    const target = headForm(word); // инфинитив для наборов форм
+    let letters = shuffle(target.split(''));
+    if (target.length > 1 && letters.join('') === target) letters = shuffle(letters);
 
     area().innerHTML = `
       <div class="game-card">
@@ -187,7 +192,7 @@ WM.games = (() => {
     let placed = []; // {slotEl, tileIdx}
 
     const slotsEl = $('#as-slots'), poolEl = $('#as-pool');
-    word.word.split('').forEach(() => {
+    target.split('').forEach(() => {
       const s = document.createElement('div');
       s.className = 'letter-slot';
       s.addEventListener('click', () => {
@@ -245,8 +250,8 @@ WM.games = (() => {
 
     $('#as-check').addEventListener('click', () => {
       const answer = placed.map(s => s.textContent).join('');
-      const ok = norm(answer) === norm(word.word);
-      answerFeedback(ok, word.word);
+      const ok = norm(answer) === norm(target);
+      answerFeedback(ok, target);
       recordAnswer(word, ok);
       next(ok ? 900 : 1600);
     });
@@ -258,6 +263,7 @@ WM.games = (() => {
   // 2. Диктант
   function renderDictation(t) {
     const { word } = t;
+    const target = headForm(word); // инфинитив для наборов форм
     area().innerHTML = `
       <div class="game-card">
         <div class="hint">Прослушайте и напишите слово</div>
@@ -269,14 +275,14 @@ WM.games = (() => {
         </div>
       </div>`;
 
-    $('#dt-speak').addEventListener('click', () => WM.tts.speak(word.word, session.lang));
-    later(() => WM.tts.speak(word.word, session.lang), 250);
+    $('#dt-speak').addEventListener('click', () => WM.tts.speak(target, session.lang));
+    later(() => WM.tts.speak(target, session.lang), 250);
 
     const check = () => {
       const val = $('#dt-input').value;
       if (!val.trim()) return;
-      const ok = norm(val) === norm(word.word);
-      answerFeedback(ok, `${word.word} — ${word.translation}`);
+      const ok = norm(val) === norm(target);
+      answerFeedback(ok, `${target} — ${word.translation}`);
       recordAnswer(word, ok);
       next(ok ? 900 : 1600);
     };

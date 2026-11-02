@@ -170,6 +170,8 @@ WM.storage = (() => {
       createdAt: Date.now(),
       ...group,
     };
+    // словам набора нужны id: на них строится сопоставление в играх
+    full.words = (full.words || []).map(w => ({ ...w, id: w.id || genId() }));
     groups.push(full);
     write(kGroups(uid), groups);
     return full;
