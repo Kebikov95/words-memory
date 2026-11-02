@@ -1305,6 +1305,17 @@ restaurant|ˈrɛstərɑːnt|ресторан|This restaurant is very famous.|Que
 menu|ˈmɛnjuː|меню|Can I see the menu?|Posso vedere il menu?|Можно посмотреть меню?
 bill|bɪl|счёт (в кафе)|The bill, please.|Il conto, per favore.|Счёт, пожалуйста.
 waiter|ˈweɪtər|официант|The waiter takes the order.|Il cameriere prende l'ordine.|Официант принимает заказ.
+cutlery|ˈkʌtləri|столовые приборы|The cutlery is on the table.|Le posate sono sul tavolo.|Столовые приборы на столе.
+toaster|ˈtoʊstər|тостер|The toaster is in the kitchen.|Il tostapane è in cucina.|Тостер на кухне.
+juicer|ˈdʒuːsər|соковыжималка|I make juice with the juicer.|Faccio la spremuta con lo spremiagrumi.|Я делаю сок соковыжималкой.
+apron|ˈeɪprən|фартук|I put on an apron to cook.|Mi metto il grembiule per cucinare.|Я надеваю фартук, чтобы готовить.
+pan|pæn|сковорода|The pan is on the stove.|La padella è sul fuoco.|Сковорода на плите.
+chef|ʃɛf|шеф-повар|The chef prepares a new dish.|Il chef prepara un piatto nuovo.|Шеф-повар готовит новое блюдо.
+appetizers|ˈæpɪtaɪzərz|закуски|The appetizers are ready.|Gli antipasti sono pronti.|Закуски готовы.
+colander|ˈkʌləndər|дуршлаг|I drain the pasta with the colander.|Scolo la pasta con lo scolapasta.|Я сливаю пасту через дуршлаг.
+sparkling wine|ˈspɑːrkəlɪŋ waɪn|игристое вино|We drink sparkling wine at parties.|A festa beviamo lo spumante.|На празднике мы пьём игристое вино.
+scales|skeɪlz|весы|I weigh the flour with the scales.|Peso la farina con la bilancia.|Я взвешиваю муку на весах.
+moka pot|ˈmoʊkə pɑːt|кофеварка (гейзерная)|I make coffee with the moka pot.|Preparo il caffè con la caffettiera.|Я готовлю кофе в гейзерной кофеварке.
   `,
   },
   {

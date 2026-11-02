@@ -1299,6 +1299,17 @@ bicchiere|bikˈkjɛːre|стакан|Vorrei un bicchiere di vino.|I'd like a gla
 tazza|ˈtattsa|чашка|Questa tazza è mia.|This cup is mine.|Эта чашка моя.
 bottiglia|botˈtiʎʎa|бутылка|Una bottiglia d'acqua, per favore.|A bottle of water, please.|Бутылку воды, пожалуйста.
 colazione|kolatˈtsjoːne|завтрак|La colazione è alle sette.|Breakfast is at seven.|Завтрак в семь.
+posate|poˈzaːte|столовые приборы|Le posate sono sul tavolo.|The cutlery is on the table.|Столовые приборы на столе.
+tostapane|tostaˈpaːne|тостер|Il tostapane è in cucina.|The toaster is in the kitchen.|Тостер на кухне.
+spremiagrumi|spremjaˈɡruːmi|соковыжималка|Faccio la spremuta con lo spremiagrumi.|I make juice with the juicer.|Я делаю сок соковыжималкой.
+grembiule|ɡremˈbjuːle|фартук|Mi metto il grembiule per cucinare.|I put on an apron to cook.|Я надеваю фартук, чтобы готовить.
+padella|paˈdɛlla|сковорода|La padella è sul fuoco.|The pan is on the stove.|Сковорода на плите.
+chef|ʃɛf|шеф-повар|Il chef prepara un piatto nuovo.|The chef prepares a new dish.|Шеф-повар готовит новое блюдо.
+antipasti|antiˈpaːsti|закуски|Gli antipasti sono pronti.|The appetizers are ready.|Закуски готовы.
+scolapasta|skɔlaˈpasta|дуршлаг|Scolo la pasta con lo scolapasta.|I drain the pasta with the colander.|Я сливаю пасту через дуршлаг.
+spumante|spuˈmante|игристое вино|A festa beviamo lo spumante.|We drink sparkling wine at parties.|На празднике мы пьём игристое вино.
+bilancia|biˈlantʃa|весы|Peso la farina con la bilancia.|I weigh the flour with the scales.|Я взвешиваю муку на весах.
+caffettiera|kaffetˈtjɛːra|кофеварка (гейзерная)|Preparo il caffè con la caffettiera.|I make coffee with the moka pot.|Я готовлю кофе в гейзерной кофеварке.
   `,
   },
   {
