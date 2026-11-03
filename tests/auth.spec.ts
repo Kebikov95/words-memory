@@ -1,7 +1,7 @@
 // Вход и профили: создание, ошибки, PIN, «Продолжить как…», выход.
 import { test, expect } from '@playwright/test';
 import { uniqueName } from './helpers/app';
-import { addWordViaModal, resolveConfirm } from './helpers/actions';
+import { addWordViaModal, logoutViaMenu } from './helpers/actions';
 
 test.describe('Вход и профили', () => {
   test('создание профиля без PIN открывает словарь', async ({ page }) => {
@@ -34,8 +34,7 @@ test.describe('Вход и профили', () => {
     await expect(page.locator('#view-app')).toBeVisible();
 
     // выход
-    await page.locator('#btn-profile').click();
-    await resolveConfirm(page, true);
+    await logoutViaMenu(page);
     await expect(page.locator('#view-auth')).toBeVisible();
 
     // повторное создание с тем же именем
@@ -52,8 +51,7 @@ test.describe('Вход и профили', () => {
     await page.getByRole('button', { name: 'Создать профиль' }).click();
     await expect(page.locator('#view-app')).toBeVisible();
 
-    await page.locator('#btn-profile').click();
-    await resolveConfirm(page, true);
+    await logoutViaMenu(page);
     await expect(page.locator('.auth-user-btn')).toBeVisible();
 
     await page.locator('.auth-user-btn').click();
@@ -71,8 +69,7 @@ test.describe('Вход и профили', () => {
     await page.getByRole('button', { name: 'Создать профиль' }).click();
     await expect(page.locator('#view-app')).toBeVisible();
 
-    await page.locator('#btn-profile').click();
-    await resolveConfirm(page, true);
+    await logoutViaMenu(page);
     await page.locator('.auth-user-btn').click();
     await page.locator('#pin-input').fill('1234');
     await page.getByRole('button', { name: 'Войти' }).click();
@@ -95,8 +92,7 @@ test.describe('Вход и профили', () => {
     await expect(page.locator('#view-app')).toBeVisible();
     await expect(page.locator('#btn-profile')).toContainText(ada);
 
-    await page.locator('#btn-profile').click();
-    await resolveConfirm(page, true);
+    await logoutViaMenu(page);
     await page.locator('.auth-user-btn', { hasText: bruno }).click();
     await expect(page.locator('#btn-profile')).toContainText(bruno);
   });
@@ -111,8 +107,7 @@ test.describe('Вход и профили', () => {
     await addWordViaModal(page, { word: 'mela', translation: 'яблоко' });
     await expect(page.locator('.word-card')).toHaveCount(1);
 
-    await page.locator('#btn-profile').click();
-    await resolveConfirm(page, true);
+    await logoutViaMenu(page);
     await expect(page.locator('#view-auth')).toBeVisible();
 
     // «Продолжить как…» — данные на месте

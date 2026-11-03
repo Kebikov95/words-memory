@@ -1,7 +1,7 @@
 // Словарь: добавление/редактирование/удаление, поиск, теги, вкладки, озвучка, картинки, экспорт/импорт, тема.
 import fs from 'node:fs';
 import { test, expect } from './fixtures/app';
-import { addWordViaModal, resolveConfirm, switchLang } from './helpers/actions';
+import { addWordViaModal, resolveConfirm, switchLang, openProfileMenu } from './helpers/actions';
 
 test.describe('Словарь — добавление и карточка', () => {
   test('ручное добавление: слово, транскрипция, пример с флажком языка', async ({ appPage: page }) => {
@@ -256,7 +256,8 @@ test.describe('Словарь — тема', () => {
     const theme = () => page.evaluate(() => document.documentElement.dataset.theme ?? '');
     const before = await theme();
 
-    await page.locator('#btn-theme').click();
+    await openProfileMenu(page);
+    await page.locator('#menu-theme').click();
     const after = await theme();
     expect(after).not.toBe(before);
     expect(['light', 'dark']).toContain(after);

@@ -1,7 +1,7 @@
 // Данные и целостность: структура GROUPS, полнота слов, изоляция профилей, экранирование.
 import { test, expect } from './fixtures/app';
 import { uniqueName } from './helpers/app';
-import { addWordViaModal } from './helpers/actions';
+import { addWordViaModal, logoutViaMenu } from './helpers/actions';
 
 test.describe('Данные — каталог наборов', () => {
   // каталог вырос: добавились «ключевые глаголы» (it), «неправильные глаголы» (en) и пара «топ-300»
@@ -64,9 +64,7 @@ test.describe('Данные — изоляция и безопасность', (
     await expect(page.locator('.word-card')).toHaveCount(1);
 
     // выход и создание профиля B
-    await page.locator('#btn-profile').click();
-    await page.getByRole('button', { name: 'Выйти' }).click();
-    await expect(page.locator('#view-auth')).toBeVisible();
+    await logoutViaMenu(page);
     await page.getByPlaceholder('Ваше имя').fill(uniqueName('Профиль B'));
     await page.getByRole('button', { name: 'Создать профиль' }).click();
     await expect(page.locator('#view-app')).toBeVisible();

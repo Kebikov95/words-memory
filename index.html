@@ -8,9 +8,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=22">
+  <link rel="stylesheet" href="css/style.css?v=23">
   <!-- v=2: при изменении js/css повышайте версию — это сбрасывает кеш браузера -->
-  <script src="js/icons.js?v=3" defer></script>
+  <script src="js/icons.js?v=4" defer></script>
   <script src="js/storage.js?v=9" defer></script>
   <script src="js/tts.js?v=5" defer></script>
   <script src="js/images.js?v=3" defer></script>
@@ -21,7 +21,7 @@
   <script src="js/words.js?v=12" defer></script>
   <script src="js/games.js?v=6" defer></script>
   <script src="js/groups.js?v=18" defer></script>
-  <script src="js/app.js?v=7" defer></script>
+  <script src="js/app.js?v=8" defer></script>
 </head>
 <body>
 
@@ -84,9 +84,13 @@
         </nav>
 
         <div class="header-actions">
-          <button class="icon-btn" id="btn-stats" aria-label="Статистика" title="Статистика"></button>
-          <button class="icon-btn" id="btn-theme" aria-label="Сменить тему" title="Сменить тему"></button>
-          <button class="user-chip" id="btn-profile" aria-label="Сменить профиль" title="Сменить профиль"></button>
+          <button class="user-chip" id="btn-profile" aria-label="Настройки профиля" title="Настройки профиля"></button>
+          <div class="profile-menu hidden" id="profile-menu">
+            <button class="profile-menu-item" id="menu-stats"><span class="pm-ic"></span>Статистика</button>
+            <button class="profile-menu-item" id="menu-theme"></button>
+            <div class="profile-menu-sep"></div>
+            <button class="profile-menu-item profile-menu-exit" id="menu-logout"><span class="pm-ic"></span>Выйти из профиля</button>
+          </div>
         </div>
       </div>
     </header>

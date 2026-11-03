@@ -48,6 +48,20 @@ export async function resolveConfirm(page: Page, accept = true) {
     .click();
 }
 
+/** Меню профиля: открывается по клику на аватар. */
+export async function openProfileMenu(page: Page) {
+  await page.locator('#btn-profile').click();
+  await expect(page.locator('#profile-menu')).toBeVisible();
+}
+
+/** Выход из профиля: аватар → «Выйти из профиля» → подтверждение. */
+export async function logoutViaMenu(page: Page) {
+  await openProfileMenu(page);
+  await page.locator('#menu-logout').click();
+  await resolveConfirm(page, true);
+  await expect(page.locator('#view-auth')).toBeVisible();
+}
+
 /** Переключает языковую вкладку словаря (вкладки — role=tab, не button). */
 export async function switchLang(page: Page, lang: 'it' | 'en') {
   await page.locator(lang === 'it' ? '#tab-it' : '#tab-en').click();

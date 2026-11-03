@@ -347,7 +347,49 @@ select {
   box-shadow: var(--shadow);
 }
 
-.header-actions { margin-left: auto; display: flex; align-items: center; gap: 6px; }
+.header-actions { margin-left: auto; display: flex; align-items: center; gap: 6px; position: relative; }
+
+/* меню настроек профиля (раскрывается по клику на аватар) */
+.profile-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 230px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 6px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  z-index: 60;
+  animation: menuIn var(--dur) var(--ease);
+}
+@keyframes menuIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: none; }
+}
+.profile-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 42px;
+  padding: 0 12px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--text);
+  text-align: left;
+  transition: background var(--dur) var(--ease), color var(--dur) var(--ease);
+}
+.profile-menu-item svg { width: 18px; height: 18px; flex-shrink: 0; color: var(--text-2); transition: color var(--dur) var(--ease); }
+.profile-menu-item:hover { background: var(--surface-2); }
+.profile-menu-item:hover svg { color: var(--text); }
+.profile-menu-sep { height: 1px; background: var(--border); margin: 4px 6px; }
+.profile-menu-exit { color: var(--err); }
+.profile-menu-exit svg { color: var(--err); }
+.profile-menu-exit:hover { background: var(--err-soft); }
 
 .user-chip {
   display: flex; align-items: center; gap: 8px;

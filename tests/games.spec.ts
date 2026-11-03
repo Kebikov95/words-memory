@@ -14,7 +14,7 @@ import {
   type SeedEntry,
 } from './helpers/games';
 import { SEED_WORDS_IT } from './helpers/app';
-import { resolveConfirm } from './helpers/actions';
+import { resolveConfirm, openProfileMenu } from './helpers/actions';
 
 function openTrainModal(page: import('@playwright/test').Page) {
   return page.getByRole('button', { name: /Тренировка/ }).click();
@@ -268,11 +268,12 @@ test.describe('Игры — Микс и результаты', () => {
     }
     await expect(page.locator('#res-percent')).toBeVisible();
 
-    // со страницы результатов возвращаемся в приложение — кнопка статистики в шапке
+    // со страницы результатов возвращаемся в приложение — статистика в меню профиля
     await page.locator('#btn-finish').click();
     await expect(page.locator('#view-app')).toBeVisible();
 
-    await page.locator('#btn-stats').click();
+    await openProfileMenu(page);
+    await page.locator('#menu-stats').click();
     await expect(page.locator('#modal-stats')).toBeVisible();
     await expect(page.locator('#stats-content')).toContainText('Тренировок пройдено');
     await expect(page.locator('#stats-content')).toContainText('100% (5/5)');

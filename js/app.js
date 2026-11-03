@@ -43,7 +43,10 @@ WM.app = (() => {
   function applyTheme() {
     const stored = localStorage.getItem('wm_theme') || '';
     document.documentElement.dataset.theme = stored;
-    $('#btn-theme').innerHTML = effectiveDark() ? ICONS.sun : ICONS.moon;
+    // пункт меню показывает тему, в которую переключит клик
+    const dark = effectiveDark();
+    $('#menu-theme').innerHTML =
+      `${dark ? ICONS.sun : ICONS.moon}<span>${dark ? 'Светлая тема' : 'Тёмная тема'}</span>`;
   }
   const effectiveDark = () =>
     (localStorage.getItem('wm_theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')) === 'dark';
@@ -115,7 +118,7 @@ WM.app = (() => {
 
     $('#btn-profile').innerHTML =
       `<span class="auth-user-ava" style="width:26px;height:26px;font-size:12px">${esc(user.name[0].toUpperCase())}</span><span class="user-chip-name">${esc(user.name)}</span>`;
-    $('#btn-profile').title = `Сменить профиль (${user.name})`;
+    $('#btn-profile').title = `Настройки профиля (${user.name})`;
 
     if (!modulesBound) {
       bindApp();
@@ -169,13 +172,27 @@ WM.app = (() => {
       e.target.value = '';
     });
 
-    // профиль, тема, статистика, настройки
-    $('#btn-profile').addEventListener('click', async () => {
+    // меню профиля: статистика, тема, выход
+    const menu = $('#profile-menu');
+    const closeMenu = () => menu.classList.add('hidden');
+    $('#btn-profile').addEventListener('click', e => {
+      e.stopPropagation();
+      menu.classList.toggle('hidden');
+    });
+    document.addEventListener('click', e => {
+      if (!menu.classList.contains('hidden') &&
+          !menu.contains(e.target) && !$('#btn-profile').contains(e.target)) closeMenu();
+    });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
+
+    $('#menu-stats .pm-ic').innerHTML = ICONS.chart;
+    $('#menu-stats').addEventListener('click', () => { closeMenu(); openStats(); });
+    $('#menu-logout .pm-ic').innerHTML = ICONS.logout;
+    $('#menu-logout').addEventListener('click', async () => {
+      closeMenu();
       if (await confirm(`Выйти из профиля «${state.user.name}»? Данные останутся сохранены.`, 'Выйти')) logout();
     });
-    $('#btn-theme').addEventListener('click', toggleTheme);
-    $('#btn-stats').innerHTML = ICONS.chart;
-    $('#btn-stats').addEventListener('click', openStats);
+    $('#menu-theme').addEventListener('click', toggleTheme);
 
     // подтверждение
     $('#confirm-yes').addEventListener('click', () => { $('#modal-confirm').close(); confirmResolve?.(true); });
