@@ -466,7 +466,6 @@ select {
 
 .word-actions {
   display: flex;
-  flex-direction: column;
   gap: 2px;
   align-self: flex-start;
 }
@@ -1062,8 +1061,15 @@ span.g-check.done {
 #modal-bulk textarea { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13.5px; }
 
 @media (max-width: 560px) {
-  /* шапка: одна компактная строка, «отлеплена» от контента через position: sticky
-     (фон с фолбэком и -webkit-backdrop-filter — см. секцию «шапка») */
+  /* шапка одной компактной строкой; на мобильных прибита намертво через
+     position: fixed — sticky «дышит» при коллапсе адресной строки и дрожит
+     при скролле (фон с фолбэком и -webkit-backdrop-filter — см. секцию «шапка») */
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
   .header-inner {
     flex-wrap: nowrap;
     gap: 8px;
@@ -1078,7 +1084,8 @@ span.g-check.done {
   .user-chip { min-height: 40px; padding: 0 4px; }
   .user-chip-name { display: none; }
 
-  .main { padding: 16px 12px 48px; }
+  /* отступ = высота fixed-шапки (63px: 46px контролы + 16px паддинги + 1px рамка) + зазор 16px */
+  .main { padding: 79px 12px 48px; }
 
   /* поиск на всю строку, кнопки ниже; select растягивается */
   .toolbar { gap: 8px; }
