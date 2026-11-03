@@ -75,13 +75,10 @@ WM.words = (() => {
   }
 
   function cardHTML(w, i) {
-    // транскрипция — рядом с кнопкой озвучки слова; кнопка произносит только слово
+    // верхняя строка: слово + транскрипция + озвучка; кнопка произносит только слово
     const ipa = w.transcription ? `<span class="ipa">/${esc(w.transcription)}/</span>` : '';
     const speakBtn = WM.tts.supported()
-      ? `<button class="icon-btn" data-act="speak" data-id="${w.id}" aria-label="Озвучить слово" title="Озвучить слово">${ICONS.speaker}</button>`
-      : '';
-    const speakers = (speakBtn || ipa)
-      ? `<div class="word-speakers">${speakBtn}${ipa}</div>`
+      ? `<button class="icon-btn w-speak" data-act="speak" data-id="${w.id}" aria-label="Озвучить слово" title="Озвучить слово">${ICONS.speaker}</button>`
       : '';
     // на карточке — только пример на языке слова; парный пример-перевод
     // остаётся в данных и виден в модалке редактирования
@@ -93,7 +90,7 @@ WM.words = (() => {
       <div class="word-example">
         <button class="icon-btn" data-speak-ex data-text="${esc(e.text)}" data-lang="${l}" aria-label="Озвучить пример">${ICONS.speaker}</button>
         <span class="ex-flag">${langFlag(l)}</span>
-        ${esc(e.text)} <span class="ex-tr">— ${esc(e.translation)}</span>
+        <span class="ex-body">${esc(e.text)} <span class="ex-tr">— ${esc(e.translation)}</span></span>
       </div>`;
       }).join('');
     const tags = w.tags.map(t => `<span class="tag" data-tagchip="${esc(t)}">${esc(t)}</span>`).join('');
@@ -102,8 +99,12 @@ WM.words = (() => {
     <article class="word-card" style="animation-delay:${Math.min(i * 30, 300)}ms">
       ${WM.images.renderPreview(w.image, w.word, w.tags)}
       <div class="word-body">
-        <div class="word-title"><span class="w">${esc(w.word)}</span><span class="t">${esc(w.translation)}</span></div>
-        ${speakers}
+        <div class="word-title">
+          <span class="w">${esc(w.word)}</span>
+          ${ipa}
+          ${speakBtn}
+        </div>
+        <span class="t">${esc(w.translation)}</span>
         <div class="word-examples">${examples}</div>
         <div class="word-tags">${tags}</div>
       </div>

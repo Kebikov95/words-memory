@@ -410,33 +410,44 @@ select {
 
 .word-title {
   display: flex;
-  align-items: baseline;
-  gap: 10px;
+  align-items: center;
+  gap: 8px;
   flex-wrap: wrap;
+  min-width: 0;
 }
 .word-title .w {
   font-size: 22px;
   font-weight: 800;
   letter-spacing: -0.02em;
 }
-.word-title .t {
+.word-title .ipa {
+  color: var(--text-2);
+  font-size: 14px;
+}
+.word-title .w-speak { width: 24px; height: 24px; flex-shrink: 0; }
+.word-title .w-speak svg { width: 15px; height: 15px; }
+
+/* перевод — отдельной строкой под словом */
+.word-body > .t {
+  display: block;
   color: var(--text-2);
   font-size: 15px;
+  margin-top: 1px;
 }
 
-.word-speakers { display: flex; align-items: center; gap: 6px; margin: 2px 0 6px; }
-.word-speakers .icon-btn { width: 34px; height: 34px; }
-.word-speakers .icon-btn svg { width: 16px; height: 16px; }
-.word-speakers .ipa { font-size: 13.5px; color: var(--text-2); }
-
-.word-examples { margin: 4px 0 8px; display: flex; flex-direction: column; gap: 6px; }
-.word-example { font-size: 13.5px; color: var(--text-2); }
-.word-example .ex-flag { font-size: 12px; margin: 0 3px 0 1px; }
+.word-examples { margin: 6px 0 8px; display: flex; flex-direction: column; gap: 6px; }
+.word-example {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13.5px;
+  color: var(--text-2);
+}
+.word-example .ex-flag { font-size: 12px; flex-shrink: 0; }
+.word-example .ex-body { flex: 1; min-width: 0; }
 .word-example .ex-tr { opacity: .75; font-style: italic; }
-.word-example .icon-btn {
-  width: 26px; height: 26px; vertical-align: -6px; margin-right: 2px;
-}
-.word-example .icon-btn svg { width: 13px; height: 13px; }
+.word-example .icon-btn { width: 18px; height: 18px; flex-shrink: 0; }
+.word-example .icon-btn svg { width: 12px; height: 12px; }
 
 .word-tags { display: flex; gap: 6px; flex-wrap: wrap; }
 
@@ -946,7 +957,8 @@ select {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 14px 18px;
+  /* вертикальный отступ ~10% высоты строки: картинка крупная, почти на всю ячейку */
+  padding: 8px 14px;
   border-bottom: 1px solid var(--border);
   transition: background var(--dur) var(--ease);
 }
@@ -964,18 +976,18 @@ select {
   flex-shrink: 0;
 }
 
-/* квадратная картинка слова: между чекбоксом и словом, по высоте строки */
+/* квадратная картинка слова: между чекбоксом и текстом, почти на всю высоту строки */
 .g-img { flex-shrink: 0; }
 .g-img .g-img-box {
-  width: 52px;
-  height: 52px;
-  border-radius: 12px;
+  width: 80px;
+  height: 80px;
+  border-radius: 14px;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   background: var(--surface-2);
-  font-size: 30px;
+  font-size: 40px;
   line-height: 1;
 }
 .g-img .g-img-box img { width: 100%; height: 100%; object-fit: cover; display: block; }
@@ -1001,27 +1013,45 @@ span.g-check.done {
   white-space: nowrap;
 }
 
-.g-texts { flex: 1; min-width: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 5px 12px; }
-.g-word { font-weight: 700; font-size: 20px; }
-.g-ipa { font-size: 15px; color: var(--text-2); }
-.g-tr { color: var(--text-2); font-size: 18px; }
+.g-texts { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+
+/* верхняя строка: слово — транскрипция — озвучка (и пометка «в словаре») */
+.g-top { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; min-width: 0; }
+.g-word { font-weight: 700; font-size: 21px; }
+.g-ipa { font-size: 14px; color: var(--text-2); }
+.g-top .g-speak { width: 22px; height: 22px; flex-shrink: 0; }
+.g-top .g-speak svg { width: 15px; height: 15px; }
+.g-top .g-speak:hover { color: var(--accent); }
+
+.g-inmark {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ok);
+  background: var(--ok-soft);
+  padding: 2px 9px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+/* перевод — второй строкой */
+.g-tr { color: var(--text-2); font-size: 16px; }
+
+/* пример — третьей строкой: текст и динамик по одной линии, динамик в высоту текста */
 .g-ex {
-  width: 100%;
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  font-size: 16px;
+  gap: 6px;
+  font-size: 14px;
   color: var(--text-2);
   font-style: italic;
 }
+.g-ex .g-ex-text { min-width: 0; }
 
-.g-speak { width: 40px; height: 40px; flex-shrink: 0; }
-.g-speak svg { width: 18px; height: 18px; }
-.g-edit { width: 38px; height: 38px; flex-shrink: 0; color: var(--text-2); }
+.g-edit { width: 38px; height: 38px; flex-shrink: 0; color: var(--text-2); align-self: flex-start; }
 .g-edit svg { width: 16px; height: 16px; }
 .g-edit:hover { color: var(--accent); }
-.g-ex .g-speak-ex { width: 28px; height: 28px; flex-shrink: 0; color: var(--text-2); }
-.g-ex .g-speak-ex svg { width: 14px; height: 14px; }
+.g-ex .g-speak-ex { width: 18px; height: 18px; flex-shrink: 0; color: var(--text-2); }
+.g-ex .g-speak-ex svg { width: 12px; height: 12px; }
 .g-ex .g-speak-ex:hover { color: var(--accent); }
 
 /* ---------- прочее ---------- */
@@ -1062,7 +1092,13 @@ span.g-check.done {
   .word-card { gap: 12px; padding: 12px; }
   .word-img { width: 56px; height: 56px; font-size: 28px; }
   .word-title .w { font-size: 19px; }
-  .word-title .t { font-size: 14px; }
+  .word-body > .t { font-size: 14px; }
+
+  .g-row { gap: 10px; padding: 6px 10px; }
+  .g-img .g-img-box { width: 64px; height: 64px; border-radius: 12px; font-size: 32px; }
+  .g-word { font-size: 18px; }
+  .g-tr { font-size: 14px; }
+  .g-ex { font-size: 13px; }
 
   .lang-chips .chip-btn { min-height: 38px; padding: 0 12px; font-size: 15px; }
 

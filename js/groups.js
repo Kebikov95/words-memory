@@ -206,13 +206,15 @@ WM.groups = (() => {
       <div class="g-row${inDict ? ' in-dict' : ''}">
         <input type="checkbox" class="g-check" data-word="${esc(w.word)}" ${checked}>
         <div class="g-img" data-gimg="${esc(w.word)}">${WM.images.renderPreview(img, w.word, [g.tag], 'g-img-box')}</div>
-        <button class="icon-btn g-speak" data-say="${esc(w.word)}" aria-label="Озвучить слово" title="Озвучить слово">${ICONS.speaker}</button>
         <div class="g-texts">
-          <span class="g-word">${esc(w.word)}</span>
-          ${w.transcription ? `<span class="g-ipa">/${esc(w.transcription)}/</span>` : ''}
-          ${inDict ? '<span class="g-inmark" title="Уже в словаре">✓ в словаре</span>' : ''}
+          <div class="g-top">
+            <span class="g-word">${esc(w.word)}</span>
+            ${w.transcription ? `<span class="g-ipa">/${esc(w.transcription)}/</span>` : ''}
+            <button class="icon-btn g-speak" data-say="${esc(w.word)}" aria-label="Озвучить слово" title="Озвучить слово">${ICONS.speaker}</button>
+            ${inDict ? '<span class="g-inmark" title="Уже в словаре">✓ в словаре</span>' : ''}
+          </div>
           <span class="g-tr">${esc(w.translation)}</span>
-          ${w.examples.filter(e => e.lang === g.lang).map(e => `<span class="g-ex">${e.lang === 'en' ? '🇬🇧' : '🇮🇹'} ${esc(e.text)}<button class="icon-btn g-speak-ex" data-say="${esc(e.text)}" aria-label="Озвучить пример" title="Озвучить пример">${ICONS.speaker}</button></span>`).join('')}
+          ${w.examples.filter(e => e.lang === g.lang).map(e => `<span class="g-ex">${e.lang === 'en' ? '🇬🇧' : '🇮🇹'} <span class="g-ex-text">${esc(e.text)}</span><button class="icon-btn g-speak-ex" data-say="${esc(e.text)}" aria-label="Озвучить пример" title="Озвучить пример">${ICONS.speaker}</button></span>`).join('')}
         </div>
         <button type="button" class="icon-btn g-edit" data-gwidx="${g.words.indexOf(w)}" aria-label="Изменить слово" title="Изменить слово">${ICONS.pencil}</button>
       </div>`;
