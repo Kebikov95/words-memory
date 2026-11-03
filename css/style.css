@@ -439,15 +439,16 @@ select {
 .word-examples { margin: 6px 0 8px; display: flex; flex-direction: column; gap: 6px; }
 .word-example {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 4px;
   font-size: 13.5px;
   color: var(--text-2);
 }
-.word-example .ex-flag { font-size: 12px; flex-shrink: 0; }
+/* пример + его перевод занимают всю ширину до динамика; динамик — в конце строки примера */
 .word-example .ex-body { flex: 1; min-width: 0; }
-.word-example .ex-tr { opacity: .75; font-style: italic; }
-.word-example .icon-btn { width: 18px; height: 18px; flex-shrink: 0; }
+.word-example .ex-text { display: block; }
+.word-example .ex-tr { display: block; opacity: .75; font-style: italic; }
+.word-example .icon-btn { width: 18px; height: 18px; flex-shrink: 0; margin-top: 1px; }
 .word-example .icon-btn svg { width: 12px; height: 12px; }
 
 .word-tags { display: flex; gap: 6px; flex-wrap: wrap; }

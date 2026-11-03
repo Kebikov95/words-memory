@@ -17,7 +17,10 @@ test.describe('Словарь — добавление и карточка', () 
     await expect(card.locator('.t')).toHaveText('яблоко');
     await expect(card.locator('.ipa')).toHaveText('/ˈmɛːla/');
     await expect(card.locator('.word-example')).toContainText('La mela è dolce.');
-    await expect(card.locator('.ex-flag')).toHaveText('🇮🇹');
+    await expect(card.locator('.word-example')).toContainText('Яблоко сладкое.');
+    // флажок языка на карточке убран, динамик — после текста примера
+    await expect(card.locator('.ex-flag')).toHaveCount(0);
+    await expect(card.locator('.word-example .icon-btn')).toBeVisible();
   });
 
   test('авто-картинка: мок Википедии возвращает миниатюру → <img> в карточке', async ({ appPage: page }) => {

@@ -88,9 +88,11 @@ WM.words = (() => {
         const l = e.lang || w.lang;
         return `
       <div class="word-example">
+        <span class="ex-body">
+          <span class="ex-text">${esc(e.text)}</span>
+          ${e.translation ? `<span class="ex-tr">${esc(e.translation)}</span>` : ''}
+        </span>
         <button class="icon-btn" data-speak-ex data-text="${esc(e.text)}" data-lang="${l}" aria-label="Озвучить пример">${ICONS.speaker}</button>
-        <span class="ex-flag">${langFlag(l)}</span>
-        <span class="ex-body">${esc(e.text)} <span class="ex-tr">— ${esc(e.translation)}</span></span>
       </div>`;
       }).join('');
     const tags = w.tags.map(t => `<span class="tag" data-tagchip="${esc(t)}">${esc(t)}</span>`).join('');
