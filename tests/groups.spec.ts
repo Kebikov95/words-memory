@@ -92,7 +92,7 @@ test.describe('Группы — тренировка из набора', () => {
     await openGroup(page, '20 ключевых глаголов');
     await page.locator('#g-train-all').click();
     await expect(page.locator('#modal-train')).toBeVisible();
-    await expect(page.locator('#train-available')).toContainText('доступно слов: 20');
+    await expect(page.locator('#train-available')).toContainText('слов: 20');
     // тег при тренировке из набора скрыт
     await expect(page.locator('#train-tag').locator('xpath=..')).toBeHidden();
   });
@@ -102,7 +102,7 @@ test.describe('Группы — тренировка из набора', () => {
     await page.locator('.g-check').nth(0).check();
     await page.locator('.g-check').nth(1).check();
     await page.locator('#g-train-selected').click();
-    await expect(page.locator('#train-available')).toContainText('доступно слов: 2');
+    await expect(page.locator('#train-available')).toContainText('слов: 2');
   });
 
   test('тренировка набора форм: сборка использует только инфинитив', async ({ appPage: page }) => {

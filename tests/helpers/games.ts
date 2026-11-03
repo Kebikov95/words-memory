@@ -84,6 +84,12 @@ export async function matchPair(page: Page, id: string) {
   await page.locator(`.match-grid [data-right="${id}"]`).click();
 }
 
+/** Сопоставление в обратном порядке: сначала правая часть, затем левая. */
+export async function matchPairReverse(page: Page, id: string) {
+  await page.locator(`.match-grid [data-right="${id}"]`).click();
+  await page.locator(`.match-grid [data-left="${id}"]`).click();
+}
+
 /** Неверная пара: левый id + правый id другого слова. */
 export async function matchWrong(page: Page, leftId: string, rightId: string) {
   await page.locator(`.match-grid [data-left="${leftId}"]`).click();
@@ -116,7 +122,7 @@ export async function solveMatchPairs(page: Page, ids: string[]) {
   }
 }
 
-/** Универсальное решение текущего задания «Микса» по сид-карте.
+/** Универсальное решение текущего задания «Микса» по сид-карте; возвращает тип задания.
  *  Для диктанта caller обязан дождаться озвучки и передать слово в spoken. */
 async function solveAnyCurrentTask(
   page: Page,
@@ -124,8 +130,11 @@ async function solveAnyCurrentTask(
   failNow: boolean,
   seedById: Map<string, SeedEntry>,
   spoken: string,
-) {
+): Promise<string> {
   if (await page.locator('.match-grid').count()) {
+    const type = (await page.locator('.match-grid .mi-emoji, .match-grid img').count())
+      ? 'match-image'
+      : 'match-word';
     // чанк сопоставления: решаем все видимые пары (первую — с ошибкой, если нужно)
     let failed = false;
     for (;;) {
@@ -142,7 +151,7 @@ async function solveAnyCurrentTask(
       }
       await matchPair(page, id);
     }
-    return;
+    return type;
   }
   if (await page.locator('#as-slots').count()) {
     const letters = await page.evaluate(() =>
@@ -153,36 +162,27 @@ async function solveAnyCurrentTask(
       await page.locator('#as-pool .letter-tile:not([disabled])', { hasText: ch }).first().click();
     }
     await page.locator('#as-check').click();
-    return;
+    return 'assemble';
   }
   if (await page.locator('#dt-input').count()) {
     await solveDictation(page, failNow ? spoken.toUpperCase() : spoken);
-    return;
-  }
-  if (await page.locator('[data-opt]').count()) {
-    const word = (await page.locator('.game-word').innerText()).trim();
-    const seed = seeds.find(s => s.word === word)!;
-    const opt = failNow
-      ? seeds.find(s => s.translation !== seed.translation)!.translation
-      : seed.translation;
-    await page.locator(`[data-opt="${opt.replace(/"/g, '\\"')}"]`).first().click();
-    return;
+    return 'dictation';
   }
   throw new Error('Не распознан тип текущего задания');
 }
 
-/** Прогоняет сессию «Микса» до экрана результатов.
+/** Прогоняет сессию «Микса» до экрана результатов; возвращает типы встретившихся заданий.
  *  failIndex — номер задания (по счётчику), которое решается с ошибкой. */
 export async function solveAllTasks(
   page: Page,
   seeds: SeedEntry[],
   total: number,
   failIndex?: number,
-) {
+): Promise<string[]> {
   const seedById = new Map(seeds.map(s => [s.id, s]));
+  const seen: string[] = [];
   let failUsed = false;
   let done = parseInt((await counter(page).innerText()).split('/')[0].trim(), 10) || 0;
-  let ttsSeen = 0;
 
   while (done < total) {
     if (await page.locator('#res-percent').isVisible()) break;
@@ -205,16 +205,28 @@ export async function solveAllTasks(
     const failNow = !failUsed && failIndex === done;
     if (failNow) failUsed = true;
 
-    // в диктанте внутри микса: у каждого задания своя озвучка — ждём новую
+    // в диктанте внутри микса: ждём стартовую озвучку задания. Она приходит
+    // ~через 310 мс после рендера; если к замеру baseline она уже прозвучала —
+    // счётчик не вырастет, ждём стабилизации и берём последний вызов
+    // (озвучка-ответ предыдущего задания не может прийти позже: её блокирует окно фидбека)
     let spoken = '';
     if (await page.locator('#dt-input').count()) {
-      spoken = await waitForSpokenWord(page, ttsSeen + 1);
-      ttsSeen++;
+      const baseline = await page.evaluate(() => (window as any).__ttsCalls?.length ?? 0);
+      const deadline = Date.now() + 600;
+      await expect.poll(async () => {
+        const n = await page.evaluate(() => (window as any).__ttsCalls?.length ?? 0);
+        return n > baseline || Date.now() > deadline ? 'ready' : 'pending';
+      }, { timeout: 3000 }).toBe('ready');
+      spoken = await page.evaluate(() => {
+        const calls = (window as any).__ttsCalls;
+        return calls[calls.length - 1].text;
+      });
     }
 
-    await solveAnyCurrentTask(page, seeds, failNow, seedById, spoken);
+    seen.push(await solveAnyCurrentTask(page, seeds, failNow, seedById, spoken));
     done = await waitDoneGrown(page, done, total);
   }
 
   await expect(page.locator('#res-percent')).toBeVisible();
+  return seen;
 }

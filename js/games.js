@@ -10,12 +10,23 @@ WM.games = (() => {
     { id: 'dictation',   name: 'Диктант',             desc: 'прослушайте слово и напишите его' },
     { id: 'match-word',  name: 'Слово ↔ перевод',     desc: 'соедините пары «слово — перевод»' },
     { id: 'match-image', name: 'Картинка ↔ перевод',  desc: 'соедините пары «картинка — перевод»' },
-    { id: 'mix',         name: 'Микс',                desc: 'все режимы вперемешку' },
+    { id: 'mix',         name: 'Микс',                desc: 'каждое слово проходит все режимы по порядку' },
   ];
 
   let session = null;
   let lastConfig = null;
   let presetPool = null; // тренировка из группы: {words, lang, label}
+
+  // «Микс»: каждое слово проходит все режимы строго по порядку —
+  // картинка↔перевод → слово↔перевод → собери слово → диктант.
+  // Фазы идут подряд, поэтому сопоставления собираются в полноценные
+  // сетки из нескольких пар, а для одного слова порядок ровно такой
+  const MIX_ORDER = ['match-image', 'match-word', 'assemble', 'dictation'];
+
+  function dealTasks(words, mode) {
+    if (mode !== 'mix') return words.map(w => ({ word: w, sub: mode }));
+    return MIX_ORDER.flatMap(sub => words.map(w => ({ word: w, sub })));
+  }
 
   const norm = s => String(s).toLowerCase().trim()
     .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
@@ -43,7 +54,7 @@ WM.games = (() => {
     $('#train-modes').innerHTML = MODES.map((m, i) => `
       <label class="mode-item${i === 0 ? ' selected' : ''}">
         <input type="radio" name="train-mode" value="${m.id}" ${i === 0 ? 'checked' : ''}>
-        <span><span class="m-name">${m.name}</span><br><span class="m-desc">${m.desc}</span></span>
+        <span class="m-text"><span class="m-name">${m.name}</span><span class="m-desc">${m.desc}</span></span>
       </label>`).join('');
     $('#train-modes').querySelectorAll('.mode-item').forEach(item => {
       item.addEventListener('click', () => {
@@ -67,14 +78,12 @@ WM.games = (() => {
 
   function updateAvailability() {
     if (presetPool) {
-      $('#train-available').textContent =
-        `Набор «${presetPool.label}» — доступно слов: ${presetPool.words.length}.`;
+      $('#train-available').textContent = `Набор «${presetPool.label}» · слов: ${presetPool.words.length}`;
       return;
     }
     const n = poolWords(WM.app.state.lang, $('#train-tag').value).length;
     $('#train-available').textContent =
-      n === 0 ? 'Нет слов для тренировки — сначала добавьте слова на этой вкладке.'
-              : `Доступно слов: ${n}. Тренировка идёт по языку текущей вкладки.`;
+      n === 0 ? 'Нет слов для тренировки — сначала добавьте слова на этой вкладке.' : '';
   }
 
   function poolWords(lang, tag) {
@@ -84,7 +93,8 @@ WM.games = (() => {
 
   function start() {
     const mode = document.querySelector('input[name="train-mode"]:checked').value;
-    const count = parseInt($('#train-count').value, 10);
+    const raw = $('#train-count').value;
+    const count = raw === 'all' ? null : parseInt(raw, 10);
 
     let available, lang;
     if (presetPool) {
@@ -96,19 +106,18 @@ WM.games = (() => {
     }
     if (!available.length) { WM.app.toast('Нет слов для тренировки — добавьте слова', true); return; }
 
-    const words = shuffle(available).slice(0, count);
     lastConfig = { mode, count, preset: presetPool };
-
-    let tasks;
-    if (mode === 'mix') {
-      const subs = ['assemble', 'dictation', 'quiz', 'match-word', 'match-image'];
-      tasks = words.map(w => ({ word: w, sub: subs[Math.floor(Math.random() * subs.length)] }));
-    } else {
-      tasks = words.map(w => ({ word: w, sub: mode }));
-    }
-
-    session = { mode, lang, total: words.length, tasks, i: 0, done: 0, correct: 0, mistakes: new Map(), timers: [] };
     $('#modal-train').close();
+    beginSession(mode, count, available, lang);
+  }
+
+  function beginSession(mode, count, available, lang) {
+    const words = count ? shuffle(available).slice(0, count) : shuffle(available);
+    const tasks = dealTasks(words, mode);
+    session = {
+      mode, lang, total: tasks.length, tasks,
+      i: 0, done: 0, correct: 0, mistakes: new Map(), timers: [],
+    };
     WM.app.showView('game');
     renderTask();
   }
@@ -157,7 +166,6 @@ WM.games = (() => {
 
     if (t.sub === 'assemble')       renderAssemble(t);
     else if (t.sub === 'dictation') renderDictation(t);
-    else if (t.sub === 'quiz')      renderQuiz(t);
     else if (t.sub === 'match-word' || t.sub === 'match-image') renderMatch(t);
 
     // контейнер фидбека — после отрисовки, чтобы не затирался innerHTML
@@ -251,8 +259,9 @@ WM.games = (() => {
     $('#as-check').addEventListener('click', () => {
       const answer = placed.map(s => s.textContent).join('');
       const ok = norm(answer) === norm(target);
-      answerFeedback(ok, target);
+      answerFeedback(ok, `${target} — ${word.translation}`);
       recordAnswer(word, ok);
+      WM.tts.speak(target, session.lang);
       next(ok ? 900 : 1600);
     });
 
@@ -284,6 +293,7 @@ WM.games = (() => {
       const ok = norm(val) === norm(target);
       answerFeedback(ok, `${target} — ${word.translation}`);
       recordAnswer(word, ok);
+      WM.tts.speak(target, session.lang);
       next(ok ? 900 : 1600);
     };
     $('#dt-check').addEventListener('click', check);
@@ -311,7 +321,7 @@ WM.games = (() => {
       chunk.push(session.tasks[j].word);
     }
 
-    session._match = { chunk, selLeft: null, wrong: new Set() };
+    session._match = { chunk, sel: null, wrong: new Set() };
 
     const leftHTML = chunk.map(w => withImages
       ? `<button class="match-item" data-left="${w.id}">${smallImage(w)}</button>`
@@ -330,70 +340,51 @@ WM.games = (() => {
 
     const grid = area().querySelector('.match-grid');
     grid.addEventListener('click', e => {
-      const left = e.target.closest('[data-left]');
-      const right = e.target.closest('[data-right]');
-      if (left) {
-        if (left.classList.contains('done')) return;
-        grid.querySelectorAll('[data-left]').forEach(x => x.classList.remove('selected'));
-        left.classList.add('selected');
-        session._match.selLeft = left;
+      const item = e.target.closest('.match-item');
+      if (!item || item.classList.contains('done') || item.disabled) return;
+      const side = item.dataset.left ? 'left' : 'right';
+      const sel = session._match.sel;
+
+      // повторный клик по выбранному — снимаем выбор; клик по той же стороне — переносим выбор
+      if (sel) {
+        sel.el.classList.remove('selected');
+        if (sel.side === side) { session._match.sel = null; return; }
+      }
+      if (!sel || sel.side === side) {
+        item.classList.add('selected');
+        session._match.sel = { el: item, side };
         return;
       }
-      if (right && session._match.selLeft) {
-        const l = session._match.selLeft;
-        const ok = l.dataset.left === right.dataset.right;
-        if (ok) {
-          l.classList.remove('selected');
-          l.classList.add('done'); right.classList.add('done');
-          l.disabled = right.disabled = true;
-          session._match.selLeft = null;
-          recordAnswer(chunk.find(w => w.id === l.dataset.left), !session._match.wrong.has(l.dataset.left));
-          if (grid.querySelector('[data-left]:not(.done)') === null) {
-            session.i += chunk.length;
-            updateProgress();
-            later(() => renderTask(), 600);
-          }
-        } else {
-          session._match.wrong.add(l.dataset.left);
-          l.classList.add('wrong'); right.classList.add('wrong');
-          later(() => { l.classList.remove('wrong'); right.classList.remove('wrong'); }, 350);
-          feedback('Не та пара — попробуйте ещё', false);
+
+      // пара собрана: слева всегда элемент data-left, справа — data-right
+      const l = sel.side === 'left' ? sel.el : item;
+      const r = sel.side === 'left' ? item : sel.el;
+      session._match.sel = null;
+      const pairWord = chunk.find(w => w.id === l.dataset.left);
+      const ok = l.dataset.left === r.dataset.right;
+      if (ok) {
+        l.classList.add('done'); r.classList.add('done');
+        l.disabled = r.disabled = true;
+        answerFeedback(true, `${pairWord.word} — ${pairWord.translation}`);
+        recordAnswer(pairWord, !session._match.wrong.has(pairWord.id));
+        WM.tts.speak(headForm(pairWord), session.lang);
+        if (grid.querySelector('[data-left]:not(.done)') === null) {
+          session.i += chunk.length;
+          updateProgress();
+          later(() => renderTask(), 600);
         }
+      } else {
+        session._match.wrong.add(l.dataset.left);
+        l.classList.add('wrong'); r.classList.add('wrong');
+        later(() => { l.classList.remove('wrong'); r.classList.remove('wrong'); }, 350);
+        feedback('Не та пара — попробуйте ещё', false);
+        WM.tts.speak(headForm(pairWord), session.lang);
       }
-    });
-  }
-
-  // Квиз (используется в «Миксе» для сопоставления)
-  function renderQuiz(t) {
-    const { word } = t;
-    const { uid: U } = WM.app.state;
-    const others = shuffle(WM.storage.getWords(U).filter(w => w.id !== word.id && w.translation !== word.translation))
-      .slice(0, 3).map(w => w.translation);
-    const options = shuffle([word.translation, ...others]);
-
-    area().innerHTML = `
-      <div class="game-card">
-        <div class="hint">Выберите перевод</div>
-        <div class="game-word">${esc(word.word)}</div>
-        <div class="game-actions" style="flex-direction:column;align-items:stretch;gap:8px;margin-top:16px">
-          ${options.map(o => `<button class="btn btn-ghost match-item" data-opt="${esc(o)}" style="min-height:48px">${esc(o)}</button>`).join('')}
-        </div>
-      </div>`;
-
-    area().querySelectorAll('[data-opt]').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const ok = btn.dataset.opt === word.translation;
-        btn.classList.add(ok ? 'done' : 'wrong');
-        if (!ok) area().querySelector(`[data-opt="${CSS.escape(word.translation)}"]`)?.classList.add('done');
-        answerFeedback(ok, `${word.word} — ${word.translation}`);
-        recordAnswer(word, ok);
-        next(ok ? 800 : 1400);
-      });
     });
   }
 
   function answerFeedback(ok, answer) {
-    feedback(ok ? '✓ Верно!' : `✗ Правильно: ${answer}`, ok);
+    feedback(ok ? `✓ Верно · ${answer}` : `✗ Правильно: ${answer}`, ok);
   }
 
   // ---------- финал ----------
@@ -410,6 +401,9 @@ WM.games = (() => {
     $('#res-line').textContent = `Верно ${session.correct} из ${session.total}`;
 
     const mistakes = [...session.mistakes.values()];
+    const retryBtn = $('#btn-retry-mistakes');
+    retryBtn.hidden = !mistakes.length;
+    retryBtn.textContent = `Прогнать ошибки (${mistakes.length})`;
     $('#res-mistakes').innerHTML = mistakes.length
       ? `<h4>Ошибки (${mistakes.length})</h4>` +
         mistakes.map(w => `<div class="mistake-row"><span class="mw">${esc(w.word)}</span><span>${esc(w.translation)}</span></div>`).join('')
@@ -447,15 +441,12 @@ WM.games = (() => {
       }
       if (!available.length) return exit();
       const lang = preset ? preset.lang : WM.app.state.lang;
-      const words = shuffle(available).slice(0, count);
-      const subs = ['assemble', 'dictation', 'quiz', 'match-word', 'match-image'];
-      session = {
-        mode, lang, total: words.length,
-        tasks: words.map(w => ({ word: w, sub: mode === 'mix' ? subs[Math.floor(Math.random() * subs.length)] : mode })),
-        i: 0, done: 0, correct: 0, mistakes: new Map(), timers: [],
-      };
-      WM.app.showView('game');
-      renderTask();
+      beginSession(mode, count, available, lang);
+    });
+    // перепройти только слова, которые не поддались в прошлой сессии
+    $('#btn-retry-mistakes').addEventListener('click', () => {
+      if (!session || !session.mistakes.size) return;
+      beginSession(session.mode, null, [...session.mistakes.values()], session.lang);
     });
     $('#btn-finish').addEventListener('click', exit);
   }
