@@ -375,6 +375,7 @@ select {
 @media (min-width: 680px) { .words-grid { grid-template-columns: 1fr 1fr; } }
 
 .word-card {
+  position: relative;
   display: flex;
   gap: 16px;
   background: var(--surface);
@@ -428,6 +429,10 @@ select {
 .word-title .w-speak { width: 24px; height: 24px; flex-shrink: 0; }
 .word-title .w-speak svg { width: 15px; height: 15px; }
 
+/* кнопки редактирования наложены на карточку и не сжимают тело:
+   слово и его перевод держат справа резерв под них, примеры — нет */
+.word-title, .word-body > .t { padding-right: 92px; }
+
 /* перевод — отдельной строкой под словом */
 .word-body > .t {
   display: block;
@@ -448,8 +453,8 @@ select {
 .word-example .ex-body { flex: 1; min-width: 0; }
 .word-example .ex-text { display: block; }
 .word-example .ex-tr { display: block; opacity: .75; font-style: italic; }
-.word-example .icon-btn { width: 18px; height: 18px; flex-shrink: 0; margin-top: 1px; }
-.word-example .icon-btn svg { width: 12px; height: 12px; }
+.word-example .icon-btn { width: 24px; height: 24px; flex-shrink: 0; margin-top: -2px; }
+.word-example .icon-btn svg { width: 15px; height: 15px; }
 
 .word-tags { display: flex; gap: 6px; flex-wrap: wrap; }
 
@@ -466,9 +471,11 @@ select {
 .tag:hover { background: var(--accent); color: #fff; }
 
 .word-actions {
+  position: absolute;
+  top: 16px;
+  right: 16px;
   display: flex;
   gap: 2px;
-  align-self: flex-start;
 }
 
 /* ---------- пустое состояние ---------- */
@@ -1099,6 +1106,7 @@ span.g-check.done {
 
   /* карточка слова остаётся горизонтальной, но с компактной картинкой */
   .word-card { gap: 12px; padding: 12px; }
+  .word-actions { top: 12px; right: 12px; }
   .word-img { width: 56px; height: 56px; font-size: 28px; }
   .word-title .w { font-size: 19px; }
   .word-body > .t { font-size: 14px; }
