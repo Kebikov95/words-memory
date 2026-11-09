@@ -9,26 +9,26 @@ window.WM = window.WM || {};
 (() => {
 // частотное ядро (300 слов) — основа набора «300 самых частотных слов»
 const CORE_TOP = `
-the|ðə|определённый артикль|The book is on the table.|Il libro è sul tavolo.|Книга на столе.
-a|ə|неопределённый артикль|I have a new backpack.|Ho uno zaino nuovo.|У меня новый рюкзак.
-an|æn|неопределённый артикль (перед гласной)|I eat an egg for breakfast.|Mangio un uovo a colazione.|Я ем яйцо на завтрак.
+the|ðə| определённый артикль|The book is on the table.|Il libro è sul tavolo.|Книга на столе.
+a|ə| неопределённый артикль|I have a new backpack.|Ho uno zaino nuovo.|У меня новый рюкзак.
+an|æn| неопределённый артикль (перед гласной)|I eat an egg for breakfast.|Mangio un uovo a colazione.|Я ем яйцо на завтрак.
 and|ænd|и|Marco and Luca are friends.|Marco e Luca sono amici.|Марко и Лука — друзья.
 or|ɔːr|или|Do you want tea or coffee?|Vuoi tè o caffè?|Хочешь чай или кофе?
 but|bʌt|но|I want to come, but I am tired.|Voglio venire, ma sono stanco.|Я хочу прийти, но я устал.
 if|ɪf| если|If it rains, I stay home.|Se piove, resto a casa.|Если идёт дождь, я остаюсь дома.
-because|bɪˈkɔːz|потому что|I stay home because I am tired.|Resto a casa perché sono stanco.|Я остаюсь дома, потому что я устал.
+because|bɪˈkɔːz| потому что|I stay home because I am tired.|Resto a casa perché sono stanco.|Я остаюсь дома, потому что я устал.
 not|nɑːt|не|I do not understand it.|Non lo capisco.|Я не понимаю этого.
 yes|jɛs|да|Yes, you are right.|Sì, hai ragione.|Да, ты прав.
 no|noʊ|нет|No, thanks.|No, grazie.|Нет, спасибо.
-please|pliːz|пожалуйста|A coffee, please.|Un caffè, per favore.|Кофе, пожалуйста.
+please|pliːz| пожалуйста|A coffee, please.|Un caffè, per favore.|Кофе, пожалуйста.
 thank you|ˈθæŋk juː|спасибо|Thank you for your help!|Grazie per il tuo aiuto!|Спасибо за твою помощь!
-sorry|ˈsɑːri|извини(те)|Sorry, I am late!|Scusa, sono in ritardo!|Извини, я опаздываю!
-hello|həˈloʊ|здравствуй(те)|Hello, how are you?|Ciao, come stai?|Привет, как дела?
+sorry|ˈsɑːri| извини|Sorry, I am late!|Scusa, sono in ritardo!|Извини, я опаздываю!
+hello|həˈloʊ| здравствуй|Hello, how are you?|Ciao, come stai?|Привет, как дела?
 I|aɪ|я|I work, you study.|Io lavoro, tu studi.|Я работаю, ты учишься.
 you|juː| ты|And you, how are you?|E tu, come stai?|А ты как?
 he|hiː|он|He is my brother.|Lui è mio fratello.|Он мой брат.
 she|ʃiː| она|She is my sister.|Lei è mia sorella.|Она моя сестра.
-it|ɪt|оно, это|It is very hot today.|Fa molto caldo oggi.|Сегодня очень жарко.
+it|ɪt| оно, это|It is very hot today.|Fa molto caldo oggi.|Сегодня очень жарко.
 we|wiː|мы|We live in Milan.|Noi abitiamo a Milano.|Мы живём в Милане.
 they|ðeɪ|они|They don't speak Italian.|Loro non parlano italiano.|Они не говорят по-итальянски.
 this|ðɪs|это, этот|This book is interesting.|Questo libro è interessante.|Эта книга интересная.
@@ -42,12 +42,12 @@ tomorrow|təˈmɑːroʊ|завтра|Tomorrow I am going to the sea.|Domani vado
 always|ˈɔːlweɪz|всегда|Marco is always late.|Marco è sempre in ritardo.|Марко всегда опаздывает.
 never|ˈnɛvər|никогда|I never eat meat.|Non mangio mai la carne.|Я никогда не ем мясо.
 often|ˈɔːfən|часто|I often walk to work.|Spesso vado a piedi al lavoro.|Я часто хожу на работу пешком.
-very|ˈvɛri|очень|You are very kind!|Sei molto gentile!|Ты очень добрый!
+very|ˈvɛri| очень|You are very kind!|Sei molto gentile!|Ты очень добрый!
 much|mʌtʃ| много|I don't have much time.|Non ho molto tempo.|У меня нет много времени.
 many|ˈmɛni|много (с исчисляемыми)|There are many people in the city.|In città ci sono tante persone.|В городе много людей.
 little|ˈlɪtəl| мало|I have little time today.|Ho poco tempo oggi.|У меня мало времени сегодня.
 all|ɔːl| все|All my friends are here.|Tutti i miei amici sono qui.|Все мои друзья здесь.
-nothing|ˈnʌθɪŋ|ничто|There is nothing in the fridge.|Non c'è niente nel frigorifero.|В холодильнике ничего нет.
+nothing|ˈnʌθɪŋ| ничто|There is nothing in the fridge.|Non c'è niente nel frigorifero.|В холодильнике ничего нет.
 something|ˈsʌmθɪŋ|что-то|I want to tell you something.|Voglio dirti qualcosa.|Я хочу тебе кое-что сказать.
 somebody|ˈsʌmˌbɑːdi|кто-то|There is someone at the door.|C'è qualcuno alla porta.|У двери кто-то есть.
 one|wʌn|один|I have only one euro.|Ho solo un euro.|У меня всего один евро.
@@ -69,8 +69,8 @@ man|mæn|мужчина, человек|That man is my father.|Quell'uomo è mio
 woman|ˈwʊmən|женщина|That woman is my teacher.|Quella donna è la mia professoressa.|Та женщина — моя преподавательница.
 child|tʃaɪld|ребёнок|The child is playing in the park.|Il bambino gioca nel parco.|Ребёнок играет в парке.
 friend|frend|друг|Marco is my best friend.|Marco è il mio migliore amico.|Марко — мой лучший друг.
-mother|ˈmʌðər|мать|My mother cooks very well.|Mia madre cucina molto bene.|Моя мама готовит очень хорошо.
-father|ˈfɑːðər|отец|My father works in a bank.|Mio padre lavora in banca.|Мой папа работает в банке.
+mother|ˈmʌðər| мать|My mother cooks very well.|Mia madre cucina molto bene.|Моя мама готовит очень хорошо.
+father|ˈfɑːðər| отец|My father works in a bank.|Mio padre lavora in banca.|Мой папа работает в банке.
 hand|hænd|рука (кисть)|I write with my right hand.|Scrivo con la mano destra.|Я пишу правой рукой.
 eye|aɪ|глаз|I have something in my eye.|Ho qualcosa nell'occhio.|У меня что-то в глазу.
 head|hɛd|голова|My head hurts.|Mi fa male la testa.|У меня болит голова.
@@ -87,32 +87,32 @@ name|neɪm|имя|Write your name here, please.|Scrivi il tuo nome qui, per favo
 life|laɪf|жизнь|Life in Rome is beautiful.|La vita a Roma è bella.|Жизнь в Риме прекрасна.
 world|wɜːrld|мир|The world is big.|Il mondo è grande.|Мир большой.
 part|pɑːrt|часть|This is my favorite part of the film.|Questa è la mia parte preferita del film.|Это моя любимая часть фильма.
-way|weɪ|путь, способ|There is no other way.|Non c'è un altro modo.|Другого способа нет.
+way|weɪ| путь, способ|There is no other way.|Non c'è un altro modo.|Другого способа нет.
 thing|θɪŋ| вещь|I always forget my things.|Dimentico sempre le mie cose.|Я всегда забываю свои вещи.
 place|pleɪs|место|Is this seat free?|Questo posto è libero?|Это место свободно?
 love|lʌv| любовь|Love is important in life.|L'amore è importante nella vita.|Любовь важна в жизни.
 family|ˈfæməli|семья|My family lives in Moscow.|La mia famiglia abita a Mosca.|Моя семья живёт в Москве.
-maybe|ˈmeɪbi|может быть|Maybe it will rain tomorrow.|Forse domani piove.|Может быть, завтра будет дождь.
+maybe|ˈmeɪbi| может быть|Maybe it will rain tomorrow.|Forse domani piove.|Может быть, завтра будет дождь.
 good|ɡʊd|хороший|The food here is good and cheap.|Il cibo qui è buono e economico.|Еда здесь хорошая и дешёвая.
 bad|bæd|плохой|The weather is bad, it is raining.|Il tempo è brutto, piove.|Погода плохая, идёт дождь.
-OK|oʊˈkeɪ|ладно, хорошо|OK, see you tomorrow!|Va bene, ci vediamo domani!|Ладно, увидимся завтра!
+OK|oʊˈkeɪ| ладно|OK, see you tomorrow!|Va bene, ci vediamo domani!|Ладно, увидимся завтра!
 people|ˈpiːpəl|люди|There are many people in the square.|In piazza ci sono tante persone.|На площади много людей.
 true|truː|правда, верный|It is true, you are right.|È vero, hai ragione.|Это правда, ты прав.
-right|raɪt|правильно, право|Turn right at the corner.|Gira a destra all'angolo.|Поверни направо на углу.
+right|raɪt| право, направо|Turn right at the corner.|Gira a destra all'angolo.|Поверни направо на углу.
 wrong|rɔːŋ|неправильный|We are going in the wrong direction.|Andiamo nella direzione sbagliata.|Мы идём не в том направлении.
 what|wʌt| что|What time is it?|Che ora è?|Который час?
-who|huː|кто|Who is that woman?|Chi è quella donna?|Кто та женщина?
+who|huː| кто|Who is that woman?|Chi è quella donna?|Кто та женщина?
 why|waɪ| почему|Why do you study Italian?|Perché studi l'italiano?|Почему ты учишь итальянский?
-everyone|ˈɛvriwʌn|каждый, все|Everyone is happy today.|Tutti sono felici oggi.|Сегодня все счастливы.
-still|stɪl|всё ещё|The tea is still hot.|Il tè è ancora caldo.|Чай ещё горячий.
+everyone|ˈɛvriwʌn| каждый, все|Everyone is happy today.|Tutti sono felici oggi.|Сегодня все счастливы.
+still|stɪl| всё ещё|The tea is still hot.|Il tè è ancora caldo.|Чай ещё горячий.
 be|biː|быть|I am a student.|Sono studente.|Я студент.
 have|hæv|иметь|I have a sister.|Ho una sorella.|У меня есть сестра.
 do|duː|делать|What do you do in the evening?|Che fai la sera?|Что ты делаешь вечером?
 say|seɪ|сказать|Say it again, please.|Dillo di nuovo, per favore.|Скажи это ещё раз, пожалуйста.
 go|ɡoʊ|идти, ехать|I go to school by bike.|Vado a scuola in bicicletta.|Я езжу в школу на велосипеде.
 can|kæn|мочь|Can I open the window?|Posso aprire la finestra?|Можно открыть окно?
-get|ɡet|получать, добираться|I get many emails every day.|Ricevo tante email ogni giorno.|Я получаю много писем каждый день.
-make|meɪk|делать, создавать|I make breakfast every morning.|Preparo la colazione ogni mattina.|Я готовлю завтрак каждое утро.
+get|ɡet| получать, добираться|I get many emails every day.|Ricevo tante email ogni giorno.|Я получаю много писем каждый день.
+make|meɪk| делать, создавать|I make breakfast every morning.|Preparo la colazione ogni mattina.|Я готовлю завтрак каждое утро.
 know|noʊ|знать|I don't know.|Non lo so.|Я не знаю.
 think|θɪŋk|думать|I often think about you.|Penso spesso a te.|Я часто думаю о тебе.
 take|teɪk|брать|Take an umbrella, it is raining.|Prendi un ombrello, piove.|Возьми зонт, идёт дождь.
@@ -120,51 +120,51 @@ see|siː|видеть|I see the sea from the window.|Vedo il mare dalla finestra
 come|kʌm|приходить|Come to my house!|Vieni a casa mia!|Приходи ко мне домой!
 want|wɑːnt|хотеть|I want an ice cream.|Voglio un gelato.|Я хочу мороженое.
 look|lʊk|смотреть|I look at the stars at night.|Guardo le stelle di notte.|Я смотрю на звёзды ночью.
-use|juːz|использовать|Can I use your phone?|Posso usare il tuo telefono?|Можно воспользоваться твоим телефоном?
+use|juːz| использовать|Can I use your phone?|Posso usare il tuo telefono?|Можно воспользоваться твоим телефоном?
 find|faɪnd|находить|I can't find the keys.|Non trovo le chiavi.|Не могу найти ключи.
 give|ɡɪv|давать|Give the book to Marco.|Dai il libro a Marco.|Дай книгу Марко.
 tell|tel|рассказывать|Grandma tells a story.|La nonna racconta una storia.|Бабушка рассказывает историю.
-call|kɔːl|звонить, называть|Call me tonight, please.|Chiamami stasera, per favore.|Позвони мне сегодня вечером, пожалуйста.
-try|traɪ|пытаться|I try to learn ten words a day.|Provo a imparare dieci parole al giorno.|Я стараюсь учить десять слов в день.
+call|kɔːl| звонить, называть|Call me tonight, please.|Chiamami stasera, per favore.|Позвони мне сегодня вечером, пожалуйста.
+try|traɪ| пытаться|I try to learn ten words a day.|Provo a imparare dieci parole al giorno.|Я стараюсь учить десять слов в день.
 ask|æsk|спрашивать|I ask for information at the station.|Chiedo informazioni in stazione.|Я спрашиваю информацию на вокзале.
-need|niːd|нужно, требоваться|I need some help.|Mi serve un aiuto.|Мне нужна помощь.
-feel|fiːl|чувствовать|How do you feel today?|Come ti senti oggi?|Как ты себя чувствуешь сегодня?
+need|niːd| нужно, требоваться|I need some help.|Mi serve un aiuto.|Мне нужна помощь.
+feel|fiːl| чувствовать|How do you feel today?|Come ti senti oggi?|Как ты себя чувствуешь сегодня?
 become|bɪˈkʌm|становиться|My sister is becoming a doctor.|Mia sorella diventa medico.|Моя сестра становится врачом.
-leave|liːv|уходить, оставлять|I leave the house at eight.|Esco di casa alle otto.|Я выхожу из дома в восемь.
+leave|liːv| уходить, оставлять|I leave the house at eight.|Esco di casa alle otto.|Я выхожу из дома в восемь.
 put|pʊt| класть|I put the book on the table.|Metto il libro sul tavolo.|Я кладу книгу на стол.
-keep|kiːp|хранить, держать|I keep my money in the bank.|Tengo i soldi in banca.|Я храню деньги в банке.
+keep|kiːp| хранить, держать|I keep my money in the bank.|Tengo i soldi in banca.|Я храню деньги в банке.
 begin|bɪˈɡɪn|начинать|The lesson begins at nine.|La lezione inizia alle nove.|Урок начинается в девять.
-seem|siːm|казаться|He seems like a kind person.|Sembra una persona gentile.|Он кажется добрым человеком.
-help|help|помогать|I help my mother in the kitchen.|Aiuto mia madre in cucina.|Я помогаю маме на кухне.
+seem|siːm| казаться|He seems like a kind person.|Sembra una persona gentile.|Он кажется добрым человеком.
+help|help| помогать|I help my mother in the kitchen.|Aiuto mia madre in cucina.|Я помогаю маме на кухне.
 talk|tɔːk|разговаривать|We talk about work every day.|Parliamo di lavoro ogni giorno.|Мы разговариваем о работе каждый день.
 start|stɑːrt|начинать|The film starts at eight.|Il film inizia alle otto.|Фильм начинается в восемь.
-show|ʃoʊ|показывать|I will show you my city.|Ti mostro la mia città.|Я покажу тебе мой город.
+show|ʃoʊ| показывать|I will show you my city.|Ti mostro la mia città.|Я покажу тебе мой город.
 hear|hɪr| слышать|I hear a strange noise.|Sento un rumore strano.|Я слышу странный шум.
-play|pleɪ|играть|I play the guitar.|Suono la chitarra.|Я играю на гитаре.
-run|rʌn|бегать, управлять|I run in the park every morning.|Corro nel parco ogni mattina.|Я бегаю в парке каждое утро.
-move|muːv|двигать(ся)|We move to a new house.|Ci trasferiamo in una casa nuova.|Мы переезжаем в новый дом.
+play|pleɪ| играть|I play the guitar.|Suono la chitarra.|Я играю на гитаре.
+run|rʌn| бегать|I run in the park every morning.|Corro nel parco ogni mattina.|Я бегаю в парке каждое утро.
+move|muːv| двигать(ся)|We move to a new house.|Ci trasferiamo in una casa nuova.|Мы переезжаем в новый дом.
 like|laɪk| нравиться|I like pizza.|Mi piace la pizza.|Мне нравится пицца.
 live|lɪv|жить|I have lived in Rome for ten years.|Vivo a Roma da dieci anni.|Я живу в Риме десять лет.
-bring|brɪŋ|приносить|I am bringing a present for Anna.|Porto un regalo ad Anna.|Я приношу подарок Анне.
+bring|brɪŋ| приносить|I am bringing a present for Anna.|Porto un regalo ad Anna.|Я приношу подарок Анне.
 write|raɪt|писать|I write a letter to grandma.|Scrivo una lettera alla nonna.|Я пишу письмо бабушке.
-pay|peɪ|платить|Who is paying the bill?|Chi paga il conto?|Кто платит по счёту?
+pay|peɪ| платить|Who is paying the bill?|Chi paga il conto?|Кто платит по счёту?
 continue|kənˈtɪnjuː|продолжать|The road continues for two kilometers.|La strada continua per due chilometri.|Дорога продолжается два километра.
-learn|lɜːrn|учить|I learn new words every day.|Imparo parole nuove ogni giorno.|Я учу новые слова каждый день.
+learn|lɜːrn| учить|I learn new words every day.|Imparo parole nuove ogni giorno.|Я учу новые слова каждый день.
 change|tʃeɪndʒ| менять|I want to change my plans.|Voglio cambiare i miei piani.|Я хочу поменять свои планы.
 understand|ˌʌndərˈstænd|понимать|I don't understand this word.|Non capisco questa parola.|Я не понимаю это слово.
-stop|stɑːp|останавливать(ся)|The bus stops at the corner.|L'autobus si ferma all'angolo.|Автобус останавливается на углу.
-create|kriˈeɪt|создавать|They create a new website.|Creano un sito nuovo.|Они создают новый сайт.
-speak|spiːk|говорить|I speak Italian and a little English.|Parlo italiano e un po' d'inglese.|Я говорю по-итальянски и немного по-английски.
+stop|stɑːp| останавливать(ся)|The bus stops at the corner.|L'autobus si ferma all'angolo.|Автобус останавливается на углу.
+create|kriˈeɪt| создавать|They create a new website.|Creano un sito nuovo.|Они создают новый сайт.
+speak|spiːk| говорить|I speak Italian and a little English.|Parlo italiano e un po' d'inglese.|Я говорю по-итальянски и немного по-английски.
 read|riːd|читать|I read a book every month.|Leggo un libro ogni mese.|Я читаю книгу каждый месяц.
 walk|wɔːk| гулять|I walk half an hour every day.|Cammino mezz'ora ogni giorno.|Я хожу пешком полчаса каждый день.
-teach|tiːtʃ|учить (кого-то)|I teach English at a school.|Insegno inglese in una scuola.|Я преподаю английский в школе.
+teach|tiːtʃ| учить (кого-то)|I teach English at a school.|Insegno inglese in una scuola.|Я преподаю английский в школе.
 offer|ˈɔːfər| предлагать|I offer you a coffee.|Ti offro un caffè.|Я угощаю тебя кофе.
 remember|rɪˈmembər|помнить|I don't remember his name.|Non ricordo il suo nome.|Я не помню его имя.
-die|daɪ|умирать|Plants die without water.|Le piante muoiono senza acqua.|Растения умирают без воды.
+die|daɪ| умирать|Plants die without water.|Le piante muoiono senza acqua.|Растения умирают без воды.
 stay|steɪ|оставаться|I am staying home today.|Rimango a casa oggi.|Я остаюсь сегодня дома.
 pass|pæs| проходить|Pass me the salt, please.|Passami il sale, per favore.|Передай мне соль, пожалуйста.
 break|breɪk| ломать|The glass breaks easily.|Il vetro si rompe facilmente.|Стекло легко бьётся.
-receive|rɪˈsiːv|получать|I receive many emails at work.|Ricevo tante email al lavoro.|Я получаю много писем на работе.
+receive|rɪˈsiːv| получать|I receive many emails at work.|Ricevo tante email al lavoro.|Я получаю много писем на работе.
 brother|ˈbrʌðər|брат|My brother is ten years old.|Mio fratello ha dieci anni.|Моему брату десять лет.
 sister|ˈsɪstər|сестра|My sister lives in Turin.|Mia sorella abita a Torino.|Моя сестра живёт в Турине.
 son|sʌn|сын|Anna's son is called Paolo.|Il figlio di Anna si chiama Paolo.|Сына Анны зовут Паоло.
@@ -183,9 +183,9 @@ cheese|tʃiːz|сыр|This cheese is very good.|Questo formaggio è molto buono.
 rice|raɪs|рис|Rice is a typical dish here.|Il riso è un piatto tipico qui.|Рис — типичное блюдо здесь.
 egg|ɛɡ|яйцо|The eggs are in the fridge.|Le uova sono in frigorifero.|Яйца в холодильнике.
 fruit|fruːt|фрукты|I eat a lot of fruit in summer.|Mangio tanta frutta in estate.|Летом я ем много фруктов.
-apple|ˈæpəl|яблоко|I eat an apple every day.|Mangio una mela ogni giorno.|Я ем яблоко каждый день.
-orange|ˈɔːrɪndʒ|апельсин|I drink orange juice.|Bevo un succo d'arancia.|Я пью апельсиновый сок.
-foot|fʊt|ступня, нога|My right foot hurts.|Mi fa male il piede destro.|У меня болит правая ступня.
+apple|ˈæpəl| яблоко|I eat an apple every day.|Mangio una mela ogni giorno.|Я ем яблоко каждый день.
+orange|ˈɔːrɪndʒ| апельсин|I drink orange juice.|Bevo un succo d'arancia.|Я пью апельсиновый сок.
+foot|fʊt| ступня|My right foot hurts.|Mi fa male il piede destro.|У меня болит правая ступня.
 ear|ɪr|ухо|My ear hurts.|Mi fa male l'orecchio.|У меня болит ухо.
 nose|noʊz|нос|My nose is red from the cold.|Il mio naso è rosso dal freddo.|Мой нос покраснел от холода.
 mouth|maʊθ|рот|Don't talk with your mouth full!|Non parlare con la bocca piena!|Не разговаривай с полным ртом!
@@ -193,9 +193,9 @@ tooth|tuːθ|зуб|The child has a new tooth.|Il bambino ha un dente nuovo.|У 
 arm|ɑːrm|рука (от плеча)|My right arm hurts.|Mi fa male il braccio destro.|У меня болит правая рука.
 leg|lɛɡ|нога|After running my legs hurt.|Dopo la corsa mi fanno male le gambe.|После бега у меня болят ноги.
 heart|hɑːrt|сердце|My heart beats fast.|Il mio cuore batte forte.|Моё сердце сильно бьётся.
-hair|hɛr|волосы|I have short hair.|Ho i capelli corti.|У меня короткие волосы.
-back|bæk|спина|My back hurts.|Mi fa male la schiena.|У меня болит спина.
-finger|ˈfɪŋɡər|палец|I have a ring on my finger.|Ho un anello sul dito.|У меня кольцо на пальце.
+hair|hɛr| волосы|I have short hair.|Ho i capelli corti.|У меня короткие волосы.
+back|bæk| спина|My back hurts.|Mi fa male la schiena.|У меня болит спина.
+finger|ˈfɪŋɡər| палец|I have a ring on my finger.|Ho un anello sul dito.|У меня кольцо на пальце.
 room|ruːm|комната|My room is small but bright.|La mia stanza è piccola ma luminosa.|Моя комната маленькая, но светлая.
 kitchen|ˈkɪtʃɪn|кухня|The kitchen is my favorite room.|La cucina è la mia stanza preferita.|Кухня — моя любимая комната.
 bathroom|ˈbæθruːm|ванная|The bathroom is on the right.|Il bagno è a destra.|Ванная справа.
@@ -205,7 +205,7 @@ table|ˈteɪbəl|стол|The plates are on the table.|I piatti sono sul tavolo.
 door|dɔːr|дверь|Lock the door.|Chiudi la porta a chiave.|Закрой дверь на ключ.
 window|ˈwɪndoʊ|окно|From the window I see the garden.|Dalla finestra vedo il giardino.|Из окна я вижу сад.
 key|kiː|ключ|I lost the house keys.|Ho perso le chiavi della casa.|Я потерял ключи от дома.
-garden|ˈɡɑːrdən|сад|Your garden is very beautiful.|Il tuo giardino è molto bello.|Твой сад очень красивый.
+garden|ˈɡɑːrdən| сад|Your garden is very beautiful.|Il tuo giardino è molto bello.|Твой сад очень красивый.
 street|striːt|улица|I live on a quiet street.|Abito in una via tranquilla.|Я живу на тихой улице.
 square|skwɛr|площадь|Let's meet in the square at ten.|Ci vediamo in piazza alle dieci.|Встретимся на площади в десять.
 bridge|brɪdʒ|мост|The bridge over the river is old.|Il ponte sul fiume è vecchio.|Мост через реку старый.
@@ -219,10 +219,10 @@ bicycle|ˈbaɪsɪkəl|велосипед|I go to work by bike.|Vado al lavoro in
 ticket|ˈtɪkɪt|билет|Two tickets to Milan, please.|Due biglietti per Milano, per favore.|Два билета до Милана, пожалуйста.
 suitcase|ˈsuːtkeɪs|чемодан|My suitcase is very heavy.|La mia valigia è molto pesante.|Мой чемодан очень тяжёлый.
 journey|ˈdʒɜːrni|путешествие|The trip takes three hours.|Il viaggio dura tre ore.|Поездка длится три часа.
-hotel|hoʊˈtɛl|отель|The hotel is near the station.|L'albergo è vicino alla stazione.|Отель рядом с вокзалом.
+hotel|hoʊˈtɛl| отель|The hotel is near the station.|L'albergo è vicino alla stazione.|Отель рядом с вокзалом.
 sea|siː|море|In August we go to the sea.|In agosto andiamo al mare.|В августе мы едем на море.
 beach|biːtʃ|пляж|The beach is full of people.|La spiaggia è piena di gente.|Пляж полон людей.
-mountain|ˈmaʊntɪn|гора|In winter I go to the mountains.|In inverno vado in montagna.|Зимой я езжу в горы.
+mountain|ˈmaʊntɪn| гора|In winter I go to the mountains.|In inverno vado in montagna.|Зимой я езжу в горы.
 lake|leɪk|озеро|The lake is very deep.|Il lago è molto profondo.|Озеро очень глубокое.
 river|ˈrɪvər|река|The river flows through the city.|Il fiume passa in mezzo alla città.|Река течёт через город.
 sun|sʌn|солнце|Today the sun is strong.|Oggi il sole è forte.|Сегодня солнце сильное.
@@ -239,13 +239,13 @@ music|ˈmjuːzɪk|музыка|I listen to music while I work.|Ascolto musica me
 film|fɪlm|фильм|The film starts at nine.|Il film inizia alle nove.|Фильм начинается в девять.
 song|sɔːŋ|песня|This song is very famous.|Questa canzone è molto famosa.|Эта песня очень известная.
 game|ɡeɪm|игра|This game is easy.|Questo gioco è facile.|Эта игра лёгкая.
-party|ˈpɑːrti|вечеринка|We are having fun at the party.|Ci divertiamo alla festa.|Мы веселимся на вечеринке.
+party|ˈpɑːrti| вечеринка|We are having fun at the party.|Ci divertiamo alla festa.|Мы веселимся на вечеринке.
 student|ˈstuːdənt|студент|The student studies a lot for the exam.|Lo studente studia molto per l'esame.|Студент много занимается перед экзаменом.
-teacher|ˈtiːtʃər|учитель|The teacher explains the lesson.|L'insegnante spiega la lezione.|Учитель объясняет урок.
+teacher|ˈtiːtʃər| учитель|The teacher explains the lesson.|L'insegnante spiega la lezione.|Учитель объясняет урок.
 lesson|ˈlɛsən|урок|The lesson lasts an hour.|La lezione dura un'ora.|Урок длится час.
 university|ˌjuːnɪˈvɜːrsəti|университет|My son studies at the university.|Mio figlio studia all'università.|Мой сын учится в университете.
 exam|ɪɡˈzæm|экзамен|The exam is very difficult.|L'esame è molto difficile.|Экзамен очень трудный.
-office|ˈɔːfɪs|офис|My office is on the third floor.|Il mio ufficio è al terzo piano.|Мой офис на третьем этаже.
+office|ˈɔːfɪs| приёмная, секретариат|My office is on the third floor.|Il mio ufficio è al terzo piano.|Мой офис на третьем этаже.
 boss|bɔːs|начальник|My boss is very kind.|Il mio capo è molto gentile.|Мой начальник очень добрый.
 colleague|ˈkɑːliːɡ|коллега|My colleagues are nice.|I miei colleghi sono simpatici.|Мои коллеги приятные.
 doctor|ˈdɑːktər|врач|I have to go to the doctor.|Devo andare dal dottore.|Мне надо пойти к врачу.
@@ -261,7 +261,7 @@ account|əˈkaʊnt|счёт|I open an account at the bank.|Apro un conto in banc
 idea|aɪˈdiːə|идея|I have a good idea!|Ho una buona idea!|У меня есть хорошая идея!
 answer|ˈænsər|ответ|Your answer is correct.|La tua risposta è corretta.|Твой ответ правильный.
 question|ˈkwɛstʃən|вопрос|I have a question for you.|Ho una domanda per te.|У меня к тебе вопрос.
-reason|ˈriːzən|причина|What is the reason for your trip?|Qual è il motivo del tuo viaggio?|Какая причина твоей поездки?
+reason|ˈriːzən| правота, разум|What is the reason for your trip?|Qual è il motivo del tuo viaggio?|Какая причина твоей поездки?
 end|ɛnd|конец|The film is good until the end.|Il film è bello fino alla fine.|Фильм хорош до самого конца.
 beginning|bɪˈɡɪnɪŋ|начало|The beginning of the book is boring.|L'inizio del libro è noioso.|Начало книги скучное.
 beautiful|ˈbjuːtɪfəl|красивый|She has a beautiful voice.|Ha una voce bellissima.|У неё красивый голос.
@@ -269,7 +269,7 @@ ugly|ˈʌɡli|некрасивый|That building is ugly.|Quell'edificio è brut
 big|bɪɡ|большой|Milan is a big city.|Milano è una città grande.|Милан — большой город.
 small|smɔːl|маленький|I live in a small apartment.|Abito in un appartamento piccolo.|Я живу в маленькой квартире.
 tall|tɔːl|высокий|My brother is very tall.|Mio fratello è molto alto.|Мой брат очень высокий.
-short|ʃɔːrt|короткий, невысокий|The trousers are too short.|I pantaloni sono troppo corti.|Брюки слишком короткие.
+short|ʃɔːrt| короткий|The trousers are too short.|I pantaloni sono troppo corti.|Брюки слишком короткие.
 long|lɔːŋ|длинный|The river is three hundred kilometers long.|Il fiume è lungo trecento chilometri.|Река длиной триста километров.
 old|oʊld|старый|This book is very old.|Questo libro è molto vecchio.|Эта книга очень старая.
 young|jʌŋ|молодой|My aunt is still young.|Mia zia è ancora giovane.|Моя тётя ещё молодая.
@@ -298,13 +298,13 @@ thirsty|ˈθɜːrsti|жаждущий|I am thirsty, I'll drink a glass of water.
 ready|ˈrɛdi|готовый|Dinner is ready!|La cena è pronta!|Ужин готов!
 last|læst|последний|The last bus leaves at midnight.|L'ultimo autobus parte a mezzanotte.|Последний автобус уходит в полночь.
 first|fɜːrst|первый|The first day of the week is Monday.|Il primo giorno della settimana è lunedì.|Первый день недели — понедельник.
-near|nɪr|близко|The supermarket is near my house.|Il supermercato è vicino a casa mia.|Супермаркет рядом с моим домом.
-far|fɑːr|далеко|Is the center far from here?|Il centro è lontano da qui?|Центр далеко отсюда?
+near|nɪr| близко|The supermarket is near my house.|Il supermercato è vicino a casa mia.|Супермаркет рядом с моим домом.
+far|fɑːr| далеко|Is the center far from here?|Il centro è lontano da qui?|Центр далеко отсюда?
 together|təˈɡɛðər|вместе|Let's go to the cinema together.|Andiamo al cinema insieme.|Пойдём в кино вместе.
 really|ˈriːəli|действительно|It is really a good film.|È davvero un buon film.|Это действительно хороший фильм.
 already|ɔːlˈrɛdi|уже|I have already finished my homework.|Ho già finito i compiti.|Я уже закончил домашнюю работу.
 almost|ˈɔːlmoʊst|почти|I am almost ready.|Sono quasi pronto.|Я почти готов.
-then|ðɛn| потом|First I eat, then I study.|Prima mangio, poi studio.|Сначала я ем, потом учусь.
+then|ðɛn| тогда|First I eat, then I study.|Prima mangio, poi studio.|Сначала я ем, потом учусь.
 after|ˈæftər| после|After work I go home.|Dopo il lavoro vado a casa.|После работы я иду домой.
 before|bɪˈfɔːr| до|Before eating I wash my hands.|Prima di mangiare mi lavo le mani.|Перед едой я мою руки.
 inside|ɪnˈsaɪd|внутри|The documents are inside the bag.|I documenti sono dentro la borsa.|Документы внутри сумки.
@@ -376,32 +376,32 @@ pink|pɪŋk|розовый|Her room is pink.|La sua stanza è rosa.|Её ком�
 grey|ɡreɪ|серый|The grey cat is sleeping.|Il gatto grigio dorme.|Серый кот спит.
 brown|braʊn|коричневый|The dog is brown.|Il cane è marrone.|Собака коричневая.
 purple|ˈpɜːrpəl|фиолетовый|Her dress is purple.|Il suo vestito è viola.|Её платье фиолетовое.
-light|laɪt|свет; светлый|The light of the sun is strong.|La luce del sole è forte.|Солнечный свет сильный.
+light|laɪt| свет|The light of the sun is strong.|La luce del sole è forte.|Солнечный свет сильный.
 dark|dɑːrk|тёмный|The room is too dark.|La stanza è troppo scura.|Комната слишком тёмная.
-colour|ˈkʌlər|цвет; флаг|The colours of the house are warm.|I colori della casa sono caldi.|Цвета дома тёплые.
+colour|ˈkʌlər| цвет|The colours of the house are warm.|I colori della casa sono caldi.|Цвета дома тёплые.
 grandfather|ˈɡrænfɑːðər|дедушка|Grandfather tells a story.|Il nonno racconta una storia.|Дедушка рассказывает историю.
 grandmother|ˈɡrænmʌðər|бабушка|Grandmother makes the cake.|La nonna prepara la torta.|Бабушка готовит торт.
 uncle|ˈʌŋkəl|дядя|My uncle lives in Rome.|Mio zio abita a Roma.|Мой дядя живёт в Риме.
 aunt|ænt|тётя|My aunt speaks English.|Mia zia parla inglese.|Моя тётя говорит по-английски.
-cousin|ˈkʌzən| двоюродный брат|My cousin studies medicine.|Il mio cugino studia medicina.|Мой двоюродный брат учится на врача.
+cousin|ˈkʌzən| двоюродная сестра|My cousin studies medicine.|Il mio cugino studia medicina.|Мой двоюродный брат учится на врача.
 nephew|ˈnɛfjuː|племянник, внук|The grandson plays in the garden.|Il nipote gioca in giardino.|Внук играет в саду.
 parents|ˈpɛrənts|родители|My parents are at home.|I miei genitori sono a casa.|Мои родители дома.
 guest|ɡɛst|гость|We have a guest for dinner.|Abbiamo un ospite a cena.|У нас гость на ужин.
-neighbour|ˈneɪbər|сосед|The neighbours are kind.|I vicini di casa sono gentili.|Соседи добрые.
+neighbour|ˈneɪbər| сосед|The neighbours are kind.|I vicini di casa sono gentili.|Соседи добрые.
 shoulder|ˈʃoʊldər|плечо|My shoulder hurts.|La mia spalla fa male.|У меня болит плечо.
 knee|niː|колено|The child cut his knee.|Il bambino si è tagliato il ginocchio.|Ребёнок порезал колено.
 thumb|θʌm|большой палец|The thumb is the strongest finger.|Il pollice è il dito più forte.|Большой палец — самый сильный палец.
 neck|nɛk|шея|My neck hurts today.|Il collo mi fa male oggi.|Шея сегодня болит.
 skin|skɪn|кожа|Her skin is very fair.|La sua pelle è molto chiara.|У неё очень светлая кожа.
 lips|lɪps|губы|Her lips are red.|Le sue labbra sono rosse.|Её губы красные.
-tongue|tʌŋ|язык (орган); язык речи|Italian is a beautiful language.|L'italiano è una bella lingua.|Итальянский — красивый язык.
+tongue|tʌŋ| язык (орган)|Italian is a beautiful language.|L'italiano è una bella lingua.|Итальянский — красивый язык.
 stomach|ˈstʌmək|живот, желудок|My stomach is rumbling.|Il mio stomaco brontola.|Мой живот урчит.
 cheek|tʃiːk|щёка|The child has pink cheeks.|Il bambino ha le guance rosa.|У ребёнка розовые щёки.
 shirt|ʃɜːrt|рубашка|My shirt is white.|La mia camicia è bianca.|Моя рубашка белая.
 T-shirt|ˈtiːʃɜːrt|футболка|I am wearing a green T-shirt.|Indosso una maglietta verde.|На мне зелёная футболка.
 trousers|ˈtraʊzərz|брюки|These trousers are comfortable.|Questi pantaloni sono comodi.|Эти брюки удобные.
 skirt|skɜːrt|юбка|My sister has a new skirt.|Mia sorella ha una gonna nuova.|У моей сестры новая юбка.
-dress|drɛs|платье|I am wearing an elegant dress.|Indosso un vestito elegante.|Я одет(а) в элегантное платье.
+dress|drɛs| платье|I am wearing an elegant dress.|Indosso un vestito elegante.|Я одет(а) в элегантное платье.
 shoe|ʃuː|ботинок, туфля|These shoes are new.|Queste scarpe sono nuove.|Эти туфли новые.
 boot|buːt|сапог|In winter I wear boots.|In inverno indosso gli stivali.|Зимой я ношу сапоги.
 coat|koʊt|пальто, шуба|The coat is on the bed.|Il cappotto è sul letto.|Пальто на кровати.
@@ -409,7 +409,7 @@ jacket|ˈdʒækɪt|пиджак, куртка|The jacket is in the wardrobe.|La 
 sweater|ˈswɛtər|свитер|This sweater is very warm.|Questo maglione è molto caldo.|Этот свитер очень тёплый.
 hat|hæt|шляпа, шапка|I put on my hat.|Mi metto il cappello.|Я надеваю шляпу.
 scarf|skɑːrf|шарф|The scarf is made of wool.|La sciarpa è di lana.|Шарф из шерсти.
-gloves|ɡlʌvz|перчатки|In winter I wear gloves.|In inverno porto i guanti.|Зимой я ношу перчатки.
+gloves|ɡlʌvz| перчатки|In winter I wear gloves.|In inverno porto i guanti.|Зимой я ношу перчатки.
 belt|bɛlt|ремень, пояс|The belt is in the pocket.|La cintura è nella tasca.|Ремень в кармане.
 sock|sɑːk| носок|I have lost a sock.|Ho perso una calza.|Я потерял носок.
 button|ˈbʌtən|пуговица|A button fell off the shirt.|Un bottone è caduto dalla camicia.|Пуговица оторвалась от рубашки.
@@ -417,9 +417,9 @@ pocket|ˈpɑːkɪt|карман|The keys are in the pocket.|Le chiavi sono in ta
 oil|ɔɪl|масло|I add oil to the salad.|Aggiungo olio all'insalata.|Я добавляю масло в салат.
 vinegar|ˈvɪnɪɡər|уксус|Vinegar and oil for the salad.|Aceto e olio per l'insalata.|Уксус и масло для салата.
 pepper|ˈpɛpər|перец|The pepper is too spicy.|Il pepe è troppo piccante.|Перец слишком острый.
-soup|suːp|суп|The soup is hot.|La zuppa è calda.|Суп горячий.
+soup|suːp| суп|The soup is hot.|La zuppa è calda.|Суп горячий.
 salad|ˈsæləd|салат|I make a fresh salad.|Preparo un'insalata fresca.|Я готовлю свежий салат.
-dessert|diˈzɜːrt|десерт|For dessert I have ice cream.|Come dolce prendo il gelato.|На десерт я беру мороженое.
+dessert|diˈzɜːrt| десерт|For dessert I have ice cream.|Come dolce prendo il gelato.|На десерт я беру мороженое.
 ice cream|ˌaɪs ˈkriːm|мороженое|A vanilla ice cream, please.|Un gelato alla vaniglia, per cortesia.|Мороженое с ванилью, пожалуйста.
 cake|keɪk|торт, пирог|The birthday cake is ready.|La torta di compleanno è pronta.|Торт ко дню рождения готов.
 biscuit|ˈbɪskɪt|печенье|A biscuit with tea.|Un biscotto con il tè.|Печенье к чаю.
@@ -454,7 +454,7 @@ church|tʃɜːrtʃ|церковь|The church is very old.|La chiesa è molto ant
 museum|mjuˈziːəm|музей|The museum is closed on Mondays.|Il museo è chiuso il lunedì.|Музей закрыт по понедельникам.
 theatre|ˈθɪətər|театр|We are going to the theatre tonight.|Andiamo al teatro stasera.|Мы идём в театр сегодня вечером.
 cinema|ˈsɪnəma|кинотеатр|I go to the cinema with friends.|Vado al cinema con gli amici.|Я иду в кино с друзьями.
-park|pɑːrk|парк|The children play in the park.|I bambini giocano al parco.|Дети играют в парке.
+park|pɑːrk| парковаться|The children play in the park.|I bambini giocano al parco.|Дети играют в парке.
 library|ˈlaɪbrɛri|библиотека|I study in the library every day.|Studio in biblioteca ogni giorno.|Я учусь в библиотеке каждый день.
 swimming pool|ˈswɪmɪŋ puːl|бассейн|The swimming pool is open today.|La piscina è aperta oggi.|Бассейн открыт сегодня.
 gym|dʒɪm|спортивный зал|I go to the gym after work.|Vado in palestra dopo il lavoro.|Я хожу в спортзал после работы.
@@ -467,7 +467,7 @@ stairs|stɛərz|лестница|The stairs are at the end of the corridor.|Le s
 lift|lɪft|лифт|The lift is broken again.|L'ascensore è rotto di nuovo.|Лифт снова сломан.
 corridor|ˈkɔːridɔːr|коридор|The corridor is long.|Il corridoio è lungo.|Коридор длинный.
 ceiling|ˈsiːlɪŋ|потолок|The ceiling is high.|Il soffitto è alto.|Потолок высокий.
-floor|flɔːr|пол; этаж|The floor is cold.|Il pavimento è freddo.|Пол холодный.
+floor|flɔːr| пол; этаж|The floor is cold.|Il pavimento è freddo.|Пол холодный.
 roof|ruːf|крыша|From the roof you can see the sea.|Dal tetto si vede il mare.|С крыши видно море.
 wall|wɔːl|стена|A picture on the wall.|Un quadro sul muro.|Картина на стене.
 building|ˈbɪldɪŋ|дом, здание|This building is historic.|Questo palazzo è storico.|Это здание историческое.
@@ -481,9 +481,9 @@ flight|flaɪt|рейс, полёт|The flight is delayed.|Il volo è in ritardo.
 passenger|ˈpæsəndʒər|пассажир|The passenger has a suitcase.|Il passeggero ha una valigia.|У пассажира чемодан.
 pilot|ˈpaɪlət|пилот|The pilot talks to the passengers.|Il pilota parla ai passeggeri.|Пилот разговаривает с пассажирами.
 platform|ˈplætfɔːrm| платформа|The train leaves from platform seven.|Il treno parte dal binario sette.|Поезд отходит с седьмой платформы.
-timetable|ˈtaɪmtəbəl|расписание|I look at the train timetable.|Guardo l'orario dei treni.|Я смотрю расписание поездов.
+timetable|ˈtaɪmtəbəl| расписание|I look at the train timetable.|Guardo l'orario dei treni.|Я смотрю расписание поездов.
 petrol|ˈpɛtrəl|бензин|The journey needs petrol.|Serve benzina per il viaggio.|Для поездки нужен бензин.
-corner|ˈkɔːrnər|угол; поворот|The bar is on the corner.|Il bar è all'angolo.|Бар на углу.
+corner|ˈkɔːrnər| угол; поворот|The bar is on the corner.|Il bar è all'angolo.|Бар на углу.
 traffic|ˈtræfɪk|движение, пробки|There is a lot of traffic this morning.|C'è molto traffico stamattina.|Сегодня утром большие пробки.
 car park|ˈkɑːr pɑːrk|парковка|The car park is full.|Il parcheggio è pieno.|Парковка полная.
 monument|ˈmɒnjumənt|памятник|The monument is in the middle of the square.|Il monumento è al centro della piazza.|Памятник в центре площади.
@@ -499,12 +499,12 @@ bee|biː|пчела|Bees make honey.|Le api fanno il miele.|Пчёлы дела�
 tree|triː|дерево|The tree is very old.|L'albero è molto vecchio.|Дерево очень старое.
 flower|ˈflaʊər|цветок|I bought flowers for her.|Ho comprato dei fiori per lei.|Я купил ей цветы.
 leaf|liːf|лист (растения)|The leaf is green in summer.|La foglia è verde d'estate.|Лист летом зелёный.
-forest|ˈfɒrɪst|лес|The forest is full of birds.|La foresta è piena di uccelli.|Лес полон птиц.
+forest|ˈfɒrɪst| лес|The forest is full of birds.|La foresta è piena di uccelli.|Лес полон птиц.
 hill|hɪl|холм|The house is on a hill.|La casa è su una collina.|Дом на холме.
 valley|ˈvæli|долина|The valley is green and quiet.|La valle è verde e tranquilla.|Долина зелёная и тихая.
 sand|sænd|песок|The sand is warm in the sun.|La sabbia è calda al sole.|Песок тёплый на солнце.
-stone|stoʊn|камень|The old wall is made of stone.|Il vecchio muro è di pietra.|Старая стена из камня.
-ground|ɡraʊnd|земля; почва|The ground is dry in summer.|La terra è secca d'estate.|Земля летом сухая.
+stone|stoʊn| камень|The old wall is made of stone.|Il vecchio muro è di pietra.|Старая стена из камня.
+ground|ɡraʊnd| земля; почва|The ground is dry in summer.|La terra è secca d'estate.|Земля летом сухая.
 fire|ˈfaɪər|огонь|The fire in the stove is warm.|Il fuoco nella stufa è caldo.|Огонь в печи тёплый.
 air|ɛər|воздух|The mountain air is clean.|L'aria di montagna è pulita.|Горный воздух чистый.
 fog|fɒɡ|туман|The fog covers the city.|La nebbia copre la città.|Туман покрывает город.
@@ -514,7 +514,7 @@ clock|klɒk|часы (настенные)|My watch is fast.|Il mio orologio va a
 nurse|nɜːrs|медсестра, медбрат|The nurse works at night.|L'infermiere lavora di notte.|Медбрат работает ночью.
 lawyer|ˈlɔːjər|адвокат|The lawyer reads the document.|L'avvocato legge il documento.|Адвокат читает документ.
 engineer|ˌɛndʒɪˈnɪər|инженер|My father is an engineer.|Mio padre è ingegnere.|Мой отец инженер.
-cook|kʊk|повар; готовить|The cook makes dinner.|Il cuoco prepara la cena.|Повар готовит ужин.
+cook|kʊk| повар; готовить|The cook makes dinner.|Il cuoco prepara la cena.|Повар готовит ужин.
 waiter|ˈweɪtər|официант|The waiter brings the bill.|Il cameriere porta il conto.|Официант приносит счёт.
 mechanic|miˈkænɪk|механик|The mechanic repairs the car.|Il meccanico ripara la macchina.|Механик чинит машину.
 artist|ˈɑːrtɪst|художник; артист|The artist paints a picture.|L'artista dipinge un quadro.|Художник пишет картину.
@@ -538,12 +538,12 @@ passport|ˈpɑːspɔːrt|паспорт|The passport is valid for ten years.|Il 
 photograph|ˈfoʊtəɡrɑːf|фотография|A photograph of the grandparents.|Una fotografia dei nonni.|Фотография бабушки и дедушки.
 birthday|ˈbɜːrθdeɪ|день рождения|Happy birthday, Marco!|Buon compleanno, Marco!|С днём рождения, Марко!
 surprise|sərˈpraɪz|сюрприз|What a nice surprise to see you!|Che bella sorpresa vedere te!|Какой приятный сюрприз — видеть тебя!
-wedding|ˈwɛdɪŋ|свадьба|The wedding is in June.|Il matrimonio è a giugno.|Свадьба в июне.
+wedding|ˈwɛdɪŋ| свадьба|The wedding is in June.|Il matrimonio è a giugno.|Свадьба в июне.
 holiday|ˈhɒlədeɪ| отпуск|The holidays start tomorrow.|Le vacanze iniziano domani.|Каникулы начинаются завтра.
 rest|rɛst| отдых|Rest is the best cure.|Il riposo è la migliore cura.|Отдых — лучшее лечение.
-dream|driːm|сон; мечта|I had a nice dream.|Ho fatto un bel sogno.|Мне приснился хороший сон.
+dream|driːm| сон; мечта|I had a nice dream.|Ho fatto un bel sogno.|Мне приснился хороший сон.
 truth|truːθ|правда|The truth is important.|La verità è importante.|Правда важна.
-lie|laɪ|ложь; лгать|Don't tell lies.|Non dire bugie.|Не говори лжи.
+lie|laɪ| ложь; лгать|Don't tell lies.|Non dire bugie.|Не говори лжи.
 peace|piːs|мир, покой|The country wants peace.|Il paese vuole la pace.|Страна хочет мира.
 war|wɔːr|война|Grandfather tells about the war.|Il nonno racconta la guerra.|Дедушка рассказывает о войне.
 luck|lʌk| удача|Good luck at the exam!|Buona fortuna all'esame!|Удачи на экзамене!
@@ -563,7 +563,7 @@ charger|ˈtʃɑːrdʒər|зарядное устройство|The charger is in
 headphones|ˈhɛdfoʊnz|наушники|The earphones are new.|Gli auricolari sono nuovi.|Наушники новые.
 screen|skriːn|экран|The screen is broken.|Lo schermo è rotto.|Экран разбит.
 keyboard|ˈkiːbɔːrd|клавиатура|The keyboard is new.|La tastiera è nuova.|Клавиатура новая.
-paper|ˈpeɪpər|бумага|A sheet of paper, please.|Un foglio di carta, per favore.|Лист бумаги, пожалуйста.
+paper|ˈpeɪpər| бумага|A sheet of paper, please.|Un foglio di carta, per favore.|Лист бумаги, пожалуйста.
 coins|kɔɪnz|монеты (мн.)|I have only coins.|Ho solo monete.|У меня только монеты.
 cash|kæʃ|наличные|I pay in cash.|Pago in contanti.|Я плачу наличными.
 discount|ˈdɪskaʊnt|скидка|There is a ten per cent discount.|C'è uno sconto del dieci per cento.|Скидка десять процентов.
@@ -575,14 +575,14 @@ loan|loʊn|заём, кредит|The bank loan is expensive.|Il prestito della 
 interest|ˈɪntərɛst|интерес; процент|I have an interest in music.|Ho interesse per la musica.|Я интересуюсь музыкой.
 tailor|ˈteɪlər|портной|The tailor adjusts the trousers.|Il sarto aggiusta i pantaloni.|Портной подгоняет брюки.
 laundry|ˈlɔːndri|прачечная|The laundry is in the centre.|La lavanderia è in centro.|Прачечная в центре.
-hairdresser|ˈhɛərdrɛsər|парикмахер|The hairdresser cuts the hair.|Il parrucchiere taglia i capelli.|Парикмахер стрижёт волосы.
-haircut|ˈhɛərkʌt|стрижка|The haircut costs twenty euros.|Il taglio costa venti euro.|Стрижка стоит двадцать евро.
-paint|peɪnt|краска; красить|The paint is fresh.|La vernice è fresca.|Краска свежая.
-brush|brʌʃ|кисть; щётка|The brush is in the water.|Il pennello è nell'acqua.|Кисть в воде.
+hairdresser|ˈhɛərdrɛsər| парикмахер|The hairdresser cuts the hair.|Il parrucchiere taglia i capelli.|Парикмахер стрижёт волосы.
+haircut|ˈhɛərkʌt| стрижка|The haircut costs twenty euros.|Il taglio costa venti euro.|Стрижка стоит двадцать евро.
+paint|peɪnt| краска; красить|The paint is fresh.|La vernice è fresca.|Краска свежая.
+brush|brʌʃ| кисть; щётка|The brush is in the water.|Il pennello è nell'acqua.|Кисть в воде.
 canvas|ˈkænvəs|холст|The canvas is white.|La tela è bianca.|Холст белый.
 art gallery|ɑːrt ˈɡæləri|галерея|The art gallery is famous.|La galleria d'arte è famosa.|Художественная галерея известна.
 concert|ˈkɒnsərt|концерт|The concert starts at nine.|Il concerto inizia alle nove.|Концерт начинается в девять.
-stage|steɪdʒ|сцена|The singer is on the stage.|Il cantante è sul palco.|Певец на сцене.
+stage|steɪdʒ| сцена|The singer is on the stage.|Il cantante è sul palco.|Певец на сцене.
 audience|ˈɔːdiəns|публика, зрители|The audience applauds.|Il pubblico applaude.|Публика аплодирует.
 applause|əˈplɔːz|аплодисменты|The applause is loud.|Gli applausi sono forti.|Аплодисменты громкие.
 director|diˈrɛktər|режиссёр|The director talks to the actor.|Il regista parla con l'attore.|Режиссёр разговаривает с актёром.
@@ -593,13 +593,13 @@ coach|koʊtʃ|тренер|The coach watches the team.|L'allenatore guarda la sq
 field|fiːld|поле; площадка|The football field is big.|Il campo da calcio è grande.|Футбольное поле большое.
 ball|bɔːl|мяч|The ball is in the garden.|La palla è nel giardino.|Мяч в саду.
 score|skɔːr|счёт (в игре)|The score is two to one.|Il punteggio è due a uno.|Счёт два — один.
-draw|drɔː|ничья; рисовать|The match ends in a draw.|La partita finisce in pareggio.|Матч заканчивается вничью.
+draw|drɔː| рисовать|The match ends in a draw.|La partita finisce in pareggio.|Матч заканчивается вничью.
 championship|ˈtʃæmpiənʃɪp|чемпионат|The championship starts in September.|Il campionato inizia in settembre.|Чемпионат начинается в сентябре.
-fan|fæn|болельщик; вентилятор|The fans sing at the stadium.|I tifosi cantano allo stadio.|Болельщики поют на стадионе.
+fan|fæn| болельщик; вентилятор|The fans sing at the stadium.|I tifosi cantano allo stadio.|Болельщики поют на стадионе.
 medal|ˈmɛdəl|медаль|The medal is made of gold.|La medaglia è d'oro.|Медаль золотая.
 prize|praɪz|приз|The prize is a medal.|Il premio è una medaglia.|Приз — медаль.
-point|pɔɪnt|точка; очко|Our team scores three points.|La nostra squadra fa tre punti.|Наша команда набирает три очка.
-goal|ɡoʊl|цель; гол|The destination of the journey is Rome.|La meta del viaggio è Roma.|Цель поездки — Рим.
+point|pɔɪnt| точка; очко|Our team scores three points.|La nostra squadra fa tre punti.|Наша команда набирает три очка.
+goal|ɡoʊl| цель; гол|The destination of the journey is Rome.|La meta del viaggio è Roma.|Цель поездки — Рим.
 aim|eɪm|цель, задача|My aim is to learn.|Il mio obiettivo è imparare.|Моя цель — научиться.
 result|riˈzʌlt|результат|The result is good.|Il risultato è buono.|Результат хороший.
 progress|ˈprɒɡrɛs|прогресс|I make progress every day.|Faccio progressi ogni giorno.|Я делаю успехи каждый день.
@@ -609,18 +609,18 @@ bookshop|ˈbʊkʃɒp|книжный магазин|The bookshop is in the centre
 pharmacist|ˈfɑːrməsɪst|аптекарь|The pharmacist recommends a medicine.|Il farmacista consiglia una medicina.|Аптекарь советует лекарство.
 illness|ˈɪlnəs|болезнь|The illness lasts a week.|La malattia dura una settimana.|Болезнь длится неделю.
 fever|ˈfiːvər|жар, температура|The child has a fever.|Il bambino ha la febbre.|У ребёнка жар.
-cold|koʊld|простуда; холодный|I have a bad cold.|Ho un raffreddore forte.|У меня сильная простуда.
+cold|koʊld| простуда; холодный|I have a bad cold.|Ho un raffreddore forte.|У меня сильная простуда.
 cough|kɒf|кашель|The cough has lasted three days.|La tosse dura da tre giorni.|Кашель длит три дня.
 breath|brɛθ|дыхание|Take a deep breath.|Fai un respiro profondo.|Сделай глубокий вдох.
 prescription|priˈskrɪpʃən|рецепт (медицинский)|The doctor writes a prescription.|Il dottore scrive una ricetta.|Врач выписывает рецепт.
 pill|pɪl|таблетка|Take a tablet with water.|Prendi una pastiglia con acqua.|Прими таблетку с водой.
-cure|kjʊr|лечение; лекарство|Rest is the best cure.|Il riposo è la migliore cura.|Отдых — лучшее лечение.
+cure|kjʊr| лечение; лекарство|Rest is the best cure.|Il riposo è la migliore cura.|Отдых — лучшее лечение.
 secretary|ˈsɛkrəteri|секретарь|The secretary answers the phone.|La segretaria risponde al telefono.|Секретарь отвечает на телефон.
 appointment|əˈpɔɪntmənt|назначенная встреча|I have an appointment at ten.|Ho un appuntamento alle dieci.|У меня встреча в десять.
 toy|tɔɪ|игрушка|The child breaks the toy.|Il bambino rompe il giocattolo.|Ребёнок ломает игрушку.
 ticket office|ˈtɪkɪt ˈɒfɪs|касса|The ticket office closes at eight.|La biglietteria chiude alle otto.|Касса закрывается в восемь.
 spectator|spɛkˈteɪtər|зритель|The spectators applaud.|Gli spettatori applaudono.|Зрители аплодируют.
-match|mætʃ|матч; спичка|The match ends in a draw.|La partita finisce in pareggio.|Матч заканчивается вничью.
+match|mætʃ| матч; спичка|The match ends in a draw.|La partita finisce in pareggio.|Матч заканчивается вничью.
 team|tiːm|команда|Our team plays well.|La nostra squadra gioca bene.|Наша команда играет хорошо.
 training|ˈtreɪnɪŋ|тренировка|The training lasts two hours.|L'allenamento dura due ore.|Тренировка длится два часа.
 race|reɪs| соревнование|The race starts at three.|La gara inizia alle tre.|Соревнование начинается в три.
@@ -629,16 +629,16 @@ defeat|diˈfiːt|поражение|Defeat hurts.|La sconfitta fa male.|Пора
 same|seɪm|тот же самый|We live in the same building.|Abitiamo nello stesso palazzo.|Мы живём в том же доме.
 other|ˈʌðər|другой, иной|I would like another coffee.|Vorrei un altro caffè.|Я хотел бы ещё один кофе.
 each|iːtʃ|каждый (по отдельности)|Every morning I drink a coffee.|Ogni mattina bevo un caffè.|Каждое утро я пью кофе.
-every|ˈɛvri|каждый, всякий|All the students are present.|Tutti gli studenti sono presenti.|Все студенты присутствуют.
-too|tuː|слишком; тоже|This sweater is too warm.|Questo maglione è troppo caldo.|Этот свитер слишком тёплый.
+every|ˈɛvri| каждый, всякий|All the students are present.|Tutti gli studenti sono presenti.|Все студенты присутствуют.
+too|tuː| слишком; тоже|This sweater is too warm.|Questo maglione è troppo caldo.|Этот свитер слишком тёплый.
 less|lɛs|меньше|I would like less sugar in the tea.|Vorrei meno zucchero nel tè.|Я хотел бы меньше сахара в чае.
 better|ˈbɛtər|лучше|I feel better today.|Oggi mi sento meglio.|Сегодня я чувствую себя лучше.
 worse|wɜːrs|хуже|The weather is getting worse and worse.|Il tempo va di peggio in peggio.|Погода становится всё хуже.
 best|bɛst|лучший|This restaurant is the best.|Questo ristorante è il migliore.|Этот ресторан — лучший.
 worst|wɜːrst|худший|It is the worst day of the week.|È il giorno peggiore della settimana.|Это худший день недели.
 famous|ˈfeɪməs|известный, знаменитый|This actor is very famous.|Questo attore è molto famoso.|Этот актёр очень известен.
-free|friː|свободный; бесплатный|I am free tomorrow evening.|Sono libero domani sera.|Я свободен завтра вечером.
-busy|ˈbɪzi|занятой|The line is busy.|La linea è occupata.|Линия занята.
+free|friː| свободный; бесплатный|I am free tomorrow evening.|Sono libero domani sera.|Я свободен завтра вечером.
+busy|ˈbɪzi| занятой|The line is busy.|La linea è occupata.|Линия занята.
 asleep|əˈsliːp|уснувший|The child is already asleep.|Il bambino è già addormentato.|Ребёнок уже уснул.
 ill|ɪl|больной|Marco is ill today.|Marco è malato oggi.|Марко сегодня болен.
 glad|ɡlæd|радостный, довольный|I am glad to see you.|Sono contento di vederti.|Я рад тебя видеть.
@@ -664,7 +664,7 @@ salty|ˈsɔːlti|солёный|The soup is too salty.|La zuppa è troppo salata
 bitter|ˈbɪtər|горький|Coffee without sugar is bitter.|Il caffè senza zucchero è amaro.|Кофе без сахара горький.
 fresh|frɛʃ| свежий|The bread is still fresh.|Il pane è ancora fresco.|Хлеб ещё свежий.
 wet|wɛt|мокрый|The trousers are wet.|I pantaloni sono bagnati.|Брюки мокрые.
-dry|draɪ|сухой; вытирать|The road is dry.|La strada è asciutta.|Дорога сухая.
+dry|draɪ| сухой; вытирать|The road is dry.|La strada è asciutta.|Дорога сухая.
 heavy|ˈhɛvi|тяжёлый|This suitcase is heavy.|Questa valigia è pesante.|Этот чемодан тяжёлый.
 narrow|ˈnæroʊ|узкий|The corridor is narrow.|Il corridoio è stretto.|Коридор узкий.
 wide|waɪd|широкий|The road is wide.|La strada è larga.|Дорога широкая.
@@ -673,7 +673,7 @@ thin|θɪn|тонкий|The pencil is thin.|La matita è sottile.|Каранда
 thick|θɪk| толстый|A thick book on the table.|Un libro grosso sul tavolo.|Толстая книга на столе.
 correct|kəˈrɛkt|правильный, верный|Your answer is correct.|La tua risposta è giusta.|Твой ответ правильный.
 exact|ɪɡˈzækt|точный|The address is exact.|L'indirizzo è esatto.|Адрес точный.
-just|dʒʌst|только что; просто|I have just finished the work.|Ho appena finito il lavoro.|Я только что закончил работу.
+just|dʒʌst| только что; просто|I have just finished the work.|Ho appena finito il lavoro.|Я только что закончил работу.
 backwards|ˈbækwərdz| назад|The building is a bit further back.|Il palazzo è un po' più indietro.|Дом немного дальше назад.
 in front of|ɪn frʌnt ɒv| перед|The bar is in front of the station.|Il bar è davanti alla stazione.|Бар перед вокзалом.
 behind|biˈhaɪnd|позади, за|The garden is behind the house.|Il giardino è dietro la casa.|Сад за домом.
@@ -681,14 +681,14 @@ probably|ˈprɒbəbli|вероятно|Probably it will rain tomorrow.|Probabilm
 unfortunately|ʌnˈfɔːrtʃənətli|к сожалению|Unfortunately I cannot come.|Purtroppo non posso venire.|К сожалению, я не могу прийти.
 at least|æt liːst|по крайней мере|At least answer the question.|Rispondi almeno alla domanda.|Хотя бы ответь на вопрос.
 also|ˈɔːlsoʊ|тоже, также|I also want to come.|Anche io voglio venire.|Я тоже хочу прийти.
-only|ˈoʊnli|только|I stay only two days.|Resto solo due giorni.|Я остаюсь только два дня.
-instead|ɪnˈstɛd|вместо, наоборот|He goes out, I instead stay.|Lui esce, io invece resto.|Он выходит, я же остаюсь.
-so|soʊ|поэтому; так|It is late, so I go home.|È tardi, quindi vado a casa.|Поздно, поэтому я иду домой.
+only|ˈoʊnli| только|I stay only two days.|Resto solo due giorni.|Я остаюсь только два дня.
+instead|ɪnˈstɛd| вместо, наоборот|He goes out, I instead stay.|Lui esce, io invece resto.|Он выходит, я же остаюсь.
+so|soʊ| поэтому; так|It is late, so I go home.|È tardi, quindi vado a casa.|Поздно, поэтому я иду домой.
 towards|təˈwɔːrdz| к|I come back around nine.|Torno verso le nove.|Я возвращаюсь около девяти.
 during|ˈdʊrɪŋ|во время|I read during the journey.|Leggo durante il viaggio.|Я читаю во время поездки.
-against|əˈɡɛnst|против|The match is against Milan.|La partita è contro Milano.|Матч против Милана.
+against|əˈɡɛnst| против|The match is against Milan.|La partita è contro Milano.|Матч против Милана.
 without|wɪˈðaʊt|без|Coffee without sugar, please.|Caffè senza zucchero, per favore.|Кофе без сахара, пожалуйста.
-about|əˈbaʊt|о, об; приблизительно|The journey lasts about two hours.|Il viaggio dura circa due ore.|Поездка длится около двух часов.
+about|əˈbaʊt| о, об; приблизительно|The journey lasts about two hours.|Il viaggio dura circa due ore.|Поездка длится около двух часов.
 one more|wʌn mɔːr|ещё один|Another coffee, thanks.|Un altro caffè, grazie.|Ещё один кофе, спасибо.
 soy milk|sɔɪ mɪlk|соевое молоко|I have soy milk in my coffee.|Prendo il latte di soia nel caffè.|Я беру соевое молоко в кофе.
 toast|toʊst|тост, поджаренный хлеб|At breakfast I eat toast.|A colazione mangio il pane tostato.|На завтрак я ем тост.
@@ -699,28 +699,28 @@ nuts|nʌts| орехи|At Christmas we eat nuts.|A Natale mangiamo frutta secca.
 mineral water|ˈmɪnərəl ˈwɔːtər|минеральная вода|A cold mineral water, please.|Un'acqua minerale fresca, per favore.|Холодную минеральную воду, пожалуйста.
 deckchair|ˈdɛktʃɛər|шезлонг|A deckchair in the garden.|Una sedia a sdraio in giardino.|Шезлонг в саду.
 meadow|ˈmɛdoʊ|луг|The cows are in the meadow.|Le mucche sono nel prato.|Коровы на лугу.
-pebble|ˈpɛbəl|булыжник, галька|The stone is in the water.|Il sasso è nell'acqua.|Камень в воде.
+pebble|ˈpɛbəl| булыжник, галька|The stone is in the water.|Il sasso è nell'acqua.|Камень в воде.
 puddle|ˈpʌdəl|лужа|The child jumps into the puddle.|Il bambino salta nella pozzanghera.|Ребёнок прыгает в лужу.
 nest|nɛst|гнездо|The bird builds the nest.|L'uccello costruisce il nido.|Птица строит гнездо.
 wheat|wiːt|зерно, пшеница|The wheat is ripe.|Il grano è maturo.|Пшеница созрела.
-harvest|ˈhɑːrvɪst|урожай; собирать урожай|The apple harvest is in September.|La raccolta delle mele è in settembre.|Сбор яблок — в сентябре.
+harvest|ˈhɑːrvɪst| урожай; собирать урожай|The apple harvest is in September.|La raccolta delle mele è in settembre.|Сбор яблок — в сентябре.
 path|pæθ|тропинка|The path leads to the lake.|Il sentiero porta al lago.|Тропинка ведёт к озеру.
 edge|ɛdʒ| край|We are at the edge of the road.|Siamo al bordo della strada.|Мы на краю дороги.
 border|ˈbɔːrdər|граница|The border is near.|Il confine è vicino.|Граница близко.
-map|mæp|карта (географическая)|The map is on the wall.|La carta geografica è sul muro.|Карта на стене.
+map|mæp| карта|The map is on the wall.|La carta geografica è sul muro.|Карта на стене.
 compass|ˈkʌmpəs|компас|The compass shows the north.|La bussola indica il nord.|Компас показывает север.
 north|nɔːrθ|север|The north of Italy is industrial.|Il nord dell'Italia è industriale.|Север Италии — промышленный.
 south|saʊθ|юг|The south has more sun.|Il sud ha più sole.|На юге больше солнца.
 east|iːst|восток|The east is towards the sea.|L'est è verso il mare.|Восток — в сторону моря.
 west|wɛst|запад|The sun sets in the west.|Il sole tramonta a ovest.|Солнце садится на западе.
 temperature|ˈtɛmprətʃər|температура|The temperature is high today.|La temperatura è alta oggi.|Температура сегодня высокая.
-degree|diˈɡriː|градус|It is thirty degrees in summer.|Sono trenta gradi in estate.|Летом тридцать градусов.
+degree|diˈɡriː| градус|It is thirty degrees in summer.|Sono trenta gradi in estate.|Летом тридцать градусов.
 shade|ʃeɪd|тень|We sit in the shade.|Ci sediamo all'ombra.|Мы садимся в тень.
-living room|ˈlɪvɪŋ ruːm|гостиная|The living room is a big room.|Il soggiorno è una stanza grande.|Гостиная — большая комната.
+living room|ˈlɪvɪŋ ruːm| гостиная|The living room is a big room.|Il soggiorno è una stanza grande.|Гостиная — большая комната.
 storeroom|ˈstɔːrruːm|кладовка|The brooms are in the storeroom.|Le scope sono nel ripostiglio.|Метлы в кладовке.
 cellar|ˈsɛlər|подвал, погреб|The wine is in the cellar.|Il vino è in cantina.|Вино в погребе.
 mattress|ˈmætrəs|матрас|The mattress is new.|Il materasso è nuovo.|Матрас новый.
-sheet|ʃiːt|простыня; лист бумаги|The sheet is white.|Il lenzuolo è bianco.|Простыня белая.
+sheet|ʃiːt| простыня; лист бумаги|The sheet is white.|Il lenzuolo è bianco.|Простыня белая.
 bucket|ˈbʌkɪt|ведро|The bucket is in the garage.|Il secchio è nel garage.|Ведро в гараже.
 rubbish|ˈrʌbɪʃ|мусор|The rubbish is outside.|La spazzatura è fuori.|Мусор снаружи.
 bin|bɪn|корзина, мусорное ведро|Throw the paper into the bin.|Getta la carta nel cestino.|Брось бумагу в корзину.
@@ -732,7 +732,7 @@ pot|pɒt|кастрюля|The pot is on the fire.|La pentola è sul fuoco.|Ка�
 pan|pæn|сковорода|The pan is hot.|La padella è calda.|Сковорода горячая.
 teaspoon|ˈtiːspuːn|чайная ложка|The teaspoon is small.|Il cucchiaino è piccolo.|Чайная ложка маленькая.
 curtain|ˈkɜːrtən|штора, занавеска|Close the curtain, please.|Chiudi la tenda, per favore.|Закрой штору, пожалуйста.
-shutters|ˈʃʌtərz|ставни, жалюзи|The shutters are closed.|Le tapparelle sono chiuse.|Ставни закрыты.
+shutters|ˈʃʌtərz| ставни, жалюзи|The shutters are closed.|Le tapparelle sono chiuse.|Ставни закрыты.
 open|ˈoʊpən|открывать|Open the window, please.|Apri la finestra, per favore.|Открой окно, пожалуйста.
 close|kloʊz|закрывать|Lock the door.|Chiudi la porta a chiave.|Закрой дверь на ключ.
 buy|baɪ|покупать|I buy bread every day.|Compro il pane ogni giorno.|Я покупаю хлеб каждый день.
@@ -740,15 +740,15 @@ sell|sɛl|продавать|They sell fresh fruit at the market.|Vendono frutta
 drive|draɪv|водить машину|I drive slowly in the centre.|Guido piano nel centro.|Я еду медленно в центре.
 fly|flaɪ|летать|The birds fly south.|Gli uccelli volano a sud.|Птицы летят на юг.
 swim|swɪm|плавать|I swim every morning in summer.|Nuoto ogni mattina d'estate.|Летом я плаваю каждое утро.
-carry|ˈkæri|носить; приносить|I take the book to the library.|Porto il libro alla biblioteca.|Я несу книгу в библиотеку.
-serve|sɜːrv|служить; подавать|This tool is used for cutting.|Questo strumento serve a tagliare.|Этот инструмент служит для резки.
+carry|ˈkæri| носить|I take the book to the library.|Porto il libro alla biblioteca.|Я несу книгу в библиотеку.
+serve|sɜːrv| служить; подавать|This tool is used for cutting.|Questo strumento serve a tagliare.|Этот инструмент служит для резки.
 hold|hoʊld|держать|I hold the book in my hand.|Tengo il libro in mano.|Я держу книгу в руке.
 study|ˈstʌdi|учиться, изучать|They study English in the evening.|Studiano inglese alla sera.|Они учат английский вечером.
 wait|weɪt|ждать|I wait for the train at the bar.|Aspetto il treno al bar.|Я жду поезд в баре.
 return|rɪˈtɜːrn|возвращаться|I come home at six.|Torno a casa alle sei.|Я возвращаюсь домой в шесть.
 lose|luːz|терять|I always lose the keys.|Perdo sempre le chiavi.|Я вечно теряю ключи.
 manage|ˈmænɪdʒ|удаваться, справляться|I manage to understand the lesson.|Riesco a capire la lezione.|Мне удаётся понять урок.
-be born|bi bɔːrn|родиться|I was born in Turin.|Sono nato a Torino.|Я родился в Турине.
+be born|bi bɔːrn| родиться|I was born in Turin.|Sono nato a Torino.|Я родился в Турине.
 win|wɪn|побеждать|Our team wins the match.|La nostra squadra vince la partita.|Наша команда выигрывает матч.
 forget|fərˈɡɛt|забывать|I always forget names.|Dimentico sempre i nomi.|Я вечно забываю имена.
 wake up|weɪk ʌp|просыпаться|I wake up at seven.|Mi sveglio alle sette.|Я просыпаюсь в семь.
@@ -756,32 +756,32 @@ be called|bi kɔːld|называться, зваться|My name is Luca and he
 enjoy oneself|ɪnˈdʒɔɪ wʌnˈsɛlf| веселиться|We enjoy ourselves at the party.|Ci divertiamo alla festa.|Мы весело проводим время на вечеринке.
 get up|ɡɛt ʌp|подниматься, вставать|I get up early in the morning.|Mi alzo presto la mattina.|Утром я встаю рано.
 sit down|sɪt daʊn|садиться|Sit here, please.|Vi sedete qui, per favore.|Сядьте здесь, пожалуйста.
-send|sɛnd|отправлять|I send a letter to my aunt.|Mando una lettera alla zia.|Я отправляю письмо тёте.
+send|sɛnd| отправлять (посылку)|I send a letter to my aunt.|Mando una lettera alla zia.|Я отправляю письмо тёте.
 accept|əkˈsɛpt|принимать, соглашаться|I accept your proposal.|Accetto la tua proposta.|Я принимаю твоё предложение.
 refuse|rɪˈfjuːz|отказывать, отклонять|I refuse to go out tonight.|Rifiuto di uscire stasera.|Я отказываюсь идти гулять сегодня.
 obtain|əbˈteɪn|получать, добывать|I get good results.|Ottengo buoni risultati.|Я получаю хорошие результаты.
 repeat|rɪˈpiːt|повторять|I repeat the sentence for the professor.|Ripeto la frase per il professore.|Я повторяю фразу для профессора.
 build|bɪld|строить|They are building a new house.|Costruiscono una casa nuova.|Они строят новый дом.
 sing|sɪŋ|петь|We sing together at the party.|Cantiamo insieme alla festa.|Мы поём вместе на вечеринке.
-play an instrument|pleɪ æn ˈɪnstrument|играть на инструменте|I play the piano every evening.|Suono il piano ogni sera.|Я играю на пианино каждый вечер.
+play an instrument|pleɪ æn ˈɪnstrument| играть на инструменте|I play the piano every evening.|Suono il piano ogni sera.|Я играю на пианино каждый вечер.
 dance|dɑːns|танцевать|We dance all night.|Balliamo tutta la notte.|Мы танцуем всю ночь.
-cut|kʌt|резать|I cut the bread for dinner.|Taglio il pane per cena.|Я режу хлеб на ужин.
-go up|ɡoʊ ʌp|подниматься|We go up with the lift.|Saliamo con l'ascensore.|Мы поднимаемся на лифте.
+cut|kʌt| резать|I cut the bread for dinner.|Taglio il pane per cena.|Я режу хлеб на ужин.
+go up|ɡoʊ ʌp| подниматься|We go up with the lift.|Saliamo con l'ascensore.|Мы поднимаемся на лифте.
 go down|ɡoʊ daʊn|спускаться|I go down the stairs slowly.|Scendo le scale piano.|Я медленно спускаюсь по лестнице.
-choose|tʃuːz|выбирать|Choose your present.|Scegli il tuo regalo.|Выбирай свой подарок.
+choose|tʃuːz| выбирать|Choose your present.|Scegli il tuo regalo.|Выбирай свой подарок.
 decide|diˈsaɪd|решать|We decide the programme together.|Decidiamo il programma insieme.|Мы вместе решаем программу.
 explain|ɪkˈspleɪn|объяснять|The teacher explains the rule.|Il maestro spiega la regola.|Учитель объясняет правило.
 describe|diˈskraɪb|описывать|I describe my city.|Descrivo la mia città.|Я описываю свой город.
 translate|trænzˈleɪt|переводить|I translate the text from French.|Traduco il testo dal francese.|Я перевожу текст с французского.
-promise|ˈprɒmɪs|обещать|I promise to come back soon.|Prometto di tornare presto.|Обещаю вернуться скоро.
+promise|ˈprɒmɪs| обещание|I promise to come back soon.|Prometto di tornare presto.|Обещаю вернуться скоро.
 allow|əˈlaʊ|позволять|The weather does not allow it.|Il tempo non lo permette.|Погода этого не позволяет.
 solve|sɒlv|решать (проблему)|We will solve the problem tomorrow.|Risolveremo il problema domani.|Мы решим проблему завтра.
 share|ʃɛər|делиться|I share the photo with you.|Condivido la foto con te.|Я делюсь с тобой фото.
 add|æd|добавлять|I add salt to the soup.|Aggiungo sale alla zuppa.|Я добавляю соль в суп.
 remove|rɪˈmuːv| убирать|Remove the salt from the table.|Togli il sale dalla tavola.|Убери соль со стола.
-wear|wɛər|надевать; носить (одежду)|I put on a warm sweater.|Indosso un maglione caldo.|Я надеваю тёплый свитер.
+wear|wɛər| надевать; носить (одежду)|I put on a warm sweater.|Indosso un maglione caldo.|Я надеваю тёплый свитер.
 wash|wɒʃ|мыть, стирать|I wash the dishes after dinner.|Lavo i piatti dopo la cena.|Я мою посуду после ужина.
-tidy|ˈtaɪdi|убирать, приводить в порядок|I arrange the books on the table.|Ordino i libri sul tavolo.|Я расставляю книги на столе.
+tidy|ˈtaɪdi| убирать, приводить в порядок|I arrange the books on the table.|Ordino i libri sul tavolo.|Я расставляю книги на столе.
 relax|rɪˈlæks|отдыхать|I rest for an hour after lunch.|Riposo un'ora dopo pranzo.|Я отдыхаю час после обеда.
 visit|ˈvɪzɪt|посещать|We visit the museum of Milan.|Visitiamo il museo di Milano.|Мы посещаем музей в Милане.
 invite|ɪnˈvaɪt|приглашать|I invite friends home.|Invito gli amici a casa.|Я приглашаю друзей домой.
@@ -791,14 +791,14 @@ meet|miːt| встречать|I meet Marco at the bar.|Incontro Marco al bar.|�
 laugh|læf|смеяться|We laugh at your story.|Ridiamo della tua storia.|Мы смеёмся над твоей историей.
 cry|kraɪ|плакать|The child cries a lot.|Il bambino piange molto.|Ребёнок много плачет.
 shout|ʃaʊt|кричать|The fan shouts at the stadium.|Il tifoso urla allo stadio.|Фанат кричит на стадионе.
-deliver|diˈlɪvər|доставлять|I send the parcel tomorrow.|Spedisco il pacco domani.|Я отправлю посылку завтра.
+deliver|diˈlɪvər| доставлять|I send the parcel tomorrow.|Spedisco il pacco domani.|Я отправлю посылку завтра.
 sign|saɪn|подписывать|Sign here, please.|Firmi qui, per favore.|Подпишите здесь, пожалуйста.
 copy|ˈkɒpi|копировать|I copy the sentence into the notebook.|Copio la frase nel quaderno.|Я переписываю фразу в тетрадь.
 have dinner|hæv ˈdɪnər|ужинать|We have dinner at eight in the evening.|Ceniamo alle otto di sera.|Мы ужинаем в восемь вечера.
 get married|ɡɛt ˈmærid|жениться, выходить замуж|They are getting married in September.|Si sposano a settembre.|Они женятся в сентябре.
 exist|ɪɡˈzɪst|существовать|I do not believe dragons exist.|Non credo che i draghi esistano.|Я не верю, что драконы существуют.
 be enough|bi ɪˈnʌf|быть достаточным|One sandwich is enough for me.|Un panino basta per me.|Одного бутерброда мне достаточно.
-lack|læk|не хватать|I am missing two words.|Mi mancano due parole.|Мне не хватает двух слов.
+lack|læk| не хватать|I am missing two words.|Mi mancano due parole.|Мне не хватает двух слов.
 contain|kənˈteɪn|содержать|The bottle contains one litre.|La bottiglia contiene un litro.|Бутылка содержит литр.
 raise|reɪz|поднимать|I raise my hand to answer.|Alzo la mano per rispondere.|Я поднимаю руку, чтобы ответить.
 lower|ˈloʊər|опускать|Lower the volume, please.|Abbassi il volume, per favore.|Убавь громкость, пожалуйста.
@@ -807,8 +807,8 @@ throw|θroʊ|бросать|Throw the paper into the bin.|Getta la carta nel ces
 push|pʊʃ|толкать|I push the door but it is closed.|Spingo la porta ma è chiusa.|Я толкаю дверь, но она закрыта.
 pull|pʊl|тянуть|Pull the rope with strength.|Tira la corda con forza.|Тяни верёвку с силой.
 repair|rɪˈpɛər|чинить|I repair the computer myself.|Riparo il computer da solo.|Я чиню компьютер сам.
-bride|braɪd|невеста|The bride is very beautiful.|La sposa è bellissima.|Невеста очень красивая.
-groom|ɡruːm|жених|The groom is very nervous.|Lo sposo è molto nervoso.|Жених очень волнуется.
+bride|braɪd| невеста|The bride is very beautiful.|La sposa è bellissima.|Невеста очень красивая.
+groom|ɡruːm| жених|The groom is very nervous.|Lo sposo è molto nervoso.|Жених очень волнуется.
 patient|ˈpeɪʃənt|терпеливый|The teacher is very patient.|Il maestro è molto paziente.|Учитель очень терпеливый.
 curious|ˈkjʊriəs|любопытный, любознательный|The child is very curious.|Il bambino è molto curioso.|Ребёнок очень любознательный.
 lazy|ˈleɪzi|ленивый|The cat is lazy in the morning.|Il gatto è pigro la mattina.|Кот утром ленивый.
@@ -817,13 +817,13 @@ mysterious|mɪˈstɪriəs|загадочный|The house is mysterious at night.
 quiet|ˈkwaɪət|тихий, беззвучный|The library is silent.|La biblioteca è silenziosa.|Библиотека тихая.
 noisy|ˈnɔɪzi|шумный|The neighbourhood is noisy in the evening.|Il quartiere è rumoroso di sera.|Район шумный вечером.
 dangerous|ˈdeɪndʒərəs|опасный|The road is dangerous at night.|La strada è pericolosa di notte.|Дорога опасна ночью.
-safe|seɪf|безопасный; надёжный|I am sure about him.|Sono sicuro di lui.|Я уверен в нём.
+safe|seɪf| безопасный; надёжный|I am sure about him.|Sono sicuro di lui.|Я уверен в нём.
 perfect|ˈpɜːrfɪkt|идеальный, совершенный|The answer is perfect.|La risposta è perfetta.|Ответ идеальный.
 complete|kəmˈpliːt| полный|The notebook is complete.|Il quaderno è completo.|Тетрадь полная.
 only one|ˈoʊnli wʌn|единственный|It is the only book I have.|È l'unico libro che ho.|Это единственная книга, которая у меня есть.
 common|ˈkɒmən|общий; обычный|It is a common problem.|È un problema comune.|Это обычная проблема.
 private|ˈpraɪvət|частный, личный|This garden is private.|Questo giardino è privato.|Этот сад частный.
-tasty|ˈteɪsti|вкусный, аппетитный|The soup is tasty.|La minestra è gustosa.|Суп аппетитный.
+tasty|ˈteɪsti| вкусный, аппетитный|The soup is tasty.|La minestra è gustosa.|Суп аппетитный.
 healthy|ˈhɛlθi|здоровый; полезный|Healthy food helps the body.|Il cibo sano aiuta il corpo.|Здоровая еда помогает телу.
 raw|rɔː|сырой|The raw fish is fresh.|Il pesce crudo è fresco.|Сырая рыба свежая.
 cooked|kʊkt|варёный, приготовленный|The rice is cooked to perfection.|Il riso è cotto alla perfezione.|Рис приготовлен идеально.
@@ -841,45 +841,45 @@ washing machine|ˈwɒʃɪŋ məʃiːn|стиральная машина|The wash
 comb|koʊm|расчёска|The comb is on the shelf.|Il pettine è sulla mensola.|Расчёска на полке.
 perfume|pərˈfjuːm|духи; аромат|This perfume is sweet.|Questo profumo è dolce.|Эти духи сладкие.
 classroom|ˈklɑːsruːm|аудитория, класс|The classroom is big and bright.|L'aula è grande e luminosa.|Аудитория большая и светлая.
-PE|ˌpiː ˈiː|физкультура|PE is on Tuesday.|La ginnastica è il martedì.|Физкультура по вторникам.
+PE|ˌpiː ˈiː| физкультура|PE is on Tuesday.|La ginnastica è il martedì.|Физкультура по вторникам.
 geography|dʒiˈɒɡrəfi|география|I study geography tonight.|Studio geografia stasera.|Я учу географию сегодня вечером.
 maths|mæθs|математика|Mathematics is difficult.|La matematica è difficile.|Математика трудная.
 Italian|ɪˈtæljən|итальянский (язык); итальянец|I study Italian every day.|Studio italiano ogni giorno.|Я учу итальянский каждый день.
 English|ˈɪŋɡlɪʃ|английский (язык); англичанин|English is useful for work.|L'inglese è utile per il lavoro.|Английский полезен для работы.
-moment|ˈmoʊmənt|момент|The right moment is now.|Il momento giusto è adesso.|Подходящий момент — сейчас.
+moment|ˈmoʊmənt| мгновение|The right moment is now.|Il momento giusto è adesso.|Подходящий момент — сейчас.
 value|ˈvæljuː|ценность; значение|This book has great value.|Questo libro ha un grande valore.|Эта книга имеет большую ценность.
 system|ˈsɪstəm|система; способ|The system works well.|Il sistema funziona bene.|Система работает хорошо.
 method|ˈmɛθəd|метод|My method is simple.|Il mio metodo è semplice.|Мой метод простой.
 example|ɪɡˈzæmpəl|пример|I give an example.|Faccio un esempio.|Я привожу пример.
 solution|səˈluːʃən|решение|The solution is easy.|La soluzione è facile.|Решение простое.
 choice|tʃɔɪs|выбор|The choice is yours.|La scelta è tua.|Выбор за тобой.
-opportunity|ˌɒpərˈtuːniti|случай, возможность|It is a good opportunity.|È una buona occasione.|Это хорошая возможность.
+opportunity|ˌɒpərˈtuːniti| случай, возможность|It is a good opportunity.|È una buona occasione.|Это хорошая возможность.
 habit|ˈhæbɪt|привычка|It is a good habit.|È una buona abitudine.|Это полезная привычка.
 smile|smaɪl|улыбаться|I smile at the photograph.|Sorrido alla fotografia.|Я улыбаюсь на фотографии.
 breathe|briːð|дышать|I breathe the fresh air.|Respiro l'aria fresca.|Я дышу свежим воздухом.
 observe|əbˈzɜːrv|наблюдать|I watch the sea from the window.|Osservo il mare dalla finestra.|Я наблюдаю за морем из окна.
-taste|teɪst|пробовать на вкус; вкус|I taste the soup before adding salt.|Assaggio la zuppa prima di salare.|Я пробую суп до соли.
+taste|teɪst| пробовать на вкус; вкус|I taste the soup before adding salt.|Assaggio la zuppa prima di salare.|Я пробую суп до соли.
 pour|pɔːr|наливать|I pour the water into the glass.|Verso l'acqua nel bicchiere.|Я наливаю воду в стакан.
-mix|mɪks| мешать|I mix the pasta on the plate.|Mescolo la pasta nel piatto.|Я перемешиваю пасту на тарелке.
-boil|bɔɪl|кипятить, кипеть|The water boils in five minutes.|L'acqua bolle in cinque minuti.|Вода кипит через пять минут.
+mix|mɪks| мешать, размешивать|I mix the pasta on the plate.|Mescolo la pasta nel piatto.|Я перемешиваю пасту на тарелке.
+boil|bɔɪl| варить|The water boils in five minutes.|L'acqua bolle in cinque minuti.|Вода кипит через пять минут.
 get dressed|ɡɛt drɛst|одеваться|I get dressed quickly.|Mi vesto in fretta.|Я одеваюсь быстро.
 turn on|tɜːrn ɒn| включать|I turn on the living room light.|Accendo la luce del salotto.|Я включаю свет в гостиной.
 turn off|tɜːrn ɒf| выключать|Turn off the radio, please.|Spegni la radio, per favore.|Выключи радио, пожалуйста.
 hire|ˈhaɪər|брать напрокат|I hire a bicycle for a day.|Noleggio una bicicletta per un giorno.|Я беру велосипед на день.
-rent|rɛnt|сдавать в аренду; арендовать|I rent out a room in the centre.|Affitto una stanza in centro.|Я сдаю комнату в центре.
-brake|breɪk|тормозить; тормоз|I brake before the corner.|Freno prima dell'angolo.|Я торможу перед поворотом.
+rent|rɛnt| сдавать в аренду; арендовать|I rent out a room in the centre.|Affitto una stanza in centro.|Я сдаю комнату в центре.
+brake|breɪk| тормозить; тормоз|I brake before the corner.|Freno prima dell'angolo.|Я торможу перед поворотом.
 land|lænd|приземляться|The plane lands at nine.|L'aereo atterra alle nove.|Самолёт приземляется в девять.
 take off|teɪk ɒf|взлетать|The plane takes off at seven.|L'aereo decolla alle sette.|Самолёт взлетает в семь.
-surf|sɜːrf|пользоваться интернетом; заниматься сёрфингом|I surf the web every evening.|Navigo sul web ogni sera.|Я сижу в интернете каждый вечер.
-dive|daɪv|погружаться (под воду)|The dive is nice in the morning.|L'immersione è bella al mattino.|Погружение прекрасно утром.
+surf|sɜːrf| пользоваться интернетом; сёрфинг|I surf the web every evening.|Navigo sul web ogni sera.|Я сижу в интернете каждый вечер.
+dive|daɪv| погружаться (под воду)|The dive is nice in the morning.|L'immersione è bella al mattino.|Погружение прекрасно утром.
 cruise|kruːz|круиз|The cruise leaves from Genoa.|La crociera parte da Genova.|Круиз отплывает из Генуи.
 excursion|ɪkˈskɜːrʒən|экскурсия, поход|The excursion lasts three hours.|L'escursione dura tre ore.|Экскурсия длится три часа.
-guidebook|ˈɡaɪdbʊk|путеводитель|The guidebook talks about this museum.|La guida parla di questo museo.|Путеводитель рассказывает об этом музее.
+guidebook|ˈɡaɪdbʊk| путеводитель|The guidebook talks about this museum.|La guida parla di questo museo.|Путеводитель рассказывает об этом музее.
 tourist|ˈtʊrɪst|турист|The tourist photographs the tower.|Il turista fotografa la torre.|Турист фотографирует башню.
 adventure|ədˈvɛntʃər|приключение|This journey is an adventure.|Questo viaggio è un'avventura.|Это путешествие — приключение.
-memory|ˈmɛməri|воспоминание; память|The memory of the journey is nice.|Il ricordo del viaggio è bello.|Воспоминание о поездке приятно.
+memory|ˈmɛməri| воспоминание; память|The memory of the journey is nice.|Il ricordo del viaggio è bello.|Воспоминание о поездке приятно.
 receipt|rɪˈsiːt|чек (кассовый)|I keep the receipt.|Conservo lo scontrino.|Я сохраняю чек.
-shopping|ˈʃɒpɪŋ|покупки|I do the shopping at the market.|Faccio la spesa al mercato.|Я делаю покупки на рынке.
+shopping|ˈʃɒpɪŋ| покупки|I do the shopping at the market.|Faccio la spesa al mercato.|Я делаю покупки на рынке.
 purchase|ˈpɜːrtʃəs|покупка|The purchase is good.|L'acquisto è buono.|Покупка удачная.
 sale|seɪl| продажа|The sale starts tomorrow.|La vendita inizia domani.|Распродажа начинается завтра.
 company|ˈkʌmpəni|фирма, компания|The company has a hundred employees.|L'azienda ha cento dipendenti.|У компании сто сотрудников.
@@ -887,7 +887,7 @@ advert|ˈædvɜːrt|объявление (реклама)|I read an advert in th
 interview|ˈɪntərvjuː| собеседование|The interview is tomorrow morning.|Il colloquio è domani mattina.|Собеседование завтра утром.
 course|kɔːrs|курс (обучение)|The course lasts three months.|Il corso dura tre mesi.|Курс длится три месяца.
 lecture|ˈlɛktʃər|конференция, лекция|The lecture is in the main hall.|La conferenza è in aula magna.|Лекция в большом зале.
-steering wheel|ˈstɪərɪŋ wiːl|руль (авто)|The steering wheel is on the right.|Il volante è a destra.|Руль справа.
+steering wheel|ˈstɪərɪŋ wiːl| руль (авто)|The steering wheel is on the right.|Il volante è a destra.|Руль справа.
 wheel|wiːl|колесо|The wheel is flat.|La ruota è buca.|Колесо спущено.
 helmet|ˈhɛlmɪt|шлем|The helmet is necessary on a motorbike.|Il casco è necessario in moto.|Шлем необходим на мотоцикле.
 steak|steɪk| стейк|The steak is grilled.|La bistecca è alla griglia.|Стейк на гриле.
@@ -904,115 +904,187 @@ by now|baɪ naʊ|уже (к этому времени)|By now it is too late.|Or
 finally|ˈfaɪnəli|наконец|Finally it is Friday!|Finalmente è venerdì!|Наконец-то пятница!
 slowly|ˈsloʊli|медленно|Speak slowly, please.|Parla lentamente, per favore.|Говори медленно, пожалуйста.
 quickly|ˈkwɪkli| быстро|I close the window quickly.|Chiudo rapidamente la finestra.|Я быстро закрываю окно.
-come on|kʌm ɒn|ну же; давай|Come on, decide at once!|Insomma, decidi subito!|Ну же, решай немедленно!
+come on|kʌm ɒn| ну же; давай|Come on, decide at once!|Insomma, decidi subito!|Ну же, решай немедленно!
 even|ˈiːvən|даже|He even bought a motorbike.|Ha comprato addirittura una moto.|Он даже купил мотоцикл.
-polite|pəˈlaɪt|вежливый|The waiter is very polite.|Il cameriere è molto educato.|Официант очень вежливый.
-rude|ruːd|грубый|Don't be rude to the guests.|Non essere maleducato con gli ospiti.|Не будь грубым с гостями.
-shy|ʃaɪ|стеснительный|The boy is shy at school.|Il ragazzo è timido a scuola.|Мальчик стеснительный в школе.
-brave|breɪv|смелый|The firefighter is brave.|Il pompiere è coraggioso.|Пожарный смелый.
-honest|ˈɒnɪst|честный|The shopkeeper is honest.|Il commerciante è onesto.|Торговец честный.
-careful|ˈkɛərfəl|осторожный, внимательный|Be careful with the knife.|Sta attento col coltello.|Будь осторожен с ножом.
-careless|ˈkɛərləs|невнимательный, неосторожный|A careless driver is dangerous.|Un guidatore imprudente è pericoloso.|Невнимательный водитель опасен.
-strict|strɪkt|строгий|The teacher is strict.|L'insegnante è severo.|Учитель строгий.
-fair|fɛər|справедливый|The decision is fair.|La decisione è giusta.|Решение справедливое.
-clever|ˈklɛvər|умный, сообразительный|The student is clever.|Lo studente è sveglio.|Студент сообразительный.
-wise|waɪz|мудрый|The old man is wise.|Il vecchio è saggio.|Старик мудрый.
-silly|ˈsɪli|глупый, несерьёзный|It is a silly question.|È una domanda sciocca.|Это глупый вопрос.
-married|ˈmærid|женатый, замужем|They are married since June.|Sono sposati da giugno.|Они женаты с июня.
-single|ˈsɪŋɡəl|холостой, одинокий|My cousin is single.|Mio cugino è single.|Мой двоюродный брат холостой.
-loud|laʊd|громкий|The music is too loud.|La musica è troppo forte.|Музыка слишком громкая.
-soft|sɒft|мягкий; нежный|The pillow is soft.|Il cuscino è morbido.|Подушка мягкая.
-hard|hɑːrd|твёрдый; тяжёлый|The bread is hard.|Il pane è duro.|Хлеб жёсткий.
-sweet|swiːt|сладкий|The cake is too sweet.|La torta è troppo dolce.|Торт слишком сладкий.
-warm|wɔːrm|тёплый|The soup is warm.|La minestra è calda.|Суп тёплый.
-cool|kuːl|прохладный; крутой|The evening is cool.|La sera è fresca.|Вечер прохладный.
-sunny|ˈsʌni|солнечный|It is a sunny day.|È una giornata soleggiata.|Это солнечный день.
-cloudy|ˈklaʊdi|облачный|The sky is cloudy today.|Il cielo è nuvoloso oggi.|Небо сегодня облачное.
-rainy|ˈreɪni|дождливый|It is a rainy week.|È una settimana piovosa.|Это дождливая неделя.
-windy|ˈwɪndi|ветреный|It is windy at the sea.|Al mare tira vento.|У моря ветрено.
-left|lɛft|левый; налево|The shop is on the left.|Il negozio è a sinistra.|Магазин слева.
-planet|ˈplænɪt|планета|The Earth is a planet.|La Terra è un pianeta.|Земля — планета.
-space|speɪs|космос; пространство|I dream of space travel.|Sogno un viaggio nello spazio.|Я мечтаю о космическом путешествии.
-tray|treɪ|поднос|The tray is on the table.|Il vassoio è sul tavolo.|Поднос на столе.
-kettle|ˈkɛtəl|чайник (для кипячения)|The kettle is on the stove.|Il bollitore è sul fornello.|Чайник на плите.
-cupboard|ˈkʌbərd|шкаф (кухонный)|The cups are in the cupboard.|Le tazze sono nell'armadio.|Чашки в шкафу.
-shelf|ʃɛlf|полка|The book is on the shelf.|Il libro è sullo scaffale.|Книга на полке.
+polite|pəˈlaɪt| вежливый|The waiter is very polite.|Il cameriere è molto educato.|Официант очень вежливый.
+rude|ruːd| грубый|Don't be rude to the guests.|Non essere maleducato con gli ospiti.|Не будь грубым с гостями.
+shy|ʃaɪ| стеснительный|The boy is shy at school.|Il ragazzo è timido a scuola.|Мальчик стеснительный в школе.
+brave|breɪv| смелый|The firefighter is brave.|Il pompiere è coraggioso.|Пожарный смелый.
+honest|ˈɒnɪst| честный|The shopkeeper is honest.|Il commerciante è onesto.|Торговец честный.
+careful|ˈkɛərfəl| осторожный, внимательный|Be careful with the knife.|Sta attento col coltello.|Будь осторожен с ножом.
+careless|ˈkɛərləs| невнимательный, неосторожный|A careless driver is dangerous.|Un guidatore imprudente è pericoloso.|Невнимательный водитель опасен.
+strict|strɪkt| строгий|The teacher is strict.|L'insegnante è severo.|Учитель строгий.
+fair|fɛər| справедливый|The decision is fair.|La decisione è giusta.|Решение справедливое.
+clever|ˈklɛvər| умный, сообразительный|The student is clever.|Lo studente è sveglio.|Студент сообразительный.
+wise|waɪz| мудрый|The old man is wise.|Il vecchio è saggio.|Старик мудрый.
+silly|ˈsɪli| глупый, несерьёзный|It is a silly question.|È una domanda sciocca.|Это глупый вопрос.
+married|ˈmærid| женатый, замужем|They are married since June.|Sono sposati da giugno.|Они женаты с июня.
+single|ˈsɪŋɡəl| холостой, одинокий|My cousin is single.|Mio cugino è single.|Мой двоюродный брат холостой.
+loud|laʊd| громкий|The music is too loud.|La musica è troppo forte.|Музыка слишком громкая.
+soft|sɒft| мягкий; нежный|The pillow is soft.|Il cuscino è morbido.|Подушка мягкая.
+hard|hɑːrd| твёрдый; тяжёлый|The bread is hard.|Il pane è duro.|Хлеб жёсткий.
+sweet|swiːt| сладкий|The cake is too sweet.|La torta è troppo dolce.|Торт слишком сладкий.
+warm|wɔːrm| тёплый|The soup is warm.|La minestra è calda.|Суп тёплый.
+cool|kuːl| прохладный; крутой|The evening is cool.|La sera è fresca.|Вечер прохладный.
+sunny|ˈsʌni| солнечный|It is a sunny day.|È una giornata soleggiata.|Это солнечный день.
+cloudy|ˈklaʊdi| облачный|The sky is cloudy today.|Il cielo è nuvoloso oggi.|Небо сегодня облачное.
+rainy|ˈreɪni| дождливый|It is a rainy week.|È una settimana piovosa.|Это дождливая неделя.
+windy|ˈwɪndi| ветреный|It is windy at the sea.|Al mare tira vento.|У моря ветрено.
+left|lɛft| левый; налево|The shop is on the left.|Il negozio è a sinistra.|Магазин слева.
+planet|ˈplænɪt| планета|The Earth is a planet.|La Terra è un pianeta.|Земля — планета.
+space|speɪs| космос; пространство|I dream of space travel.|Sogno un viaggio nello spazio.|Я мечтаю о космическом путешествии.
+tray|treɪ| поднос|The tray is on the table.|Il vassoio è sul tavolo.|Поднос на столе.
+kettle|ˈkɛtəl| чайник (для кипячения)|The kettle is on the stove.|Il bollitore è sul fornello.|Чайник на плите.
+cupboard|ˈkʌbərd| шкаф (кухонный)|The cups are in the cupboard.|Le tazze sono nell'armadio.|Чашки в шкафу.
+shelf|ʃɛlf| полка|The book is on the shelf.|Il libro è sullo scaffale.|Книга на полке.
 drawer|drɔːr|ящик (стола)|The photos are in the drawer.|Le foto sono nel cassetto.|Фотографии в ящике.
-armchair|ˈɑːrmtʃɛər|кресло|The armchair is near the window.|La poltrona è vicino alla finestra.|Кресло у окна.
+armchair|ˈɑːrmtʃɛər| кресло|The armchair is near the window.|La poltrona è vicino alla finestra.|Кресло у окна.
 carpet|ˈkɑːrpɪt|ковёр|The carpet is new.|Il tappeto è nuovo.|Ковёр новый.
 mirror|ˈmɪrər|зеркало|I look in the mirror before going out.|Guardo lo specchio prima di uscire.|Я смотрю в зеркало перед выходом.
 soap|soʊp|мыло|The soap is in the bathroom.|Il sapone è nel bagno.|Мыло в ванной.
 towel|ˈtaʊəl|полотенце|The towel is clean.|L'asciugamano è pulito.|Полотенце чистое.
 pillow|ˈpɪloʊ|подушка|The pillow is soft.|Il cuscino è morbido.|Подушка мягкая.
 blanket|ˈblæŋkɪt|одеяло|The blanket is on the bed.|La coperta è sul letto.|Одеяло на кровати.
-hammer|ˈhæmər|молоток|The hammer is in the box.|Il martello è nella cassetta.|Молоток в коробке.
-nail|neɪl|гвоздь|The nail is in the wall.|Il chiodo è nel muro.|Гвоздь в стене.
-rope|roʊp|верёвка|Pull the rope with strength.|Tira la corda con forza.|Тяни верёвку с силой.
-gate|ɡeɪt|ворота, калитка|The gate is closed.|Il cancello è chiuso.|Калитка закрыта.
-chimney|ˈtʃɪmni|труба, дымоход|The smoke comes out of the chimney.|Il fumo esce dal comignolo.|Дым выходит из трубы.
-wave|weɪv|волна|The wave is high today.|L'onda è alta oggi.|Волна сегодня высокая.
-island|ˈaɪlənd|остров|The island is beautiful in summer.|L'isola è bella d'estate.|Остров прекрасен летом.
-desert|diˈzɜːrt|пустыня|The desert is dry and hot.|Il deserto è secco e caldo.|Пустыня сухая и жаркая.
-jungle|ˈdʒʌŋɡəl|джунгли|The jungle is full of animals.|La giungla è piena di animali.|Джунгли полны животных.
-cave|keɪv|пещера|The cave is dark.|La caverna è scura.|Пещера тёмная.
-thunder|ˈθʌndər|гром|Thunder frightens the dog.|Il tuono spaventa il cane.|Гром пугает собаку.
-lightning|ˈlaɪtnɪŋ|молния|Lightning illuminates the sky.|Il lampo illumina il cielo.|Молния освещает небо.
-sheep|ʃiːp|овца, баран|The sheep are in the meadow.|Le pecore sono nel prato.|Овцы на лугу.
-goat|ɡoʊt|коза|The goat eats the grass.|La capra mangia l'erba.|Коза ест траву.
-pig|pɪɡ|свинья|The pig is in the sty.|Il maiale è nel porcile.|Свинья в свинарнике.
-rabbit|ˈræbɪt|кролик|The rabbit eats a carrot.|Il coniglio mangia una carota.|Кролик ест морковь.
+hammer|ˈhæmər| молоток|The hammer is in the box.|Il martello è nella cassetta.|Молоток в коробке.
+nail|neɪl| гвоздь|The nail is in the wall.|Il chiodo è nel muro.|Гвоздь в стене.
+rope|roʊp| верёвка|Pull the rope with strength.|Tira la corda con forza.|Тяни верёвку с силой.
+gate|ɡeɪt| ворота, калитка|The gate is closed.|Il cancello è chiuso.|Калитка закрыта.
+chimney|ˈtʃɪmni| труба, дымоход|The smoke comes out of the chimney.|Il fumo esce dal comignolo.|Дым выходит из трубы.
+wave|weɪv| волна|The wave is high today.|L'onda è alta oggi.|Волна сегодня высокая.
+island|ˈaɪlənd| остров|The island is beautiful in summer.|L'isola è bella d'estate.|Остров прекрасен летом.
+desert|diˈzɜːrt| пустыня|The desert is dry and hot.|Il deserto è secco e caldo.|Пустыня сухая и жаркая.
+jungle|ˈdʒʌŋɡəl| джунгли|The jungle is full of animals.|La giungla è piena di animali.|Джунгли полны животных.
+cave|keɪv| пещера|The cave is dark.|La caverna è scura.|Пещера тёмная.
+thunder|ˈθʌndər| гром|Thunder frightens the dog.|Il tuono spaventa il cane.|Гром пугает собаку.
+lightning|ˈlaɪtnɪŋ| молния|Lightning illuminates the sky.|Il lampo illumina il cielo.|Молния освещает небо.
+sheep|ʃiːp| овца, баран|The sheep are in the meadow.|Le pecore sono nel prato.|Овцы на лугу.
+goat|ɡoʊt| коза|The goat eats the grass.|La capra mangia l'erba.|Коза ест траву.
+pig|pɪɡ| свинья|The pig is in the sty.|Il maiale è nel porcile.|Свинья в свинарнике.
+rabbit|ˈræbɪt| кролик|The rabbit eats a carrot.|Il coniglio mangia una carota.|Кролик ест морковь.
 mouse|maʊs|мышь|A mouse is in the kitchen.|Un topo è in cucina.|В кухне мышь.
-wolf|wʊlf|волк|The wolf howls at night.|Il lupo urla di notte.|Волк воет ночью.
-bear|bɛər|медведь|The bear sleeps in winter.|L'orso dorme in inverno.|Медведь спит зимой.
-lion|ˈlaɪən|лев|The lion is the king of the animals.|Il leone è il re degli animali.|Лев — царь зверей.
-duck|dʌk|утка|The duck swims in the pond.|Il papero nuota nello stagno.|Утка плавает в пруду.
-wing|wɪŋ|крыло|The bird moves its wings.|L'uccello muove le ali.|Птица машет крыльями.
-feather|ˈfɛðər|перо|A feather falls from the sky.|Una piuma cade dal cielo.|Перо падает с неба.
-tail|teɪl|хвост|The dog wags its tail.|Il cane scodinzola.|Собака виляет хвостом.
-meal|miːl|приём пищи, трапеза|The main meal is at one p.m.|Il pasto principale è alle tredici.|Основной приём пищи в час дня.
+wolf|wʊlf| волк|The wolf howls at night.|Il lupo urla di notte.|Волк воет ночью.
+bear|bɛər| медведь|The bear sleeps in winter.|L'orso dorme in inverno.|Медведь спит зимой.
+lion|ˈlaɪən| лев|The lion is the king of the animals.|Il leone è il re degli animali.|Лев — царь зверей.
+duck|dʌk| утка|The duck swims in the pond.|Il papero nuota nello stagno.|Утка плавает в пруду.
+wing|wɪŋ| крыло|The bird moves its wings.|L'uccello muove le ali.|Птица машет крыльями.
+feather|ˈfɛðər| перо|A feather falls from the sky.|Una piuma cade dal cielo.|Перо падает с неба.
+tail|teɪl| хвост|The dog wags its tail.|Il cane scodinzola.|Собака виляет хвостом.
+meal|miːl| приём пищи, трапеза|The main meal is at one p.m.|Il pasto principale è alle tredici.|Основной приём пищи в час дня.
 recipe|ˈrɛsəpi|рецепт (кулинарный)|This recipe is easy.|Questa ricetta è semplice.|Этот рецепт простой.
-ingredient|ɪnˈɡriːdiənt|ингредиент|Read the ingredients on the pack.|Leggi gli ingredienti sulla confezione.|Прочитай ингредиенты на упаковке.
-hunger|ˈhʌŋɡər|голод|Hunger is stronger than tiredness.|La fame è più forte della stanchezza.|Голод сильнее усталости.
-thirst|θɜːrst|жажда|Thirst passes with water.|La sete passa con l'acqua.|Жажда проходит с водой.
-menu|ˈmɛnjuː|меню|Read the menu before ordering.|Leggi il menu prima di ordinare.|Прочитай меню перед заказом.
-tip|tɪp|чаевые; совет|Leave a tip for the waiter.|Lascia una mancia al cameriere.|Оставь чаевые официанту.
+ingredient|ɪnˈɡriːdiənt| ингредиент|Read the ingredients on the pack.|Leggi gli ingredienti sulla confezione.|Прочитай ингредиенты на упаковке.
+hunger|ˈhʌŋɡər| голод|Hunger is stronger than tiredness.|La fame è più forte della stanchezza.|Голод сильнее усталости.
+thirst|θɜːrst| жажда|Thirst passes with water.|La sete passa con l'acqua.|Жажда проходит с водой.
+menu|ˈmɛnjuː| меню|Read the menu before ordering.|Leggi il menu prima di ordinare.|Прочитай меню перед заказом.
+tip|tɪp| чаевые|Leave a tip for the waiter.|Lascia una mancia al cameriere.|Оставь чаевые официанту.
 bill|bɪl|счёт (в ресторане)|The waiter brings the bill.|Il cameriere porta il conto.|Официант приносит счёт.
 peel|piːl|чистить (от кожуры)|Peel the apple for the child.|Sbuccia la mela per il bambino.|Почисти яблоко для ребёнка.
-chop|tʃɒp|рубить, нарезать|Chop the onion for the sauce.|Taglia la cipolla per il sugo.|Нарежь лук для соуса.
-stir|stɜːr|размешивать|Stir the soup slowly.|Mescola la zuppa lentamente.|Медленно помешивай суп.
-bake|beɪk|печь|Bake the cake for forty minutes.|Cuoci la torta per quaranta minuti.|Пеки торт сорок минут.
-fry|fraɪ|жарить|Fry the fish in oil.|Friggi il pesce nell'olio.|Жарь рыбу в масле.
-grill|ɡrɪl|жарить на гриле|Grill the meat outside.|Griglia la carne all'aperto.|Жарь мясо на открытом воздухе.
-freeze|friːz|замораживать, замерзать|The water freezes at zero degrees.|L'acqua gela a zero gradi.|Вода замерзает при нуле градусов.
-melt|mɛlt|таять, плавить|The snow melts in the sun.|La neve si scioglie al sole.|Снег тает на солнце.
-smell|smɛl|пахнуть; нюхать|The flowers smell nice.|I fiori profumano.|Цветы приятно пахнут.
-touch|tʌtʃ|трогать, трогаться|Don't touch the hot pan.|Non toccare la padella calda.|Не трогай горячую сковороду.
-borrow|ˈbɒroʊ|занимать, брать взаймы|I borrow a book from the library.|Prendo un libro in prestito in biblioteca.|Я беру книгу в библиотеке.
-earn|ɜːrn|зарабатывать|I earn money with this work.|Guadagno denaro con questo lavoro.|Я зарабатываю деньги этой работой.
-save|seɪv|экономить, сохранять|I save money every month.|Risparmio denaro ogni mese.|Я экономлю деньги каждый месяц.
-pack|pæk|упаковывать; упаковка|I pack the suitcase in the evening.|Faccio la valigia la sera.|Я собираю чемодан вечером.
+chop|tʃɒp| рубить, нарезать|Chop the onion for the sauce.|Taglia la cipolla per il sugo.|Нарежь лук для соуса.
+stir|stɜːr| размешивать|Stir the soup slowly.|Mescola la zuppa lentamente.|Медленно помешивай суп.
+bake|beɪk| печь|Bake the cake for forty minutes.|Cuoci la torta per quaranta minuti.|Пеки торт сорок минут.
+fry|fraɪ| жарить|Fry the fish in oil.|Friggi il pesce nell'olio.|Жарь рыбу в масле.
+grill|ɡrɪl| жарить на гриле|Grill the meat outside.|Griglia la carne all'aperto.|Жарь мясо на открытом воздухе.
+freeze|friːz| замораживать, замерзать|The water freezes at zero degrees.|L'acqua gela a zero gradi.|Вода замерзает при нуле градусов.
+melt|mɛlt| таять, плавить|The snow melts in the sun.|La neve si scioglie al sole.|Снег тает на солнце.
+smell|smɛl| пахнуть; нюхать|The flowers smell nice.|I fiori profumano.|Цветы приятно пахнут.
+touch|tʌtʃ| трогать, трогаться|Don't touch the hot pan.|Non toccare la padella calda.|Не трогай горячую сковороду.
+borrow|ˈbɒroʊ| занимать, брать взаймы|I borrow a book from the library.|Prendo un libro in prestito in biblioteca.|Я беру книгу в библиотеке.
+earn|ɜːrn| зарабатывать|I earn money with this work.|Guadagno denaro con questo lavoro.|Я зарабатываю деньги этой работой.
+save|seɪv| экономить, сохранять|I save money every month.|Risparmio denaro ogni mese.|Я экономлю деньги каждый месяц.
+pack|pæk| упаковывать; упаковка|I pack the suitcase in the evening.|Faccio la valigia la sera.|Я собираю чемодан вечером.
 arrive|əˈraɪv| прибывать|The bus arrives at three p.m.|Il bus arriva alle quindici.|Автобус прибывает в пятнадцать ноль-ноль.
-travel|ˈtrævəl|путешествовать|I travel by train often.|Viaggio spesso in treno.|Я часто путешествую поездом.
-climb|klaɪm|лезть, взбираться|We climb the mountain in summer.|Salammo la montagna d'estate.|Мы поднимаемся на гору летом.
-zoo|zuː|зоопарк|The children visit the zoo.|I bambini visitano lo zoo.|Дети посещают зоопарк.
-circus|ˈsɜːrkəs|цирк|The circus arrives in town.|Il circo arriva in città.|Цирк приезжает в город.
-actress|ˈæktrəs|актриса|The actress is in the new film.|L'attrice è nel film nuovo.|Актриса в новом фильме.
-role|roʊl|роль|The main role is difficult.|La parte principale è difficile.|Главная роль трудная.
-main|meɪn|главный, основной|The main character is Luca.|Il personaggio principale è Luca.|Главный персонаж — Лука.
-hero|ˈhɪəroʊ|герой|The hero of the story is brave.|L'eroe della storia è coraggioso.|Герой истории смелый.
-exciting|ɪkˈsaɪtɪŋ|увлекательный, волнующий|The final scene is exciting.|La scena finale è emozionante.|Финальная сцена волнующая.
-ending|ˈɛndɪŋ|концовка, финал|The ending of the film is happy.|Il finale del film è felice.|Финал фильма счастливый.
-court|kɔːrt|корт, площадка (для игры)|The tennis court is free.|Il campo da tennis è libero.|Теннисный корт свободен.
-player|ˈpleɪər|игрок|The player kicks the ball.|Il giocatore calcia la palla.|Игрок бьёт по мячу.
-kick|kɪk|пинать, бить (ногой)|Kick the ball towards the goal.|Calcia la palla verso la porta.|Пни мяч в сторону ворот.
-fit|fɪt|в хорошей форме; подходить|I am fit thanks to sport.|Sono in forma grazie allo sport.|Я в форме благодаря спорту.
-strength|strɛŋθ|сила|You are very strong!|Hai molta forza!|У тебя большая сила!
-skill|skɪl|навык, умение|Cooking is a useful skill.|Cucinare è un'abilità utile.|Готовить — полезный навык.
-practice|ˈpræktɪs|практика, тренировка|Practice makes perfect.|La pratica rende perfetti.|Практика делает совершенным.
-improve|ɪmˈpruːv|улучшать, улучшаться|I improve every day.|Miglioro ogni giorno.|Я улучшаюсь с каждым днём.
-knowledge|ˈnɒlɪdʒ|знание, знания|Knowledge is important.|La conoscenza è importante.|Знание важно.
-attention|əˈtɛnʃən|внимание|Pay attention to the teacher.|Fai attenzione al maestro.|Обрати внимание на учителя.
-silence|ˈsaɪləns|тишина, молчание|The silence of the forest is nice.|Il silenzio del bosco è bello.|Тишина леса приятна.
+travel|ˈtrævəl| путешествовать|I travel by train often.|Viaggio spesso in treno.|Я часто путешествую поездом.
+climb|klaɪm| лезть, взбираться|We climb the mountain in summer.|Salammo la montagna d'estate.|Мы поднимаемся на гору летом.
+zoo|zuː| зоопарк|The children visit the zoo.|I bambini visitano lo zoo.|Дети посещают зоопарк.
+circus|ˈsɜːrkəs| цирк|The circus arrives in town.|Il circo arriva in città.|Цирк приезжает в город.
+actress|ˈæktrəs| актриса|The actress is in the new film.|L'attrice è nel film nuovo.|Актриса в новом фильме.
+role|roʊl| роль|The main role is difficult.|La parte principale è difficile.|Главная роль трудная.
+main|meɪn| главный, основной|The main character is Luca.|Il personaggio principale è Luca.|Главный персонаж — Лука.
+hero|ˈhɪəroʊ| герой|The hero of the story is brave.|L'eroe della storia è coraggioso.|Герой истории смелый.
+exciting|ɪkˈsaɪtɪŋ| увлекательный, волнующий|The final scene is exciting.|La scena finale è emozionante.|Финальная сцена волнующая.
+ending|ˈɛndɪŋ| концовка, финал|The ending of the film is happy.|Il finale del film è felice.|Финал фильма счастливый.
+court|kɔːrt| корт, площадка (для игры)|The tennis court is free.|Il campo da tennis è libero.|Теннисный корт свободен.
+player|ˈpleɪər| игрок|The player kicks the ball.|Il giocatore calcia la palla.|Игрок бьёт по мячу.
+kick|kɪk| пинать, бить (ногой)|Kick the ball towards the goal.|Calcia la palla verso la porta.|Пни мяч в сторону ворот.
+fit|fɪt| в хорошей форме; подходить|I am fit thanks to sport.|Sono in forma grazie allo sport.|Я в форме благодаря спорту.
+strength|strɛŋθ| сила|You are very strong!|Hai molta forza!|У тебя большая сила!
+skill|skɪl| навык, умение|Cooking is a useful skill.|Cucinare è un'abilità utile.|Готовить — полезный навык.
+practice|ˈpræktɪs| практика, тренировка|Practice makes perfect.|La pratica rende perfetti.|Практика делает совершенным.
+improve|ɪmˈpruːv| улучшать, улучшаться|I improve every day.|Miglioro ogni giorno.|Я улучшаюсь с каждым днём.
+knowledge|ˈnɒlɪdʒ| знание, знания|Knowledge is important.|La conoscenza è importante.|Знание важно.
+attention|əˈtɛnʃən| внимание|Pay attention to the teacher.|Fai attenzione al maestro.|Обрати внимание на учителя.
+silence|ˈsaɪləns| тишина, молчание|The silence of the forest is nice.|Il silenzio del bosco è bello.|Тишина леса приятна.
+  hot|hɑːt| жаркий| It is hot in August.| Fa caldo in agosto.| В августе жарко.
+  more|mɔːr| ещё| Can I have some more tea?| Posso avere ancora un po' di tè?| Можно ещё немного чая?
+  chef|ʃɛf| повар| The cook makes dinner.| Il cuoco prepara la cena.| Повар готовит ужин.
+  rent out|rent aʊt| сдавать в аренду| I rent out a room in the centre.| Affitto una stanza in centro.| Я сдаю комнату в центре.
+  degrees|dɪˈɡriːz| градусы| It is thirty degrees in summer.| Sono trenta gradi in estate.| Летом тридцать градусов.
+  rock|rɒk| камень| The old wall is made of stone.| Il vecchio muro è di pietra.| Старая стена из камня.
+  language|ˈlæŋɡwɪdʒ| язык| Italian is a beautiful language.| L'italiano è una bella lingua.| Итальянский — красивый язык.
+  glove|ɡlʌv| перчатка| In winter I wear gloves.| In inverno porto i guanti.| Зимой я ношу перчатки.
+  sandwich|ˈsænwɪdʒ| бутерброд| I have a sandwich at the bar.| Prendo un panino al bar.| Я беру бутерброд в баре.
+  neighbourhood|ˈneɪbərhʊd| район| My neighbourhood is quiet.| Il mio quartiere è tranquillo.| Мой район тихий.
+  traffic light|ˈtræfɪk laɪt| светофор| The traffic light is red.| Il semaforo è rosso.| Светофор красный.
+  sheet of paper|ʃiːt əv ˈpeɪpər| лист бумаги| A sheet of white paper.| Un foglio di carta bianca.| Лист белой бумаги.
+  second|ˈsɛkənd| секунда; второй| One second, I am coming.| Un secondo, sto arrivando.| Секунду, я иду.
+  photo|ˈfoʊtoʊ| фото| I look at the holiday photos.| Guardo le foto delle vacanze.| Я смотрю фото из отпуска.
+  backpack|ˈbækpæk| рюкзак| My backpack is heavy.| Il mio zaino è pesante.| Мой рюкзак тяжёлый.
+  notebook|ˈnoʊtbʊk| тетрадь| The notebook is in the bag.| Il quaderno è nella borsa.| Тетрадь в сумке.
+  pencil|ˈpɛnsəl| карандаш| The pencil is on the table.| La matita è sul tavolo.| Карандаш на столе.
+  mark|mɑːrk| оценка| The exam mark is high.| Il voto dell'esame è alto.| Оценка за экзамен высокая.
+  homework|ˈhoʊmwɜːrk| домашнее задание| The homework is difficult.| Il compito è difficile.| Домашнее задание трудное.
+  grammar|ˈɡræmər| грамматика| Italian grammar is not easy.| La grammatica italiana non è facile.| Итальянская грамматика непростая.
+  verb|vɜːrb| глагол| This verb is irregular.| Questo verbo è irregolare.| Этот глагол неправильный.
+  dictionary|ˈdɪkʃənɛri| словарь| Look up the word in the dictionary.| Cerca la parola nel dizionario.| Найди слово в словаре.
+  courage|ˈkʌrɪdʒ| смелость| Courage, the end is near!| Coraggio, la fine è vicina!| Смелее, конец близко!
+  patience|ˈpeɪʃəns| терпение| Learning needs patience.| Serve pazienza per imparare.| Для учёбы нужно терпение.
+  fear|fɪər| страх| I am afraid of the dark.| Ho paura del buio.| Я боюсь темноты.
+  anger|ˈæŋɡər| злость| His answer is full of anger.| La sua risposta è piena di rabbia.| Его ответ полон злости.
+  joy|dʒɔɪ| радость| His voice is full of joy.| La sua voce è piena di gioia.| Его голос полон радости.
+  pain|peɪn| боль| The pain passes quickly.| Il dolore passa presto.| Боль быстро проходит.
+  hope|hoʊp| надежда| There is always hope.| C'è sempre speranza.| Всегда есть надежда.
+  wish|wɪʃ| желание| My wish is a journey.| Il mio desiderio è un viaggio.| Моё желание — путешествие.
+  necessity|nəˈsɛsəti| нужда, необходимость| I need help.| Ho bisogno di aiuto.| Мне нужна помощь.
+  aid|eɪd| помощь| Thanks for your help.| Grazie per il tuo aiuto.| Спасибо за помощь.
+  advice|ədˈvaɪs| совет| The doctor's advice is useful.| Il consiglio del dottore è utile.| Совет врача полезен.
+  umbrella|ʌmˈbrɛlə| зонт| I take the umbrella because it rains.| Prendo l'ombrello perché piove.| Я беру зонт, потому что идёт дождь.
+  glasses|ˈɡlɑːsɪz| очки| I need my glasses.| Ho bisogno dei miei occhiali.| Мне нужны мои очки.
+  bag|bæɡ| сумка| The bag is on the chair.| La borsa è sulla sedia.| Сумка на стуле.
+  wallet|ˈwɑːlɪt| кошелёк| The wallet is in the pocket.| Il portafoglio è in tasca.| Кошелёк в кармане.
+  coin|kɔɪn| монета| A coin is on the floor.| Una moneta è sul pavimento.| Монета на полу.
+  picture|ˈpɪktʃər| картина| The picture is above the sofa.| Il quadro è sopra il divano.| Картина над диваном.
+  sofa|soʊfə| диван| The cat sleeps on the sofa.| Il gatto dorme sul divano.| Кот спит на диване.
+  tidy up|ˈtaɪdi ʌp| убирать, приводить в порядок| I arrange the books on the table.| Ordino i libri sul tavolo.| Я расставляю книги на столе.
+  dream of|driːm əv| мечтать (о)| I dream of a journey to Italy.| Sogno un viaggio in Italia.| Я мечтаю о поездке в Италию.
+  reserve|rɪˈzɜːrv| бронировать| I book a table for two.| Prenoto un tavolo per due.| Я бронирую столик на двоих.
+  the same|ðə seɪm| то же самое| I take the same.| Prendo lo stesso.| Я возьму то же самое.
+  quite a lot|kwaɪt ə lɒt| довольно много| I have quite a lot of work today.| Ho parecchio lavoro oggi.| У меня довольно много работы сегодня.
+  performance|pəˈfɔːməns| спектакль| The show starts at nine.| Lo spettacolo inizia alle nove.| Представление начинается в девять.
+  destination|ˌdestɪˈneɪʃən| цель поездки| The destination of the journey is Rome.| La meta del viaggio è Roma.| Цель поездки — Рим.
+  mistakes|mɪˈsteɪks| ошибки (мн.)| Mistakes help to learn.| Gli errori aiutano a imparare.| Ошибки помогают учиться.
+  newsstand|ˈnjuːzstænd| киоск печати| I buy the newspaper at the kiosk.| Compro il giornale all'edicola.| Я покупаю газету в киоске.
+  head cold|hed kəʊld| простуда| I have a bad cold.| Ho un raffreddore forte.| У меня сильная простуда.
+  clinic|ˈklɪnɪk| амбулатория| The outpatient clinic opens at eight.| L'ambulatorio apre alle otto.| Амбулатория открывается в восемь.
+  hairdryer|ˈhɛədraɪər| фен| The hairdryer is in the bathroom.| L'asciugacapelli è nel bagno.| Фен в ванной.
+  tool|tuːl| инструмент| The tool is in the garage.| L'attrezzo è nel garage.| Инструмент в гараже.
+  sitting room|ˈsɪtɪŋ ruːm| салон, гостиная| The television is in the living room.| Il televisore è nel salotto.| Телевизор в гостиной.
+  deadline|ˈdedlaɪn| срок окончания| The deadline is tomorrow.| La scadenza è domani.| Срок завтра.
+  top-up|tɒp ʌp| пополнение| A top-up for the phone.| Una ricarica per il telefono.| Пополнение для телефона.
+  barber|ˈbɑːrbər| цирюльник, парикмахер| The barber shaves the client.| Il barbiere rade il cliente.| Цирюльник бреет клиента.
+  ornament|ˈɔːrnəmənt| украшение| The ornament is made of wood.| L'ornamento è di legno.| Украшение из дерева.
+  easel|ˈiːzəl| мольберт| The easel is in the corner.| Il cavalletto è nell'angolo.| Мольберт в углу.
+  colours|ˈkʌlərz| цвета (мн.)| The colours of the house are warm.| I colori della casa sono caldi.| Цвета дома тёплые.
+  paintbrush|ˈpeɪntbrʌʃ| кисть (для краски)| The brush is in the water.| Il pennello è nell'acqua.| Кисть в воде.
+  a draw|ə drɔː| ничья| The match ends in a draw.| La partita finisce in pareggio.| Матч заканчивается вничью.
+  here is|hɪər ɪz| вот| Here is your book.| Ecco il tuo libro.| Вот твоя книга.
+  precise|prɪˈsaɪs| точный| The timetable is exact.| L'orario è preciso.| Расписание точное.
+  savour|ˈseɪvər| смаковать| I taste the ice cream slowly.| Gusto il gelato lentamente.| Я медленно смакую мороженое.
+  comb one’s hair|kəʊm wʌnz hɛə| причёсываться| I comb my hair in front of the mirror.| Mi pettino davanti allo specchio.| Я причёсываюсь перед зеркалом.
+  function|ˈfʌŋkʃən| функционировать| The computer works well.| Il computer funziona bene.| Компьютер работает хорошо.
+  free of charge|friː əv tʃɑːdʒ| бесплатный| The museum is free on Sundays.| Il museo è gratuito la domenica.| Музей бесплатный по воскресеньям.
+  shopkeeper|ˈʃɒpkiːpər| торговец| The shopkeeper opens at eight.| Il commerciante apre alle otto.| Торговец открывает в восемь.
+  customer|ˈkʌstəmər| клиент| The customer asks for the bill.| Il cliente chiede il conto.| Клиент просит счёт.
+  diploma|dɪˈploʊmə| диплом (школьный)| The diploma is on the wall.| Il diploma è sul muro.| Диплом на стене.
+  university degree|ˌjuːnɪˈvɜːsəti dɪˈɡriː| диплом университета| I take my degree in June.| Prendo la laurea a giugno.| Я получаю диплом в июне.
   `;
 
 WM.DATA_EN = [
@@ -1375,7 +1447,7 @@ tooth|tuːθ|зуб|I brush my teeth three times a day.|Mi lavo i denti tre volt
 tongue|tʌŋ|язык|Italian is not an easy language.|L'italiano non è una lingua facile.|Итальянский — не лёгкий язык.
 neck|nɛk|шея|My neck hurts.|Mi fa male il collo.|У меня болит шея.
 shoulder|ˈʃoʊldər|плечо|I have a bag on my shoulder.|Ho una borsa sulla spalla.|У меня сумка на плече.
-arm|ɑːrm|рука (от плеча)|Raise your right arm!|Alza il braccio destro!|Подними правую руку!
+arm|ɑːrm|рука (от плеча до кисти)|Raise your right arm!|Alza il braccio destro!|Подними правую руку!
 elbow|ˈɛlboʊ|локоть|My right elbow hurts.|Mi fa male il gomito destro.|У меня болит правый локоть.
 wrist|rɪst|запястье|I put my watch on my wrist.|Mi metto l'orologio al polso.|Я надеваю часы на запястье.
 hand|hænd|рука (кисть)|Give me your hand!|Dammi la mano!|Дай мне руку!
@@ -1627,8 +1699,9 @@ budget|ˈbʌdʒɪt|бюджет|The project budget is small.|Il budget del proge
 big|bɪɡ|большой|They have a big house.|Hanno una casa grande.|У них большой дом.
 small|smɔːl|маленький|It is a small and quiet hotel.|È un hotel piccolo e tranquillo.|Это маленький и тихий отель.
 tall|tɔːl|высокий|The mountain is two thousand meters high.|La montagna è alta duemila metri.|Гора высотой две тысячи метров.
-  short|ʃɔːrt| короткий|The trousers are too short.|I pantaloni sono troppo corti.|Брюки слишком короткие.
+low|loʊ|низкий|The wall is low.|Il muro è basso.|Стена низкая.
 long|lɔːŋ|длинный|The skirt is too long.|La gonna è troppo lunga.|Юбка слишком длинная.
+  short|ʃɔːrt| короткий|The trousers are too short.|I pantaloni sono troppo corti.|Брюки слишком короткие.
 new|nuː|новый|The new phone costs little.|Il telefono nuovo costa poco.|Новый телефон стоит дёшево.
 old|oʊld|старый|The old town is old but beautiful.|Il centro storico è vecchio ma bello.|Старый город старый, но красивый.
 young|jʌŋ|молодой|The new teacher is very young.|Il nuovo insegnante è molto giovane.|Новый учитель очень молодой.
@@ -1664,7 +1737,6 @@ hungry|ˈhʌŋɡri|голодный|The children are hungry after school.|I bamb
 kind|kaɪnd| добрый|The hotel staff is very kind.|Il personale dell'albergo è molto gentile.|Персонал отеля очень добрый.
 nice|naɪs| приятный|Your friend is very nice.|Il tuo amico è molto simpatico.|Твой друг очень приятный.
 ready|ˈrɛdi|готовый|Dinner is ready!|La cena è pronta!|Ужин готов!
-  low|loʊ| низкий| The wall is low.| Il muro è basso.| Стена низкая.
   `,
   },
   {

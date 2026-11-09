@@ -1214,3 +1214,90 @@ span.g-check.done {
   .auth-card { padding: 28px 20px; }
   .results-card { padding: 32px 20px; }
 }
+
+/* ---------- редактор картинок ---------- */
+
+.ed-head { margin-bottom: 16px; }
+.ed-head-row { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+.ed-head-row h3 { font-size: 18px; }
+.ed-head .hint { margin-bottom: 12px; }
+.ed-head input[type="search"] { width: 100%; }
+.ed-empty { padding: 24px; }
+
+.ed-flag-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: var(--text-2);
+  margin: 20px 0 10px;
+}
+.ed-flag-head:first-child { margin-top: 0; }
+
+/* раскрываемый блок группы каталога */
+.ed-g-block { margin-bottom: 8px; }
+.ed-g-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  text-align: left;
+  transition: background var(--dur) var(--ease);
+}
+.ed-g-head:hover { background: var(--surface-2); }
+.ed-g-arrow { color: var(--text-2); transition: transform var(--dur) var(--ease); flex-shrink: 0; }
+.ed-g-block.open .ed-g-arrow { transform: rotate(90deg); }
+.ed-g-icon { font-size: 20px; flex-shrink: 0; }
+.ed-g-name { font-weight: 700; font-size: 15px; flex: 1; min-width: 0; }
+.ed-g-count { font-size: 12.5px; color: var(--text-2); flex-shrink: 0; }
+.ed-g-body { margin: 6px 0 14px; }
+.ed-flags { letter-spacing: 2px; }
+
+.ed-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 10px;
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  margin-bottom: 6px;
+}
+.ed-img { flex-shrink: 0; }
+.ed-img .ed-img-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  background: var(--surface-2);
+}
+.ed-img .ed-img-box img { width: 100%; height: 100%; object-fit: cover; }
+
+.ed-info { flex: 1; min-width: 0; }
+.ed-word {
+  font-size: 14.5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ed-tr { color: var(--text-2); font-weight: 400; }
+.ed-state { font-size: 12px; color: var(--text-2); opacity: .8; }
+
+.ed-actions { display: flex; gap: 2px; flex-shrink: 0; }
+
+@media (max-width: 680px) {
+  .ed-row { flex-wrap: wrap; }
+  .ed-actions { width: 100%; padding-left: 60px; }
+}

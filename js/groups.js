@@ -87,6 +87,28 @@ WM.groups = (() => {
     try { localStorage.setItem(IMG_KEY, JSON.stringify(store)); } catch { /* переполнение — не критично */ }
   }
 
+  // правка кеша извне (редактор картинок): url — пишем в localStorage,
+  // null/своя base64 — пометка «не автокартинка» только в памяти сессии
+  function updateImageCache(lang, word, image) {
+    const k = `${lang}:${word.toLowerCase()}`;
+    const store = imgCacheRead();
+    if (image?.type === 'url') {
+      imgMem.set(k, image);
+      store[k] = image;
+      const keys = Object.keys(store);
+      if (keys.length > 800) delete store[keys[0]];
+    } else {
+      imgMem.set(k, { type: 'none' });
+      delete store[k];
+    }
+    try { localStorage.setItem(IMG_KEY, JSON.stringify(store)); } catch { /* переполнение — не критично */ }
+  }
+
+  // чтение кеша извне (редактор картинок): память сессии → localStorage
+  function lookupImage(lang, word) {
+    return cachedImage(lang, word);
+  }
+
   function paintImageIntoRow(lang, word) {
     const val = imgMem.get(`${lang}:${word.toLowerCase()}`);
     if (!val || val.type !== 'url') return;
@@ -423,12 +445,16 @@ WM.groups = (() => {
   async function addWords(group, words) {
     const U = WM.app.state.uid;
     const before = existingKeys();
-    const payload = words.map(w => ({
-      lang: group.lang, word: w.word, transcription: w.transcription || '',
-      translation: w.translation, examples: w.examples,
-      tags: (w.tags && w.tags.length) ? w.tags : [group.tag],
-      image: w.image || null,
-    }));
+    const payload = words.map(w => {
+      // картинка из набора, иначе — заранее настроенная в редакторе (кеш групп)
+      const cached = cachedImage(group.lang, w.word);
+      return {
+        lang: group.lang, word: w.word, transcription: w.transcription || '',
+        translation: w.translation, examples: w.examples,
+        tags: (w.tags && w.tags.length) ? w.tags : [group.tag],
+        image: w.image || (cached?.type === 'url' ? cached : null),
+      };
+    });
     const { added, skipped } = WM.storage.importWords(U, payload);
     WM.app.toast(`Добавлено: ${added}${skipped ? ` · уже были в словаре: ${skipped}` : ''}`);
 
@@ -473,5 +499,5 @@ WM.groups = (() => {
     applyRoute(); // открываем набор, если hash уже в URL
   }
 
-  return { init, render };
+  return { init, render, updateImageCache, lookupImage };
 })();

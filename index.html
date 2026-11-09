@@ -8,20 +8,21 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=23">
+  <link rel="stylesheet" href="css/style.css?v=24">
   <!-- v=2: при изменении js/css повышайте версию — это сбрасывает кеш браузера -->
-  <script src="js/icons.js?v=4" defer></script>
+  <script src="js/icons.js?v=5" defer></script>
   <script src="js/storage.js?v=9" defer></script>
   <script src="js/tts.js?v=5" defer></script>
-  <script src="js/images.js?v=3" defer></script>
+  <script src="js/images.js?v=4" defer></script>
   <script src="js/io.js?v=3" defer></script>
-  <script src="js/data-it.js?v=6" defer></script>
-  <script src="js/data-en.js?v=6" defer></script>
+  <script src="js/data-it.js?v=7" defer></script>
+  <script src="js/data-en.js?v=7" defer></script>
   <script src="js/groups-data.js?v=7" defer></script>
   <script src="js/words.js?v=12" defer></script>
   <script src="js/games.js?v=6" defer></script>
-  <script src="js/groups.js?v=18" defer></script>
-  <script src="js/app.js?v=8" defer></script>
+  <script src="js/groups.js?v=19" defer></script>
+  <script src="js/editor.js?v=4" defer></script>
+  <script src="js/app.js?v=9" defer></script>
 </head>
 <body>
 
@@ -87,6 +88,7 @@
           <button class="user-chip" id="btn-profile" aria-label="Настройки профиля" title="Настройки профиля"></button>
           <div class="profile-menu hidden" id="profile-menu">
             <button class="profile-menu-item" id="menu-stats"><span class="pm-ic"></span>Статистика</button>
+            <button class="profile-menu-item" id="menu-images"><span class="pm-ic"></span>Редактор картинок</button>
             <button class="profile-menu-item" id="menu-theme"></button>
             <div class="profile-menu-sep"></div>
             <button class="profile-menu-item profile-menu-exit" id="menu-logout"><span class="pm-ic"></span>Выйти из профиля</button>
@@ -123,6 +125,9 @@
       </section>
 
       <section id="page-groups" class="hidden"></section>
+
+      <!-- ======== РЕДАКТОР КАРТИНОК ======== -->
+      <section id="page-images" class="hidden"></section>
     </main>
   </div>
 

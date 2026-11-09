@@ -27,25 +27,31 @@ WM.images = (() => {
     return '📘';
   }
 
-  // ищет первую картинку статьи по слову в соответствующей Википедии
-  async function fetchImage(word, lang = 'it') {
+  // все варианты картинок по слову (для редактора «Другая картинка»):
+  // generator=search отдаёт до limit статей; offset листает выдачу дальше
+  async function fetchImageList(word, lang = 'it', { limit = 8, offset = 0 } = {}) {
     const host = WIKI[lang] || WIKI.en;
     const url = `https://${host}/w/api.php?action=query&format=json&origin=*` +
-      `&generator=search&gsrsearch=${encodeURIComponent(word)}&gsrlimit=3` +
+      `&generator=search&gsrsearch=${encodeURIComponent(word)}&gsrlimit=${limit}` +
+      (offset > 0 ? `&gsroffset=${offset}` : '') +
       `&prop=pageimages&piprop=thumbnail&pithumbsize=480`;
     try {
       const ctrl = new AbortController();
       const timer = setTimeout(() => ctrl.abort(), 6000);
       const res = await fetch(url, { signal: ctrl.signal });
       clearTimeout(timer);
-      if (!res.ok) return null;
+      if (!res.ok) return [];
       const data = await res.json();
       const pages = data?.query?.pages ? Object.values(data.query.pages) : [];
-      for (const p of pages) {
-        if (p.thumbnail?.source) return p.thumbnail.source;
-      }
+      return pages.map(p => p.thumbnail?.source).filter(Boolean);
     } catch { /* сеть недоступна или ничего не нашли */ }
-    return null;
+    return [];
+  }
+
+  // ищет первую картинку статьи по слову в соответствующей Википедии
+  async function fetchImage(word, lang = 'it') {
+    const list = await fetchImageList(word, lang, { limit: 3 });
+    return list[0] ?? null;
   }
 
   // HTML картинки для карточки: base64 → url (с фолбэком) → эмодзи
@@ -82,5 +88,5 @@ WM.images = (() => {
     });
   }
 
-  return { emojiForWord, fetchImage, renderPreview, imageToBase64 };
+  return { emojiForWord, fetchImage, fetchImageList, renderPreview, imageToBase64 };
 })();

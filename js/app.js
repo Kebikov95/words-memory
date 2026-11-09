@@ -172,13 +172,25 @@ WM.app = (() => {
       e.target.value = '';
     });
 
-    // меню профиля: статистика, тема, выход
+    // меню профиля: статистика, редактор картинок, тема, выход.
+    // Открывается кликом и при наведении на аватар (на телефоне — первым касанием),
+    // поэтому клик по аватару только открывает, а закрывают клик мимо / Esc / увод мыши
     const menu = $('#profile-menu');
     const closeMenu = () => menu.classList.add('hidden');
-    $('#btn-profile').addEventListener('click', e => {
-      e.stopPropagation();
-      menu.classList.toggle('hidden');
-    });
+    let menuHideTimer = null;
+    const openMenu = () => {
+      clearTimeout(menuHideTimer);
+      menu.classList.remove('hidden');
+    };
+    const scheduleMenuHide = () => {
+      clearTimeout(menuHideTimer);
+      menuHideTimer = setTimeout(closeMenu, 400);
+    };
+    $('#btn-profile').addEventListener('click', e => { e.stopPropagation(); openMenu(); });
+    $('#btn-profile').addEventListener('mouseenter', openMenu);
+    $('#btn-profile').addEventListener('mouseleave', scheduleMenuHide);
+    menu.addEventListener('mouseenter', openMenu);
+    menu.addEventListener('mouseleave', scheduleMenuHide);
     document.addEventListener('click', e => {
       if (!menu.classList.contains('hidden') &&
           !menu.contains(e.target) && !$('#btn-profile').contains(e.target)) closeMenu();
@@ -187,6 +199,8 @@ WM.app = (() => {
 
     $('#menu-stats .pm-ic').innerHTML = ICONS.chart;
     $('#menu-stats').addEventListener('click', () => { closeMenu(); openStats(); });
+    $('#menu-images .pm-ic').innerHTML = ICONS.image;
+    $('#menu-images').addEventListener('click', () => { closeMenu(); WM.editor.open(); });
     $('#menu-logout .pm-ic').innerHTML = ICONS.logout;
     $('#menu-logout').addEventListener('click', async () => {
       closeMenu();
@@ -223,10 +237,15 @@ WM.app = (() => {
   function showPage(page) {
     $('#page-words').classList.toggle('hidden', page !== 'words');
     $('#page-groups').classList.toggle('hidden', page !== 'groups');
+    const pageImages = $('#page-images');
+    if (pageImages) pageImages.classList.toggle('hidden', page !== 'images');
     document.querySelector('.tabs').style.display = page === 'groups' ? 'none' : '';
     document.querySelectorAll('.page-tab').forEach(t =>
       t.classList.toggle('active', t.dataset.page === page));
+    $('#page-images') && $('#page-images').classList.toggle('hidden', page !== 'images');
+    document.querySelector('.tabs').style.display = page === 'words' ? '' : 'none';
     if (page === 'groups') WM.groups.render();
+    else if (page === 'images') WM.editor.render();
     else WM.words.render();
   }
 
@@ -269,7 +288,7 @@ WM.app = (() => {
     else renderAuth();
   }
 
-  return { state, init, showView, toast, confirm };
+  return { state, init, showView, showPage, toast, confirm };
 })();
 
 WM.app.init();
