@@ -29,11 +29,10 @@ test('каталог: общие группы первыми, затем 🇬�
   expect(common!.y).toBeLessThan(enHead!.y);
   expect(enHead!.y).toBeLessThan(itHead!.y);
 
-  // пара с общими словами и без («Пословицы и поговорки») — две версии
-  // под флагами, по блоку в английской и итальянской секциях;
-  // «Цвета» — зеркальные списки переводов: одна общая группа
+  // блок = файл data/*.json: «Цвета» и «Пословицы» содержат слова обоих
+  // языков и потому общие — по одному блоку с флагами 🇮🇹🇬🇧
   await expect(page.locator('.ed-g-name', { hasText: 'Цвета' })).toHaveCount(1);
-  await expect(page.locator('.ed-g-name', { hasText: 'Пословицы' })).toHaveCount(2);
+  await expect(page.locator('.ed-g-name', { hasText: 'Пословицы' })).toHaveCount(1);
 
   // общая группа «Еда» свёрнута по умолчанию и раскрывается кликом
   const food = page.locator('.ed-g-block', { hasText: 'Еда' });
@@ -87,8 +86,9 @@ test('«Убрать» снимает картинку и из словаря, �
   })).toBe(true);
 
   const cache = await page.evaluate(() => JSON.parse(localStorage.getItem('wm_group_images')!));
-  expect(cache['it:pasta']).toBeUndefined();
-  expect(cache['en:pasta']).toBeUndefined();
+  // «Убрать» пишет постоянную пометку «нет картинки» — она перекрывает img из data/*.json
+  expect(cache['it:pasta']).toEqual({ type: 'none' });
+  expect(cache['en:pasta']).toEqual({ type: 'none' });
 
   // превью снова эмодзи-заглушка (у «pasta» — 🍝 по тегу «еда»)
   await expect(food.locator('.ed-row[data-w="pasta"] .ed-img img')).toHaveCount(0);

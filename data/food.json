@@ -1,0 +1,1344 @@
+{
+  "_meta": {
+    "id": "food",
+    "name": "Еда",
+    "icon": "🍝",
+    "tag": "еда",
+    "desc": "Продукты, блюда и то, чем едят.",
+    "id-en": "food-en"
+  },
+  "паста, макароны": {
+    "en": {
+      "word": "pasta",
+      "transcription": "ˈpɑːstə",
+      "examples": [
+        {
+          "text": "I eat pasta with tomato sauce.",
+          "translation": "Я ем пасту с помидорами."
+        }
+      ]
+    },
+    "it": {
+      "word": "pasta",
+      "transcription": "ˈpasta",
+      "examples": [
+        {
+          "text": "Mangio la pasta al pomodoro.",
+          "translation": "Я ем пасту с помидорами."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/%28Pasta%29_by_David_Adam_Kess_%28pic.2%29.jpg/500px-%28Pasta%29_by_David_Adam_Kess_%28pic.2%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "пицца": {
+    "en": {
+      "word": "pizza",
+      "transcription": "ˈpiːtsə",
+      "examples": [
+        {
+          "text": "Let's order a pizza tonight.",
+          "translation": "Закажем пиццу сегодня вечером."
+        }
+      ]
+    },
+    "it": {
+      "word": "pizza",
+      "transcription": "ˈpittsa",
+      "examples": [
+        {
+          "text": "Ordiniamo una pizza stasera.",
+          "translation": "Закажем пиццу сегодня вечером."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg/500px-Eq_it-na_pizza-margherita_sep2005_sml.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "хлеб": {
+    "en": {
+      "word": "bread",
+      "transcription": "brɛd",
+      "examples": [
+        {
+          "text": "The bread is fresh.",
+          "translation": "Хлеб свежий."
+        }
+      ]
+    },
+    "it": {
+      "word": "pane",
+      "transcription": "ˈpaːne",
+      "examples": [
+        {
+          "text": "Il pane è fresco.",
+          "translation": "Хлеб свежий."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Assorted_bread.jpg/500px-Assorted_bread.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "вода": {
+    "en": {
+      "word": "water",
+      "transcription": "ˈwɔːtər",
+      "examples": [
+        {
+          "text": "I drink two liters of water a day.",
+          "translation": "Я пью два литра воды в день."
+        }
+      ]
+    },
+    "it": {
+      "word": "acqua",
+      "transcription": "ˈakkwa",
+      "examples": [
+        {
+          "text": "Bevo due litri d'acqua al giorno.",
+          "translation": "Я пью два литра воды в день."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Water_drop_001.jpg/500px-Water_drop_001.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "вино": {
+    "en": {
+      "word": "wine",
+      "transcription": "waɪn",
+      "examples": [
+        {
+          "text": "We are drinking a glass of wine.",
+          "translation": "Мы пьём бокал вина."
+        }
+      ]
+    },
+    "it": {
+      "word": "vino",
+      "transcription": "ˈviːno",
+      "examples": [
+        {
+          "text": "Beviamo un bicchiere di vino.",
+          "translation": "Мы пьём бокал вина."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Glass_of_Red_Wine_with_a_bottle_of_Red_Wine_-_Evan_Swigart.jpg/500px-Glass_of_Red_Wine_with_a_bottle_of_Red_Wine_-_Evan_Swigart.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "пиво": {
+    "en": {
+      "word": "beer",
+      "transcription": "bɪr",
+      "examples": [
+        {
+          "text": "A cold beer, please.",
+          "translation": "Холодное пиво, пожалуйста."
+        }
+      ]
+    },
+    "it": {
+      "word": "birra",
+      "transcription": "ˈbirra",
+      "examples": [
+        {
+          "text": "Una birra fredda, per favore.",
+          "translation": "Холодное пиво, пожалуйста."
+        }
+      ]
+    },
+    "img": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Export_hell_seidel_steiner.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  "кофе": {
+    "en": {
+      "word": "coffee",
+      "transcription": "ˈkɔːfi",
+      "examples": [
+        {
+          "text": "The coffee is too strong.",
+          "translation": "Кофе слишком крепкий."
+        }
+      ]
+    },
+    "it": {
+      "word": "caffè",
+      "transcription": "kafˈfɛ",
+      "examples": [
+        {
+          "text": "Il caffè è troppo forte.",
+          "translation": "Кофе слишком крепкий."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Cup_of_coffee_%28Serbian_cuisine%2C_Grand_kava%29.jpg/500px-Cup_of_coffee_%28Serbian_cuisine%2C_Grand_kava%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "молоко": {
+    "en": {
+      "word": "milk",
+      "transcription": "mɪlk",
+      "examples": [
+        {
+          "text": "The milk is in the fridge.",
+          "translation": "Молоко в холодильнике."
+        }
+      ]
+    },
+    "it": {
+      "word": "latte",
+      "transcription": "ˈlatte",
+      "examples": [
+        {
+          "text": "Il latte è nel frigorifero.",
+          "translation": "Молоко в холодильнике."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Milk_glass.jpg/500px-Milk_glass.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "сыр": {
+    "en": {
+      "word": "cheese",
+      "transcription": "tʃiːz",
+      "examples": [
+        {
+          "text": "The cheese is on the plate.",
+          "translation": "Сыр на тарелке."
+        }
+      ]
+    },
+    "it": {
+      "word": "formaggio",
+      "transcription": "forˈmaddʒo",
+      "examples": [
+        {
+          "text": "Il formaggio è sul piatto.",
+          "translation": "Сыр на тарелке."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Hartkaese_HardCheeses.jpg/500px-Hartkaese_HardCheeses.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "мясо": {
+    "en": {
+      "word": "meat",
+      "transcription": "miːt",
+      "examples": [
+        {
+          "text": "This meat is very good.",
+          "translation": "Это мясо очень вкусное."
+        }
+      ]
+    },
+    "it": {
+      "word": "carne",
+      "transcription": "ˈkarne",
+      "examples": [
+        {
+          "text": "Questa carne è molto buona.",
+          "translation": "Это мясо очень вкусное."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/FoodMeat.jpg/500px-FoodMeat.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "курица": {
+    "en": {
+      "word": "chicken",
+      "transcription": "ˈtʃɪkɪn",
+      "examples": [
+        {
+          "text": "We eat chicken on Sundays.",
+          "translation": "Мы едим курицу по воскресеньям."
+        }
+      ]
+    },
+    "it": {
+      "word": "pollo",
+      "transcription": "ˈpɔllo",
+      "examples": [
+        {
+          "text": "Mangiamo il pollo la domenica.",
+          "translation": "Мы едим курицу по воскресеньям."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Male_and_female_chicken_sitting_together.jpg/500px-Male_and_female_chicken_sitting_together.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "рыба": {
+    "en": {
+      "word": "fish",
+      "transcription": "fɪʃ",
+      "examples": [
+        {
+          "text": "Do you want fish or meat?",
+          "translation": "Хочешь рыбу или мясо?"
+        }
+      ]
+    },
+    "it": {
+      "word": "pesce",
+      "transcription": "ˈpeʃʃe",
+      "examples": [
+        {
+          "text": "Vuoi pesce o carne?",
+          "translation": "Хочешь рыбу или мясо?"
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Fish_diversity.jpg/500px-Fish_diversity.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "ветчина": {
+    "en": {
+      "word": "ham",
+      "transcription": "hæm",
+      "examples": [
+        {
+          "text": "The sandwich is with ham and cheese.",
+          "translation": "Бутерброд с ветчиной и сыром."
+        }
+      ]
+    },
+    "it": {
+      "word": "prosciutto",
+      "transcription": "proʃˈʃutto",
+      "examples": [
+        {
+          "text": "Il panino è con prosciutto e formaggio.",
+          "translation": "Бутерброд с ветчиной и сыром."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/d/d8/Prosciutto%2C_prosciutto.jpg/500px-Prosciutto%2C_prosciutto.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "рис": {
+    "en": {
+      "word": "rice",
+      "transcription": "raɪs",
+      "examples": [
+        {
+          "text": "The rice is not ready yet.",
+          "translation": "Рис ещё не готов."
+        }
+      ]
+    },
+    "it": {
+      "word": "riso",
+      "transcription": "ˈriːzo",
+      "examples": [
+        {
+          "text": "Il riso non è pronto.",
+          "translation": "Рис ещё не готов."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/20201102.Hengnan.Hybrid_rice_Sanyou-1.6.jpg/500px-20201102.Hengnan.Hybrid_rice_Sanyou-1.6.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "суп": {
+    "en": {
+      "word": "soup",
+      "transcription": "suːp",
+      "examples": [
+        {
+          "text": "The soup is hot.",
+          "translation": "Суп горячий."
+        }
+      ]
+    },
+    "it": {
+      "word": "zuppa",
+      "transcription": "ˈtsuppa",
+      "examples": [
+        {
+          "text": "La zuppa è calda.",
+          "translation": "Суп горячий."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/1_Zuppa_inglese.jpg/500px-1_Zuppa_inglese.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "салат": {
+    "en": {
+      "word": "salad",
+      "transcription": "ˈsæləd",
+      "examples": [
+        {
+          "text": "A mixed salad, please.",
+          "translation": "Смешанный салат, пожалуйста."
+        }
+      ]
+    },
+    "it": {
+      "word": "insalata",
+      "transcription": "insaˈlaːta",
+      "examples": [
+        {
+          "text": "Un'insalata mista, per favore.",
+          "translation": "Смешанный салат, пожалуйста."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Mackerel_and_apple_salad_%2817120194506%29.jpg/500px-Mackerel_and_apple_salad_%2817120194506%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "помидор": {
+    "en": {
+      "word": "tomato",
+      "transcription": "təˈmeɪtoʊ",
+      "examples": [
+        {
+          "text": "I put tomato in the salad.",
+          "translation": "Я кладу помидор в салат."
+        }
+      ]
+    },
+    "it": {
+      "word": "pomodoro",
+      "transcription": "pomoˈdoːro",
+      "examples": [
+        {
+          "text": "Metto il pomodoro nell'insalata.",
+          "translation": "Я кладу помидор в салат."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Kwiat_pomidora.Solanum_lycopersicum._01.jpg/500px-Kwiat_pomidora.Solanum_lycopersicum._01.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "моцарелла": {
+    "en": {
+      "word": "mozzarella",
+      "transcription": "ˌmɒtsəˈrɛlə",
+      "examples": [
+        {
+          "text": "I love pizza with mozzarella.",
+          "translation": "Я люблю пиццу с моцареллой."
+        }
+      ]
+    },
+    "it": {
+      "word": "mozzarella",
+      "transcription": "mottsaˈrɛlla",
+      "examples": [
+        {
+          "text": "La pizza è con mozzarella.",
+          "translation": "Пицца с моцареллой."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Mozzarella_di_bufala3.jpg/500px-Mozzarella_di_bufala3.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "оливковое масло": {
+    "en": {
+      "word": "olive oil",
+      "transcription": "ˈɒlɪv ɔɪl",
+      "examples": [
+        {
+          "text": "I cook with olive oil.",
+          "translation": "Я готовлю на оливковом масле."
+        }
+      ]
+    },
+    "it": {
+      "word": "olio",
+      "transcription": "ˈɔːljo",
+      "examples": [
+        {
+          "text": "Nell'insalata metto olio e sale.",
+          "translation": "В салат я кладу масло и соль."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Many_types_of_Oils.jpg/500px-Many_types_of_Oils.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "перец": {
+    "en": {
+      "word": "pepper",
+      "transcription": "ˈpɛpər",
+      "examples": [
+        {
+          "text": "The pepper is too spicy.",
+          "translation": "Перец слишком острый."
+        }
+      ]
+    },
+    "it": {
+      "word": "pepe",
+      "transcription": "ˈpeːpe",
+      "examples": [
+        {
+          "text": "Il pepe è troppo piccante.",
+          "translation": "Перец слишком острый."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Pfeffer-Gew%C3%BCrz.jpg/500px-Pfeffer-Gew%C3%BCrz.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "яйцо": {
+    "en": {
+      "word": "egg",
+      "transcription": "ɛɡ",
+      "examples": [
+        {
+          "text": "The eggs are in the fridge.",
+          "translation": "Яйца в холодильнике."
+        }
+      ]
+    },
+    "it": {
+      "word": "uovo",
+      "transcription": "ˈwɔːvo",
+      "examples": [
+        {
+          "text": "Le uova sono in frigorifero.",
+          "translation": "Яйца в холодильнике."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Adolphe_Millot_oeufs-fixed.jpg/500px-Adolphe_Millot_oeufs-fixed.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "масло (сливочное)": {
+    "en": {
+      "word": "butter",
+      "transcription": "ˈbʌtər",
+      "examples": [
+        {
+          "text": "We put butter on bread.",
+          "translation": "Мы кладём масло на хлеб."
+        }
+      ]
+    },
+    "it": {
+      "word": "burro",
+      "transcription": "ˈburro",
+      "examples": [
+        {
+          "text": "Mettiamo il burro sul pane.",
+          "translation": "Мы кладём масло на хлеб."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/2023_Mas%C5%82o_w_maselniczce.jpg/500px-2023_Mas%C5%82o_w_maselniczce.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "фрукты": {
+    "en": {
+      "word": "fruit",
+      "transcription": "fruːt",
+      "examples": [
+        {
+          "text": "The fruit is on the table.",
+          "translation": "Фрукты на столе."
+        }
+      ]
+    },
+    "it": {
+      "word": "frutta",
+      "transcription": "ˈfrutta",
+      "examples": [
+        {
+          "text": "La frutta è sul tavolo.",
+          "translation": "Фрукты на столе."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Fruit_Stall_in_Barcelona_Market.jpg/500px-Fruit_Stall_in_Barcelona_Market.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "апельсин": {
+    "en": {
+      "word": "orange",
+      "transcription": "ˈɔːrɪndʒ",
+      "examples": [
+        {
+          "text": "I drink orange juice.",
+          "translation": "Я пью апельсиновый сок."
+        }
+      ]
+    },
+    "it": {
+      "word": "arancia",
+      "transcription": "aˈrantʃa",
+      "examples": [
+        {
+          "text": "Bevo un succo d'arancia.",
+          "translation": "Я пью апельсиновый сок."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Histoire_et_culture_des_orangers_A._Risso_et_A._Poiteau._--_Paris_Henri_Plon%2C_Editeur%2C_1872.jpg/500px-Histoire_et_culture_des_orangers_A._Risso_et_A._Poiteau._--_Paris_Henri_Plon%2C_Editeur%2C_1872.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "банан": {
+    "en": {
+      "word": "banana",
+      "transcription": "bəˈnænə",
+      "examples": [
+        {
+          "text": "The monkey eats a banana.",
+          "translation": "Обезьяна ест банан."
+        }
+      ]
+    },
+    "it": {
+      "word": "banana",
+      "transcription": "baˈnaːna",
+      "examples": [
+        {
+          "text": "La scimmia mangia una banana.",
+          "translation": "Обезьяна ест банан."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Musa_paradisiaca_Blanco1.88.png/500px-Musa_paradisiaca_Blanco1.88.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "лимон": {
+    "en": {
+      "word": "lemon",
+      "transcription": "ˈlɛmən",
+      "examples": [
+        {
+          "text": "Tea with lemon, please.",
+          "translation": "Чай с лимоном, пожалуйста."
+        }
+      ]
+    },
+    "it": {
+      "word": "limone",
+      "transcription": "liˈmoːne",
+      "examples": [
+        {
+          "text": "Il tè con limone, per favore.",
+          "translation": "Чай с лимоном, пожалуйста."
+        }
+      ]
+    },
+    "img": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Citrus_x_limon_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-041.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  "мороженое": {
+    "en": {
+      "word": "ice cream",
+      "transcription": "ˌaɪs ˈkriːm",
+      "examples": [
+        {
+          "text": "Two ice creams, please!",
+          "translation": "Два мороженых, пожалуйста!"
+        }
+      ]
+    },
+    "it": {
+      "word": "gelato",
+      "transcription": "dʒeˈlaːto",
+      "examples": [
+        {
+          "text": "Due gelati, per favore!",
+          "translation": "Два мороженых, пожалуйста!"
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Gelato_ice_cream.jpg/500px-Gelato_ice_cream.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "десерт": {
+    "en": {
+      "word": "dessert",
+      "transcription": "dɪˈzɜːrt",
+      "examples": [
+        {
+          "text": "I don't eat sweets in the evening.",
+          "translation": "Я не ем сладкое вечером."
+        }
+      ]
+    },
+    "it": {
+      "word": "dolce",
+      "transcription": "ˈdoltʃe",
+      "examples": [
+        {
+          "text": "Non mangio dolci la sera.",
+          "translation": "Я не ем сладкое вечером."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Desserts.jpg/500px-Desserts.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "торт": {
+    "en": {
+      "word": "cake",
+      "transcription": "keɪk",
+      "examples": [
+        {
+          "text": "This cake is homemade.",
+          "translation": "Этот торт домашний."
+        }
+      ]
+    },
+    "it": {
+      "word": "torta",
+      "transcription": "ˈtorta",
+      "examples": [
+        {
+          "text": "Questa torta è fatta in casa.",
+          "translation": "Этот торт домашний."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Birthday_cake.jpg/500px-Birthday_cake.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "лёд": {
+    "en": {
+      "word": "ice",
+      "transcription": "aɪs",
+      "examples": [
+        {
+          "text": "I want water with ice.",
+          "translation": "Я хочу воду со льдом."
+        }
+      ]
+    },
+    "it": {
+      "word": "ghiaccio",
+      "transcription": "ˈɡjattʃo",
+      "examples": [
+        {
+          "text": "Il ghiaccio è freddo.",
+          "translation": "Лёд холодный."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/IceBlockNearJoekullsarlon.jpg/500px-IceBlockNearJoekullsarlon.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "тарелка": {
+    "en": {
+      "word": "plate",
+      "transcription": "pleɪt",
+      "examples": [
+        {
+          "text": "The plate is clean.",
+          "translation": "Тарелка чистая."
+        }
+      ]
+    },
+    "it": {
+      "word": "piatto",
+      "transcription": "ˈpjatto",
+      "examples": [
+        {
+          "text": "Qual è il piatto del giorno?",
+          "translation": "Какое блюдо дня?"
+        }
+      ]
+    },
+    "img": ""
+  },
+  "вилка": {
+    "en": {
+      "word": "fork",
+      "transcription": "fɔːrk",
+      "examples": [
+        {
+          "text": "The fork is on the left.",
+          "translation": "Вилка слева."
+        }
+      ]
+    },
+    "it": {
+      "word": "forchetta",
+      "transcription": "forˈketta",
+      "examples": [
+        {
+          "text": "La forchetta è a sinistra.",
+          "translation": "Вилка слева."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Tenedor_%285227350230%29.jpg/500px-Tenedor_%285227350230%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "ложка": {
+    "en": {
+      "word": "spoon",
+      "transcription": "spuːn",
+      "examples": [
+        {
+          "text": "Can you give me a spoon?",
+          "translation": "Дашь мне ложку?"
+        }
+      ]
+    },
+    "it": {
+      "word": "cucchiaio",
+      "transcription": "kukˈkjaːjo",
+      "examples": [
+        {
+          "text": "Mi dai un cucchiaio?",
+          "translation": "Дашь мне ложку?"
+        }
+      ]
+    },
+    "img": "https://upload.wikimedia.org/wikipedia/commons/d/de/Silver_spoon.jpeg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  "нож": {
+    "en": {
+      "word": "knife",
+      "transcription": "naɪf",
+      "examples": [
+        {
+          "text": "I cut the meat with the knife.",
+          "translation": "Я режу мясо ножом."
+        }
+      ]
+    },
+    "it": {
+      "word": "coltello",
+      "transcription": "kolˈtɛllo",
+      "examples": [
+        {
+          "text": "Taglio la carne col coltello.",
+          "translation": "Я режу мясо ножом."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Coltelli3.jpg/500px-Coltelli3.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "стакан": {
+    "en": {
+      "word": "glass",
+      "transcription": "ɡlæs",
+      "examples": [
+        {
+          "text": "I'd like a glass of wine.",
+          "translation": "Я хотел бы бокал вина."
+        }
+      ]
+    },
+    "it": {
+      "word": "bicchiere",
+      "transcription": "bikˈkjɛːre",
+      "examples": [
+        {
+          "text": "Vorrei un bicchiere di vino.",
+          "translation": "Я хотел бы бокал вина."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Bicchiere_mezzo_pieno.jpg/500px-Bicchiere_mezzo_pieno.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "чашка": {
+    "en": {
+      "word": "cup",
+      "transcription": "kʌp",
+      "examples": [
+        {
+          "text": "This cup is mine.",
+          "translation": "Эта чашка моя."
+        }
+      ]
+    },
+    "it": {
+      "word": "tazza",
+      "transcription": "ˈtattsa",
+      "examples": [
+        {
+          "text": "Questa tazza è mia.",
+          "translation": "Эта чашка моя."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/2023_Fili%C5%BCanka_do_kawy.jpg/500px-2023_Fili%C5%BCanka_do_kawy.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "бутылка": {
+    "en": {
+      "word": "bottle",
+      "transcription": "ˈbɑːtəl",
+      "examples": [
+        {
+          "text": "A bottle of water, please.",
+          "translation": "Бутылку воды, пожалуйста."
+        }
+      ]
+    },
+    "it": {
+      "word": "bottiglia",
+      "transcription": "botˈtiʎʎa",
+      "examples": [
+        {
+          "text": "Una bottiglia d'acqua, per favore.",
+          "translation": "Бутылку воды, пожалуйста."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Bottle_on_sand.jpg/500px-Bottle_on_sand.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "завтрак": {
+    "en": {
+      "word": "breakfast",
+      "transcription": "ˈbrɛkfəst",
+      "examples": [
+        {
+          "text": "Breakfast is at seven.",
+          "translation": "Завтрак в семь."
+        }
+      ]
+    },
+    "it": {
+      "word": "colazione",
+      "transcription": "kolatˈtsjoːne",
+      "examples": [
+        {
+          "text": "La colazione è alle sette.",
+          "translation": "Завтрак в семь."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Robert_Schiff_Die_Langschl%C3%A4ferin.jpg/500px-Robert_Schiff_Die_Langschl%C3%A4ferin.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "столовые приборы": {
+    "en": {
+      "word": "cutlery",
+      "transcription": "ˈkʌtləri",
+      "examples": [
+        {
+          "text": "The cutlery is on the table.",
+          "translation": "Столовые приборы на столе."
+        }
+      ]
+    },
+    "it": {
+      "word": "posate",
+      "transcription": "poˈzaːte",
+      "examples": [
+        {
+          "text": "Le posate sono sul tavolo.",
+          "translation": "Столовые приборы на столе."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Silberbesteck.jpg/500px-Silberbesteck.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "тостер": {
+    "en": {
+      "word": "toaster",
+      "transcription": "ˈtoʊstər",
+      "examples": [
+        {
+          "text": "The toaster is in the kitchen.",
+          "translation": "Тостер на кухне."
+        }
+      ]
+    },
+    "it": {
+      "word": "tostapane",
+      "transcription": "tostaˈpaːne",
+      "examples": [
+        {
+          "text": "Il tostapane è in cucina.",
+          "translation": "Тостер на кухне."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Consumer_Reports_-_Hamilton_Beach_Digital_toaster.tiff/lossless-page1-500px-Consumer_Reports_-_Hamilton_Beach_Digital_toaster.tiff.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "соковыжималка": {
+    "en": {
+      "word": "juicer",
+      "transcription": "ˈdʒuːsər",
+      "examples": [
+        {
+          "text": "I make juice with the juicer.",
+          "translation": "Я делаю сок соковыжималкой."
+        }
+      ]
+    },
+    "it": {
+      "word": "spremiagrumi",
+      "transcription": "spremjaˈɡruːmi",
+      "examples": [
+        {
+          "text": "Faccio la spremuta con lo spremiagrumi.",
+          "translation": "Я делаю сок соковыжималкой."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/LemonSqueezer.jpg/500px-LemonSqueezer.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "фартук": {
+    "en": {
+      "word": "apron",
+      "transcription": "ˈeɪprən",
+      "examples": [
+        {
+          "text": "I put on an apron to cook.",
+          "translation": "Я надеваю фартук, чтобы готовить."
+        }
+      ]
+    },
+    "it": {
+      "word": "grembiule",
+      "transcription": "ɡremˈbjuːle",
+      "examples": [
+        {
+          "text": "Mi metto il grembiule per cucinare.",
+          "translation": "Я надеваю фартук, чтобы готовить."
+        }
+      ]
+    },
+    "img": "https://upload.wikimedia.org/wikipedia/commons/7/78/Sommelier_F.I.S.A.R..jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  "сковорода": {
+    "en": {
+      "word": "pan",
+      "transcription": "pæn",
+      "examples": [
+        {
+          "text": "The pan is on the stove.",
+          "translation": "Сковорода на плите."
+        }
+      ]
+    },
+    "it": {
+      "word": "padella",
+      "transcription": "paˈdɛlla",
+      "examples": [
+        {
+          "text": "La padella è sul fuoco.",
+          "translation": "Сковорода на плите."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Aluminium_koekenpan_met_lange_zwart_gelakte_steel%2C_objectnr_80330.JPG/500px-Aluminium_koekenpan_met_lange_zwart_gelakte_steel%2C_objectnr_80330.JPG?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "шеф-повар": {
+    "en": {
+      "word": "chef",
+      "transcription": "ʃɛf",
+      "examples": [
+        {
+          "text": "The chef prepares a new dish.",
+          "translation": "Шеф-повар готовит новое блюдо."
+        }
+      ]
+    },
+    "it": {
+      "word": "chef",
+      "transcription": "ʃɛf",
+      "examples": [
+        {
+          "text": "Il chef prepara un piatto nuovo.",
+          "translation": "Шеф-повар готовит новое блюдо."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/William_Orpen_Le_Chef_de_l%27H%C3%B4tel_Chatham%2C_Paris.jpg/500px-William_Orpen_Le_Chef_de_l%27H%C3%B4tel_Chatham%2C_Paris.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "закуски": {
+    "en": {
+      "word": "appetizers",
+      "transcription": "ˈæpɪtaɪzərz",
+      "examples": [
+        {
+          "text": "The appetizers are ready.",
+          "translation": "Закуски готовы."
+        }
+      ]
+    },
+    "it": {
+      "word": "antipasti",
+      "transcription": "antiˈpaːsti",
+      "examples": [
+        {
+          "text": "Gli antipasti sono pronti.",
+          "translation": "Закуски готовы."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Antipasto_nell%27isola_di_Ortigia.jpg/500px-Antipasto_nell%27isola_di_Ortigia.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "дуршлаг": {
+    "en": {
+      "word": "colander",
+      "transcription": "ˈkʌləndər",
+      "examples": [
+        {
+          "text": "I drain the pasta with the colander.",
+          "translation": "Я сливаю пасту через дуршлаг."
+        }
+      ]
+    },
+    "it": {
+      "word": "scolapasta",
+      "transcription": "skɔlaˈpasta",
+      "examples": [
+        {
+          "text": "Scolo la pasta con lo scolapasta.",
+          "translation": "Я сливаю пасту через дуршлаг."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Kevgir.JPG/500px-Kevgir.JPG?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "игристое вино": {
+    "en": {
+      "word": "sparkling wine",
+      "transcription": "ˈspɑːrkəlɪŋ waɪn",
+      "examples": [
+        {
+          "text": "We drink sparkling wine at parties.",
+          "translation": "На празднике мы пьём игристое вино."
+        }
+      ]
+    },
+    "it": {
+      "word": "spumante",
+      "transcription": "spuˈmante",
+      "examples": [
+        {
+          "text": "A festa beviamo lo spumante.",
+          "translation": "На празднике мы пьём игристое вино."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Calice_a_tulipano_per_spumante_03.jpg/500px-Calice_a_tulipano_per_spumante_03.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "весы": {
+    "en": {
+      "word": "scales",
+      "transcription": "skeɪlz",
+      "examples": [
+        {
+          "text": "I weigh the flour with the scales.",
+          "translation": "Я взвешиваю муку на весах."
+        }
+      ]
+    },
+    "it": {
+      "word": "bilancia",
+      "transcription": "biˈlantʃa",
+      "examples": [
+        {
+          "text": "Peso la farina con la bilancia.",
+          "translation": "Я взвешиваю муку на весах."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Balance_%C3%A0_tabac_1850.JPG/500px-Balance_%C3%A0_tabac_1850.JPG?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "кофеварка (гейзерная)": {
+    "en": {
+      "word": "moka pot",
+      "transcription": "ˈmoʊkə pɑːt",
+      "examples": [
+        {
+          "text": "I make coffee with the moka pot.",
+          "translation": "Я готовлю кофе в гейзерной кофеварке."
+        }
+      ]
+    },
+    "it": {
+      "word": "caffettiera",
+      "transcription": "kaffetˈtjɛːra",
+      "examples": [
+        {
+          "text": "Preparo il caffè con la caffettiera.",
+          "translation": "Я готовлю кофе в гейзерной кофеварке."
+        }
+      ]
+    },
+    "img": "https://upload.wikimedia.org/wikipedia/commons/2/24/Doccia_Ginori_XVIII_1589.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  "сахар": {
+    "en": {
+      "word": "sugar",
+      "transcription": "ˈʃʊɡər",
+      "examples": [
+        {
+          "text": "Two sugars in the tea, please.",
+          "translation": "Два кусочка сахара в чай, пожалуйста."
+        }
+      ]
+    },
+    "it": {
+      "word": "zucchero",
+      "transcription": "tsukˈkeːro",
+      "examples": [
+        {
+          "text": "Non metto zucchero nel caffè.",
+          "translation": "Я не кладу сахар в кофе."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/2023-07-08_065_KN_Sommerkonzerte_-_Zucchero_zeigt_a_%28cropped%29.jpg/500px-2023-07-08_065_KN_Sommerkonzerte_-_Zucchero_zeigt_a_%28cropped%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "соль": {
+    "en": {
+      "word": "salt",
+      "transcription": "sɔːlt",
+      "examples": [
+        {
+          "text": "Is there enough salt?",
+          "translation": "Соли достаточно?"
+        }
+      ]
+    },
+    "it": {
+      "word": "sale",
+      "transcription": "ˈsaːle",
+      "examples": [
+        {
+          "text": "Il sale è sul tavolo.",
+          "translation": "Соль на столе."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Rock_salt_%28halitite%29_%28Billianwala_Salt_Member%2C_Salt_Range_Formation%2C_Ediacaran_to_Lower_Cambrian%3B_Khewra_Salt_Mine%2C_Salt_Range%2C_Pakistan%29_14.jpg/500px-Rock_salt_%28halitite%29_%28Billianwala_Salt_Member%2C_Salt_Range_Formation%2C_Ediacaran_to_Lower_Cambrian%3B_Khewra_Salt_Mine%2C_Salt_Range%2C_Pakistan%29_14.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "яблоко": {
+    "en": {
+      "word": "apple",
+      "transcription": "ˈæpəl",
+      "examples": [
+        {
+          "text": "I eat an apple every day.",
+          "translation": "Я ем яблоко каждый день."
+        }
+      ]
+    },
+    "it": {
+      "word": "mela",
+      "transcription": "ˈmeːla",
+      "examples": [
+        {
+          "text": "Mangio una mela ogni giorno.",
+          "translation": "Я ем яблоко каждый день."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Red_Apple.jpg/500px-Red_Apple.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "обед": {
+    "en": {
+      "word": "lunch",
+      "transcription": "lʌntʃ",
+      "examples": [
+        {
+          "text": "Lunch is ready!",
+          "translation": "Обед готов!"
+        }
+      ]
+    },
+    "it": {
+      "word": "pranzo",
+      "transcription": "ˈprantso",
+      "examples": [
+        {
+          "text": "Il pranzo è pronto.",
+          "translation": "Обед готов."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Fritz_Syberg%2C_Ved_frokosten%2C_1906%2C_privat_eje.png/500px-Fritz_Syberg%2C_Ved_frokosten%2C_1906%2C_privat_eje.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "ужин": {
+    "en": {
+      "word": "dinner",
+      "transcription": "ˈdɪnər",
+      "examples": [
+        {
+          "text": "Dinner is at eight.",
+          "translation": "Ужин в восемь."
+        }
+      ]
+    },
+    "it": {
+      "word": "cena",
+      "transcription": "ˈtʃeːna",
+      "examples": [
+        {
+          "text": "La cena è alle otto.",
+          "translation": "Ужин в восемь."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/John_Cena_2012.jpg/500px-John_Cena_2012.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "ресторан": {
+    "en": {
+      "word": "restaurant",
+      "transcription": "ˈrɛstərɑːnt",
+      "examples": [
+        {
+          "text": "This restaurant is very famous.",
+          "translation": "Этот ресторан очень известный."
+        }
+      ]
+    },
+    "it": {
+      "word": "ristorante",
+      "transcription": "ristoˈrante",
+      "examples": [
+        {
+          "text": "Questo ristorante è famoso.",
+          "translation": "Этот ресторан знаменит."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Moscow_Tavern_%28Kustodiev%29.jpg/500px-Moscow_Tavern_%28Kustodiev%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "меню": {
+    "en": {
+      "word": "menu",
+      "transcription": "ˈmɛnjuː",
+      "examples": [
+        {
+          "text": "Can I see the menu?",
+          "translation": "Можно посмотреть меню?"
+        }
+      ]
+    },
+    "it": {
+      "word": "menù",
+      "transcription": "meˈnu",
+      "examples": [
+        {
+          "text": "Il menù è in italiano e in inglese.",
+          "translation": "Меню на итальянском и английском."
+        }
+      ]
+    },
+    "img": "https://upload.wikimedia.org/wikipedia/commons/d/d7/The_third_class_menus_of_R.M.S.TITANIC_%28April_14._1912%EF%BC%89.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  "счёт (в кафе)": {
+    "en": {
+      "word": "bill",
+      "transcription": "bɪl",
+      "examples": [
+        {
+          "text": "The bill, please.",
+          "translation": "Счёт, пожалуйста."
+        }
+      ]
+    },
+    "it": {
+      "word": "conto",
+      "transcription": "ˈkonto",
+      "examples": [
+        {
+          "text": "Il conto, per favore.",
+          "translation": "Счёт, пожалуйста."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "официант": {
+    "en": {
+      "word": "waiter",
+      "transcription": "ˈweɪtər",
+      "examples": [
+        {
+          "text": "The waiter takes the order.",
+          "translation": "Официант принимает заказ."
+        }
+      ]
+    },
+    "it": {
+      "word": "cameriere",
+      "transcription": "kameˈrjeːre",
+      "examples": [
+        {
+          "text": "Il cameriere è gentile.",
+          "translation": "Официант вежливый."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Edouard_Manet_004.jpg/500px-Edouard_Manet_004.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  }
+}

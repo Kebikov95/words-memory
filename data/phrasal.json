@@ -1,0 +1,451 @@
+{
+  "_meta": {
+    "id": "phrasal",
+    "name": "Фразовые глаголы",
+    "icon": "🔗",
+    "tag": "фразовые глаголы",
+    "desc": "Английские phrasal verbs, без которых не понять живую речь."
+  },
+  "вставать": {
+    "en": {
+      "word": "get up",
+      "transcription": "ɡɛt ʌp",
+      "examples": [
+        {
+          "text": "I get up at seven.",
+          "translation": "Я встаю в семь."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "просыпаться": {
+    "en": {
+      "word": "wake up",
+      "transcription": "weɪk ʌp",
+      "examples": [
+        {
+          "text": "She wakes up early in the morning.",
+          "translation": "Она просыпается рано утром."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "сдаваться": {
+    "en": {
+      "word": "give up",
+      "transcription": "ɡɪv ʌp",
+      "examples": [
+        {
+          "text": "Never give up!",
+          "translation": "Никогда не сдавайся!"
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/PostalService_cover300dpi.jpg/500px-PostalService_cover300dpi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "искать": {
+    "en": {
+      "word": "look for",
+      "transcription": "lʊk fɔːr",
+      "examples": [
+        {
+          "text": "I am looking for a new job.",
+          "translation": "Я ищу новую работу."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "заботиться о": {
+    "en": {
+      "word": "look after",
+      "transcription": "lʊk ˈæftər",
+      "examples": [
+        {
+          "text": "Can you look after my cat?",
+          "translation": "Присмотришь за моим котом?"
+        }
+      ]
+    },
+    "img": ""
+  },
+  "с нетерпением ждать": {
+    "en": {
+      "word": "look forward to",
+      "transcription": "lʊk ˈfɔːrwərd tuː",
+      "examples": [
+        {
+          "text": "I look forward to your letter.",
+          "translation": "С нетерпением жду твоего письма."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "надевать": {
+    "en": {
+      "word": "put on",
+      "transcription": "pʊt ɑːn",
+      "examples": [
+        {
+          "text": "Put on your coat, it is cold.",
+          "translation": "Надень пальто, холодно."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "снимать, взлетать": {
+    "en": {
+      "word": "take off",
+      "transcription": "teɪk ɔːf",
+      "examples": [
+        {
+          "text": "Take off your shoes, please.",
+          "translation": "Сними обувь, пожалуйста."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "включать": {
+    "en": {
+      "word": "turn on",
+      "transcription": "tɜːrn ɑːn",
+      "examples": [
+        {
+          "text": "Turn on the light, please.",
+          "translation": "Включи свет, пожалуйста."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "выключать": {
+    "en": {
+      "word": "turn off",
+      "transcription": "tɜːrn ɔːf",
+      "examples": [
+        {
+          "text": "Turn off the TV before sleeping.",
+          "translation": "Выключи телевизор перед сном."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "возвращаться": {
+    "en": {
+      "word": "come back",
+      "transcription": "kʌm bæk",
+      "examples": [
+        {
+          "text": "He comes back home at seven.",
+          "translation": "Он возвращается домой в семь."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "продолжать": {
+    "en": {
+      "word": "go on",
+      "transcription": "ɡoʊ ɑːn",
+      "examples": [
+        {
+          "text": "Go on, I am listening!",
+          "translation": "Продолжай, я слушаю!"
+        }
+      ]
+    },
+    "img": ""
+  },
+  "выяснять": {
+    "en": {
+      "word": "find out",
+      "transcription": "faɪnd aʊt",
+      "examples": [
+        {
+          "text": "I want to find out the truth.",
+          "translation": "Я хочу выяснить правду."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "взрослеть": {
+    "en": {
+      "word": "grow up",
+      "transcription": "ɡroʊ ʌp",
+      "examples": [
+        {
+          "text": "Children grow up so fast.",
+          "translation": "Дети растут так быстро."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "подбирать, забирать": {
+    "en": {
+      "word": "pick up",
+      "transcription": "pɪk ʌp",
+      "examples": [
+        {
+          "text": "I pick up my son after school.",
+          "translation": "Я забираю сына после школы."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "откладывать": {
+    "en": {
+      "word": "put off",
+      "transcription": "pʊt ɔːf",
+      "examples": [
+        {
+          "text": "Don't put off the work until tomorrow.",
+          "translation": "Не откладывай работу на завтра."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "заканчиваться (о запасах)": {
+    "en": {
+      "word": "run out of",
+      "transcription": "rʌn aʊt əv",
+      "examples": [
+        {
+          "text": "We run out of milk.",
+          "translation": "У нас заканчивается молоко."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "организовывать": {
+    "en": {
+      "word": "set up",
+      "transcription": "sɛt ʌp",
+      "examples": [
+        {
+          "text": "They set up a small company.",
+          "translation": "Они организуют маленькую компанию."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "садиться": {
+    "en": {
+      "word": "sit down",
+      "transcription": "sɪt daʊn",
+      "examples": [
+        {
+          "text": "Sit down, please.",
+          "translation": "Садитесь, пожалуйста."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "вставать ·2": {
+    "en": {
+      "word": "stand up",
+      "transcription": "stænd ʌp",
+      "examples": [
+        {
+          "text": "Please stand up.",
+          "translation": "Встаньте, пожалуйста."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Jesus_is_coming.._Look_Busy_%28George_Carlin%29.jpg/500px-Jesus_is_coming.._Look_Busy_%28George_Carlin%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "выбрасывать": {
+    "en": {
+      "word": "throw away",
+      "transcription": "θroʊ əˈweɪ",
+      "examples": [
+        {
+          "text": "Throw away the old newspaper.",
+          "translation": "Выброси старую газету."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Eve_Road_dumped_clothes_%2848230317066%29.jpg/500px-Eve_Road_dumped_clothes_%2848230317066%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "примерять": {
+    "en": {
+      "word": "try on",
+      "transcription": "traɪ ɑːn",
+      "examples": [
+        {
+          "text": "Can I try on this dress?",
+          "translation": "Можно примерить это платье?"
+        }
+      ]
+    },
+    "img": ""
+  },
+  "тренироваться; получаться": {
+    "en": {
+      "word": "work out",
+      "transcription": "wɜːrk aʊt",
+      "examples": [
+        {
+          "text": "I work out at the gym on Mondays.",
+          "translation": "Я тренируюсь в зале по понедельникам."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Cycling_in_Amsterdam_%28893%29.jpg/500px-Cycling_in_Amsterdam_%28893%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "понимать, разгадывать": {
+    "en": {
+      "word": "figure out",
+      "transcription": "ˈfɪɡjər aʊt",
+      "examples": [
+        {
+          "text": "I can't figure out this problem.",
+          "translation": "Не могу понять эту задачу."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/en/thumb/4/46/Figure_It_Out_2012.svg/500px-Figure_It_Out_2012.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "ломаться (о машине)": {
+    "en": {
+      "word": "break down",
+      "transcription": "breɪk daʊn",
+      "examples": [
+        {
+          "text": "The car breaks down on the road.",
+          "translation": "Машина ломается на дороге."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "поднимать (тему)": {
+    "en": {
+      "word": "bring up",
+      "transcription": "brɪŋ ʌp",
+      "examples": [
+        {
+          "text": "Don't bring up that topic at dinner.",
+          "translation": "Не поднимай эту тему за ужином."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Bringing_Up_Baby_%281938_poster%29.jpg/500px-Bringing_Up_Baby_%281938_poster%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "отменять": {
+    "en": {
+      "word": "call off",
+      "transcription": "kɔːl ɔːf",
+      "examples": [
+        {
+          "text": "They call off the match.",
+          "translation": "Они отменяют матч."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "придумывать": {
+    "en": {
+      "word": "come up with",
+      "transcription": "kʌm ʌp wɪð",
+      "examples": [
+        {
+          "text": "She comes up with a good idea.",
+          "translation": "Она придумывает хорошую идею."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "ладить": {
+    "en": {
+      "word": "get along",
+      "transcription": "ɡɛt əˈlɔːŋ",
+      "examples": [
+        {
+          "text": "The two brothers get along well.",
+          "translation": "Два брата хорошо ладят."
+        }
+      ]
+    },
+    "img": "https://upload.wikimedia.org/wikipedia/commons/e/e0/CynthiaKelleyRodneyKingApr2012_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  "пережить, выздороветь": {
+    "en": {
+      "word": "get over",
+      "transcription": "ɡɛt ˈoʊvər",
+      "examples": [
+        {
+          "text": "He gets over the flu in a week.",
+          "translation": "Он выздоравливает от гриппа за неделю."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "искать (в словаре, интернете)": {
+    "en": {
+      "word": "look up",
+      "transcription": "lʊk ʌp",
+      "examples": [
+        {
+          "text": "Look up the word in the dictionary.",
+          "translation": "Поищи слово в словаре."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "возвращать долг": {
+    "en": {
+      "word": "pay back",
+      "transcription": "peɪ bæk",
+      "examples": [
+        {
+          "text": "I pay back the loan in two years.",
+          "translation": "Я возвращаю кредит за два года."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "появляться": {
+    "en": {
+      "word": "turn up",
+      "transcription": "tɜːrn ʌp",
+      "examples": [
+        {
+          "text": "Marco turns up late as always.",
+          "translation": "Марко появляется поздно, как всегда."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "отдавать даром": {
+    "en": {
+      "word": "give away",
+      "transcription": "ɡɪv əˈweɪ",
+      "examples": [
+        {
+          "text": "We give away the old clothes.",
+          "translation": "Мы отдаём старую одежду."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/The_Giving_Pledge_Logo.svg/500px-The_Giving_Pledge_Logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  }
+}

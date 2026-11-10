@@ -1,0 +1,700 @@
+{
+  "_meta": {
+    "id": "business",
+    "name": "Бизнес",
+    "icon": "💼",
+    "tag": "бизнес",
+    "desc": "Лексика офиса, договоров и денег.",
+    "id-en": "business-en"
+  },
+  "компания": {
+    "en": {
+      "word": "company",
+      "transcription": "ˈkʌmpəni",
+      "examples": [
+        {
+          "text": "I work for a big company.",
+          "translation": "Я работаю в большой компании."
+        }
+      ]
+    },
+    "it": {
+      "word": "azienda",
+      "transcription": "atˈtsjɛnda",
+      "examples": [
+        {
+          "text": "Lavoro per una grande azienda.",
+          "translation": "Я работаю в большой компании."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Nokia_office_building_in_Hervanta_Tampere_1.jpg/500px-Nokia_office_building_in_Hervanta_Tampere_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "фирма": {
+    "en": {
+      "word": "firm",
+      "transcription": "fɜːrm",
+      "examples": [
+        {
+          "text": "It is a small family firm.",
+          "translation": "Это маленькая семейная фирма."
+        }
+      ]
+    },
+    "it": {
+      "word": "ditta",
+      "transcription": "ˈditta",
+      "examples": [
+        {
+          "text": "È una piccola ditta di famiglia.",
+          "translation": "Это маленькая семейная фирма."
+        }
+      ]
+    },
+    "img": "https://upload.wikimedia.org/wikipedia/it/3/3a/Premiata_Ditta.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  "начальник": {
+    "en": {
+      "word": "boss",
+      "transcription": "bɔːs",
+      "examples": [
+        {
+          "text": "The boss signs the contracts.",
+          "translation": "Начальник подписывает договоры."
+        }
+      ]
+    },
+    "it": {
+      "word": "capo",
+      "transcription": "ˈkaːpo",
+      "examples": [
+        {
+          "text": "Il capo firma i contratti.",
+          "translation": "Начальник подписывает договоры."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "сотрудник": {
+    "en": {
+      "word": "employee",
+      "transcription": "ɪmˈplɔɪiː",
+      "examples": [
+        {
+          "text": "The employees arrive at nine.",
+          "translation": "Сотрудники приходят в девять."
+        }
+      ]
+    },
+    "it": {
+      "word": "dipendente",
+      "transcription": "dipenˈdente",
+      "examples": [
+        {
+          "text": "I dipendenti arrivano alle nove.",
+          "translation": "Сотрудники приходят в девять."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "клиент": {
+    "en": {
+      "word": "client",
+      "transcription": "ˈklaɪənt",
+      "examples": [
+        {
+          "text": "The customer is always right.",
+          "translation": "Клиент всегда прав."
+        }
+      ]
+    },
+    "it": {
+      "word": "cliente",
+      "transcription": "kliˈɛnte",
+      "examples": [
+        {
+          "text": "Il cliente ha sempre ragione.",
+          "translation": "Клиент всегда прав."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "поставщик": {
+    "en": {
+      "word": "supplier",
+      "transcription": "səˈplaɪər",
+      "examples": [
+        {
+          "text": "We are calling the supplier tomorrow.",
+          "translation": "Мы позвоним поставщику завтра."
+        }
+      ]
+    },
+    "it": {
+      "word": "fornitore",
+      "transcription": "forniˈtoːre",
+      "examples": [
+        {
+          "text": "Chiamiamo il fornitore domani.",
+          "translation": "Мы позвоним поставщику завтра."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "договор": {
+    "en": {
+      "word": "contract",
+      "transcription": "ˈkɑːntrækt",
+      "examples": [
+        {
+          "text": "The contract lasts two years.",
+          "translation": "Договор длится два года."
+        }
+      ]
+    },
+    "it": {
+      "word": "contratto",
+      "transcription": "konˈtratto",
+      "examples": [
+        {
+          "text": "Il contratto dura due anni.",
+          "translation": "Договор длится два года."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Sales_contract_Louvre_AO2753.jpg/500px-Sales_contract_Louvre_AO2753.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "совещание": {
+    "en": {
+      "word": "meeting",
+      "transcription": "ˈmiːtɪŋ",
+      "examples": [
+        {
+          "text": "The meeting starts at ten.",
+          "translation": "Совещание начинается в десять."
+        }
+      ]
+    },
+    "it": {
+      "word": "riunione",
+      "transcription": "riuˈnjoːne",
+      "examples": [
+        {
+          "text": "La riunione inizia alle dieci.",
+          "translation": "Совещание начинается в десять."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Proposed_flag_of_R%C3%A9union_%28VAR%29.svg/500px-Proposed_flag_of_R%C3%A9union_%28VAR%29.svg.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "проект": {
+    "en": {
+      "word": "project",
+      "transcription": "ˈprɑːdʒɛkt",
+      "examples": [
+        {
+          "text": "The project is almost finished.",
+          "translation": "Проект почти закончен."
+        }
+      ]
+    },
+    "it": {
+      "word": "progetto",
+      "transcription": "proˈdʒɛtto",
+      "examples": [
+        {
+          "text": "Il progetto è quasi finito.",
+          "translation": "Проект почти закончен."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Project_network.png/500px-Project_network.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "срок": {
+    "en": {
+      "word": "deadline",
+      "transcription": "ˈdɛdlaɪn",
+      "examples": [
+        {
+          "text": "The deadline is the first of the month.",
+          "translation": "Срок — первое число месяца."
+        }
+      ]
+    },
+    "it": {
+      "word": "scadenza",
+      "transcription": "skaˈdɛntsa",
+      "examples": [
+        {
+          "text": "La scadenza è il primo del mese.",
+          "translation": "Срок — первое число месяца."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "зарплата": {
+    "en": {
+      "word": "salary",
+      "transcription": "ˈsæləri",
+      "examples": [
+        {
+          "text": "The salary comes at the end of the month.",
+          "translation": "Зарплата приходит в конце месяца."
+        }
+      ]
+    },
+    "it": {
+      "word": "stipendio",
+      "transcription": "stiˈpɛndjo",
+      "examples": [
+        {
+          "text": "Lo stipendio arriva alla fine del mese.",
+          "translation": "Зарплата приходит в конце месяца."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "повышение (зарплаты)": {
+    "en": {
+      "word": "raise",
+      "transcription": "reɪz",
+      "examples": [
+        {
+          "text": "I ask my boss for a raise.",
+          "translation": "Я прошу начальника о повышении."
+        }
+      ]
+    },
+    "it": {
+      "word": "aumento",
+      "transcription": "auˈmento",
+      "examples": [
+        {
+          "text": "Chiedo un aumento al capo.",
+          "translation": "Я прошу начальника о повышении."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "приём на работу": {
+    "en": {
+      "word": "hiring",
+      "transcription": "ˈhaɪərɪŋ",
+      "examples": [
+        {
+          "text": "The hiring of new employees starts in March.",
+          "translation": "Приём новых сотрудников начинается в марте."
+        }
+      ]
+    },
+    "it": {
+      "word": "assunzione",
+      "transcription": "assunˈtsjoːne",
+      "examples": [
+        {
+          "text": "L'assunzione di nuovi dipendenti inizia a marzo.",
+          "translation": "Приём новых сотрудников начинается в марте."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "увольнение": {
+    "en": {
+      "word": "dismissal",
+      "transcription": "dɪsˈmɪsəl",
+      "examples": [
+        {
+          "text": "Dismissal is a difficult thing.",
+          "translation": "Увольнение — это тяжело."
+        }
+      ]
+    },
+    "it": {
+      "word": "licenziamento",
+      "transcription": "litʃentsjaˈmento",
+      "examples": [
+        {
+          "text": "Il licenziamento è una cosa difficile.",
+          "translation": "Увольнение — это тяжело."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "счёт-фактура": {
+    "en": {
+      "word": "invoice",
+      "transcription": "ˈɪnvɔɪs",
+      "examples": [
+        {
+          "text": "I am sending the invoice to the client.",
+          "translation": "Я отправляю счёт клиенту."
+        }
+      ]
+    },
+    "it": {
+      "word": "fattura",
+      "transcription": "fatˈtuːra",
+      "examples": [
+        {
+          "text": "Invio la fattura al cliente.",
+          "translation": "Я отправляю счёт клиенту."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "прибыль": {
+    "en": {
+      "word": "profit",
+      "transcription": "ˈprɑːfɪt",
+      "examples": [
+        {
+          "text": "The yearly profit is good.",
+          "translation": "Прибыль за год хорошая."
+        }
+      ]
+    },
+    "it": {
+      "word": "guadagno",
+      "transcription": "ɡwaˈdaɲɲo",
+      "examples": [
+        {
+          "text": "Il guadagno dell'anno è buono.",
+          "translation": "Прибыль за год хорошая."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "убыток": {
+    "en": {
+      "word": "loss",
+      "transcription": "lɔːs",
+      "examples": [
+        {
+          "text": "The company has a big loss.",
+          "translation": "У компании большой убыток."
+        }
+      ]
+    },
+    "it": {
+      "word": "perdita",
+      "transcription": "ˈpɛrdita",
+      "examples": [
+        {
+          "text": "L'azienda ha una grande perdita.",
+          "translation": "У компании большой убыток."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "рынок": {
+    "en": {
+      "word": "market",
+      "transcription": "ˈmɑːrkɪt",
+      "examples": [
+        {
+          "text": "The Italian market is big.",
+          "translation": "Итальянский рынок большой."
+        }
+      ]
+    },
+    "it": {
+      "word": "mercato",
+      "transcription": "merˈkaːto",
+      "examples": [
+        {
+          "text": "Il mercato italiano è grande.",
+          "translation": "Итальянский рынок большой."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Campo_dei_Fiori.jpg/500px-Campo_dei_Fiori.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "конкуренция": {
+    "en": {
+      "word": "competition",
+      "transcription": "ˌkɑːmpəˈtɪʃən",
+      "examples": [
+        {
+          "text": "The competition is very strong.",
+          "translation": "Конкуренция очень сильная."
+        }
+      ]
+    },
+    "it": {
+      "word": "concorrenza",
+      "transcription": "konkorˈrɛntsa",
+      "examples": [
+        {
+          "text": "La concorrenza è molto forte.",
+          "translation": "Конкуренция очень сильная."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Heat_1_of_the_Womens_100m_Semi-Final.jpg/500px-Heat_1_of_the_Womens_100m_Semi-Final.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "компания ·2": {
+    "en": {
+      "word": "corporation",
+      "transcription": "ˌkɔːrpəˈreɪʃən",
+      "examples": [
+        {
+          "text": "The corporation has one hundred employees.",
+          "translation": "В корпорации сто сотрудников."
+        }
+      ]
+    },
+    "it": {
+      "word": "società",
+      "transcription": "sotʃeˈta",
+      "examples": [
+        {
+          "text": "La società ha cento dipendenti.",
+          "translation": "В компании сто сотрудников."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/New_McDonald%27s_restaurant_in_Mount_Pleasant%2C_Iowa.jpg/500px-New_McDonald%27s_restaurant_in_Mount_Pleasant%2C_Iowa.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "капитал": {
+    "en": {
+      "word": "capital",
+      "transcription": "ˈkæpɪtəl",
+      "examples": [
+        {
+          "text": "The company has a lot of capital.",
+          "translation": "У компании много капитала."
+        }
+      ]
+    },
+    "it": {
+      "word": "capitale",
+      "transcription": "kapiˈtaːle",
+      "examples": [
+        {
+          "text": "L'azienda ha molto capitale.",
+          "translation": "У компании много капитала."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "инвестиция": {
+    "en": {
+      "word": "investment",
+      "transcription": "ɪnˈvɛstmənt",
+      "examples": [
+        {
+          "text": "This investment is safe.",
+          "translation": "Эта инвестиция безопасная."
+        }
+      ]
+    },
+    "it": {
+      "word": "investimento",
+      "transcription": "investiˈmento",
+      "examples": [
+        {
+          "text": "Questo investimento è sicuro.",
+          "translation": "Эта инвестиция безопасная."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "кредит": {
+    "en": {
+      "word": "loan",
+      "transcription": "loʊn",
+      "examples": [
+        {
+          "text": "We are asking for a loan at the bank.",
+          "translation": "Мы просим кредит в банке."
+        }
+      ]
+    },
+    "it": {
+      "word": "prestito",
+      "transcription": "ˈprɛstito",
+      "examples": [
+        {
+          "text": "Chiediamo un prestito in banca.",
+          "translation": "Мы просим кредит в банке."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Petrevene_18.jpg/500px-Petrevene_18.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "долг": {
+    "en": {
+      "word": "debt",
+      "transcription": "dɛt",
+      "examples": [
+        {
+          "text": "The company has many debts.",
+          "translation": "У компании много долгов."
+        }
+      ]
+    },
+    "it": {
+      "word": "debito",
+      "transcription": "ˈdɛːbito",
+      "examples": [
+        {
+          "text": "L'azienda ha molti debiti.",
+          "translation": "У компании много долгов."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Payday_loan_shop_window.jpg/500px-Payday_loan_shop_window.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "налог": {
+    "en": {
+      "word": "tax",
+      "transcription": "tæks",
+      "examples": [
+        {
+          "text": "Taxes are high in Italy.",
+          "translation": "В Италии налоги высокие."
+        }
+      ]
+    },
+    "it": {
+      "word": "tassa",
+      "transcription": "ˈtassa",
+      "examples": [
+        {
+          "text": "Le tasse sono alte in Italia.",
+          "translation": "В Италии налоги высокие."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Quenti_Massys_Gli_esattori.jpg/500px-Quenti_Massys_Gli_esattori.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "оборот": {
+    "en": {
+      "word": "turnover",
+      "transcription": "ˈtɜːrnoʊvər",
+      "examples": [
+        {
+          "text": "The turnover grows every year.",
+          "translation": "Оборот растёт каждый год."
+        }
+      ]
+    },
+    "it": {
+      "word": "fatturato",
+      "transcription": "fattuˈraːto",
+      "examples": [
+        {
+          "text": "Il fatturato cresce ogni anno.",
+          "translation": "Оборот растёт каждый год."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "цель": {
+    "en": {
+      "word": "goal",
+      "transcription": "ɡoʊl",
+      "examples": [
+        {
+          "text": "Our goal is a new market.",
+          "translation": "Наша цель — новый рынок."
+        }
+      ]
+    },
+    "it": {
+      "word": "obiettivo",
+      "transcription": "obdʒetˈtiːvo",
+      "examples": [
+        {
+          "text": "Il nostro obiettivo è un nuovo mercato.",
+          "translation": "Наша цель — новый рынок."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "презентация": {
+    "en": {
+      "word": "presentation",
+      "transcription": "ˌprizɛnˈteɪʃən",
+      "examples": [
+        {
+          "text": "The presentation is tomorrow morning.",
+          "translation": "Презентация завтра утром."
+        }
+      ]
+    },
+    "it": {
+      "word": "presentazione",
+      "transcription": "presentatˈtsjoːne",
+      "examples": [
+        {
+          "text": "La presentazione è domani mattina.",
+          "translation": "Презентация завтра утром."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Street_preacher_in_Covent_Garden_1.jpg/500px-Street_preacher_in_Covent_Garden_1.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "отчёт": {
+    "en": {
+      "word": "report",
+      "transcription": "rɪˈpɔːrt",
+      "examples": [
+        {
+          "text": "I am writing a report for the boss.",
+          "translation": "Я пишу отчёт для начальника."
+        }
+      ]
+    },
+    "it": {
+      "word": "relazione",
+      "transcription": "relatˈtsjoːne",
+      "examples": [
+        {
+          "text": "Scrivo una relazione per il capo.",
+          "translation": "Я пишу отчёт для начальника."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Hurt_Report_cover_page.png/500px-Hurt_Report_cover_page.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "истекать (о сроке)": {
+    "en": {
+      "word": "to expire",
+      "transcription": "tuː ɪkˈspaɪər",
+      "examples": [
+        {
+          "text": "The contract expires in December.",
+          "translation": "Договор истекает в декабре."
+        }
+      ]
+    },
+    "it": {
+      "word": "scadere",
+      "transcription": "ˈskaːdere",
+      "examples": [
+        {
+          "text": "Il contratto scade a dicembre.",
+          "translation": "Договор истекает в декабре."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/500px-Flag_of_Europe.svg.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  }
+}

@@ -1,0 +1,749 @@
+{
+  "_meta": {
+    "id": "it",
+    "name": "ИТ",
+    "icon": "💻",
+    "tag": "ИТ",
+    "desc": "Компьютеры, интернет и разработка.",
+    "id-en": "it-en"
+  },
+  "компьютер": {
+    "en": {
+      "word": "computer",
+      "transcription": "kəmˈpjuːtər",
+      "examples": [
+        {
+          "text": "The computer is new.",
+          "translation": "Компьютер новый."
+        }
+      ]
+    },
+    "it": {
+      "word": "computer",
+      "transcription": "komˈpjuter",
+      "examples": [
+        {
+          "text": "Il computer è nuovo.",
+          "translation": "Компьютер новый."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/20080831-R0012506.JPG/500px-20080831-R0012506.JPG?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "ноутбук": {
+    "en": {
+      "word": "laptop",
+      "transcription": "ˈlæptɑːp",
+      "examples": [
+        {
+          "text": "My laptop is fast.",
+          "translation": "Мой ноутбук быстрый."
+        }
+      ]
+    },
+    "it": {
+      "word": "portatile",
+      "transcription": "portaˈtile",
+      "examples": [
+        {
+          "text": "Il mio portatile è veloce.",
+          "translation": "Мой ноутбук быстрый."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Laptop_collage.jpg/500px-Laptop_collage.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "экран": {
+    "en": {
+      "word": "screen",
+      "transcription": "skriːn",
+      "examples": [
+        {
+          "text": "The screen is broken.",
+          "translation": "Экран разбит."
+        }
+      ]
+    },
+    "it": {
+      "word": "schermo",
+      "transcription": "ˈskɛrmo",
+      "examples": [
+        {
+          "text": "Lo schermo è rotto.",
+          "translation": "Экран разбит."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "клавиатура": {
+    "en": {
+      "word": "keyboard",
+      "transcription": "ˈkiːbɔːrd",
+      "examples": [
+        {
+          "text": "My computer's keyboard is Italian.",
+          "translation": "Клавиатура моего компьютера итальянская."
+        }
+      ]
+    },
+    "it": {
+      "word": "tastiera",
+      "transcription": "tasˈtjɛːra",
+      "examples": [
+        {
+          "text": "La tastiera del mio computer è italiana.",
+          "translation": "Клавиатура моего компьютера итальянская."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Masterkeyboard.png/500px-Masterkeyboard.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "мышь": {
+    "en": {
+      "word": "mouse",
+      "transcription": "maʊs",
+      "examples": [
+        {
+          "text": "The mouse doesn't work.",
+          "translation": "Мышь не работает."
+        }
+      ]
+    },
+    "it": {
+      "word": "mouse",
+      "transcription": "ˈmaus",
+      "examples": [
+        {
+          "text": "Il mouse non funziona.",
+          "translation": "Мышь не работает."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Wheel_mouse.JPG/500px-Wheel_mouse.JPG?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "принтер": {
+    "en": {
+      "word": "printer",
+      "transcription": "ˈprɪntər",
+      "examples": [
+        {
+          "text": "The printer is out of paper.",
+          "translation": "В принтере нет бумаги."
+        }
+      ]
+    },
+    "it": {
+      "word": "stampante",
+      "transcription": "stamˈpante",
+      "examples": [
+        {
+          "text": "La stampante è senza carta.",
+          "translation": "В принтере нет бумаги."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Epson_PM-700C.jpg/500px-Epson_PM-700C.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "файл": {
+    "en": {
+      "word": "file",
+      "transcription": "faɪl",
+      "examples": [
+        {
+          "text": "The file is too big.",
+          "translation": "Файл слишком большой."
+        }
+      ]
+    },
+    "it": {
+      "word": "file",
+      "transcription": "ˈfaile",
+      "examples": [
+        {
+          "text": "Il file è troppo grande.",
+          "translation": "Файл слишком большой."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Generic_File.png/500px-Generic_File.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "папка": {
+    "en": {
+      "word": "folder",
+      "transcription": "ˈfoʊldər",
+      "examples": [
+        {
+          "text": "Create a new folder.",
+          "translation": "Создай новую папку."
+        }
+      ]
+    },
+    "it": {
+      "word": "cartella",
+      "transcription": "karˈtɛlla",
+      "examples": [
+        {
+          "text": "Crea una cartella nuova.",
+          "translation": "Создай новую папку."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "программа": {
+    "en": {
+      "word": "program",
+      "transcription": "ˈproʊɡræm",
+      "examples": [
+        {
+          "text": "This program is free.",
+          "translation": "Эта программа бесплатная."
+        }
+      ]
+    },
+    "it": {
+      "word": "programma",
+      "transcription": "proˈɡramma",
+      "examples": [
+        {
+          "text": "Questo programma è gratis.",
+          "translation": "Эта программа бесплатная."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "приложение": {
+    "en": {
+      "word": "application",
+      "transcription": "ˌæplɪˈkeɪʃən",
+      "examples": [
+        {
+          "text": "I am downloading an app to learn Italian.",
+          "translation": "Я скачиваю приложение для изучения итальянского."
+        }
+      ]
+    },
+    "it": {
+      "word": "applicazione",
+      "transcription": "applikatˈtsjoːne",
+      "examples": [
+        {
+          "text": "Scarico un'applicazione per imparare l'italiano.",
+          "translation": "Я скачиваю приложение для изучения итальянского."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "сайт": {
+    "en": {
+      "word": "website",
+      "transcription": "ˈwɛbsaɪt",
+      "examples": [
+        {
+          "text": "This website is in Italian.",
+          "translation": "Этот сайт на итальянском."
+        }
+      ]
+    },
+    "it": {
+      "word": "sito",
+      "transcription": "ˈsiːto",
+      "examples": [
+        {
+          "text": "Questo sito è in italiano.",
+          "translation": "Этот сайт на итальянском."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Wikipedia_home_screenshot.png/500px-Wikipedia_home_screenshot.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "страница": {
+    "en": {
+      "word": "page",
+      "transcription": "peɪdʒ",
+      "examples": [
+        {
+          "text": "Open the page in the browser.",
+          "translation": "Открой страницу в браузере."
+        }
+      ]
+    },
+    "it": {
+      "word": "pagina",
+      "transcription": "ˈpaːdʒina",
+      "examples": [
+        {
+          "text": "Apri la pagina nel browser.",
+          "translation": "Открой страницу в браузере."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Francesco_Sforza.jpg/500px-Francesco_Sforza.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "ссылка": {
+    "en": {
+      "word": "link",
+      "transcription": "lɪŋk",
+      "examples": [
+        {
+          "text": "Click on the blue link.",
+          "translation": "Кликни на синюю ссылку."
+        }
+      ]
+    },
+    "it": {
+      "word": "collegamento",
+      "transcription": "kolleɡaˈmento",
+      "examples": [
+        {
+          "text": "Clicca sul collegamento blu.",
+          "translation": "Кликни на синюю ссылку."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "сеть": {
+    "en": {
+      "word": "network",
+      "transcription": "ˈnɛtwɜːrk",
+      "examples": [
+        {
+          "text": "The network doesn't work today.",
+          "translation": "Сеть сегодня не работает."
+        }
+      ]
+    },
+    "it": {
+      "word": "rete",
+      "transcription": "ˈreːte",
+      "examples": [
+        {
+          "text": "La rete non funziona oggi.",
+          "translation": "Сеть сегодня не работает."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "пароль": {
+    "en": {
+      "word": "password",
+      "transcription": "ˈpæswɜːrd",
+      "examples": [
+        {
+          "text": "The password has eight characters.",
+          "translation": "В пароле восемь символов."
+        }
+      ]
+    },
+    "it": {
+      "word": "password",
+      "transcription": "pasˈwɔrd",
+      "examples": [
+        {
+          "text": "La password ha otto caratteri.",
+          "translation": "В пароле восемь символов."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Mediawiki_1.25_sign_in_form.png/500px-Mediawiki_1.25_sign_in_form.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "логин": {
+    "en": {
+      "word": "username",
+      "transcription": "ˈjuːzərneɪm",
+      "examples": [
+        {
+          "text": "My username is marco_rossi.",
+          "translation": "Мой логин — marco_rossi."
+        }
+      ]
+    },
+    "it": {
+      "word": "nome utente",
+      "transcription": "ˈnoːme uˈtɛnte",
+      "examples": [
+        {
+          "text": "Il mio nome utente è marco_rossi.",
+          "translation": "Мой логин — marco_rossi."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/System-users-3.svg/500px-System-users-3.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "почта, письмо": {
+    "en": {
+      "word": "email",
+      "transcription": "ˈiːmeɪl",
+      "examples": [
+        {
+          "text": "I receive a hundred emails a day.",
+          "translation": "Я получаю сто писем в день."
+        }
+      ]
+    },
+    "it": {
+      "word": "email",
+      "transcription": "iˈmɛil",
+      "examples": [
+        {
+          "text": "Ricevo cento email al giorno.",
+          "translation": "Я получаю сто писем в день."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/2016-03-22-trojita-home.png/500px-2016-03-22-trojita-home.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "сообщение": {
+    "en": {
+      "word": "message",
+      "transcription": "ˈmɛsɪdʒ",
+      "examples": [
+        {
+          "text": "Send me a message on WhatsApp.",
+          "translation": "Отправь мне сообщение в WhatsApp."
+        }
+      ]
+    },
+    "it": {
+      "word": "messaggio",
+      "transcription": "mesˈsaddʒo",
+      "examples": [
+        {
+          "text": "Mandami un messaggio su WhatsApp.",
+          "translation": "Отправь мне сообщение в WhatsApp."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/%27The_Children_of_Captain_Grant%27_by_%C3%89douard_Riou_004.jpg/500px-%27The_Children_of_Captain_Grant%27_by_%C3%89douard_Riou_004.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "вложение": {
+    "en": {
+      "word": "attachment",
+      "transcription": "əˈtætʃmənt",
+      "examples": [
+        {
+          "text": "The file is in the attachment.",
+          "translation": "Файл во вложении."
+        }
+      ]
+    },
+    "it": {
+      "word": "allegato",
+      "transcription": "alleˈɡaːto",
+      "examples": [
+        {
+          "text": "Il file è nell'allegato.",
+          "translation": "Файл во вложении."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "скачивать": {
+    "en": {
+      "word": "to download",
+      "transcription": "tuː ˌdaʊnˈloʊd",
+      "examples": [
+        {
+          "text": "I am downloading a film from the network.",
+          "translation": "Я скачиваю фильм из сети."
+        }
+      ]
+    },
+    "it": {
+      "word": "scaricare",
+      "transcription": "skariˈkaːre",
+      "examples": [
+        {
+          "text": "Scarico un film dalla rete.",
+          "translation": "Я скачиваю фильм из сети."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/9/97/Forgetting_Sarah_Marshall_-_Trailer.png/500px-Forgetting_Sarah_Marshall_-_Trailer.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "загружать": {
+    "en": {
+      "word": "to upload",
+      "transcription": "tuː ʌpˈloʊd",
+      "examples": [
+        {
+          "text": "I am uploading the photos to the website.",
+          "translation": "Я загружаю фото на сайт."
+        }
+      ]
+    },
+    "it": {
+      "word": "caricare",
+      "transcription": "kariˈkaːre",
+      "examples": [
+        {
+          "text": "Carico le foto sul sito.",
+          "translation": "Я загружаю фото на сайт."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "сохранять": {
+    "en": {
+      "word": "to save",
+      "transcription": "tuː seɪv",
+      "examples": [
+        {
+          "text": "Save the file, please.",
+          "translation": "Сохрани файл, пожалуйста."
+        }
+      ]
+    },
+    "it": {
+      "word": "salvare",
+      "transcription": "salˈvaːre",
+      "examples": [
+        {
+          "text": "Salva il file, per favore.",
+          "translation": "Сохрани файл, пожалуйста."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/f/f2/Fotogramma_dal_film_%22Flow_-_Un_mondo_da_salvare%22.jpg/500px-Fotogramma_dal_film_%22Flow_-_Un_mondo_da_salvare%22.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "удалять": {
+    "en": {
+      "word": "to delete",
+      "transcription": "tuː dɪˈliːt",
+      "examples": [
+        {
+          "text": "I delete old messages.",
+          "translation": "Я удаляю старые сообщения."
+        }
+      ]
+    },
+    "it": {
+      "word": "cancellare",
+      "transcription": "kantʃelˈlaːre",
+      "examples": [
+        {
+          "text": "Cancello i messaggi vecchi.",
+          "translation": "Я удаляю старые сообщения."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "копировать": {
+    "en": {
+      "word": "to copy",
+      "transcription": "tuː ˈkɑːpi",
+      "examples": [
+        {
+          "text": "I am copying the text into the document.",
+          "translation": "Я копирую текст в документ."
+        }
+      ]
+    },
+    "it": {
+      "word": "copiare",
+      "transcription": "koˈpjaːre",
+      "examples": [
+        {
+          "text": "Copio il testo nel documento.",
+          "translation": "Я копирую текст в документ."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Brain_diagram_it.svg/500px-Brain_diagram_it.svg.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "вставить": {
+    "en": {
+      "word": "to paste",
+      "transcription": "tuː peɪst",
+      "examples": [
+        {
+          "text": "I paste the text into the email.",
+          "translation": "Я вставляю текст в письмо."
+        }
+      ]
+    },
+    "it": {
+      "word": "incollare",
+      "transcription": "inkolˈlaːre",
+      "examples": [
+        {
+          "text": "Incollo il testo nella mail.",
+          "translation": "Я вставляю текст в письмо."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "обновление": {
+    "en": {
+      "word": "update",
+      "transcription": "ˈʌpdeɪt",
+      "examples": [
+        {
+          "text": "The update takes ten minutes.",
+          "translation": "Обновление длится десять минут."
+        }
+      ]
+    },
+    "it": {
+      "word": "aggiornamento",
+      "transcription": "addʒornaˈmento",
+      "examples": [
+        {
+          "text": "L'aggiornamento dura dieci minuti.",
+          "translation": "Обновление длится десять минут."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "ошибка": {
+    "it": {
+      "word": "errore",
+      "transcription": "erˈroːre",
+      "examples": [
+        {
+          "text": "C'è un errore nel codice.",
+          "translation": "В коде есть ошибка."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "код": {
+    "en": {
+      "word": "code",
+      "transcription": "koʊd",
+      "examples": [
+        {
+          "text": "The code of this program is long.",
+          "translation": "Код этой программы длинный."
+        }
+      ]
+    },
+    "it": {
+      "word": "codice",
+      "transcription": "ˈkɔːditʃe",
+      "examples": [
+        {
+          "text": "Il codice di questo programma è lungo.",
+          "translation": "Код этой программы длинный."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "данные": {
+    "en": {
+      "word": "data",
+      "transcription": "ˈdeɪtə",
+      "examples": [
+        {
+          "text": "The data is in the cloud.",
+          "translation": "Данные в облаке."
+        }
+      ]
+    },
+    "it": {
+      "word": "dati",
+      "transcription": "ˈdaːti",
+      "examples": [
+        {
+          "text": "I dati sono nel cloud.",
+          "translation": "Данные в облаке."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Rosetta_Stone_BW.jpeg/500px-Rosetta_Stone_BW.jpeg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "память": {
+    "en": {
+      "word": "memory",
+      "transcription": "ˈmɛməri",
+      "examples": [
+        {
+          "text": "The phone has little memory.",
+          "translation": "В телефоне мало памяти."
+        }
+      ]
+    },
+    "it": {
+      "word": "memoria",
+      "transcription": "meˈmɔːrja",
+      "examples": [
+        {
+          "text": "Il telefono ha poca memoria.",
+          "translation": "В телефоне мало памяти."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Ripa_-_Iconologie_-_1643_-_p._107-_memoire.jpg/500px-Ripa_-_Iconologie_-_1643_-_p._107-_memoire.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "диск": {
+    "en": {
+      "word": "disk",
+      "transcription": "dɪsk",
+      "examples": [
+        {
+          "text": "The disk is full.",
+          "translation": "Диск заполнен."
+        }
+      ]
+    },
+    "it": {
+      "word": "disco",
+      "transcription": "ˈdisko",
+      "examples": [
+        {
+          "text": "Il disco è pieno.",
+          "translation": "Диск заполнен."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Floppy_disk_2009_G1.jpg/500px-Floppy_disk_2009_G1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "соединение, подключение": {
+    "en": {
+      "word": "connection",
+      "transcription": "kəˈnɛkʃən",
+      "examples": [
+        {
+          "text": "The connection is slow today.",
+          "translation": "Соединение сегодня медленное."
+        }
+      ]
+    },
+    "it": {
+      "word": "connessione",
+      "transcription": "konneˈssjoːne",
+      "examples": [
+        {
+          "text": "La connessione è lenta oggi.",
+          "translation": "Соединение сегодня медленное."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "ошибка (в программе)": {
+    "en": {
+      "word": "bug",
+      "transcription": "bʌɡ",
+      "examples": [
+        {
+          "text": "There is an error in the code.",
+          "translation": "В коде есть ошибка."
+        }
+      ]
+    },
+    "img": ""
+  }
+}

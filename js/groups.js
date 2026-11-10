@@ -88,7 +88,8 @@ WM.groups = (() => {
   }
 
   // правка кеша извне (редактор картинок): url — пишем в localStorage,
-  // null/своя base64 — пометка «не автокартинка» только в памяти сессии
+  // «Убрать» — постоянная пометка «нет картинки» (перекрывает img из data/*.json),
+  // своя base64 — пометка только в памяти сессии
   function updateImageCache(lang, word, image) {
     const k = `${lang}:${word.toLowerCase()}`;
     const store = imgCacheRead();
@@ -99,7 +100,8 @@ WM.groups = (() => {
       if (keys.length > 800) delete store[keys[0]];
     } else {
       imgMem.set(k, { type: 'none' });
-      delete store[k];
+      if (!image) store[k] = { type: 'none' };
+      else delete store[k];
     }
     try { localStorage.setItem(IMG_KEY, JSON.stringify(store)); } catch { /* переполнение — не критично */ }
   }
@@ -117,13 +119,14 @@ WM.groups = (() => {
     });
   }
 
-  // фоновая догрузка картинок: 3 параллельных запроса, сначала свои из словаря
+  // фоновая догрузка картинок: 3 параллельных запроса, сначала свои из словаря.
+  // Слова с картинкой из data/*.json или в кеше не запрашиваются вовсе
   function loadGroupImages(g, rows, dictImgs) {
     const token = ++imgToken;
     const queue = rows.filter(w => {
       const k = `${g.lang}:${w.word.toLowerCase()}`;
-      // карточки форм глаголов («be — was/were — been») без авто-картинки
-      return !hasForms(w) && !imgMem.has(k) && !imgInflight.has(k);
+      // карточки форм глаголов («be — was/were — been») и слова с img из данных — без автокартинки
+      return !hasForms(w) && !w.image && !imgMem.has(k) && !imgInflight.has(k);
     });
     let cursor = 0;
     const worker = async () => {
@@ -147,28 +150,49 @@ WM.groups = (() => {
 
   // ---------- каталог ----------
 
+  let reloadQueued = false; // одна перерисовка после загрузки данных, как бы часто render ни звали
+
   function render() {
     const box = $('#page-groups');
     if (currentGroupId) return renderDetail(box);
+
+    // наборы грузятся fetch'ем — ждём готовность и показываем результат или ошибку
+    if (WM.groupsData.state === 'loading') {
+      if (!reloadQueued) {
+        reloadQueued = true;
+        WM.groupsData.ready.then(() => { reloadQueued = false; render(); });
+      }
+    }
 
     const groups = allGroups()
       .filter(g => !langFilter || g.lang === langFilter)
       .filter(g => !query || g.name.toLowerCase().includes(query));
 
-    box.innerHTML = `
+    const head = `
       <div class="groups-head">
         <div class="groups-title-row">
           <h2>Готовые наборы</h2>
           <button class="btn btn-primary btn-sm" id="g-create">+ Создать набор</button>
         </div>
-        <p class="hint">Выберите набор — просмотрите слова и добавьте нужные в свой словарь.
-          Каждое слово получит тег набора автоматически.</p>
+        ${WM.groupsData.state === 'error'
+          ? '<p class="hint">Наборы не загрузились: страница открыта без локального сервера ' +
+            '(file://) или нет файла data/. Запустите <b>python3 -m http.server 8080</b> и обновите страницу.</p>'
+          : '<p class="hint">Выберите набор — просмотрите слова и добавьте нужные в свой словарь.' +
+            ' Каждое слово получит тег набора автоматически.</p>'}
         <div class="lang-chips">
           <button class="tag chip-btn${langFilter === '' ? ' active-chip' : ''}" data-lf="">Все языки</button>
           <button class="tag chip-btn${langFilter === 'it' ? ' active-chip' : ''}" data-lf="it" aria-label="Italiano" title="Italiano">🇮🇹</button>
           <button class="tag chip-btn${langFilter === 'en' ? ' active-chip' : ''}" data-lf="en" aria-label="English" title="English">🇬🇧</button>
         </div>
-      </div>
+      </div>`;
+
+    if (WM.groupsData.state === 'loading') {
+      box.innerHTML = `${head}<p class="hint" style="padding:20px 0">Загрузка наборов…</p>`;
+      return;
+    }
+
+    box.innerHTML = `
+      ${head}
       <div class="groups-grid">
         ${groups.map(g => cardHTML(g)).join('')}
       </div>`;
@@ -223,7 +247,8 @@ WM.groups = (() => {
     const rowsHTML = rows.map(w => {
       const inDict = existing.has(norm({ lang: g.lang, word: w.word, translation: w.translation }));
       const checked = selection.has(w.word) ? 'checked' : '';
-      const img = w.image || cachedImage(g.lang, w.word) || dictImgs.get(w.word.toLowerCase()) || null;
+      // источники по убыванию: выбор в редакторе (кеш) → своя картинка из словаря → img из data/*.json
+      const img = cachedImage(g.lang, w.word) || dictImgs.get(w.word.toLowerCase()) || w.image || null;
       return `
       <div class="g-row${inDict ? ' in-dict' : ''}">
         <input type="checkbox" class="g-check" data-word="${esc(w.word)}" ${checked}>
@@ -329,7 +354,9 @@ WM.groups = (() => {
     return findGroup(id) ? id : null;
   }
 
-  function applyRoute() {
+  async function applyRoute() {
+    // наборы грузятся fetch'ем — маршрутизация возможна только после загрузки
+    await WM.groupsData.ready;
     const id = routeGroup();
     if (id === currentGroupId) return;
     currentGroupId = id;
@@ -446,7 +473,7 @@ WM.groups = (() => {
     const U = WM.app.state.uid;
     const before = existingKeys();
     const payload = words.map(w => {
-      // картинка из набора, иначе — заранее настроенная в редакторе (кеш групп)
+      // картинка из набора (data/*.json), иначе — заранее настроенная в редакторе (кеш групп)
       const cached = cachedImage(group.lang, w.word);
       return {
         lang: group.lang, word: w.word, transcription: w.transcription || '',

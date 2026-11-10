@@ -8,7 +8,8 @@ test.describe('Данные — каталог наборов', () => {
   const SINGLES = ['phrasal', 'key-verbs', 'irregular-verbs-en'];
 
   test('35 групп: пары it/en идут рядом, одиночные наборы на месте', async ({ appPage: page }) => {
-    const info = await page.evaluate(() => {
+    const info = await page.evaluate(async () => {
+      await (window as any).WM.groupsData.ready;
       const groups = (window as any).WM.groupsData.GROUPS;
       return { ids: groups.map((g: any) => g.id), langs: groups.map((g: any) => g.lang) };
     });
@@ -32,8 +33,9 @@ test.describe('Данные — каталог наборов', () => {
     }
   });
 
-  test('слова наборов полные: транскрипция, перевод, примеры (пословицы — без примеров)', async ({ appPage: page }) => {
-    const problems = await page.evaluate(() => {
+  test('слова наборов полные: транскрипция, перевод, пример на языке набора (пословицы — без примеров)', async ({ appPage: page }) => {
+    const problems = await page.evaluate(async () => {
+      await (window as any).WM.groupsData.ready;
       const groups = (window as any).WM.groupsData.GROUPS;
       const bad: string[] = [];
       for (const g of groups) {
@@ -41,15 +43,42 @@ test.describe('Данные — каталог наборов', () => {
         for (const w of g.words) {
           if (!proverb && !w.transcription) bad.push(`${g.id}/${w.word}: нет транскрипции`);
           if (!w.translation) bad.push(`${g.id}/${w.word}: нет перевода`);
-          const expected = proverb ? 0 : 2;
+          // в JSON у слова один пример — на языке набора (пример-перевод второго языка больше не хранится)
+          const expected = proverb ? 0 : 1;
           if (w.examples.length !== expected) {
             bad.push(`${g.id}/${w.word}: примеров ${w.examples.length}, ожидалось ${expected}`);
+          }
+          for (const e of w.examples) {
+            if (e.lang !== g.lang) bad.push(`${g.id}/${w.word}: пример не на языке набора (${e.lang})`);
+            if (!e.translation) bad.push(`${g.id}/${w.word}: у примера нет перевода`);
           }
         }
       }
       return bad;
     });
     expect(problems).toEqual([]);
+  });
+
+  test('записи данных: img из JSON попадает в слова набора', async ({ appPage: page }) => {
+    const stats = await page.evaluate(async () => {
+      await (window as any).WM.groupsData.ready;
+      const gd = (window as any).WM.groupsData;
+      let total = 0, withImage = 0, broken = 0;
+      for (const g of gd.GROUPS) {
+        for (const w of g.words) {
+          total++;
+          if (w.image) {
+            withImage++;
+            if (w.image.type === 'url' && !/^https?:\/\//.test(w.image.value)) broken++;
+          }
+        }
+      }
+      return { total, withImage, broken, files: gd.FILES.length };
+    });
+    expect(stats.files).toBe(19);
+    expect(stats.broken).toBe(0);
+    expect(stats.withImage).toBeGreaterThan(0);
+    expect(stats.total).toBeGreaterThan(3000);
   });
 });
 

@@ -1,0 +1,634 @@
+{
+  "_meta": {
+    "id": "sport",
+    "name": "Спорт",
+    "icon": "⚽",
+    "tag": "спорт",
+    "desc": "Лексика спорта: от мяча до чемпионата.",
+    "id-en": "sport-en"
+  },
+  "футбол": {
+    "en": {
+      "word": "football",
+      "transcription": "ˈfʊtbɔːl",
+      "examples": [
+        {
+          "text": "Football is the most popular sport in Italy.",
+          "translation": "Футбол — самый популярный спорт в Италии."
+        }
+      ]
+    },
+    "it": {
+      "word": "calcio",
+      "transcription": "ˈkaltʃo",
+      "examples": [
+        {
+          "text": "Il calcio è lo sport più popolare d'Italia.",
+          "translation": "Футбол — самый популярный спорт в Италии."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Stoppage_in_an_AFL_game.jpg/500px-Stoppage_in_an_AFL_game.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "матч": {
+    "en": {
+      "word": "match",
+      "transcription": "mætʃ",
+      "examples": [
+        {
+          "text": "The match starts at nine.",
+          "translation": "Матч начинается в девять."
+        }
+      ]
+    },
+    "it": {
+      "word": "partita",
+      "transcription": "parˈtiːta",
+      "examples": [
+        {
+          "text": "La partita inizia alle nove.",
+          "translation": "Матч начинается в девять."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Friction_d%27une_allumette.jpg/500px-Friction_d%27une_allumette.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "команда": {
+    "en": {
+      "word": "team",
+      "transcription": "tiːm",
+      "examples": [
+        {
+          "text": "My team is playing tonight.",
+          "translation": "Моя команда играет сегодня вечером."
+        }
+      ]
+    },
+    "it": {
+      "word": "squadra",
+      "transcription": "ˈskwadra",
+      "examples": [
+        {
+          "text": "La mia squadra gioca stasera.",
+          "translation": "Моя команда играет сегодня вечером."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Team_work.jpg/500px-Team_work.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "игрок": {
+    "en": {
+      "word": "player",
+      "transcription": "ˈpleɪər",
+      "examples": [
+        {
+          "text": "The player scores a goal.",
+          "translation": "Игрок забивает гол."
+        }
+      ]
+    },
+    "it": {
+      "word": "giocatore",
+      "transcription": "dʒokaˈtoːre",
+      "examples": [
+        {
+          "text": "Il giocatore segna un gol.",
+          "translation": "Игрок забивает гол."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "тренер": {
+    "en": {
+      "word": "coach",
+      "transcription": "koʊtʃ",
+      "examples": [
+        {
+          "text": "The coach talks to the team.",
+          "translation": "Тренер разговаривает с командой."
+        }
+      ]
+    },
+    "it": {
+      "word": "allenatore",
+      "transcription": "allenaˈtoːre",
+      "examples": [
+        {
+          "text": "L'allenatore parla con la squadra.",
+          "translation": "Тренер разговаривает с командой."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "ворота": {
+    "it": {
+      "word": "porta",
+      "transcription": "ˈpɔrta",
+      "examples": [
+        {
+          "text": "Il pallone entra in porta.",
+          "translation": "Мяч попадает в ворота."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Paradies_tuer_florenz.jpg/500px-Paradies_tuer_florenz.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "вратарь": {
+    "en": {
+      "word": "goalkeeper",
+      "transcription": "ˈɡoʊlˌkiːpər",
+      "examples": [
+        {
+          "text": "The goalkeeper saves the team.",
+          "translation": "Вратарь спасает команду."
+        }
+      ]
+    },
+    "it": {
+      "word": "portiere",
+      "transcription": "porˈtjɛːre",
+      "examples": [
+        {
+          "text": "Il portiere salva la squadra.",
+          "translation": "Вратарь спасает команду."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Foto_Azione_Diavoli_Vicenza.jpg/500px-Foto_Azione_Diavoli_Vicenza.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "гол": {
+    "en": {
+      "word": "goal",
+      "transcription": "ɡoʊl",
+      "examples": [
+        {
+          "text": "The ball goes into the goal.",
+          "translation": "Мяч попадает в ворота."
+        }
+      ]
+    },
+    "it": {
+      "word": "gol",
+      "transcription": "ɡɔl",
+      "examples": [
+        {
+          "text": "Che gol bellissimo!",
+          "translation": "Какой красивый гол!"
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Goal.jpg/500px-Goal.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "мяч": {
+    "en": {
+      "word": "ball",
+      "transcription": "bɔːl",
+      "examples": [
+        {
+          "text": "The dog runs after the ball.",
+          "translation": "Собака бежит за мячом."
+        }
+      ]
+    },
+    "it": {
+      "word": "palla",
+      "transcription": "ˈpalla",
+      "examples": [
+        {
+          "text": "Il cane corre dietro alla palla.",
+          "translation": "Собака бежит за мячом."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Many_balls.jpg/500px-Many_balls.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "поле, корт": {
+    "en": {
+      "word": "field",
+      "transcription": "fiːld",
+      "examples": [
+        {
+          "text": "The football field is big.",
+          "translation": "Футбольное поле большое."
+        }
+      ]
+    },
+    "it": {
+      "word": "campo",
+      "transcription": "ˈkampo",
+      "examples": [
+        {
+          "text": "Il campo da calcio è grande.",
+          "translation": "Футбольное поле большое."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "соревнование": {
+    "en": {
+      "word": "competition",
+      "transcription": "ˌkɑːmpəˈtɪʃən",
+      "examples": [
+        {
+          "text": "The competition is international.",
+          "translation": "Соревнование международное."
+        }
+      ]
+    },
+    "it": {
+      "word": "gara",
+      "transcription": "ˈɡaːra",
+      "examples": [
+        {
+          "text": "La gara inizia alle dieci.",
+          "translation": "Соревнование начинается в десять."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Heat_1_of_the_Womens_100m_Semi-Final.jpg/500px-Heat_1_of_the_Womens_100m_Semi-Final.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "очко": {
+    "en": {
+      "word": "point",
+      "transcription": "pɔɪnt",
+      "examples": [
+        {
+          "text": "My team has thirty points.",
+          "translation": "У моей команды тридцать очков."
+        }
+      ]
+    },
+    "it": {
+      "word": "punto",
+      "transcription": "ˈpunto",
+      "examples": [
+        {
+          "text": "La mia squadra ha trenta punti.",
+          "translation": "У моей команды тридцать очков."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "чемпионат": {
+    "en": {
+      "word": "championship",
+      "transcription": "ˈtʃæmpiənʃɪp",
+      "examples": [
+        {
+          "text": "The championship lasts until May.",
+          "translation": "Чемпионат длится до мая."
+        }
+      ]
+    },
+    "it": {
+      "word": "campionato",
+      "transcription": "kampjoˈnaːto",
+      "examples": [
+        {
+          "text": "Il campionato dura fino a maggio.",
+          "translation": "Чемпионат длится до мая."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "кубок": {
+    "en": {
+      "word": "cup",
+      "transcription": "kʌp",
+      "examples": [
+        {
+          "text": "The team wins the cup.",
+          "translation": "Команда выигрывает кубок."
+        }
+      ]
+    },
+    "it": {
+      "word": "coppa",
+      "transcription": "ˈkoppa",
+      "examples": [
+        {
+          "text": "La squadra vince la coppa.",
+          "translation": "Команда выигрывает кубок."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Cup_and_Saucer_LACMA_47.35.6a-b_%281_of_3%29.jpg/500px-Cup_and_Saucer_LACMA_47.35.6a-b_%281_of_3%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "болельщик": {
+    "en": {
+      "word": "fan",
+      "transcription": "fæn",
+      "examples": [
+        {
+          "text": "The fans sing at the stadium.",
+          "translation": "Болельщики поют на стадионе."
+        }
+      ]
+    },
+    "it": {
+      "word": "tifoso",
+      "transcription": "tiˈfoːzo",
+      "examples": [
+        {
+          "text": "I tifosi cantano allo stadio.",
+          "translation": "Болельщики поют на стадионе."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/a/ad/Tifosi_%28film_1999%29.jpg/500px-Tifosi_%28film_1999%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "болеть за": {
+    "en": {
+      "word": "root for",
+      "transcription": "ruːt fɔːr",
+      "examples": [
+        {
+          "text": "I root for Milan.",
+          "translation": "Я болею за Милан."
+        }
+      ]
+    },
+    "it": {
+      "word": "tifo per…",
+      "transcription": "ˈtiːfo per",
+      "examples": [
+        {
+          "text": "Tifo per la Juventus.",
+          "translation": "Я болею за «Ювентус»."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Salmonella_typhi_typhoid_fever_PHIL_2215_lores.jpg/500px-Salmonella_typhi_typhoid_fever_PHIL_2215_lores.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "тренировка": {
+    "en": {
+      "word": "training",
+      "transcription": "ˈtreɪnɪŋ",
+      "examples": [
+        {
+          "text": "The training lasts two hours.",
+          "translation": "Тренировка длится два часа."
+        }
+      ]
+    },
+    "it": {
+      "word": "allenamento",
+      "transcription": "allenaˈmento",
+      "examples": [
+        {
+          "text": "L'allenamento dura due ore.",
+          "translation": "Тренировка длится два часа."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Christer_Fuglesang_underwater_EVA_simulation_for_STS-116.jpg/500px-Christer_Fuglesang_underwater_EVA_simulation_for_STS-116.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "плавание": {
+    "en": {
+      "word": "swimming",
+      "transcription": "ˈswɪmɪŋ",
+      "examples": [
+        {
+          "text": "Swimming is very good for health.",
+          "translation": "Плавание очень полезно для здоровья."
+        }
+      ]
+    },
+    "it": {
+      "word": "nuoto",
+      "transcription": "ˈnwɔːto",
+      "examples": [
+        {
+          "text": "Il nuoto è buonissimo per la salute.",
+          "translation": "Плавание очень полезно для здоровья."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/H%C3%A0bit_Saludable.jpg/500px-H%C3%A0bit_Saludable.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "баскетбол": {
+    "en": {
+      "word": "basketball",
+      "transcription": "ˈbæskɪtbɔːl",
+      "examples": [
+        {
+          "text": "I play basketball with friends.",
+          "translation": "Я играю в баскетбол с друзьями."
+        }
+      ]
+    },
+    "it": {
+      "word": "pallacanestro",
+      "transcription": "pallakaneˈstro",
+      "examples": [
+        {
+          "text": "Gioco a pallacanestro con gli amici.",
+          "translation": "Я играю в баскетбол с друзьями."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/LeBron_James_Layup_%28Cleveland_vs_Brooklyn_2018%29.jpg/500px-LeBron_James_Layup_%28Cleveland_vs_Brooklyn_2018%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "волейбол": {
+    "en": {
+      "word": "volleyball",
+      "transcription": "ˈvɑːlibɔːl",
+      "examples": [
+        {
+          "text": "Volleyball is a team sport.",
+          "translation": "Волейбол — командный спорт."
+        }
+      ]
+    },
+    "it": {
+      "word": "pallavolo",
+      "transcription": "pallaˈvoːlo",
+      "examples": [
+        {
+          "text": "La pallavolo è uno sport di squadra.",
+          "translation": "Волейбол — командный спорт."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Europei_di_pallavolo_2005_-_Italia-Russia.jpg/500px-Europei_di_pallavolo_2005_-_Italia-Russia.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "лыжи": {
+    "en": {
+      "word": "skiing",
+      "transcription": "ˈskiːɪŋ",
+      "examples": [
+        {
+          "text": "Skiing is a winter sport.",
+          "translation": "Лыжи — зимний спорт."
+        }
+      ]
+    },
+    "it": {
+      "word": "sci",
+      "transcription": "ʃi",
+      "examples": [
+        {
+          "text": "Lo sci è uno sport invernale.",
+          "translation": "Лыжи — зимний спорт."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Werner_Heel_2.jpg/500px-Werner_Heel_2.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "медаль": {
+    "en": {
+      "word": "medal",
+      "transcription": "ˈmɛdəl",
+      "examples": [
+        {
+          "text": "The champion receives a gold medal.",
+          "translation": "Чемпион получает золотую медаль."
+        }
+      ]
+    },
+    "it": {
+      "word": "medaglia",
+      "transcription": "meˈdaʎʎa",
+      "examples": [
+        {
+          "text": "Il campione riceve una medaglia d'oro.",
+          "translation": "Чемпион получает золотую медаль."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Pisanello.Medaille_Einhorn.jpg/500px-Pisanello.Medaille_Einhorn.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "рекорд": {
+    "en": {
+      "word": "record",
+      "transcription": "ˈrɛkərd",
+      "examples": [
+        {
+          "text": "The swimmer breaks the world record.",
+          "translation": "Пловец бьёт мировой рекорд."
+        }
+      ]
+    },
+    "it": {
+      "word": "record",
+      "transcription": "reˈkɔrd",
+      "examples": [
+        {
+          "text": "Il nuotatore batte il record del mondo.",
+          "translation": "Пловец бьёт мировой рекорд."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "побеждать": {
+    "en": {
+      "word": "to win",
+      "transcription": "tuː wɪn",
+      "examples": [
+        {
+          "text": "Winning is not everything.",
+          "translation": "Победа — не главное."
+        }
+      ]
+    },
+    "it": {
+      "word": "vincere",
+      "transcription": "ˈvintʃere",
+      "examples": [
+        {
+          "text": "Vincere non è tutto.",
+          "translation": "Победа — не главное."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/f/f8/Vincere_Bellocchio.PNG/500px-Vincere_Bellocchio.PNG?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "проигрывать": {
+    "en": {
+      "word": "to lose",
+      "transcription": "tuː luːz",
+      "examples": [
+        {
+          "text": "The team loses the match.",
+          "translation": "Команда проигрывает матч."
+        }
+      ]
+    },
+    "it": {
+      "word": "perdere",
+      "transcription": "ˈpɛrdere",
+      "examples": [
+        {
+          "text": "La squadra perde la partita.",
+          "translation": "Команда проигрывает матч."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "ничья": {
+    "en": {
+      "word": "draw",
+      "transcription": "drɔː",
+      "examples": [
+        {
+          "text": "The match ends in a draw.",
+          "translation": "Матч заканчивается ничьей."
+        }
+      ]
+    },
+    "it": {
+      "word": "pareggio",
+      "transcription": "paˈrɛddʒo",
+      "examples": [
+        {
+          "text": "La partita finisce in pareggio.",
+          "translation": "Матч заканчивается ничьей."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Fbep_MF.png/500px-Fbep_MF.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "гонка, забег": {
+    "en": {
+      "word": "race",
+      "transcription": "reɪs",
+      "examples": [
+        {
+          "text": "The race starts at ten.",
+          "translation": "Соревнование начинается в десять."
+        }
+      ]
+    },
+    "it": {
+      "word": "corsa",
+      "transcription": "ˈkɔrsa",
+      "examples": [
+        {
+          "text": "La corsa dura un’ora.",
+          "translation": "Гонка длится час."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "ворота (на поле)": {
+    "en": {
+      "word": "goalposts",
+      "transcription": "ˈɡoʊlpoʊsts",
+      "examples": [
+        {
+          "text": "The ball hit the goalposts.",
+          "translation": "Мяч попал в ворота."
+        }
+      ]
+    },
+    "img": ""
+  }
+}

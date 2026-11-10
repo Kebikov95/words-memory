@@ -1,0 +1,516 @@
+{
+  "_meta": {
+    "id": "finance",
+    "name": "Финансы",
+    "icon": "💰",
+    "tag": "финансы",
+    "desc": "Банки, счета, налоги и инвестиции.",
+    "id-en": "finance-en"
+  },
+  "деньги": {
+    "en": {
+      "word": "money",
+      "transcription": "ˈmʌni",
+      "examples": [
+        {
+          "text": "I don't have much money with me.",
+          "translation": "У меня нет с собой много денег."
+        }
+      ]
+    },
+    "it": {
+      "word": "denaro",
+      "transcription": "ˈdeːnaro",
+      "examples": [
+        {
+          "text": "Non ho molto denaro con me.",
+          "translation": "У меня нет с собой много денег."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Euro_coins_and_banknotes.jpg/500px-Euro_coins_and_banknotes.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "банк": {
+    "en": {
+      "word": "bank",
+      "transcription": "bæŋk",
+      "examples": [
+        {
+          "text": "The bank opens at nine.",
+          "translation": "Банк открывается в девять."
+        }
+      ]
+    },
+    "it": {
+      "word": "banca",
+      "transcription": "ˈbanka",
+      "examples": [
+        {
+          "text": "La banca apre alle nove.",
+          "translation": "Банк открывается в девять."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Paolo_Monti_-_Serie_fotografica_-_BEIC_6336964.jpg/500px-Paolo_Monti_-_Serie_fotografica_-_BEIC_6336964.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "счёт": {
+    "en": {
+      "word": "account",
+      "transcription": "əˈkaʊnt",
+      "examples": [
+        {
+          "text": "I open an account at the bank.",
+          "translation": "Я открываю счёт в банке."
+        }
+      ]
+    },
+    "it": {
+      "word": "conto",
+      "transcription": "ˈkonto",
+      "examples": [
+        {
+          "text": "Apro un conto in banca.",
+          "translation": "Я открываю счёт в банке."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "кредитная карта": {
+    "en": {
+      "word": "credit card",
+      "transcription": "ˈkrɛdɪt kɑːrd",
+      "examples": [
+        {
+          "text": "I pay with a credit card.",
+          "translation": "Я плачу кредитной картой."
+        }
+      ]
+    },
+    "it": {
+      "word": "carta di credito",
+      "transcription": "ˈkarta di ˈkrɛdito",
+      "examples": [
+        {
+          "text": "Pago con la carta di credito.",
+          "translation": "Я плачу кредитной картой."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Credit-cards.jpg/500px-Credit-cards.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "банкомат": {
+    "en": {
+      "word": "ATM",
+      "transcription": "ˌeɪ tiː ˈɛm",
+      "examples": [
+        {
+          "text": "There is an ATM near the bank.",
+          "translation": "Рядом с банком есть банкомат."
+        }
+      ]
+    },
+    "it": {
+      "word": "bancomat",
+      "transcription": "baŋkoˈmat",
+      "examples": [
+        {
+          "text": "C'è un bancomat vicino alla banca.",
+          "translation": "Рядом с банком есть банкомат."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Fr%C3%BCher_Bankautomat_von_Nixdorf.jpg/500px-Fr%C3%BCher_Bankautomat_von_Nixdorf.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "наличные": {
+    "en": {
+      "word": "cash",
+      "transcription": "kæʃ",
+      "examples": [
+        {
+          "text": "I pay in cash.",
+          "translation": "Я плачу наличными."
+        }
+      ]
+    },
+    "it": {
+      "word": "contanti",
+      "transcription": "konˈtanti",
+      "examples": [
+        {
+          "text": "Pago in contanti.",
+          "translation": "Я плачу наличными."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Money_USA.jpg/500px-Money_USA.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "курс валют": {
+    "en": {
+      "word": "exchange rate",
+      "transcription": "ɪksˈtʃeɪndʒ reɪt",
+      "examples": [
+        {
+          "text": "What is the euro-dollar exchange rate?",
+          "translation": "Какой курс евро к доллару?"
+        }
+      ]
+    },
+    "it": {
+      "word": "cambio",
+      "transcription": "ˈkambio",
+      "examples": [
+        {
+          "text": "Qual è il cambio euro-dollaro?",
+          "translation": "Какой курс евро к доллару?"
+        }
+      ]
+    },
+    "img": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Money-Euro-USD-LEI_53073-480x360_%284791385567%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  "заём, кредит": {
+    "en": {
+      "word": "loan",
+      "transcription": "loʊn",
+      "examples": [
+        {
+          "text": "The house loan lasts twenty years.",
+          "translation": "Кредит на дом длится двадцать лет."
+        }
+      ]
+    },
+    "it": {
+      "word": "prestito",
+      "transcription": "ˈprɛstito",
+      "examples": [
+        {
+          "text": "Il prestito della casa dura vent'anni.",
+          "translation": "Кредит на дом длится двадцать лет."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Petrevene_18.jpg/500px-Petrevene_18.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "ипотека": {
+    "en": {
+      "word": "mortgage",
+      "transcription": "ˈmɔːrɡɪdʒ",
+      "examples": [
+        {
+          "text": "The mortgage costs eight hundred euros a month.",
+          "translation": "Ипотека стоит восемьсот евро в месяц."
+        }
+      ]
+    },
+    "it": {
+      "word": "mutuo",
+      "transcription": "ˈmutuo",
+      "examples": [
+        {
+          "text": "Il mutuo costa ottocento euro al mese.",
+          "translation": "Ипотека стоит восемьсот евро в месяц."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/30_year_mortgage_calculator.webp/500px-30_year_mortgage_calculator.webp?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "процент": {
+    "en": {
+      "word": "interest",
+      "transcription": "ˈɪntrəst",
+      "examples": [
+        {
+          "text": "The interest on the loan is low.",
+          "translation": "Процент по кредиту низкий."
+        }
+      ]
+    },
+    "it": {
+      "word": "interesse",
+      "transcription": "interˈɛsse",
+      "examples": [
+        {
+          "text": "L'interesse del prestito è basso.",
+          "translation": "Процент по кредиту низкий."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "сбережения": {
+    "en": {
+      "word": "savings",
+      "transcription": "ˈseɪvɪŋz",
+      "examples": [
+        {
+          "text": "I have a savings account.",
+          "translation": "У меня есть сберегательный счёт."
+        }
+      ]
+    },
+    "it": {
+      "word": "risparmio",
+      "transcription": "risˈparmjo",
+      "examples": [
+        {
+          "text": "Ho un conto di risparmio.",
+          "translation": "У меня есть сберегательный счёт."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Piggy_bank2.jpg/500px-Piggy_bank2.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "инвестировать": {
+    "en": {
+      "word": "to invest",
+      "transcription": "tuː ɪnˈvɛst",
+      "examples": [
+        {
+          "text": "We invest the money in a small company.",
+          "translation": "Мы инвестируем деньги в маленькую компанию."
+        }
+      ]
+    },
+    "it": {
+      "word": "investire",
+      "transcription": "invesˈtiːre",
+      "examples": [
+        {
+          "text": "Investiamo i soldi in una piccola azienda.",
+          "translation": "Мы инвестируем деньги в маленькую компанию."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Paolo_Basilico_-_Kairos.jpg/500px-Paolo_Basilico_-_Kairos.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "акция": {
+    "en": {
+      "word": "share",
+      "transcription": "ʃɛr",
+      "examples": [
+        {
+          "text": "The company's shares are going up.",
+          "translation": "Акции компании растут."
+        }
+      ]
+    },
+    "it": {
+      "word": "azione",
+      "transcription": "atˈtsjoːne",
+      "examples": [
+        {
+          "text": "Le azioni della società salgono.",
+          "translation": "Акции компании растут."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "биржа": {
+    "en": {
+      "word": "stock exchange",
+      "transcription": "stɑːk ɪksˈtʃeɪndʒ",
+      "examples": [
+        {
+          "text": "The stock exchange opens at nine.",
+          "translation": "Биржа открывается в девять."
+        }
+      ]
+    },
+    "it": {
+      "word": "borsa",
+      "transcription": "ˈborsa",
+      "examples": [
+        {
+          "text": "La borsa apre alle nove.",
+          "translation": "Биржа открывается в девять."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/New_York_Stock_Exchange_-_panoramio_%282%29.jpg/500px-New_York_Stock_Exchange_-_panoramio_%282%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "инфляция": {
+    "en": {
+      "word": "inflation",
+      "transcription": "ɪnˈfleɪʃən",
+      "examples": [
+        {
+          "text": "Inflation is high this year.",
+          "translation": "Инфляция в этом году высокая."
+        }
+      ]
+    },
+    "it": {
+      "word": "inflazione",
+      "transcription": "inflatˈtsjoːne",
+      "examples": [
+        {
+          "text": "L'inflazione è alta quest'anno.",
+          "translation": "Инфляция в этом году высокая."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Tasso_di_crescita_annuo_dell%27inflazione.png/500px-Tasso_di_crescita_annuo_dell%27inflazione.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "налог": {
+    "en": {
+      "word": "tax",
+      "transcription": "tæks",
+      "examples": [
+        {
+          "text": "I pay taxes in April.",
+          "translation": "Я плачу налоги в апреле."
+        }
+      ]
+    },
+    "it": {
+      "word": "tassa",
+      "transcription": "ˈtassa",
+      "examples": [
+        {
+          "text": "Pago le tasse ad aprile.",
+          "translation": "Я плачу налоги в апреле."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Quenti_Massys_Gli_esattori.jpg/500px-Quenti_Massys_Gli_esattori.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "расход": {
+    "en": {
+      "word": "expense",
+      "transcription": "ɪkˈspɛns",
+      "examples": [
+        {
+          "text": "I do the shopping on Saturday.",
+          "translation": "Я делаю покупки по субботам."
+        }
+      ]
+    },
+    "it": {
+      "word": "spesa",
+      "transcription": "ˈspeːza",
+      "examples": [
+        {
+          "text": "Faccio la spesa il sabato.",
+          "translation": "Я делаю покупки по субботам."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "доход": {
+    "en": {
+      "word": "income",
+      "transcription": "ˈɪnkʌm",
+      "examples": [
+        {
+          "text": "The monthly income is two thousand euros.",
+          "translation": "Ежемесячный доход — две тысячи евро."
+        }
+      ]
+    },
+    "it": {
+      "word": "guadagno",
+      "transcription": "ɡwaˈdaɲɲo",
+      "examples": [
+        {
+          "text": "Il guadagno mensile è di duemila euro.",
+          "translation": "Ежемесячный доход — две тысячи евро."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "долг": {
+    "en": {
+      "word": "debt",
+      "transcription": "dɛt",
+      "examples": [
+        {
+          "text": "I have a debt with the bank.",
+          "translation": "У меня долг перед банком."
+        }
+      ]
+    },
+    "it": {
+      "word": "debito",
+      "transcription": "ˈdɛːbito",
+      "examples": [
+        {
+          "text": "Ho un debito con la banca.",
+          "translation": "У меня долг перед банком."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Payday_loan_shop_window.jpg/500px-Payday_loan_shop_window.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "банкротство": {
+    "en": {
+      "word": "bankruptcy",
+      "transcription": "ˈbæŋkrʌptsi",
+      "examples": [
+        {
+          "text": "The firm risks bankruptcy.",
+          "translation": "Фирма рискует банкротством."
+        }
+      ]
+    },
+    "it": {
+      "word": "fallimento",
+      "transcription": "falliˈmento",
+      "examples": [
+        {
+          "text": "La ditta rischia il fallimento.",
+          "translation": "Фирма рискует банкротством."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/No_Bailout_for_Drug_Fair%3F_%283390579592%29.jpg/500px-No_Bailout_for_Drug_Fair%3F_%283390579592%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "страховка": {
+    "en": {
+      "word": "insurance",
+      "transcription": "ɪnˈʃʊrəns",
+      "examples": [
+        {
+          "text": "Car insurance is obligatory.",
+          "translation": "Страховка машины обязательна."
+        }
+      ]
+    },
+    "it": {
+      "word": "assicurazione",
+      "transcription": "assikuratˈtsjoːne",
+      "examples": [
+        {
+          "text": "L'assicurazione della macchina è obbligatoria.",
+          "translation": "Страховка машины обязательна."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Coast_review_%281910%29_%2814760820941%29.jpg/500px-Coast_review_%281910%29_%2814760820941%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "бюджет": {
+    "en": {
+      "word": "budget",
+      "transcription": "ˈbʌdʒɪt",
+      "examples": [
+        {
+          "text": "The project budget is small.",
+          "translation": "Бюджет проекта маленький."
+        }
+      ]
+    },
+    "it": {
+      "word": "budget",
+      "transcription": "ˈbaddʒet",
+      "examples": [
+        {
+          "text": "Il budget del progetto è piccolo.",
+          "translation": "Бюджет проекта маленький."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Brooklyn_Museum_-_Comme_Sisyphe_-_Honor%C3%A9_Daumier.jpg/500px-Brooklyn_Museum_-_Comme_Sisyphe_-_Honor%C3%A9_Daumier.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  }
+}

@@ -1,0 +1,378 @@
+{
+  "_meta": {
+    "id": "colors",
+    "name": "Цвета",
+    "icon": "🎨",
+    "tag": "цвета",
+    "desc": "Все цвета радуги.",
+    "id-en": "colors-en"
+  },
+  "красный": {
+    "en": {
+      "word": "red",
+      "transcription": "rɛd",
+      "examples": [
+        {
+          "text": "Marco's car is red.",
+          "translation": "Машина Марко красная."
+        }
+      ]
+    },
+    "it": {
+      "word": "rosso",
+      "transcription": "ˈrosso",
+      "examples": [
+        {
+          "text": "La macchina di Marco è rossa.",
+          "translation": "Машина Марко красная."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Color_icon_red.svg/500px-Color_icon_red.svg.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "синий": {
+    "en": {
+      "word": "blue",
+      "transcription": "bluː",
+      "examples": [
+        {
+          "text": "The sea is blue today.",
+          "translation": "Море сегодня синее."
+        }
+      ]
+    },
+    "it": {
+      "word": "blu",
+      "transcription": "blu",
+      "examples": [
+        {
+          "text": "Il mare è blu oggi.",
+          "translation": "Море сегодня синее."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Color_icon_blue.svg/500px-Color_icon_blue.svg.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "голубой": {
+    "en": {
+      "word": "light blue",
+      "transcription": "ˌlaɪt ˈbluː",
+      "examples": [
+        {
+          "text": "The sky is light blue in summer.",
+          "translation": "Летом небо голубое."
+        }
+      ]
+    },
+    "it": {
+      "word": "azzurro",
+      "transcription": "atˈtsurro",
+      "examples": [
+        {
+          "text": "Il cielo è azzurro d'estate.",
+          "translation": "Летом небо голубое."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Cloudless_blue_sky.JPG/500px-Cloudless_blue_sky.JPG?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "зелёный": {
+    "en": {
+      "word": "green",
+      "transcription": "ɡriːn",
+      "examples": [
+        {
+          "text": "The traffic light is green.",
+          "translation": "Светофор зелёный."
+        }
+      ]
+    },
+    "it": {
+      "word": "verde",
+      "transcription": "ˈvɛrde",
+      "examples": [
+        {
+          "text": "Il semaforo è verde.",
+          "translation": "Светофор зелёный."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Flag_of_Cape_Verde_%283-2%29.svg/500px-Flag_of_Cape_Verde_%283-2%29.svg.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "жёлтый": {
+    "en": {
+      "word": "yellow",
+      "transcription": "ˈjɛloʊ",
+      "examples": [
+        {
+          "text": "Lemons are yellow.",
+          "translation": "Лимоны жёлтые."
+        }
+      ]
+    },
+    "it": {
+      "word": "giallo",
+      "transcription": "ˈdʒallo",
+      "examples": [
+        {
+          "text": "I limoni sono gialli.",
+          "translation": "Лимоны жёлтые."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Color_icon_yellow.svg/500px-Color_icon_yellow.svg.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "оранжевый": {
+    "en": {
+      "word": "orange",
+      "transcription": "ˈɔːrɪndʒ",
+      "examples": [
+        {
+          "text": "Oranges are orange.",
+          "translation": "Апельсины оранжевые."
+        }
+      ]
+    },
+    "it": {
+      "word": "arancione",
+      "transcription": "arantˈʃoːne",
+      "examples": [
+        {
+          "text": "Le arance sono arancioni.",
+          "translation": "Апельсины оранжевые."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Color_icon_orange.svg/500px-Color_icon_orange.svg.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "фиолетовый": {
+    "en": {
+      "word": "purple",
+      "transcription": "ˈpɜːrpəl",
+      "examples": [
+        {
+          "text": "My favorite color is purple.",
+          "translation": "Мой любимый цвет — фиолетовый."
+        }
+      ]
+    },
+    "it": {
+      "word": "viola",
+      "transcription": "ˈvjɔːla",
+      "examples": [
+        {
+          "text": "Il mio colore preferito è il viola.",
+          "translation": "Мой любимый цвет — фиолетовый."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/5/50/Viola_come_il_mare_logo.png/500px-Viola_come_il_mare_logo.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "розовый": {
+    "en": {
+      "word": "pink",
+      "transcription": "pɪŋk",
+      "examples": [
+        {
+          "text": "The rose is a pink flower.",
+          "translation": "Роза — розовый цветок."
+        }
+      ]
+    },
+    "it": {
+      "word": "rosa",
+      "transcription": "ˈrɔːza",
+      "examples": [
+        {
+          "text": "La rosa è un fiore rosa.",
+          "translation": "Роза — розовый цветок."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Pink_sapphire_ring.jpg/500px-Pink_sapphire_ring.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "коричневый": {
+    "en": {
+      "word": "brown",
+      "transcription": "braʊn",
+      "examples": [
+        {
+          "text": "The bear is brown.",
+          "translation": "Медведь коричневый."
+        }
+      ]
+    },
+    "it": {
+      "word": "marrone",
+      "transcription": "marˈroːne",
+      "examples": [
+        {
+          "text": "L'orso è marrone.",
+          "translation": "Медведь коричневый."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Emma_%28Oct_2023%29_%28cropped%29.png/500px-Emma_%28Oct_2023%29_%28cropped%29.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "чёрный": {
+    "en": {
+      "word": "black",
+      "transcription": "blæk",
+      "examples": [
+        {
+          "text": "Grandma's cat is black.",
+          "translation": "Кот бабушки чёрный."
+        }
+      ]
+    },
+    "it": {
+      "word": "nero",
+      "transcription": "ˈneːro",
+      "examples": [
+        {
+          "text": "Il gatto della nonna è nero.",
+          "translation": "Кот бабушки чёрный."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Color_icon_black.svg/500px-Color_icon_black.svg.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "белый": {
+    "en": {
+      "word": "white",
+      "transcription": "waɪt",
+      "examples": [
+        {
+          "text": "The snow is white.",
+          "translation": "Снег белый."
+        }
+      ]
+    },
+    "it": {
+      "word": "bianco",
+      "transcription": "ˈbjanko",
+      "examples": [
+        {
+          "text": "La neve è bianca.",
+          "translation": "Снег белый."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Dispersion_prism.jpg/500px-Dispersion_prism.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "серый": {
+    "en": {
+      "word": "grey",
+      "transcription": "ɡreɪ",
+      "examples": [
+        {
+          "text": "The sky is grey today.",
+          "translation": "Небо сегодня серое."
+        }
+      ]
+    },
+    "it": {
+      "word": "grigio",
+      "transcription": "ˈɡriːdʒo",
+      "examples": [
+        {
+          "text": "Il cielo è grigio oggi.",
+          "translation": "Небо сегодня серое."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Color_icon_gray.svg/500px-Color_icon_gray.svg.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "золотой": {
+    "en": {
+      "word": "golden",
+      "transcription": "ˈɡoʊldən",
+      "examples": [
+        {
+          "text": "The golden ring is grandma's.",
+          "translation": "Золотое кольцо — бабушкино."
+        }
+      ]
+    },
+    "it": {
+      "word": "dorato",
+      "transcription": "doˈraːto",
+      "examples": [
+        {
+          "text": "L'anello dorato è della nonna.",
+          "translation": "Золотое кольцо — бабушкино."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/MDYA3194_%28cropped%29.jpg/500px-MDYA3194_%28cropped%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "серебряный": {
+    "en": {
+      "word": "silver",
+      "transcription": "ˈsɪlvər",
+      "examples": [
+        {
+          "text": "The moon is silver tonight.",
+          "translation": "Луна сегодня серебряная."
+        }
+      ]
+    },
+    "it": {
+      "word": "argenteo",
+      "transcription": "ardʒenˈteːo",
+      "examples": [
+        {
+          "text": "La luna è argentea stanotte.",
+          "translation": "Луна сегодня серебряная."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Argenteus-Constantius_I-antioch_RIC_033a.jpg/500px-Argenteus-Constantius_I-antioch_RIC_033a.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "светлый": {
+    "en": {
+      "word": "light",
+      "transcription": "laɪt",
+      "examples": [
+        {
+          "text": "My room is light blue.",
+          "translation": "Моя комната светло-голубая."
+        }
+      ]
+    },
+    "it": {
+      "word": "chiaro",
+      "transcription": "ˈkjaːro",
+      "examples": [
+        {
+          "text": "La mia stanza è blu chiaro.",
+          "translation": "Моя комната светло-голубая."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Prism_flat_rainbow_%28cropped%29.jpg/500px-Prism_flat_rainbow_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "тёмный": {
+    "en": {
+      "word": "dark",
+      "transcription": "dɑːrk",
+      "examples": [
+        {
+          "text": "I prefer dark green.",
+          "translation": "Я предпочитаю тёмно-зелёный."
+        }
+      ]
+    },
+    "it": {
+      "word": "scuro",
+      "transcription": "ˈskuːro",
+      "examples": [
+        {
+          "text": "Preferisco il verde scuro.",
+          "translation": "Я предпочитаю тёмно-зелёный."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Fenetre_bleue_Jurilovca_Musee_Village_Bucarest.jpg/500px-Fenetre_bleue_Jurilovca_Musee_Village_Bucarest.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  }
+}

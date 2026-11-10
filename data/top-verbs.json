@@ -1,0 +1,2324 @@
+{
+  "_meta": {
+    "id": "top-verbs",
+    "name": "100 самых частотных глаголов",
+    "icon": "🏃",
+    "tag": "глаголы",
+    "desc": "Опорные глаголы — без них не строится ни одна фраза.",
+    "size": 100,
+    "size-en": 100,
+    "id-en": "top-verbs-en"
+  },
+  "быть": {
+    "en": {
+      "word": "be",
+      "transcription": "biː",
+      "examples": [
+        {
+          "text": "I am a student.",
+          "translation": "Я студент."
+        }
+      ]
+    },
+    "it": {
+      "word": "essere",
+      "transcription": "ˈɛssere",
+      "examples": [
+        {
+          "text": "Sono studente.",
+          "translation": "Я студент."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Being_Parmenides.png/500px-Being_Parmenides.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "иметь": {
+    "en": {
+      "word": "have",
+      "transcription": "hæv",
+      "examples": [
+        {
+          "text": "I have a sister.",
+          "translation": "У меня есть сестра."
+        }
+      ]
+    },
+    "it": {
+      "word": "avere",
+      "transcription": "aˈveːre",
+      "examples": [
+        {
+          "text": "Ho una sorella.",
+          "translation": "У меня есть сестра."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/b/b9/%27Avere_vent%27anni%27_-_Lilli_Carati_e_Gloria_Guida.jpg/500px-%27Avere_vent%27anni%27_-_Lilli_Carati_e_Gloria_Guida.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "делать": {
+    "en": {
+      "word": "do",
+      "transcription": "duː",
+      "examples": [
+        {
+          "text": "What do you do in the evening?",
+          "translation": "Что ты делаешь вечером?"
+        }
+      ]
+    },
+    "it": {
+      "word": "fare",
+      "transcription": "ˈfaːre",
+      "examples": [
+        {
+          "text": "Che fai domani?",
+          "translation": "Что ты будешь делать завтра?"
+        }
+      ]
+    },
+    "img": ""
+  },
+  "мочь": {
+    "en": {
+      "word": "can",
+      "transcription": "kæn",
+      "examples": [
+        {
+          "text": "Can I open the window?",
+          "translation": "Можно открыть окно?"
+        }
+      ]
+    },
+    "it": {
+      "word": "potere",
+      "transcription": "poˈteːre",
+      "examples": [
+        {
+          "text": "Posso aprire la finestra?",
+          "translation": "Можно открыть окно?"
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Statue-Augustus.jpg/500px-Statue-Augustus.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "хотеть": {
+    "en": {
+      "word": "want",
+      "transcription": "wɑːnt",
+      "examples": [
+        {
+          "text": "I want an ice cream.",
+          "translation": "Я хочу мороженое."
+        }
+      ]
+    },
+    "it": {
+      "word": "volere",
+      "transcription": "ˈvoːlere",
+      "examples": [
+        {
+          "text": "Voglio un gelato.",
+          "translation": "Я хочу мороженое."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/7/72/VolereVolare%28film%29.png/500px-VolereVolare%28film%29.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "должен": {
+    "en": {
+      "word": "must",
+      "transcription": "mʌst",
+      "examples": [
+        {
+          "text": "I must study tonight.",
+          "translation": "Мне надо позаниматься сегодня вечером."
+        }
+      ]
+    },
+    "it": {
+      "word": "dovere",
+      "transcription": "ˈdoːvere",
+      "examples": [
+        {
+          "text": "Devo studiare stasera.",
+          "translation": "Мне надо позаниматься сегодня вечером."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Leighton-Duty-1883.jpg/500px-Leighton-Duty-1883.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "идти, ехать": {
+    "en": {
+      "word": "go",
+      "transcription": "ɡoʊ",
+      "examples": [
+        {
+          "text": "I go to school by bike.",
+          "translation": "Я езжу в школу на велосипеде."
+        }
+      ]
+    },
+    "it": {
+      "word": "andare",
+      "transcription": "anˈdaːre",
+      "examples": [
+        {
+          "text": "Vado a scuola in bicicletta.",
+          "translation": "Я еду в школу на велосипеде."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/e/e1/Lasciati_andare_-_Toni_Servillo.png/500px-Lasciati_andare_-_Toni_Servillo.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "приходить": {
+    "en": {
+      "word": "come",
+      "transcription": "kʌm",
+      "examples": [
+        {
+          "text": "Come to my house!",
+          "translation": "Приходи ко мне домой!"
+        }
+      ]
+    },
+    "it": {
+      "word": "venire",
+      "transcription": "veˈniːre",
+      "examples": [
+        {
+          "text": "Vieni alla festa?",
+          "translation": "Ты придёшь на праздник?"
+        }
+      ]
+    },
+    "img": ""
+  },
+  "давать": {
+    "en": {
+      "word": "give",
+      "transcription": "ɡɪv",
+      "examples": [
+        {
+          "text": "Give the book to Marco.",
+          "translation": "Дай книгу Марко."
+        }
+      ]
+    },
+    "it": {
+      "word": "dare",
+      "transcription": "ˈdaːre",
+      "examples": [
+        {
+          "text": "Dai il libro a Marco.",
+          "translation": "Дай книгу Марко."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "сказать": {
+    "en": {
+      "word": "say",
+      "transcription": "seɪ",
+      "examples": [
+        {
+          "text": "Say it again, please.",
+          "translation": "Скажи это ещё раз, пожалуйста."
+        }
+      ]
+    },
+    "it": {
+      "word": "dire",
+      "transcription": "ˈdiːre",
+      "examples": [
+        {
+          "text": "Perché non mi dici la verità?",
+          "translation": "Почему ты не говоришь мне правду?"
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Logo_dire.jpg/500px-Logo_dire.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "видеть": {
+    "en": {
+      "word": "see",
+      "transcription": "siː",
+      "examples": [
+        {
+          "text": "I see the sea from the window.",
+          "translation": "Я вижу море из окна."
+        }
+      ]
+    },
+    "it": {
+      "word": "vedere",
+      "transcription": "veˈdeːre",
+      "examples": [
+        {
+          "text": "Vedo il mare dalla finestra.",
+          "translation": "Я вижу море из окна."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/a/ab/Fatti_vedere_%28film_2025%29.png/500px-Fatti_vedere_%28film_2025%29.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "знать": {
+    "en": {
+      "word": "know",
+      "transcription": "noʊ",
+      "examples": [
+        {
+          "text": "I don't know.",
+          "translation": "Я не знаю."
+        }
+      ]
+    },
+    "it": {
+      "word": "sapere",
+      "transcription": "saˈpeːre",
+      "examples": [
+        {
+          "text": "Non lo so.",
+          "translation": "Я не знаю."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Tetradrachm_Athens_480-420BC_MBA_Lyon.jpg/500px-Tetradrachm_Athens_480-420BC_MBA_Lyon.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "разговаривать": {
+    "en": {
+      "word": "talk",
+      "transcription": "tɔːk",
+      "examples": [
+        {
+          "text": "We talk about work every day.",
+          "translation": "Мы разговариваем о работе каждый день."
+        }
+      ]
+    },
+    "it": {
+      "word": "parlare",
+      "transcription": "parˈlaːre",
+      "examples": [
+        {
+          "text": "Parlo italiano e un po' d'inglese.",
+          "translation": "Я говорю по-итальянски и немного по-английски."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/8/8e/LascialiParlare.png/500px-LascialiParlare.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "находить": {
+    "en": {
+      "word": "find",
+      "transcription": "faɪnd",
+      "examples": [
+        {
+          "text": "I can't find the keys.",
+          "translation": "Не могу найти ключи."
+        }
+      ]
+    },
+    "it": {
+      "word": "trovare",
+      "transcription": "troˈvaːre",
+      "examples": [
+        {
+          "text": "Non trovo le chiavi.",
+          "translation": "Не могу найти ключи."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "оставаться": {
+    "en": {
+      "word": "stay",
+      "transcription": "steɪ",
+      "examples": [
+        {
+          "text": "I am staying home today.",
+          "translation": "Я остаюсь сегодня дома."
+        }
+      ]
+    },
+    "it": {
+      "word": "stare",
+      "transcription": "ˈstaːre",
+      "examples": [
+        {
+          "text": "Sto bene, grazie.",
+          "translation": "У меня всё хорошо, спасибо."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "брать": {
+    "en": {
+      "word": "take",
+      "transcription": "teɪk",
+      "examples": [
+        {
+          "text": "Take an umbrella, it is raining.",
+          "translation": "Возьми зонт, идёт дождь."
+        }
+      ]
+    },
+    "it": {
+      "word": "prendere",
+      "transcription": "ˈprɛndere",
+      "examples": [
+        {
+          "text": "Prendo un caffè.",
+          "translation": "Я возьму кофе."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "класть": {
+    "en": {
+      "word": "put",
+      "transcription": "pʊt",
+      "examples": [
+        {
+          "text": "I put the book on the table.",
+          "translation": "Я кладу книгу на стол."
+        }
+      ]
+    },
+    "it": {
+      "word": "mettere",
+      "transcription": "ˈmettere",
+      "examples": [
+        {
+          "text": "Metto il libro sul tavolo.",
+          "translation": "Я кладу книгу на стол."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "выходить, уходить": {
+    "en": {
+      "word": "leave",
+      "transcription": "liːv",
+      "examples": [
+        {
+          "text": "I leave the house at eight.",
+          "translation": "Я выхожу из дома в восемь."
+        }
+      ]
+    },
+    "it": {
+      "word": "uscire",
+      "transcription": "uʃˈʃiːre",
+      "examples": [
+        {
+          "text": "Esco di casa alle otto.",
+          "translation": "Я выхожу из дома в восемь."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "тратить, проводить (время)": {
+    "en": {
+      "word": "spend",
+      "transcription": "spend",
+      "examples": [
+        {
+          "text": "I spend the weekend with my family.",
+          "translation": "Я провожу выходные с семьёй."
+        }
+      ]
+    },
+    "it": {
+      "word": "passare",
+      "transcription": "pasˈsaːre",
+      "examples": [
+        {
+          "text": "Passo il weekend con la famiglia.",
+          "translation": "Я провожу выходные с семьёй."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/2023_Roland_Garros_Qualifying_Tournament_-_25_%28cropped%29.jpg/500px-2023_Roland_Garros_Qualifying_Tournament_-_25_%28cropped%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "смотреть": {
+    "en": {
+      "word": "look",
+      "transcription": "lʊk",
+      "examples": [
+        {
+          "text": "I look at the stars at night.",
+          "translation": "Я смотрю на звёзды ночью."
+        }
+      ]
+    },
+    "it": {
+      "word": "guardare",
+      "transcription": "ɡwarˈdaːre",
+      "examples": [
+        {
+          "text": "Guardo la TV la sera.",
+          "translation": "Я смотрю телевизор вечером."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/0/08/La_polizia_sta_a_guardare.jpg/500px-La_polizia_sta_a_guardare.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "искать": {
+    "en": {
+      "word": "look for",
+      "transcription": "lʊk fɔːr",
+      "examples": [
+        {
+          "text": "I am looking for a new job.",
+          "translation": "Я ищу новую работу."
+        }
+      ]
+    },
+    "it": {
+      "word": "cercare",
+      "transcription": "tʃerˈkaːre",
+      "examples": [
+        {
+          "text": "Cerco un lavoro nuovo.",
+          "translation": "Я ищу новую работу."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/0/03/E_ti_vengo_a_cercare.png/500px-E_ti_vengo_a_cercare.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "помнить": {
+    "en": {
+      "word": "remember",
+      "transcription": "rɪˈmembər",
+      "examples": [
+        {
+          "text": "I don't remember his name.",
+          "translation": "Я не помню его имя."
+        }
+      ]
+    },
+    "it": {
+      "word": "ricordare",
+      "transcription": "rikorˈdaːre",
+      "examples": [
+        {
+          "text": "Non ricordo il suo nome.",
+          "translation": "Я не помню его имя."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "верить": {
+    "en": {
+      "word": "believe",
+      "transcription": "bɪˈliːv",
+      "examples": [
+        {
+          "text": "I don't believe this story.",
+          "translation": "Я не верю в эту историю."
+        }
+      ]
+    },
+    "it": {
+      "word": "credere",
+      "transcription": "ˈkreːdere",
+      "examples": [
+        {
+          "text": "Non credo a questa storia.",
+          "translation": "Я не верю в эту историю."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "слышать": {
+    "en": {
+      "word": "hear",
+      "transcription": "hɪr",
+      "examples": [
+        {
+          "text": "I hear a strange noise.",
+          "translation": "Я слышу странный шум."
+        }
+      ]
+    },
+    "it": {
+      "word": "sentire",
+      "transcription": "senˈtiːre",
+      "examples": [
+        {
+          "text": "Sento un rumore strano.",
+          "translation": "Я слышу странный шум."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "спрашивать": {
+    "en": {
+      "word": "ask",
+      "transcription": "æsk",
+      "examples": [
+        {
+          "text": "I ask for information at the station.",
+          "translation": "Я спрашиваю информацию на вокзале."
+        }
+      ]
+    },
+    "it": {
+      "word": "chiedere",
+      "transcription": "ˈkjɛːdere",
+      "examples": [
+        {
+          "text": "Chiedo informazioni in stazione.",
+          "translation": "Я спрашиваю информацию на вокзале."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/7/7b/Chiedere_scusa.png/500px-Chiedere_scusa.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "отвечать": {
+    "en": {
+      "word": "answer",
+      "transcription": "ˈænsər",
+      "examples": [
+        {
+          "text": "I always answer the emails.",
+          "translation": "Я всегда отвечаю на письма."
+        }
+      ]
+    },
+    "it": {
+      "word": "rispondere",
+      "transcription": "risˈpɔndere",
+      "examples": [
+        {
+          "text": "Rispondo sempre alle email.",
+          "translation": "Я всегда отвечаю на письма."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/c/c1/The_Call_-_Non_rispondere.jpg/500px-The_Call_-_Non_rispondere.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "читать": {
+    "en": {
+      "word": "read",
+      "transcription": "riːd",
+      "examples": [
+        {
+          "text": "I read a book every month.",
+          "translation": "Я читаю книгу каждый месяц."
+        }
+      ]
+    },
+    "it": {
+      "word": "leggere",
+      "transcription": "ˈleddʒere",
+      "examples": [
+        {
+          "text": "Leggo un libro ogni mese.",
+          "translation": "Я читаю книгу каждый месяц."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Franz_Eybl%2C_Lesendes_M%C3%A4dchen.jpg/500px-Franz_Eybl%2C_Lesendes_M%C3%A4dchen.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "писать": {
+    "en": {
+      "word": "write",
+      "transcription": "raɪt",
+      "examples": [
+        {
+          "text": "I write a letter to grandma.",
+          "translation": "Я пишу письмо бабушке."
+        }
+      ]
+    },
+    "it": {
+      "word": "scrivere",
+      "transcription": "ˈskriːvere",
+      "examples": [
+        {
+          "text": "Scrivo una lettera alla nonna.",
+          "translation": "Я пишу письмо бабушке."
+        }
+      ]
+    },
+    "img": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Herkulaneischer_Meister_002b.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  "есть": {
+    "en": {
+      "word": "eat",
+      "transcription": "iːt",
+      "examples": [
+        {
+          "text": "I eat pasta every day.",
+          "translation": "Я ем пасту каждый день."
+        }
+      ]
+    },
+    "it": {
+      "word": "mangiare",
+      "transcription": "manˈdʒaːre",
+      "examples": [
+        {
+          "text": "Mangio la pasta ogni giorno.",
+          "translation": "Я ем пасту каждый день."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Amandines_de_Provence%2C_poster_by_Leonetto_Cappiello%2C_1900.jpg/500px-Amandines_de_Provence%2C_poster_by_Leonetto_Cappiello%2C_1900.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "пить": {
+    "en": {
+      "word": "drink",
+      "transcription": "drɪŋk",
+      "examples": [
+        {
+          "text": "Do you drink water or wine?",
+          "translation": "Ты пьёшь воду или вино?"
+        }
+      ]
+    },
+    "it": {
+      "word": "bere",
+      "transcription": "ˈbeːre",
+      "examples": [
+        {
+          "text": "Bevi acqua o vino?",
+          "translation": "Ты пьёшь воду или вино?"
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Glass_of_tea%2C_Yogyakarta.jpg/500px-Glass_of_tea%2C_Yogyakarta.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "спать": {
+    "en": {
+      "word": "sleep",
+      "transcription": "sliːp",
+      "examples": [
+        {
+          "text": "I sleep eight hours every night.",
+          "translation": "Я сплю восемь часов каждую ночь."
+        }
+      ]
+    },
+    "it": {
+      "word": "dormire",
+      "transcription": "dorˈmiːre",
+      "examples": [
+        {
+          "text": "Dormo otto ore ogni notte.",
+          "translation": "Я сплю восемь часов каждую ночь."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Domenico_Fetti_-_Sleeping_Girl_-_WGA7863.jpg/500px-Domenico_Fetti_-_Sleeping_Girl_-_WGA7863.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "работать": {
+    "en": {
+      "word": "work",
+      "transcription": "wɜːrk",
+      "examples": [
+        {
+          "text": "I work in an office.",
+          "translation": "Я работаю в офисе."
+        }
+      ]
+    },
+    "it": {
+      "word": "lavorare",
+      "transcription": "lavoˈraːre",
+      "examples": [
+        {
+          "text": "Lavoro in un ufficio.",
+          "translation": "Я работаю в офисе."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "жить": {
+    "en": {
+      "word": "live",
+      "transcription": "lɪv",
+      "examples": [
+        {
+          "text": "I have lived in Rome for ten years.",
+          "translation": "Я живу в Риме десять лет."
+        }
+      ]
+    },
+    "it": {
+      "word": "vivere",
+      "transcription": "ˈviːvere",
+      "examples": [
+        {
+          "text": "Vivo a Roma da dieci anni.",
+          "translation": "Я живу в Риме десять лет."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "быть знакомым": {
+    "en": {
+      "word": "be familiar with",
+      "transcription": "bi fəˈmɪliər wɪð",
+      "examples": [
+        {
+          "text": "I am familiar with this city.",
+          "translation": "Я хорошо знаю этот город."
+        }
+      ]
+    },
+    "it": {
+      "word": "conoscere",
+      "transcription": "koˈnoʃʃere",
+      "examples": [
+        {
+          "text": "Conosco bene questa città.",
+          "translation": "Я хорошо знаю этот город."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/ToutUniversRouge.jpg/500px-ToutUniversRouge.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "думать": {
+    "en": {
+      "word": "think",
+      "transcription": "θɪŋk",
+      "examples": [
+        {
+          "text": "I often think about you.",
+          "translation": "Я часто думаю о тебе."
+        }
+      ]
+    },
+    "it": {
+      "word": "pensare",
+      "transcription": "penˈsaːre",
+      "examples": [
+        {
+          "text": "Penso spesso a te.",
+          "translation": "Я часто думаю о тебе."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Dante_Gabriel_Rossetti_-_Dante_in_Meditation_Holding_a_Pomegranate.jpg/500px-Dante_Gabriel_Rossetti_-_Dante_in_Meditation_Holding_a_Pomegranate.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "любить": {
+    "en": {
+      "word": "love",
+      "transcription": "lʌv",
+      "examples": [
+        {
+          "text": "I love Italian music.",
+          "translation": "Я люблю итальянскую музыку."
+        }
+      ]
+    },
+    "it": {
+      "word": "amare",
+      "transcription": "aˈmaːre",
+      "examples": [
+        {
+          "text": "Amo la musica italiana.",
+          "translation": "Я люблю итальянскую музыку."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "понимать": {
+    "en": {
+      "word": "understand",
+      "transcription": "ˌʌndərˈstænd",
+      "examples": [
+        {
+          "text": "I don't understand this word.",
+          "translation": "Я не понимаю это слово."
+        }
+      ]
+    },
+    "it": {
+      "word": "capire",
+      "transcription": "kaˈpiːre",
+      "examples": [
+        {
+          "text": "Non capisco questa parola.",
+          "translation": "Я не понимаю это слово."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "заканчивать": {
+    "en": {
+      "word": "finish",
+      "transcription": "ˈfɪnɪʃ",
+      "examples": [
+        {
+          "text": "I finish work at six.",
+          "translation": "Я заканчиваю работать в шесть."
+        }
+      ]
+    },
+    "it": {
+      "word": "finire",
+      "transcription": "fiˈniːre",
+      "examples": [
+        {
+          "text": "Finisco di lavorare alle sei.",
+          "translation": "Я заканчиваю работать в шесть."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "уезжать, отправляться": {
+    "it": {
+      "word": "partire",
+      "transcription": "parˈtiːre",
+      "examples": [
+        {
+          "text": "Il treno parte alle nove.",
+          "translation": "Поезд отправляется в девять."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/3/3f/Partire_%281938%29.png/500px-Partire_%281938%29.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "прибывать": {
+    "en": {
+      "word": "arrive",
+      "transcription": "əˈraɪv",
+      "examples": [
+        {
+          "text": "We arrive tomorrow morning.",
+          "translation": "Мы приедем завтра утром."
+        }
+      ]
+    },
+    "it": {
+      "word": "arrivare",
+      "transcription": "arriˈvaːre",
+      "examples": [
+        {
+          "text": "Arriviamo domani mattina.",
+          "translation": "Мы приедем завтра утром."
+        }
+      ]
+    },
+    "img": "https://upload.wikimedia.org/wikipedia/it/1/1c/Arrivare_a_te_manga.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  "становиться": {
+    "en": {
+      "word": "become",
+      "transcription": "bɪˈkʌm",
+      "examples": [
+        {
+          "text": "My sister is becoming a doctor.",
+          "translation": "Моя сестра становится врачом."
+        }
+      ]
+    },
+    "it": {
+      "word": "diventare",
+      "transcription": "divenˈtaːre",
+      "examples": [
+        {
+          "text": "Mia sorella diventa medico.",
+          "translation": "Моя сестра становится врачом."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "начинать": {
+    "en": {
+      "word": "begin",
+      "transcription": "bɪˈɡɪn",
+      "examples": [
+        {
+          "text": "The lesson begins at nine.",
+          "translation": "Урок начинается в девять."
+        }
+      ]
+    },
+    "it": {
+      "word": "iniziare",
+      "transcription": "innitˈtsjaːre",
+      "examples": [
+        {
+          "text": "Il film inizia alle otto.",
+          "translation": "Фильм начинается в восемь."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/f/f8/Funny_Games_US.jpg/500px-Funny_Games_US.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "продолжать": {
+    "en": {
+      "word": "continue",
+      "transcription": "kənˈtɪnjuː",
+      "examples": [
+        {
+          "text": "The road continues for two kilometers.",
+          "translation": "Дорога продолжается два километра."
+        }
+      ]
+    },
+    "it": {
+      "word": "continuare",
+      "transcription": "kontinuˈaːre",
+      "examples": [
+        {
+          "text": "Continui sempre a parlare!",
+          "translation": "Ты всё время продолжаешь говорить!"
+        }
+      ]
+    },
+    "img": ""
+  },
+  "ждать": {
+    "en": {
+      "word": "wait",
+      "transcription": "weɪt",
+      "examples": [
+        {
+          "text": "Wait for me here!",
+          "translation": "Подожди меня здесь!"
+        }
+      ]
+    },
+    "it": {
+      "word": "aspettare",
+      "transcription": "aspetˈtaːre",
+      "examples": [
+        {
+          "text": "Aspettami qui!",
+          "translation": "Подожди меня здесь!"
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/e/e3/MarxPu%C3%B2Aspettare.PNG/500px-MarxPu%C3%B2Aspettare.PNG?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "входить": {
+    "en": {
+      "word": "enter",
+      "transcription": "ˈɛntər",
+      "examples": [
+        {
+          "text": "Can we come in?",
+          "translation": "Мы можем войти?"
+        }
+      ]
+    },
+    "it": {
+      "word": "entrare",
+      "transcription": "enˈtraːre",
+      "examples": [
+        {
+          "text": "Possiamo entrare?",
+          "translation": "Мы можем войти?"
+        }
+      ]
+    },
+    "img": ""
+  },
+  "возвращаться": {
+    "en": {
+      "word": "return",
+      "transcription": "rɪˈtɜːrn",
+      "examples": [
+        {
+          "text": "I return home at seven.",
+          "translation": "Я возвращаюсь домой в семь."
+        }
+      ]
+    },
+    "it": {
+      "word": "tornare",
+      "transcription": "torˈnaːre",
+      "examples": [
+        {
+          "text": "Torno a casa alle sette.",
+          "translation": "Я возвращаюсь домой в семь."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/0/02/Tornare_-_Giovanna_Mezzogiorno.png/500px-Tornare_-_Giovanna_Mezzogiorno.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "подниматься": {
+    "en": {
+      "word": "climb",
+      "transcription": "klaɪm",
+      "examples": [
+        {
+          "text": "Let's climb in the car.",
+          "translation": "Давай сядем в машину."
+        }
+      ]
+    },
+    "it": {
+      "word": "salire",
+      "transcription": "saˈliːre",
+      "examples": [
+        {
+          "text": "Saliamo in macchina.",
+          "translation": "Давай сядем в машину."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/f/f0/Salir%C3%B2.png/500px-Salir%C3%B2.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "спускаться": {
+    "en": {
+      "word": "go down",
+      "transcription": "ɡoʊ daʊn",
+      "examples": [
+        {
+          "text": "I go down at the next stop.",
+          "translation": "Я выхожу на следующей остановке."
+        }
+      ]
+    },
+    "it": {
+      "word": "scendere",
+      "transcription": "ˈʃɛndere",
+      "examples": [
+        {
+          "text": "Scendo alla prossima fermata.",
+          "translation": "Я выхожу на следующей остановке."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "бегать": {
+    "en": {
+      "word": "run",
+      "transcription": "rʌn",
+      "examples": [
+        {
+          "text": "I run in the park every morning.",
+          "translation": "Я бегаю в парке каждое утро."
+        }
+      ]
+    },
+    "it": {
+      "word": "correre",
+      "transcription": "ˈkɔrrere",
+      "examples": [
+        {
+          "text": "Corro ogni mattina nel parco.",
+          "translation": "Я бегаю в парке каждое утро."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "ходить пешком": {
+    "en": {
+      "word": "walk",
+      "transcription": "wɔːk",
+      "examples": [
+        {
+          "text": "I walk half an hour every day.",
+          "translation": "Я хожу пешком полчаса каждый день."
+        }
+      ]
+    },
+    "it": {
+      "word": "camminare",
+      "transcription": "kammiˈnaːre",
+      "examples": [
+        {
+          "text": "Cammino mezz'ora ogni giorno.",
+          "translation": "Я хожу пешком полчаса каждый день."
+        }
+      ]
+    },
+    "img": "https://upload.wikimedia.org/wikipedia/commons/9/95/Elephant_Walking_animated.gif?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  "летать": {
+    "en": {
+      "word": "fly",
+      "transcription": "flaɪ",
+      "examples": [
+        {
+          "text": "Birds fly in the sky.",
+          "translation": "Птицы летают в небе."
+        }
+      ]
+    },
+    "it": {
+      "word": "volare",
+      "transcription": "voˈlaːre",
+      "examples": [
+        {
+          "text": "Gli uccelli volano in cielo.",
+          "translation": "Птицы летают в небе."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/5/55/Volare_%28film_di_2023%29.png/500px-Volare_%28film_di_2023%29.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "плавать": {
+    "en": {
+      "word": "swim",
+      "transcription": "swɪm",
+      "examples": [
+        {
+          "text": "In summer I swim in the sea.",
+          "translation": "Летом я плаваю в море."
+        }
+      ]
+    },
+    "it": {
+      "word": "nuotare",
+      "transcription": "nwoˈtaːre",
+      "examples": [
+        {
+          "text": "In estate nuoto nel mare.",
+          "translation": "Летом я плаваю в море."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/H%C3%A0bit_Saludable.jpg/500px-H%C3%A0bit_Saludable.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "водить (машину)": {
+    "it": {
+      "word": "guidare",
+      "transcription": "ɡwiˈdaːre",
+      "examples": [
+        {
+          "text": "Guido la macchina di mio padre.",
+          "translation": "Я веду машину моего отца."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Alan_Jones_1980_%28cropped%29.jpg/500px-Alan_Jones_1980_%28cropped%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "покупать": {
+    "en": {
+      "word": "buy",
+      "transcription": "baɪ",
+      "examples": [
+        {
+          "text": "I buy bread every morning.",
+          "translation": "Я покупаю хлеб каждое утро."
+        }
+      ]
+    },
+    "it": {
+      "word": "comprare",
+      "transcription": "komˈpraːre",
+      "examples": [
+        {
+          "text": "Compro il pane ogni mattina.",
+          "translation": "Я покупаю хлеб каждое утро."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Prostitute_tj.jpg/500px-Prostitute_tj.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "продавать": {
+    "en": {
+      "word": "sell",
+      "transcription": "sel",
+      "examples": [
+        {
+          "text": "We sell fruit at the market.",
+          "translation": "Мы продаём фрукты на рынке."
+        }
+      ]
+    },
+    "it": {
+      "word": "vendere",
+      "transcription": "ˈvɛndere",
+      "examples": [
+        {
+          "text": "Vendiamo frutta al mercato.",
+          "translation": "Мы продаём фрукты на рынке."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "платить": {
+    "en": {
+      "word": "pay",
+      "transcription": "peɪ",
+      "examples": [
+        {
+          "text": "Who is paying the bill?",
+          "translation": "Кто платит по счёту?"
+        }
+      ]
+    },
+    "it": {
+      "word": "pagare",
+      "transcription": "paˈɡaːre",
+      "examples": [
+        {
+          "text": "Chi paga il conto?",
+          "translation": "Кто платит по счёту?"
+        }
+      ]
+    },
+    "img": ""
+  },
+  "стоить": {
+    "en": {
+      "word": "cost",
+      "transcription": "kɔːst",
+      "examples": [
+        {
+          "text": "How much does this book cost?",
+          "translation": "Сколько стоит эта книга?"
+        }
+      ]
+    },
+    "it": {
+      "word": "costare",
+      "transcription": "kosˈtaːre",
+      "examples": [
+        {
+          "text": "Quanto costa questo libro?",
+          "translation": "Сколько стоит эта книга?"
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Dome_F110_left_2014_Super_GT_Suzuka.jpg/500px-Dome_F110_left_2014_Super_GT_Suzuka.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "открывать": {
+    "en": {
+      "word": "open",
+      "transcription": "ˈoʊpən",
+      "examples": [
+        {
+          "text": "I open the window, it is hot.",
+          "translation": "Я открываю окно, жарко."
+        }
+      ]
+    },
+    "it": {
+      "word": "aprire",
+      "transcription": "aˈpriːre",
+      "examples": [
+        {
+          "text": "Apro la finestra, è caldo.",
+          "translation": "Я открываю окно, жарко."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "закрывать": {
+    "en": {
+      "word": "close",
+      "transcription": "kloʊz",
+      "examples": [
+        {
+          "text": "Close the door, please.",
+          "translation": "Закрой дверь, пожалуйста."
+        }
+      ]
+    },
+    "it": {
+      "word": "chiudere",
+      "transcription": "ˈkjuːdere",
+      "examples": [
+        {
+          "text": "Chiudi la porta, per favore.",
+          "translation": "Закрой дверь, пожалуйста."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "приносить": {
+    "en": {
+      "word": "bring",
+      "transcription": "brɪŋ",
+      "examples": [
+        {
+          "text": "I am bringing a present for Anna.",
+          "translation": "Я приношу подарок Анне."
+        }
+      ]
+    },
+    "it": {
+      "word": "portare",
+      "transcription": "porˈtaːre",
+      "examples": [
+        {
+          "text": "Porto un regalo ad Anna.",
+          "translation": "Я несу подарок Анне."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/PortariaAcquasparta4.jpg/500px-PortariaAcquasparta4.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "держать": {
+    "en": {
+      "word": "hold",
+      "transcription": "hoʊld",
+      "examples": [
+        {
+          "text": "Hold my phone for a moment.",
+          "translation": "Подержи мой телефон минуту."
+        }
+      ]
+    },
+    "it": {
+      "word": "tenere",
+      "transcription": "ˈteːnere",
+      "examples": [
+        {
+          "text": "Tieni il mio telefono un momento.",
+          "translation": "Подержи мой телефон минуту."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Fachi-Bilma-D%C3%BCnen.jpg/500px-Fachi-Bilma-D%C3%BCnen.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "позволять": {
+    "en": {
+      "word": "let",
+      "transcription": "let",
+      "examples": [
+        {
+          "text": "Let's go home!",
+          "translation": "Пойдём домой!"
+        }
+      ]
+    },
+    "it": {
+      "word": "lasciare",
+      "transcription": "laʃˈʃaːre",
+      "examples": [
+        {
+          "text": "Lascio il libro a casa.",
+          "translation": "Я оставляю книгу дома."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/2/27/Non_mi_lasciare.png/500px-Non_mi_lasciare.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "помогать": {
+    "en": {
+      "word": "help",
+      "transcription": "help",
+      "examples": [
+        {
+          "text": "I help my mother in the kitchen.",
+          "translation": "Я помогаю маме на кухне."
+        }
+      ]
+    },
+    "it": {
+      "word": "aiutare",
+      "transcription": "aijuˈtaːre",
+      "examples": [
+        {
+          "text": "Aiuto mia madre in cucina.",
+          "translation": "Я помогаю маме на кухне."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "служить": {
+    "en": {
+      "word": "serve",
+      "transcription": "sɜːrv",
+      "examples": [
+        {
+          "text": "The waiter serves the dinner.",
+          "translation": "Официант подаёт ужин."
+        }
+      ]
+    },
+    "it": {
+      "word": "servire",
+      "transcription": "serˈviːre",
+      "examples": [
+        {
+          "text": "Mi serve un aiuto.",
+          "translation": "Мне нужна помощь."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/%E6%96%B0%E5%8D%8E%E9%97%A8_-_panoramio.jpg/500px-%E6%96%B0%E5%8D%8E%E9%97%A8_-_panoramio.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "выучить": {
+    "en": {
+      "word": "pick up",
+      "transcription": "pɪk ʌp",
+      "examples": [
+        {
+          "text": "I picked up some Italian phrases.",
+          "translation": "Я учу новые слова каждый день."
+        }
+      ]
+    },
+    "it": {
+      "word": "imparare",
+      "transcription": "imparaˈreːre",
+      "examples": [
+        {
+          "text": "Imparo parole nuove ogni giorno.",
+          "translation": "Я учу новые слова каждый день."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Francesco_Sforza.jpg/500px-Francesco_Sforza.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "преподавать": {
+    "en": {
+      "word": "teach",
+      "transcription": "tiːtʃ",
+      "examples": [
+        {
+          "text": "I teach English at a school.",
+          "translation": "Я преподаю английский в школе."
+        }
+      ]
+    },
+    "it": {
+      "word": "insegnare",
+      "transcription": "inseɲˈɲaːre",
+      "examples": [
+        {
+          "text": "Insegno inglese in una scuola.",
+          "translation": "Я преподаю английский в школе."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Marie_Curie_c._1920s.jpg/500px-Marie_Curie_c._1920s.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "учиться": {
+    "en": {
+      "word": "learn",
+      "transcription": "lɜːrn",
+      "examples": [
+        {
+          "text": "I learn new words every day.",
+          "translation": "Я учу новые слова каждый день."
+        }
+      ]
+    },
+    "it": {
+      "word": "studiare",
+      "transcription": "stuˈdjaːre",
+      "examples": [
+        {
+          "text": "Studio italiano la sera.",
+          "translation": "Я учу итальянский вечером."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Cooking_contest_140418-N-OX321-101.jpg/500px-Cooking_contest_140418-N-OX321-101.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "повторять": {
+    "en": {
+      "word": "repeat",
+      "transcription": "rɪˈpiːt",
+      "examples": [
+        {
+          "text": "Repeat, please, I didn't understand.",
+          "translation": "Повтори, пожалуйста, я не понял."
+        }
+      ]
+    },
+    "it": {
+      "word": "ripetere",
+      "transcription": "riˈpeːtere",
+      "examples": [
+        {
+          "text": "Ripeti, per favore, non ho capito.",
+          "translation": "Повтори, пожалуйста, я не понял."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Freud_1921_Jenseits_des_Lustprinzips.djvu/page1-500px-Freud_1921_Jenseits_des_Lustprinzips.djvu.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "забывать": {
+    "en": {
+      "word": "forget",
+      "transcription": "fərˈɡɛt",
+      "examples": [
+        {
+          "text": "I always forget my keys.",
+          "translation": "Я всегда забываю ключи."
+        }
+      ]
+    },
+    "it": {
+      "word": "dimenticare",
+      "transcription": "dimenˈtikaːre",
+      "examples": [
+        {
+          "text": "Dimentico sempre le chiavi.",
+          "translation": "Я всегда забываю ключи."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "просыпаться": {
+    "en": {
+      "word": "wake up",
+      "transcription": "weɪk ʌp",
+      "examples": [
+        {
+          "text": "I wake up at seven.",
+          "translation": "Я просыпаюсь в семь."
+        }
+      ]
+    },
+    "it": {
+      "word": "svegliarsi",
+      "transcription": "zveʎˈʎarsi",
+      "examples": [
+        {
+          "text": "Mi sveglio alle sette.",
+          "translation": "Я просыпаюсь в семь."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "вставать": {
+    "en": {
+      "word": "get up",
+      "transcription": "ɡet ʌp",
+      "examples": [
+        {
+          "text": "Do you get up early on Sunday?",
+          "translation": "Ты встаёшь рано в воскресенье?"
+        }
+      ]
+    },
+    "it": {
+      "word": "alzarsi",
+      "transcription": "alˈtsarsi",
+      "examples": [
+        {
+          "text": "Ti alzi presto la domenica?",
+          "translation": "Ты встаёшь рано в воскресенье?"
+        }
+      ]
+    },
+    "img": ""
+  },
+  "садиться": {
+    "en": {
+      "word": "sit",
+      "transcription": "sɪt",
+      "examples": [
+        {
+          "text": "Sit down, please.",
+          "translation": "Садитесь, пожалуйста."
+        }
+      ]
+    },
+    "it": {
+      "word": "sedersi",
+      "transcription": "seˈdersi",
+      "examples": [
+        {
+          "text": "Sedetevi, per favore.",
+          "translation": "Садитесь, пожалуйста."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/4/4f/CD_Tenerife_%281992%29.svg/500px-CD_Tenerife_%281992%29.svg.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "называть(ся)": {
+    "en": {
+      "word": "call",
+      "transcription": "kɔːl",
+      "examples": [
+        {
+          "text": "Call me tonight, please.",
+          "translation": "Позвони мне сегодня вечером, пожалуйста."
+        }
+      ]
+    },
+    "it": {
+      "word": "chiamarsi",
+      "transcription": "kjaˈmarsi",
+      "examples": [
+        {
+          "text": "Come ti chiami?",
+          "translation": "Как тебя зовут?"
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/The_Importance_of_Being_Earnest_-_Cigarettecase.jpg/500px-The_Importance_of_Being_Earnest_-_Cigarettecase.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "веселиться": {
+    "en": {
+      "word": "have fun",
+      "transcription": "hæv fʌn",
+      "examples": [
+        {
+          "text": "We have fun at the party.",
+          "translation": "Мы веселимся на празднике."
+        }
+      ]
+    },
+    "it": {
+      "word": "divertirsi",
+      "transcription": "diverˈtirsi",
+      "examples": [
+        {
+          "text": "Ci divertiamo alla festa.",
+          "translation": "Мы веселимся на празднике."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Antoine_Watteau_-_Actors_from_the_Com%C3%A9die_Fran%C3%A7aise_-_WGA25475.jpg/500px-Antoine_Watteau_-_Actors_from_the_Com%C3%A9die_Fran%C3%A7aise_-_WGA25475.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "чувствовать себя": {
+    "en": {
+      "word": "feel",
+      "transcription": "fiːl",
+      "examples": [
+        {
+          "text": "How do you feel today?",
+          "translation": "Как ты себя чувствуешь сегодня?"
+        }
+      ]
+    },
+    "it": {
+      "word": "sentirsi",
+      "transcription": "senˈtirsi",
+      "examples": [
+        {
+          "text": "Come ti senti oggi?",
+          "translation": "Как ты себя чувствуешь сегодня?"
+        }
+      ]
+    },
+    "img": ""
+  },
+  "показывать": {
+    "en": {
+      "word": "show",
+      "transcription": "ʃoʊ",
+      "examples": [
+        {
+          "text": "I will show you my city.",
+          "translation": "Я покажу тебе мой город."
+        }
+      ]
+    },
+    "it": {
+      "word": "mostrare",
+      "transcription": "moˈstraːre",
+      "examples": [
+        {
+          "text": "Ti mostro la mia città.",
+          "translation": "Я покажу тебе мой город."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/500px-Flag_of_Italy.svg.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "отправлять": {
+    "en": {
+      "word": "send",
+      "transcription": "send",
+      "examples": [
+        {
+          "text": "I am sending a message to Luca.",
+          "translation": "Я отправляю сообщение Лука."
+        }
+      ]
+    },
+    "it": {
+      "word": "mandare",
+      "transcription": "manˈdaːre",
+      "examples": [
+        {
+          "text": "Mando un messaggio a Luca.",
+          "translation": "Я отправляю сообщение Лука."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/5/50/Mandare_tutto_all%27aria_%28Marco_Mengoni%29.png/500px-Mandare_tutto_all%27aria_%28Marco_Mengoni%29.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "получать": {
+    "en": {
+      "word": "get",
+      "transcription": "ɡet",
+      "examples": [
+        {
+          "text": "I get many emails every day.",
+          "translation": "Я получаю много писем каждый день."
+        }
+      ]
+    },
+    "it": {
+      "word": "ricevere",
+      "transcription": "riˈtʃeːvere",
+      "examples": [
+        {
+          "text": "Ricevo tante email al lavoro.",
+          "translation": "Я получаю много писем на работе."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "предлагать": {
+    "en": {
+      "word": "offer",
+      "transcription": "ˈɔːfər",
+      "examples": [
+        {
+          "text": "I offer you a coffee.",
+          "translation": "Я угощаю тебя кофе."
+        }
+      ]
+    },
+    "it": {
+      "word": "offrire",
+      "transcription": "ofˈfriːre",
+      "examples": [
+        {
+          "text": "Ti offro un caffè.",
+          "translation": "Я угощаю тебя кофе."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/DCUSA.Gallery11.BB%26BBlackFriday.Wikipedia.jpg/500px-DCUSA.Gallery11.BB%26BBlackFriday.Wikipedia.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "принимать": {
+    "en": {
+      "word": "accept",
+      "transcription": "əkˈsɛpt",
+      "examples": [
+        {
+          "text": "I accept your proposal.",
+          "translation": "Я принимаю твоё предложение."
+        }
+      ]
+    },
+    "it": {
+      "word": "accettare",
+      "transcription": "attʃetˈtaːre",
+      "examples": [
+        {
+          "text": "Accetto la tua proposta.",
+          "translation": "Я принимаю твоё предложение."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/WW2Montage.PNG/500px-WW2Montage.PNG?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "отказывать": {
+    "en": {
+      "word": "refuse",
+      "transcription": "rɪˈfjuːz",
+      "examples": [
+        {
+          "text": "I refuse the invitation, I am tired.",
+          "translation": "Я отклоняю приглашение, я устал."
+        }
+      ]
+    },
+    "it": {
+      "word": "rifiutare",
+      "transcription": "rifjuˈtaːre",
+      "examples": [
+        {
+          "text": "Rifiuto l'invito, sono stanco.",
+          "translation": "Я отклоняю приглашение, я устал."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/All_four_members_of_Refused_performing_live.jpg/500px-All_four_members_of_Refused_performing_live.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "терять, проигрывать": {
+    "en": {
+      "word": "lose",
+      "transcription": "luːz",
+      "examples": [
+        {
+          "text": "I always lose the keys!",
+          "translation": "Я вечно теряю ключи!"
+        }
+      ]
+    },
+    "it": {
+      "word": "perdere",
+      "transcription": "ˈpɛrdere",
+      "examples": [
+        {
+          "text": "Perdo sempre le chiavi!",
+          "translation": "Я вечно теряю ключи!"
+        }
+      ]
+    },
+    "img": ""
+  },
+  "побеждать": {
+    "en": {
+      "word": "win",
+      "transcription": "wɪn",
+      "examples": [
+        {
+          "text": "Our team often wins.",
+          "translation": "Наша команда часто побеждает."
+        }
+      ]
+    },
+    "it": {
+      "word": "vincere",
+      "transcription": "ˈvintʃere",
+      "examples": [
+        {
+          "text": "La nostra squadra vince spesso.",
+          "translation": "Наша команда часто побеждает."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/f/f8/Vincere_Bellocchio.PNG/500px-Vincere_Bellocchio.PNG?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "удаваться, справляться": {
+    "it": {
+      "word": "riuscire",
+      "transcription": "riuʃˈʃiːre",
+      "examples": [
+        {
+          "text": "Non riesco a dormire.",
+          "translation": "Я не могу заснуть."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "казаться": {
+    "en": {
+      "word": "seem",
+      "transcription": "siːm",
+      "examples": [
+        {
+          "text": "He seems like a kind person.",
+          "translation": "Он кажется добрым человеком."
+        }
+      ]
+    },
+    "it": {
+      "word": "sembrare",
+      "transcription": "semˈbraːre",
+      "examples": [
+        {
+          "text": "Sembra una persona gentile.",
+          "translation": "Он кажется добрым человеком."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "рождаться": {
+    "en": {
+      "word": "be born",
+      "transcription": "bi bɔːrn",
+      "examples": [
+        {
+          "text": "My daughter was born in May.",
+          "translation": "Моя дочь родилась в мае."
+        }
+      ]
+    },
+    "it": {
+      "word": "nascere",
+      "transcription": "ˈnaʃʃere",
+      "examples": [
+        {
+          "text": "Mia figlia è nata in maggio.",
+          "translation": "Моя дочь родилась в мае."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Mariana_diritto_nascere.jpg/500px-Mariana_diritto_nascere.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "умирать": {
+    "en": {
+      "word": "die",
+      "transcription": "daɪ",
+      "examples": [
+        {
+          "text": "Plants die without water.",
+          "translation": "Растения умирают без воды."
+        }
+      ]
+    },
+    "it": {
+      "word": "morire",
+      "transcription": "moˈriːre",
+      "examples": [
+        {
+          "text": "Le piante muoiono senza acqua.",
+          "translation": "Растения умирают без воды."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/2/22/Da_morire.png/500px-Da_morire.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "резать": {
+    "en": {
+      "word": "cut",
+      "transcription": "kʌt",
+      "examples": [
+        {
+          "text": "I am cutting the bread.",
+          "translation": "Я режу хлеб."
+        }
+      ]
+    },
+    "it": {
+      "word": "tagliare",
+      "transcription": "taʎˈʎaːre",
+      "examples": [
+        {
+          "text": "Taglio il pane.",
+          "translation": "Я режу хлеб."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Monte_Tagliar%C3%A8_from_SE.png/500px-Monte_Tagliar%C3%A8_from_SE.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "готовить (еду)": {
+    "it": {
+      "word": "cucinare",
+      "transcription": "kutʃiˈnaːre",
+      "examples": [
+        {
+          "text": "Mio padre cucina molto bene.",
+          "translation": "Мой папа готовит очень хорошо."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/17-alimenti%2C_umido%2CTaccuino_Sanitatis%2C_Casanatense_4182..jpg/500px-17-alimenti%2C_umido%2CTaccuino_Sanitatis%2C_Casanatense_4182..jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "играть": {
+    "en": {
+      "word": "play",
+      "transcription": "pleɪ",
+      "examples": [
+        {
+          "text": "I play the guitar.",
+          "translation": "Я играю на гитаре."
+        }
+      ]
+    },
+    "it": {
+      "word": "suonare",
+      "transcription": "swoˈnaːre",
+      "examples": [
+        {
+          "text": "Suono la chitarra.",
+          "translation": "Я играю на гитаре."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "петь": {
+    "en": {
+      "word": "sing",
+      "transcription": "sɪŋ",
+      "examples": [
+        {
+          "text": "I always sing in the shower.",
+          "translation": "Я всегда пою в душе."
+        }
+      ]
+    },
+    "it": {
+      "word": "cantare",
+      "transcription": "kanˈtaːre",
+      "examples": [
+        {
+          "text": "Canto sempre sotto la doccia.",
+          "translation": "Я всегда пою в душе."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "танцевать": {
+    "en": {
+      "word": "dance",
+      "transcription": "dæns",
+      "examples": [
+        {
+          "text": "We dance well together.",
+          "translation": "Мы хорошо танцуем вместе."
+        }
+      ]
+    },
+    "it": {
+      "word": "ballare",
+      "transcription": "balˈlaːre",
+      "examples": [
+        {
+          "text": "Balliamo bene insieme.",
+          "translation": "Мы хорошо танцуем вместе."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/a/ae/DJ_Fish_Ballare.jpg/500px-DJ_Fish_Ballare.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "рисовать": {
+    "en": {
+      "word": "draw",
+      "transcription": "drɔː",
+      "examples": [
+        {
+          "text": "The children draw a house.",
+          "translation": "Дети рисуют дом."
+        }
+      ]
+    },
+    "it": {
+      "word": "disegnare",
+      "transcription": "dizeɲˈɲaːre",
+      "examples": [
+        {
+          "text": "I bambini disegnano una casa.",
+          "translation": "Дети рисуют дом."
+        }
+      ]
+    },
+    "img": "https://upload.wikimedia.org/wikipedia/commons/4/41/Database_management_system_diagram_from_1978_workshop.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  "строить": {
+    "en": {
+      "word": "build",
+      "transcription": "bɪld",
+      "examples": [
+        {
+          "text": "They are building a new house.",
+          "translation": "Они строят новый дом."
+        }
+      ]
+    },
+    "it": {
+      "word": "costruire",
+      "transcription": "kostruˈiːre",
+      "examples": [
+        {
+          "text": "Costruiscono una casa nuova.",
+          "translation": "Они строят новый дом."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "предпочитать": {
+    "en": {
+      "word": "prefer",
+      "transcription": "prɪˈfɜːr",
+      "examples": [
+        {
+          "text": "I prefer tea to coffee.",
+          "translation": "Я предпочитаю чай кофе."
+        }
+      ]
+    },
+    "it": {
+      "word": "preferire",
+      "transcription": "preferiˈre",
+      "examples": [
+        {
+          "text": "Preferisco il tè al caffè.",
+          "translation": "Я предпочитаю чай кофе."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "рассказывать": {
+    "en": {
+      "word": "tell",
+      "transcription": "tel",
+      "examples": [
+        {
+          "text": "Grandma tells a story.",
+          "translation": "Бабушка рассказывает историю."
+        }
+      ]
+    },
+    "it": {
+      "word": "raccontare",
+      "transcription": "rakkonˈtaːre",
+      "examples": [
+        {
+          "text": "La nonna racconta una storia.",
+          "translation": "Бабушка рассказывает историю."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "слушать": {
+    "en": {
+      "word": "listen",
+      "transcription": "ˈlɪsən",
+      "examples": [
+        {
+          "text": "I listen to music on the bus.",
+          "translation": "Я слушаю музыку в автобусе."
+        }
+      ]
+    },
+    "it": {
+      "word": "ascoltare",
+      "transcription": "askolˈtaːre",
+      "examples": [
+        {
+          "text": "Ascolto musica in autobus.",
+          "translation": "Я слушаю музыку в автобусе."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Plutarch_of_Chaeronea-03.jpg/500px-Plutarch_of_Chaeronea-03.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "нравиться": {
+    "en": {
+      "word": "like",
+      "transcription": "laɪk",
+      "examples": [
+        {
+          "text": "I like pizza.",
+          "translation": "Мне нравится пицца."
+        }
+      ]
+    },
+    "it": {
+      "word": "piacere",
+      "transcription": "pjaˈtʃeːre",
+      "examples": [
+        {
+          "text": "Mi piace la pizza.",
+          "translation": "Мне нравится пицца."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "делать, создавать": {
+    "en": {
+      "word": "make",
+      "transcription": "meɪk",
+      "examples": [
+        {
+          "text": "I make breakfast every morning.",
+          "translation": "Я готовлю завтрак каждое утро."
+        }
+      ]
+    },
+    "it": {
+      "word": "produrre",
+      "transcription": "proˈdurre",
+      "examples": [
+        {
+          "text": "Questa fabbrica produce automobili.",
+          "translation": "Этот завод производит машины."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Rayon_synth.png/500px-Rayon_synth.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "использовать": {
+    "en": {
+      "word": "use",
+      "transcription": "juːz",
+      "examples": [
+        {
+          "text": "Can I use your phone?",
+          "translation": "Можно воспользоваться твоим телефоном?"
+        }
+      ]
+    },
+    "it": {
+      "word": "usare",
+      "transcription": "uˈzaːre",
+      "examples": [
+        {
+          "text": "Posso usare il tuo telefono?",
+          "translation": "Можно воспользоваться твоим телефоном?"
+        }
+      ]
+    },
+    "img": "https://upload.wikimedia.org/wikipedia/commons/e/e9/International_Morse_code.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  "отправляться, уезжать": {
+    "en": {
+      "word": "depart",
+      "transcription": "dɪˈpɑːrt",
+      "examples": [
+        {
+          "text": "The train departs at nine.",
+          "translation": "Поезд отправляется в девять."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "водить": {
+    "en": {
+      "word": "drive",
+      "transcription": "draɪv",
+      "examples": [
+        {
+          "text": "I drive my father's car.",
+          "translation": "Я веду машину моего отца."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "справляться, удаваться": {
+    "en": {
+      "word": "manage",
+      "transcription": "ˈmænɪdʒ",
+      "examples": [
+        {
+          "text": "I can't manage to sleep.",
+          "translation": "Я не могу заснуть."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "готовить": {
+    "en": {
+      "word": "cook",
+      "transcription": "kʊk",
+      "examples": [
+        {
+          "text": "My father cooks very well.",
+          "translation": "Мой папа готовит очень хорошо."
+        }
+      ]
+    },
+    "img": ""
+  }
+}

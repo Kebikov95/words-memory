@@ -1,0 +1,199 @@
+{
+  "_meta": {
+    "id": "proverbs",
+    "name": "Пословицы и поговорки",
+    "icon": "💬",
+    "tag": "пословицы",
+    "desc": "Народная мудрость с русскими эквивалентами.",
+    "id-en": "proverbs-en"
+  },
+  "Тише едешь — дальше будешь": {
+    "it": {
+      "word": "Chi va piano, va sano e va lontano.",
+      "transcription": ""
+    },
+    "img": ""
+  },
+  "Лучше поздно, чем никогда": {
+    "en": {
+      "word": "Better late than never.",
+      "transcription": ""
+    },
+    "it": {
+      "word": "Meglio tardi che mai.",
+      "transcription": ""
+    },
+    "img": ""
+  },
+  "Не всё то золото, что блестит": {
+    "en": {
+      "word": "All that glitters is not gold.",
+      "transcription": ""
+    },
+    "it": {
+      "word": "Non è tutto oro quello che luccica.",
+      "transcription": ""
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Pyrite.jpeg/500px-Pyrite.jpeg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "Встречают по одёжке": {
+    "en": {
+      "word": "Don't judge a book by its cover.",
+      "transcription": ""
+    },
+    "it": {
+      "word": "L'abito non fa il monaco.",
+      "transcription": ""
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/6/61/The_Zoot_Cat.png/500px-The_Zoot_Cat.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "Рим не сразу строился": {
+    "en": {
+      "word": "Rome wasn't built in a day.",
+      "transcription": ""
+    },
+    "it": {
+      "word": "Roma non fu fatta in un giorno.",
+      "transcription": ""
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/0/0e/AS_Roma_Logo_2017.svg/500px-AS_Roma_Logo_2017.svg.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "Кто ищет, тот найдёт": {
+    "it": {
+      "word": "Chi cerca, trova.",
+      "transcription": ""
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Salvage_Hunters_logo.png/500px-Salvage_Hunters_logo.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "Нет дыма без огня": {
+    "en": {
+      "word": "Where there's smoke, there's fire.",
+      "transcription": ""
+    },
+    "it": {
+      "word": "Dove c'è fumo, c'è fuoco.",
+      "transcription": ""
+    },
+    "img": ""
+  },
+  "Между словом и делом — море": {
+    "it": {
+      "word": "Tra il dire e il fare c'è di mezzo il mare.",
+      "transcription": ""
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Scuola_di_barbiana_-_don_lorenzo_milani_e_alunni_in_aula.jpg/500px-Scuola_di_barbiana_-_don_lorenzo_milani_e_alunni_in_aula.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "На ошибках учатся": {
+    "it": {
+      "word": "Sbagliando s'impara.",
+      "transcription": ""
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/7/76/L%27eredit%C3%A0_logo.png/500px-L%27eredit%C3%A0_logo.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "Время — деньги": {
+    "en": {
+      "word": "Time is money.",
+      "transcription": ""
+    },
+    "it": {
+      "word": "Il tempo è denaro.",
+      "transcription": ""
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/New_York_City_-_Hard_Times_Token_Smith%27s_Clock_Time_Is_Money_Gilt_R7_NGC_%281837%29_Stevehayden_01.jpg/500px-New_York_City_-_Hard_Times_Token_Smith%27s_Clock_Time_Is_Money_Gilt_R7_NGC_%281837%29_Stevehayden_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "Дарёному коню в зубы не смотрят": {
+    "it": {
+      "word": "A caval donato non si guarda in bocca.",
+      "transcription": ""
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Yawning_horse%2C_Scotland.jpg/500px-Yawning_horse%2C_Scotland.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "Под лежачий камень вода не течёт": {
+    "it": {
+      "word": "Chi dorme non piglia pesci.",
+      "transcription": ""
+    },
+    "img": ""
+  },
+  "Предупреждён — значит вооружён": {
+    "it": {
+      "word": "Uomo avvisato, mezzo salvato.",
+      "transcription": ""
+    },
+    "img": ""
+  },
+  "Сам сделает — за троих справится": {
+    "it": {
+      "word": "Chi fa da sé, fa per tre.",
+      "transcription": ""
+    },
+    "img": "https://upload.wikimedia.org/wikipedia/commons/4/42/Chi_fa_da_s%C3%A8_fa_per_tre_2014-08-11_08-05.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  "В чужой монастырь со своим уставом не ходят": {
+    "en": {
+      "word": "When in Rome, do as the Romans do.",
+      "transcription": ""
+    },
+    "it": {
+      "word": "Paese che vai, usanza che trovi.",
+      "transcription": ""
+    },
+    "img": ""
+  },
+  "Дела говорят громче слов": {
+    "en": {
+      "word": "Actions speak louder than words.",
+      "transcription": ""
+    },
+    "img": ""
+  },
+  "Кто рано встаёт, тому Бог подаёт": {
+    "en": {
+      "word": "The early bird catches the worm.",
+      "transcription": ""
+    },
+    "img": ""
+  },
+  "Нет худа без добра": {
+    "en": {
+      "word": "Every cloud has a silver lining.",
+      "transcription": ""
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/George_Lansbury_-_cartoon_-_Project_Gutenberg_eText_17653.png/500px-George_Lansbury_-_cartoon_-_Project_Gutenberg_eText_17653.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "Повторение — мать ученья": {
+    "en": {
+      "word": "Practice makes perfect.",
+      "transcription": ""
+    },
+    "img": ""
+  },
+  "Друзья познаются в беде": {
+    "en": {
+      "word": "A friend in need is a friend indeed.",
+      "transcription": ""
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Rupert_Friend-8712.jpg/500px-Rupert_Friend-8712.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "Знание — сила": {
+    "en": {
+      "word": "Knowledge is power.",
+      "transcription": ""
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/IAO-logo.png/500px-IAO-logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "Поспешишь — людей насмешишь": {
+    "en": {
+      "word": "Haste makes waste.",
+      "transcription": ""
+    },
+    "img": ""
+  },
+  "Одна голова хорошо, а две лучше": {
+    "en": {
+      "word": "Two heads are better than one.",
+      "transcription": ""
+    },
+    "img": ""
+  }
+}

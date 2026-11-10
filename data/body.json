@@ -1,0 +1,677 @@
+{
+  "_meta": {
+    "id": "body",
+    "name": "Части тела",
+    "icon": "🖐️",
+    "tag": "части тела",
+    "desc": "С головы до пят.",
+    "id-en": "body-en"
+  },
+  "голова": {
+    "en": {
+      "word": "head",
+      "transcription": "hɛd",
+      "examples": [
+        {
+          "text": "Cover your head, it is cold!",
+          "translation": "Одень голову, холодно!"
+        }
+      ]
+    },
+    "it": {
+      "word": "testa",
+      "transcription": "ˈtɛsta",
+      "examples": [
+        {
+          "text": "Copriti la testa, fa freddo!",
+          "translation": "Одень голову, холодно!"
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Proportions_of_the_Head.jpg/500px-Proportions_of_the_Head.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "волосы": {
+    "en": {
+      "word": "hair",
+      "transcription": "hɛr",
+      "examples": [
+        {
+          "text": "I have short hair.",
+          "translation": "У меня короткие волосы."
+        }
+      ]
+    },
+    "it": {
+      "word": "capelli",
+      "transcription": "kaˈpɛlli",
+      "examples": [
+        {
+          "text": "Ho i capelli corti.",
+          "translation": "У меня короткие волосы."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Birthday_Hair_%2824589372980%29.jpg/500px-Birthday_Hair_%2824589372980%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "глаз": {
+    "en": {
+      "word": "eye",
+      "transcription": "aɪ",
+      "examples": [
+        {
+          "text": "The cat has one blue eye and one green eye.",
+          "translation": "У кота один глаз голубой, а другой зелёный."
+        }
+      ]
+    },
+    "it": {
+      "word": "occhio",
+      "transcription": "ˈɔkkjo",
+      "examples": [
+        {
+          "text": "Il gatto ha un occhio azzurro e uno verde.",
+          "translation": "У кота один глаз голубой, а другой зелёный."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Human_eye_with_limbal_ring%2C_anterior_view.jpg/500px-Human_eye_with_limbal_ring%2C_anterior_view.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "ухо": {
+    "en": {
+      "word": "ear",
+      "transcription": "ɪr",
+      "examples": [
+        {
+          "text": "I don't hear with my left ear.",
+          "translation": "Я не слышу левым ухом."
+        }
+      ]
+    },
+    "it": {
+      "word": "orecchio",
+      "transcription": "oˈrɛkkjo",
+      "examples": [
+        {
+          "text": "Non sento con l'orecchio sinistro.",
+          "translation": "Я не слышу левым ухом."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Ear.jpg/500px-Ear.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "нос": {
+    "en": {
+      "word": "nose",
+      "transcription": "noʊz",
+      "examples": [
+        {
+          "text": "The dog has a wet nose.",
+          "translation": "У собаки мокрый нос."
+        }
+      ]
+    },
+    "it": {
+      "word": "naso",
+      "transcription": "ˈnaːzo",
+      "examples": [
+        {
+          "text": "Il cane ha il naso bagnato.",
+          "translation": "У собаки мокрый нос."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Dog_nose.jpg/500px-Dog_nose.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "рот": {
+    "en": {
+      "word": "mouth",
+      "transcription": "maʊθ",
+      "examples": [
+        {
+          "text": "Open your mouth, please.",
+          "translation": "Открой рот, пожалуйста."
+        }
+      ]
+    },
+    "it": {
+      "word": "bocca",
+      "transcription": "ˈbokka",
+      "examples": [
+        {
+          "text": "Apri la bocca, per favore.",
+          "translation": "Открой рот, пожалуйста."
+        }
+      ]
+    },
+    "img": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Mouthparts.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  "зуб": {
+    "en": {
+      "word": "tooth",
+      "transcription": "tuːθ",
+      "examples": [
+        {
+          "text": "I brush my teeth three times a day.",
+          "translation": "Я чищу зубы три раза в день."
+        }
+      ]
+    },
+    "it": {
+      "word": "dente",
+      "transcription": "ˈdɛnte",
+      "examples": [
+        {
+          "text": "Mi lavo i denti tre volte al giorno.",
+          "translation": "Я чищу зубы три раза в день."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/BodyParts3D_Tooth.stl/500px-BodyParts3D_Tooth.stl.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "язык": {
+    "en": {
+      "word": "tongue",
+      "transcription": "tʌŋ",
+      "examples": [
+        {
+          "text": "Italian is not an easy language.",
+          "translation": "Итальянский — не лёгкий язык."
+        }
+      ]
+    },
+    "it": {
+      "word": "lingua",
+      "transcription": "ˈliŋɡwa",
+      "examples": [
+        {
+          "text": "L'italiano non è una lingua facile.",
+          "translation": "Итальянский — не лёгкий язык."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/%D8%B2%D8%A8%D8%A7%D9%86_tongue.jpg/500px-%D8%B2%D8%A8%D8%A7%D9%86_tongue.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "шея": {
+    "en": {
+      "word": "neck",
+      "transcription": "nɛk",
+      "examples": [
+        {
+          "text": "My neck hurts.",
+          "translation": "У меня болит шея."
+        }
+      ]
+    },
+    "it": {
+      "word": "collo",
+      "transcription": "ˈkɔllo",
+      "examples": [
+        {
+          "text": "Mi fa male il collo.",
+          "translation": "У меня болит шея."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/LIMITES_DEL_CUELLO.png/500px-LIMITES_DEL_CUELLO.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "плечо": {
+    "en": {
+      "word": "shoulder",
+      "transcription": "ˈʃoʊldər",
+      "examples": [
+        {
+          "text": "I have a bag on my shoulder.",
+          "translation": "У меня сумка на плече."
+        }
+      ]
+    },
+    "it": {
+      "word": "spalla",
+      "transcription": "ˈspalla",
+      "examples": [
+        {
+          "text": "Ho una borsa sulla spalla.",
+          "translation": "У меня сумка на плече."
+        }
+      ]
+    },
+    "img": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Gray326.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  "рука (от плеча до кисти)": {
+    "en": {
+      "word": "arm",
+      "transcription": "ɑːrm",
+      "examples": [
+        {
+          "text": "Raise your right arm!",
+          "translation": "Подними правую руку!"
+        }
+      ]
+    },
+    "it": {
+      "word": "braccio",
+      "transcription": "ˈbrattʃo",
+      "examples": [
+        {
+          "text": "Alza il braccio destro!",
+          "translation": "Подними правую руку!"
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Arm_muscles_front_superficial.png/500px-Arm_muscles_front_superficial.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "локоть": {
+    "en": {
+      "word": "elbow",
+      "transcription": "ˈɛlboʊ",
+      "examples": [
+        {
+          "text": "My right elbow hurts.",
+          "translation": "У меня болит правый локоть."
+        }
+      ]
+    },
+    "it": {
+      "word": "gomito",
+      "transcription": "ˈdʒoːmito",
+      "examples": [
+        {
+          "text": "Mi fa male il gomito destro.",
+          "translation": "У меня болит правый локоть."
+        }
+      ]
+    },
+    "img": "https://upload.wikimedia.org/wikipedia/commons/4/47/Gray333.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  "запястье": {
+    "en": {
+      "word": "wrist",
+      "transcription": "rɪst",
+      "examples": [
+        {
+          "text": "I put my watch on my wrist.",
+          "translation": "Я надеваю часы на запястье."
+        }
+      ]
+    },
+    "it": {
+      "word": "polso",
+      "transcription": "ˈpolso",
+      "examples": [
+        {
+          "text": "Mi metto l'orologio al polso.",
+          "translation": "Я надеваю часы на запястье."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Gray335.png/500px-Gray335.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "рука (кисть)": {
+    "en": {
+      "word": "hand",
+      "transcription": "hænd",
+      "examples": [
+        {
+          "text": "Give me your hand!",
+          "translation": "Дай мне руку!"
+        }
+      ]
+    },
+    "it": {
+      "word": "mano",
+      "transcription": "ˈmaːno",
+      "examples": [
+        {
+          "text": "Dammi la mano!",
+          "translation": "Дай мне руку!"
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Hand%2C_fingers_-_back.jpg/500px-Hand%2C_fingers_-_back.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "палец": {
+    "en": {
+      "word": "finger",
+      "transcription": "ˈfɪŋɡər",
+      "examples": [
+        {
+          "text": "I have a ring on my finger.",
+          "translation": "У меня кольцо на пальце."
+        }
+      ]
+    },
+    "it": {
+      "word": "dito",
+      "transcription": "ˈdiːto",
+      "examples": [
+        {
+          "text": "Ho un anello sul dito.",
+          "translation": "У меня кольцо на пальце."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Human_fingers_both_sides_2.jpg/500px-Human_fingers_both_sides_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "ноготь": {
+    "en": {
+      "word": "nail",
+      "transcription": "neɪl",
+      "examples": [
+        {
+          "text": "The thumbnail is broken.",
+          "translation": "Ноготь на большом пальце сломан."
+        }
+      ]
+    },
+    "it": {
+      "word": "unghia",
+      "transcription": "ˈuŋɡja",
+      "examples": [
+        {
+          "text": "L'unghia del pollice è rotta.",
+          "translation": "Ноготь на большом пальце сломан."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "грудь": {
+    "en": {
+      "word": "chest",
+      "transcription": "tʃɛst",
+      "examples": [
+        {
+          "text": "The heart is in the chest.",
+          "translation": "Сердце в груди."
+        }
+      ]
+    },
+    "it": {
+      "word": "petto",
+      "transcription": "ˈpetto",
+      "examples": [
+        {
+          "text": "Il cuore è nel petto.",
+          "translation": "Сердце в груди."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Thoracic_landmarks_anterior_view_edit.svg/500px-Thoracic_landmarks_anterior_view_edit.svg.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "спина": {
+    "en": {
+      "word": "back",
+      "transcription": "bæk",
+      "examples": [
+        {
+          "text": "My back hurts.",
+          "translation": "У меня болит спина."
+        }
+      ]
+    },
+    "it": {
+      "word": "schiena",
+      "transcription": "ˈskjɛːna",
+      "examples": [
+        {
+          "text": "Mi fa male la schiena.",
+          "translation": "У меня болит спина."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Posterior_view_of_human_female_and_male_backs_%28cropped%29.jpg/500px-Posterior_view_of_human_female_and_male_backs_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "живот": {
+    "en": {
+      "word": "stomach",
+      "transcription": "ˈstʌmək",
+      "examples": [
+        {
+          "text": "I have a stomachache.",
+          "translation": "У меня болит живот."
+        }
+      ]
+    },
+    "it": {
+      "word": "stomaco",
+      "transcription": "ˈstɔːmako",
+      "examples": [
+        {
+          "text": "Ho mal di stomaco.",
+          "translation": "У меня болит живот."
+        }
+      ]
+    },
+    "img": "https://upload.wikimedia.org/wikipedia/commons/3/33/Illu_stomach.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  "нога": {
+    "en": {
+      "word": "leg",
+      "transcription": "lɛɡ",
+      "examples": [
+        {
+          "text": "After running my legs hurt.",
+          "translation": "После бега у меня болят ноги."
+        }
+      ]
+    },
+    "it": {
+      "word": "gamba",
+      "transcription": "ˈɡamba",
+      "examples": [
+        {
+          "text": "Ho un tatuaggio sulla gamba.",
+          "translation": "У меня тату на ноге."
+        }
+      ]
+    },
+    "img": "https://upload.wikimedia.org/wikipedia/commons/0/09/Gray1240.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  "колено": {
+    "en": {
+      "word": "knee",
+      "transcription": "niː",
+      "examples": [
+        {
+          "text": "The child's knee is dirty.",
+          "translation": "Колено ребёнка грязное."
+        }
+      ]
+    },
+    "it": {
+      "word": "ginocchio",
+      "transcription": "dʒiˈnɔkkjo",
+      "examples": [
+        {
+          "text": "Il ginocchio del bambino è sporco.",
+          "translation": "Колено ребёнка грязное."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Gray348-it.png/500px-Gray348-it.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "лодыжка": {
+    "en": {
+      "word": "ankle",
+      "transcription": "ˈæŋkəl",
+      "examples": [
+        {
+          "text": "I have a weak ankle.",
+          "translation": "У меня слабая лодыжка."
+        }
+      ]
+    },
+    "it": {
+      "word": "caviglia",
+      "transcription": "kaˈviʎʎa",
+      "examples": [
+        {
+          "text": "Ho una caviglia debole.",
+          "translation": "У меня слабая лодыжка."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Enrico_Caviglia_02.jpg/500px-Enrico_Caviglia_02.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "ступня, нога": {
+    "en": {
+      "word": "foot",
+      "transcription": "fʊt",
+      "examples": [
+        {
+          "text": "I go to work on foot.",
+          "translation": "Я хожу на работу пешком."
+        }
+      ]
+    },
+    "it": {
+      "word": "piede",
+      "transcription": "ˈpjɛːde",
+      "examples": [
+        {
+          "text": "Vado a piedi al lavoro.",
+          "translation": "Я хожу на работу пешком."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/3DPX-008679_Foot_Skin_Nevit_Dilmen.stl/500px-3DPX-008679_Foot_Skin_Nevit_Dilmen.stl.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "кожа": {
+    "en": {
+      "word": "skin",
+      "transcription": "skɪn",
+      "examples": [
+        {
+          "text": "The child's skin is soft.",
+          "translation": "Кожа ребёнка мягкая."
+        }
+      ]
+    },
+    "it": {
+      "word": "pelle",
+      "transcription": "ˈpɛlle",
+      "examples": [
+        {
+          "text": "La pelle del bambino è morbida.",
+          "translation": "Кожа ребёнка мягкая."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Normal_Epidermis_and_Dermis_with_Intradermal_Nevus_10x.JPG/500px-Normal_Epidermis_and_Dermis_with_Intradermal_Nevus_10x.JPG?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "сердце": {
+    "en": {
+      "word": "heart",
+      "transcription": "hɑːrt",
+      "examples": [
+        {
+          "text": "The heart beats in the chest.",
+          "translation": "Сердце бьётся в груди."
+        }
+      ]
+    },
+    "it": {
+      "word": "cuore",
+      "transcription": "ˈkwoːre",
+      "examples": [
+        {
+          "text": "Il cuore batte nel petto.",
+          "translation": "Сердце бьётся в груди."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Heart_left_oblique_externa_copy.jpg/500px-Heart_left_oblique_externa_copy.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "кровь": {
+    "en": {
+      "word": "blood",
+      "transcription": "blʌd",
+      "examples": [
+        {
+          "text": "Blood is red.",
+          "translation": "Кровь красная."
+        }
+      ]
+    },
+    "it": {
+      "word": "sangue",
+      "transcription": "ˈsaŋɡwe",
+      "examples": [
+        {
+          "text": "Il sangue è rosso.",
+          "translation": "Кровь красная."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Venous_and_arterial_blood.jpg/500px-Venous_and_arterial_blood.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "кость": {
+    "en": {
+      "word": "bone",
+      "transcription": "boʊn",
+      "examples": [
+        {
+          "text": "The dog eats a bone.",
+          "translation": "Собака ест кость."
+        }
+      ]
+    },
+    "it": {
+      "word": "osso",
+      "transcription": "ˈɔsso",
+      "examples": [
+        {
+          "text": "Il cane mangia un osso.",
+          "translation": "Собака ест кость."
+        }
+      ]
+    },
+    "img": "https://upload.wikimedia.org/wikipedia/commons/7/73/Gray252.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  "мышца": {
+    "en": {
+      "word": "muscle",
+      "transcription": "ˈmʌsəl",
+      "examples": [
+        {
+          "text": "The leg muscles are strong.",
+          "translation": "Мышцы ног сильные."
+        }
+      ]
+    },
+    "it": {
+      "word": "muscolo",
+      "transcription": "ˈmuskolo",
+      "examples": [
+        {
+          "text": "I muscoli delle gambe sono forti.",
+          "translation": "Мышцы ног сильные."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Types_of_muscle.webp/500px-Types_of_muscle.webp?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "мозг": {
+    "en": {
+      "word": "brain",
+      "transcription": "breɪn",
+      "examples": [
+        {
+          "text": "The brain works at night too.",
+          "translation": "Мозг работает и ночью."
+        }
+      ]
+    },
+    "it": {
+      "word": "cervello",
+      "transcription": "tʃerˈvɛllo",
+      "examples": [
+        {
+          "text": "Il cervello lavora anche di notte.",
+          "translation": "Мозг работает и ночью."
+        }
+      ]
+    },
+    "img": "https://upload.wikimedia.org/wikipedia/commons/5/58/Human_brain.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  }
+}

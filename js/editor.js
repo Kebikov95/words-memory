@@ -1,10 +1,11 @@
 // Редактор картинок: все группы каталога, открывается из меню аватара.
-// Группы-пары с общими словами (ит+ен) или с одинаковыми списками переводов
-// (зеркальные словари: бизнес, части тела, прилагательные, цвета…) идут
-// первыми слитно — картинка меняется для обоих языков сразу; остальные —
-// под 🇬🇧 и 🇮🇹. Группы раскрываются, у слов: «Другая» листает варианты
-// из Википедии, «Своя» — файл, «Убрать» — эмодзи-заглушка. Выбор
-// сохраняется в слове словаря (если оно есть) и в постоянном кеше групп.
+// Блоки = файлы data/*.json, строки = записи (ключ — русское слово), поэтому
+// 🇮🇹🇬🇧 общие группы идут первыми и картинка меняется для обоих языков сразу;
+// одиночные наборы — под 🇬🇧 и 🇮🇹. У слов: «Другая» листает варианты из
+// Википедии, «Своя» — файл, «Убрать» — эмодзи-заглушка. Выбор сохраняется
+// в слове словаря (если оно есть) и в постоянном кеше групп, а img записи —
+// в памяти данных; кнопка «Выгрузить изменения» скачивает изменённые
+// data/*.json, чтобы ими заменить файлы в папке data.
 window.WM = window.WM || {};
 
 WM.editor = (() => {
@@ -14,7 +15,7 @@ WM.editor = (() => {
   const FLAG = { it: '🇮🇹', en: '🇬🇧' };
   const norm = s => s.trim().toLowerCase();
 
-  let variants = new Map();    // 'lang:word' → { list: [], i: -1 } — подбор «Другой»
+  let variants = new Map();    // 'lang:word' → { list: [], i: -1 } — подбор «Другая»
   let query = '';
   let uploadTarget = null;     // слово, ждущее файл из #ed-file
   let expanded = new Set();    // ключи раскрытых блоков (на сессию)
@@ -23,99 +24,61 @@ WM.editor = (() => {
 
   // ---------- структура каталога ----------
 
-  // пара ит+ен «общая», если есть слова-тёзки (одинаковое написание) или
-  // одинаковые множества переводов — зеркальные словари: каждый смысл
-  // представлен словом в обоих языках, картинка ставится обоим сразу
-  function isCommonPair(it, en) {
-    const itW = it.words.map(w => norm(w.word));
-    if (itW.some(w => en.words.some(x => norm(x.word) === w))) return true;
-    const tIt = it.words.map(w => norm(w.translation)).sort();
-    const tEn = en.words.map(w => norm(w.translation)).sort();
-    return tIt.length > 0 && JSON.stringify(tIt) === JSON.stringify(tEn);
-  }
-
+  // блок = файл данных; общий, если в записи есть слова обоих языков,
+  // иначе файл попадает в секцию 🇬🇧 или 🇮🇹
   function buildStructure() {
-    const byTag = new Map();
-    for (const g of WM.groupsData.GROUPS) {
-      if (!byTag.has(g.tag)) byTag.set(g.tag, { it: null, en: null });
-      byTag.get(g.tag)[g.lang] = g;
-    }
     const common = [], enGroups = [], itGroups = [];
-    for (const [tag, p] of byTag) {
-      if (p.it && p.en) {
-        if (isCommonPair(p.it, p.en)) common.push({ type: 'common', tag, key: `c:${tag}`, it: p.it, en: p.en });
-        else { enGroups.push(p.en); itGroups.push(p.it); }
-      } else if (p.en) enGroups.push(p.en);
-      else itGroups.push(p.it);
+    for (const fileId of WM.groupsData.FILES) {
+      const raw = WM.groupsData.files.get(fileId);
+      if (!raw) continue;
+      const entries = Object.entries(raw).filter(([k]) => k !== '_meta');
+      const hasIt = entries.some(([, v]) => v.it);
+      const hasEn = entries.some(([, v]) => v.en);
+      const block = { fileId, entries, meta: raw._meta || {}, key: `f:${fileId}` };
+      if (hasIt && hasEn) common.push({ ...block, type: 'common' });
+      else if (hasEn) enGroups.push({ ...block, type: 'single' });
+      else itGroups.push({ ...block, type: 'single' });
     }
-    const byName = (a, b) => a.tag.localeCompare(b.tag, 'ru');
+    const byName = (a, b) => a.meta.name.localeCompare(b.meta.name, 'ru');
     common.sort(byName);
-    enGroups.sort((a, b) => a.name.localeCompare(b.name, 'ru'));
-    itGroups.sort((a, b) => a.name.localeCompare(b.name, 'ru'));
+    enGroups.sort(byName);
+    itGroups.sort(byName);
     return { common, enGroups, itGroups };
   }
 
-  // строки блока: для пары — слияние по слову-тёзке (одинаковое написание,
-  // как pasta у еда) и по переводу (зеркальные словари: it-слово и en-слово
-  // одного смысла, как forchetta/fork); для одиночной группы — её слова
+  // строки блока — напрямую из записей JSON: один смысл = одна строка,
+  // слова обоих языков уже спарены русским ключом
   function blockWords(block) {
-    const specs = [];
-    const byWord = new Map();  // normWord → spec (тёзки)
-    const byTr = new Map();    // 'normTranslation#вхождение' → spec (зеркальные)
-    const trSeen = new Map();  // 'lang:translation' → сколько таких уже было
-    const langs = block.type === 'common' ? ['it', 'en'] : [block.lang];
-    for (const L of langs) {
-      const g = block.type === 'common' ? block[L] : block;
-      for (const w of g.words) {
-        const nw = norm(w.word), nt = norm(w.translation);
-        // второй «компания» в языке — отдельное вхождение: пары сопоставляются
-        // по порядку (azienda↔company, società↔corporation)
-        const occ = trSeen.get(`${L}:${nt}`) ?? 0;
-        trSeen.set(`${L}:${nt}`, occ + 1);
-        const trKey = `${nt}#${occ}`;
-        let spec = byWord.get(nw);
-        if (!spec || spec.langs.includes(L)) {
-          spec = byTr.get(trKey);
-          if (!spec || spec.langs.includes(L)) {
-            spec = {
-              rowKey: `${block.key}:${nw}:${specs.length}`,
-              words: {}, translation: w.translation.trim(),
-              langs: [], fetchLang: L,
-            };
-            specs.push(spec);
-            if (!byTr.has(trKey)) byTr.set(trKey, spec);
-          }
-        }
-        if (!spec.words[L]) spec.words[L] = w.word;
-        if (!spec.langs.includes(L)) spec.langs.push(L);
-        byWord.set(nw, spec);
-      }
-    }
+    const specs = block.entries.map(([k, v]) => ({
+      rowKey: `${block.key}:${k}`,
+      words: { it: v.it?.word, en: v.en?.word },
+      langs: [v.it ? 'it' : null, v.en ? 'en' : null].filter(Boolean),
+      translation: WM.groupsData.stripMarker(k),
+      fetchLang: v.it ? 'it' : 'en',
+      src: { file: block.fileId, key: k },
+    }));
     for (const s of specs) s.primary = s.words[s.langs[0]] ?? Object.values(s.words)[0];
     return specs.sort((a, b) => a.translation.localeCompare(b.translation, 'ru'));
   }
 
   // ---------- картинки слова ----------
 
-  // картинка слова строки: словарное слово любого языка строки → его
-  // картинка; иначе постоянный кеш групп; иначе null (эмодзи-заглушка)
+  // картинка строки: словарное слово любого языка строки → его картинка;
+  // иначе постоянный кеш групп (включая пометку «нет»); иначе img из data/*.json
   function imageFor(spec) {
     const dict = WM.storage.getWords(WM.app.state.uid)
       .find(x => spec.langs.includes(x.lang) &&
         spec.langs.some(L => spec.words[L] && norm(spec.words[L]) === norm(x.word)) && x.image);
     if (dict) return dict.image;
     for (const L of spec.langs) {
-      const w = spec.words[L];
-      if (!w) continue;
-      const c = WM.groups.lookupImage?.(L, w);
-      if (c?.type === 'url') return c;
+      const c = WM.groups.lookupImage?.(L, spec.words[L]);
+      if (c) return c; // url или пометка «нет картинки» — перекрывает img из данных
     }
-    return null;
+    return WM.groupsData.imgOf?.(spec.src) || null;
   }
 
-  // картинка ставится словам строки во всех языках (и тёзкам из словаря);
-  // кеш групп обновляется для каждой пары язык:слово, чтобы страницы групп
-  // и карточки показали её сразу
+  // картинка ставится словам строки во всех языках (и тёзкам из словаря),
+  // в кеш групп для каждой пары язык:слово и в img записи данных
   function applyImage(spec, image) {
     const U = WM.app.state.uid;
     const touched = new Set(); // 'lang:word'
@@ -133,6 +96,8 @@ WM.editor = (() => {
       const i = k.indexOf(':');
       WM.groups.updateImageCache?.(k.slice(0, i), k.slice(i + 1), image);
     }
+    // в данные пишутся только url/эмодзи — base64 слишком тяжёлый для JSON
+    WM.groupsData.setImage?.(spec.src, image);
     document.querySelectorAll(`.ed-row[data-row-key="${CSS.escape(spec.rowKey)}"]`)
       .forEach(row => refreshRow(row, image));
     WM.app.toast(image?.type === 'url' ? 'Картинка сохранена'
@@ -195,6 +160,22 @@ WM.editor = (() => {
     uploadTarget = null;
   }
 
+  // «Выгрузить изменения»: скачать изменённые data/*.json — ими заменяют
+  // файлы в папке data, чтобы настройки картинок сохранились навсегда
+  function exportChanged() {
+    const changed = WM.groupsData.changedFiles();
+    if (!changed.length) { WM.app.toast('Изменённых файлов нет'); return; }
+    for (const { file, json } of changed) {
+      const blob = new Blob([json], { type: 'application/json' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = file;
+      a.click();
+      setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+    }
+    WM.app.toast(`Скачано файлов: ${changed.length} — замените ими файлы в папке data`);
+  }
+
   // ---------- отрисовка ----------
 
   function open() {
@@ -204,20 +185,42 @@ WM.editor = (() => {
   function render() {
     rowSpecs.clear();
     blockByKey = new Map();
+    const back = `<button class="btn btn-ghost btn-sm" id="ed-back">← Назад</button>`;
+
+    if (WM.groupsData.state === 'loading') {
+      $('#page-images').innerHTML = `<div class="ed-head"><div class="ed-head-row">${back}<h3>Редактор картинок</h3></div></div>
+        <p class="hint" style="padding:20px 0">Загрузка наборов…</p>`;
+      $('#ed-back').addEventListener('click', () => WM.app.showPage('words'));
+      WM.groupsData.ready.then(() => { if (WM.groupsData.state === 'ok') render(); });
+      return;
+    }
+    if (WM.groupsData.state === 'error') {
+      $('#page-images').innerHTML = `<div class="ed-head"><div class="ed-head-row">${back}<h3>Редактор картинок</h3></div></div>
+        <p class="hint" style="padding:20px 0">Наборы не загрузились — страница открыта без локального сервера (file://).</p>`;
+      $('#ed-back').addEventListener('click', () => WM.app.showPage('words'));
+      return;
+    }
+
     const struct = buildStructure();
     $('#page-images').innerHTML = `
       <div class="ed-head">
         <div class="ed-head-row">
-          <button class="btn btn-ghost btn-sm" id="ed-back">← Назад</button>
+          ${back}
           <h3>Редактор картинок</h3>
+          <button class="btn btn-ghost btn-sm" id="ed-export" style="margin-left:auto"
+            title="Скачать изменённые файлы data/*.json — замените ими файлы в папке data">
+            ${ICONS.download}<span> Выгрузить изменения</span>
+          </button>
         </div>
         <p class="hint">Картинки настраиваются заранее и действуют на карточках, в группах и в тренировке.
-        «Другая» листает варианты из Википедии. В общих группах 🇮🇹🇬🇧 картинка меняется для обоих языков сразу.</p>
+        «Другая» листает варианты из Википедии. В общих группах 🇮🇹🇬🇧 картинка меняется для обоих языков сразу.
+        Кнопка «Выгрузить изменения» скачивает обновлённые data/*.json.</p>
         <input type="search" class="select" id="ed-search" placeholder="Поиск по группе или слову…" value="${esc(query)}">
       </div>
       <div id="ed-body">${sectionsHTML(struct)}</div>
       <input type="file" id="ed-file" accept="image/*" hidden>
     `;
+    $('#ed-export').addEventListener('click', exportChanged);
     bind();
   }
 
@@ -229,11 +232,11 @@ WM.editor = (() => {
     }
     if (struct.enGroups.length) {
       html += `<div class="ed-flag-head">🇬🇧 <span>Только английские</span></div>`;
-      html += struct.enGroups.map(g => blockHTML({ type: 'single', key: `en:${g.tag}`, ...g })).join('');
+      html += struct.enGroups.map(blockHTML).join('');
     }
     if (struct.itGroups.length) {
       html += `<div class="ed-flag-head">🇮🇹 <span>Только итальянские</span></div>`;
-      html += struct.itGroups.map(g => blockHTML({ type: 'single', key: `it:${g.tag}`, ...g })).join('');
+      html += struct.itGroups.map(blockHTML).join('');
     }
     if (!html) html = '<div class="hint ed-empty">Группы не найдены</div>';
     return html;
@@ -248,7 +251,6 @@ WM.editor = (() => {
       : words;
     if (q && !filtered.length) return '';
     const open = q ? true : expanded.has(block.key);
-    const g = block.type === 'common' ? block.it : block;
     const body = open
       ? `<div class="ed-g-body">${filtered.map(rowHTML).join('')}</div>`
       : '<div class="ed-g-body hidden" data-lazy="1"></div>';
@@ -256,8 +258,8 @@ WM.editor = (() => {
       <div class="ed-g-block${open ? ' open' : ''}" data-block="${esc(block.key)}">
         <button class="ed-g-head" type="button">
           <span class="ed-g-arrow">▸</span>
-          <span class="ed-g-icon">${g.icon}</span>
-          <span class="ed-g-name">${esc(g.name)}</span>
+          <span class="ed-g-icon">${esc(block.meta.icon)}</span>
+          <span class="ed-g-name">${esc(block.meta.name)}</span>
           <span class="ed-g-count">${filtered.length} слов</span>
         </button>
         ${body}

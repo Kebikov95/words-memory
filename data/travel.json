@@ -1,0 +1,792 @@
+{
+  "_meta": {
+    "id": "travel",
+    "name": "Путешествия",
+    "icon": "✈️",
+    "tag": "путешествия",
+    "desc": "Аэропорт, отель, транспорт и вопросы туриста.",
+    "id-en": "travel-en"
+  },
+  "путешествие": {
+    "en": {
+      "word": "journey",
+      "transcription": "ˈdʒɜːrni",
+      "examples": [
+        {
+          "text": "The trip to Italy lasts a week.",
+          "translation": "Поездка в Италию длится неделю."
+        }
+      ]
+    },
+    "it": {
+      "word": "viaggio",
+      "transcription": "ˈviaddʒo",
+      "examples": [
+        {
+          "text": "Il viaggio in Italia dura una settimana.",
+          "translation": "Поездка в Италию длится неделю."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Oviedo_el_viajero_JMM.JPG/500px-Oviedo_el_viajero_JMM.JPG?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "отпуск, каникулы": {
+    "en": {
+      "word": "vacation",
+      "transcription": "veɪˈkeɪʃən",
+      "examples": [
+        {
+          "text": "The summer vacation starts in June.",
+          "translation": "Летний отпуск начинается в июне."
+        }
+      ]
+    },
+    "it": {
+      "word": "vacanza",
+      "transcription": "vaˈkantsa",
+      "examples": [
+        {
+          "text": "Le vacanze estive iniziano a giugno.",
+          "translation": "Летние каникулы начинаются в июне."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Siracusa_vendicari.jpg/500px-Siracusa_vendicari.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "билет": {
+    "en": {
+      "word": "ticket",
+      "transcription": "ˈtɪkɪt",
+      "examples": [
+        {
+          "text": "One ticket to Florence, please.",
+          "translation": "Один билет до Флоренции, пожалуйста."
+        }
+      ]
+    },
+    "it": {
+      "word": "biglietto",
+      "transcription": "biʎˈʎɛtto",
+      "examples": [
+        {
+          "text": "Un biglietto per Firenze, per favore.",
+          "translation": "Один билет до Флоренции, пожалуйста."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Tickets.jpg/500px-Tickets.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "бронировать": {
+    "en": {
+      "word": "to book",
+      "transcription": "tuː bʊk",
+      "examples": [
+        {
+          "text": "We book a hotel in the center.",
+          "translation": "Мы бронируем отель в центре."
+        }
+      ]
+    },
+    "it": {
+      "word": "prenotare",
+      "transcription": "preˈnotaːre",
+      "examples": [
+        {
+          "text": "Prenotiamo un hotel in centro.",
+          "translation": "Мы бронируем отель в центре."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Ernesto_Maria_Ruffini.jpg/500px-Ernesto_Maria_Ruffini.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "бронь": {
+    "en": {
+      "word": "booking",
+      "transcription": "ˈbʊkɪŋ",
+      "examples": [
+        {
+          "text": "The booking is in the name of Rossi.",
+          "translation": "Бронь на имя Росси."
+        }
+      ]
+    },
+    "it": {
+      "word": "prenotazione",
+      "transcription": "prenotatˈtsjoːne",
+      "examples": [
+        {
+          "text": "La prenotazione è a nome Rossi.",
+          "translation": "Бронь на имя Росси."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "отель": {
+    "en": {
+      "word": "hotel",
+      "transcription": "hoʊˈtɛl",
+      "examples": [
+        {
+          "text": "The hotel is near the station.",
+          "translation": "Отель рядом с вокзалом."
+        }
+      ]
+    },
+    "it": {
+      "word": "albergo",
+      "transcription": "ˈalberɡo",
+      "examples": [
+        {
+          "text": "L'albergo è vicino alla stazione.",
+          "translation": "Отель рядом с вокзалом."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Hotel_Principe_di_Piemonte%2C_Viareggio_Italy.JPG/500px-Hotel_Principe_di_Piemonte%2C_Viareggio_Italy.JPG?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "хостел": {
+    "en": {
+      "word": "hostel",
+      "transcription": "ˈhɑːstəl",
+      "examples": [
+        {
+          "text": "The hostel is cheap and clean.",
+          "translation": "Хостел дешёвый и чистый."
+        }
+      ]
+    },
+    "it": {
+      "word": "ostello",
+      "transcription": "oˈstɛllo",
+      "examples": [
+        {
+          "text": "L'ostello è economico e pulito.",
+          "translation": "Хостел дешёвый и чистый."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/GrandHotelDobbiaco1.jpg/500px-GrandHotelDobbiaco1.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "комната, номер": {
+    "en": {
+      "word": "room",
+      "transcription": "ruːm",
+      "examples": [
+        {
+          "text": "We have a double room.",
+          "translation": "У нас двухместный номер."
+        }
+      ]
+    },
+    "it": {
+      "word": "camera",
+      "transcription": "ˈkaːmera",
+      "examples": [
+        {
+          "text": "Abbiamo una camera doppia.",
+          "translation": "У нас двухместный номер."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Ateneul_Rom%C3%A2n_-_Sala.jpg/500px-Ateneul_Rom%C3%A2n_-_Sala.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "чемодан": {
+    "en": {
+      "word": "suitcase",
+      "transcription": "ˈsuːtkeɪs",
+      "examples": [
+        {
+          "text": "I am packing the suitcase tonight.",
+          "translation": "Я собираю чемодан сегодня вечером."
+        }
+      ]
+    },
+    "it": {
+      "word": "valigia",
+      "transcription": "vaˈliːdʒa",
+      "examples": [
+        {
+          "text": "Preparo la valigia stasera.",
+          "translation": "Я собираю чемодан сегодня вечером."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Reisegep%C3%A4ck.JPG/500px-Reisegep%C3%A4ck.JPG?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "багаж": {
+    "en": {
+      "word": "luggage",
+      "transcription": "ˈlʌɡɪdʒ",
+      "examples": [
+        {
+          "text": "The luggage is heavy.",
+          "translation": "Багаж тяжёлый."
+        }
+      ]
+    },
+    "it": {
+      "word": "bagaglio",
+      "transcription": "baˈɡaʎʎo",
+      "examples": [
+        {
+          "text": "Il bagaglio è pesante.",
+          "translation": "Багаж тяжёлый."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/20180520_Away_carryon_%281%29.jpg/500px-20180520_Away_carryon_%281%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "паспорт": {
+    "en": {
+      "word": "passport",
+      "transcription": "ˈpæspɔːrt",
+      "examples": [
+        {
+          "text": "Show me your passport, please.",
+          "translation": "Покажите паспорт, пожалуйста."
+        }
+      ]
+    },
+    "it": {
+      "word": "passaporto",
+      "transcription": "passaˈpɔrto",
+      "examples": [
+        {
+          "text": "Mostrami il passaporto, per favore.",
+          "translation": "Покажите паспорт, пожалуйста."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Passaportoitaliano2006.jpg/500px-Passaportoitaliano2006.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "таможня": {
+    "en": {
+      "word": "customs",
+      "transcription": "ˈkʌstəmz",
+      "examples": [
+        {
+          "text": "We go through customs after the flight.",
+          "translation": "Мы проходим таможню после рейса."
+        }
+      ]
+    },
+    "it": {
+      "word": "dogana",
+      "transcription": "doˈɡaːna",
+      "examples": [
+        {
+          "text": "Passiamo la dogana dopo il volo.",
+          "translation": "Мы проходим таможню после рейса."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Dogana_simbolo.svg/500px-Dogana_simbolo.svg.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "аэропорт": {
+    "en": {
+      "word": "airport",
+      "transcription": "ˈɛrpɔːrt",
+      "examples": [
+        {
+          "text": "The airport is thirty kilometers from the center.",
+          "translation": "Аэропорт в тридцати километрах от центра."
+        }
+      ]
+    },
+    "it": {
+      "word": "aeroporto",
+      "transcription": "aeroˈpɔrto",
+      "examples": [
+        {
+          "text": "L'aeroporto è a trenta chilometri dal centro.",
+          "translation": "Аэропорт в тридцати километрах от центра."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Milano-Malpensa_Airport.svg/500px-Milano-Malpensa_Airport.svg.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "рейс, полёт": {
+    "en": {
+      "word": "flight",
+      "transcription": "flaɪt",
+      "examples": [
+        {
+          "text": "The flight is two hours late.",
+          "translation": "Рейс опаздывает на два часа."
+        }
+      ]
+    },
+    "it": {
+      "word": "volo",
+      "transcription": "ˈvoːlo",
+      "examples": [
+        {
+          "text": "Il volo ha due ore di ritardo.",
+          "translation": "Рейс опаздывает на два часа."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Juvenile_pelecanus_occidentalis_in_flight.jpg/500px-Juvenile_pelecanus_occidentalis_in_flight.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "самолёт": {
+    "en": {
+      "word": "plane",
+      "transcription": "pleɪn",
+      "examples": [
+        {
+          "text": "The plane flies above the clouds.",
+          "translation": "Самолёт летит над облаками."
+        }
+      ]
+    },
+    "it": {
+      "word": "aereo",
+      "transcription": "aˈɛːreo",
+      "examples": [
+        {
+          "text": "L'aereo vola sopra le nuvole.",
+          "translation": "Самолёт летит над облаками."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Airbus_A380.jpg/500px-Airbus_A380.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "поезд": {
+    "en": {
+      "word": "train",
+      "transcription": "treɪn",
+      "examples": [
+        {
+          "text": "The train leaves from platform five.",
+          "translation": "Поезд отходит с пятого пути."
+        }
+      ]
+    },
+    "it": {
+      "word": "treno",
+      "transcription": "ˈtreːno",
+      "examples": [
+        {
+          "text": "Il treno parte dal binario cinque.",
+          "translation": "Поезд отходит с пятого пути."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Frecciarossa_di_Trenitalia.jpg/500px-Frecciarossa_di_Trenitalia.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "платформа, путь": {
+    "en": {
+      "word": "platform",
+      "transcription": "ˈplætfɔːrm",
+      "examples": [
+        {
+          "text": "The train to Rome is on platform seven.",
+          "translation": "Поезд на Рим на седьмом пути."
+        }
+      ]
+    },
+    "it": {
+      "word": "binario",
+      "transcription": "biˈnaːrjo",
+      "examples": [
+        {
+          "text": "Il treno per Roma è al binario sette.",
+          "translation": "Поезд на Рим на седьмом пути."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Binario_traversine.JPG/500px-Binario_traversine.JPG?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "вокзал": {
+    "en": {
+      "word": "station",
+      "transcription": "ˈsteɪʃən",
+      "examples": [
+        {
+          "text": "Let's meet in front of the station.",
+          "translation": "Встретимся перед вокзалом."
+        }
+      ]
+    },
+    "it": {
+      "word": "stazione",
+      "transcription": "statˈtsjoːne",
+      "examples": [
+        {
+          "text": "Ci vediamo davanti alla stazione.",
+          "translation": "Встретимся перед вокзалом."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "автобус": {
+    "en": {
+      "word": "bus",
+      "transcription": "bʌs",
+      "examples": [
+        {
+          "text": "Bus number 64 goes to the center.",
+          "translation": "Автобус номер 64 идёт в центр."
+        }
+      ]
+    },
+    "it": {
+      "word": "autobus",
+      "transcription": "ˈautobus",
+      "examples": [
+        {
+          "text": "L'autobus numero 64 va al centro.",
+          "translation": "Автобус номер 64 идёт в центр."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Scania_Citywide_LF_KLA_Kalisz.jpg/500px-Scania_Citywide_LF_KLA_Kalisz.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "метро": {
+    "en": {
+      "word": "metro",
+      "transcription": "ˈmetroʊ",
+      "examples": [
+        {
+          "text": "I take the metro.",
+          "translation": "Я еду на метро."
+        }
+      ]
+    },
+    "it": {
+      "word": "metro",
+      "transcription": "ˈmetro",
+      "examples": [
+        {
+          "text": "La metro è veloce e comoda.",
+          "translation": "Метро быстрое и удобное."
+        }
+      ]
+    },
+    "img": "https://upload.wikimedia.org/wikipedia/commons/a/a5/US_National_Length_Meter.JPG?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  "аренда": {
+    "en": {
+      "word": "rental",
+      "transcription": "ˈrɛntəl",
+      "examples": [
+        {
+          "text": "The car rental costs fifty euros a day.",
+          "translation": "Аренда машины стоит пятьдесят евро в день."
+        }
+      ]
+    },
+    "it": {
+      "word": "noleggio",
+      "transcription": "noˈleddʒo",
+      "examples": [
+        {
+          "text": "Il noleggio della macchina costa cinquanta euro al giorno.",
+          "translation": "Аренда машины стоит пятьдесят евро в день."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Kaohsiung_Mosque_First_Building.JPG/500px-Kaohsiung_Mosque_First_Building.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "карта": {
+    "en": {
+      "word": "map",
+      "transcription": "mæp",
+      "examples": [
+        {
+          "text": "Buy a map of the city.",
+          "translation": "Купи карту города."
+        }
+      ]
+    },
+    "it": {
+      "word": "mappa",
+      "transcription": "ˈmappa",
+      "examples": [
+        {
+          "text": "Compra una mappa della città.",
+          "translation": "Купи карту города."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/FraMauroDetailedMapInverted.jpg/500px-FraMauroDetailedMapInverted.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "турист": {
+    "en": {
+      "word": "tourist",
+      "transcription": "ˈtʊrɪst",
+      "examples": [
+        {
+          "text": "Rome is full of tourists.",
+          "translation": "Рим полон туристов."
+        }
+      ]
+    },
+    "it": {
+      "word": "turista",
+      "transcription": "tuˈrista",
+      "examples": [
+        {
+          "text": "Roma è piena di turisti.",
+          "translation": "Рим полон туристов."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/New_york_times_square-terabass.jpg/500px-New_york_times_square-terabass.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "поездка": {
+    "en": {
+      "word": "trip",
+      "transcription": "trɪp",
+      "examples": [
+        {
+          "text": "We are taking a trip to the sea.",
+          "translation": "Мы едем на поездку на море."
+        }
+      ]
+    },
+    "it": {
+      "word": "gita",
+      "transcription": "ˈdʒiːta",
+      "examples": [
+        {
+          "text": "Facciamo una gita al mare.",
+          "translation": "Мы едем на вылазку на море."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Krishna_and_Arjun_on_the_chariot%2C_Mahabharata%2C_18th-19th_century%2C_India.jpg/500px-Krishna_and_Arjun_on_the_chariot%2C_Mahabharata%2C_18th-19th_century%2C_India.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "экскурсия": {
+    "en": {
+      "word": "excursion",
+      "transcription": "ɪkˈskɜːrʒən",
+      "examples": [
+        {
+          "text": "The excursion lasts three hours.",
+          "translation": "Экскурсия длится три часа."
+        }
+      ]
+    },
+    "it": {
+      "word": "escursione",
+      "transcription": "eskurˈsjoːne",
+      "examples": [
+        {
+          "text": "L'escursione dura tre ore.",
+          "translation": "Экскурсия длится три часа."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Tour_to_the_Quebrada_de_las_Conchas.jpg/500px-Tour_to_the_Quebrada_de_las_Conchas.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "отправление": {
+    "en": {
+      "word": "departure",
+      "transcription": "dɪˈpɑːrtʃər",
+      "examples": [
+        {
+          "text": "The departure time is at eight.",
+          "translation": "Время отправления — восемь."
+        }
+      ]
+    },
+    "it": {
+      "word": "partenza",
+      "transcription": "parˈtɛntsa",
+      "examples": [
+        {
+          "text": "L'orario di partenza è alle otto.",
+          "translation": "Время отправления — восемь."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "прибытие": {
+    "en": {
+      "word": "arrival",
+      "transcription": "əˈraɪvəl",
+      "examples": [
+        {
+          "text": "The arrival is expected at noon.",
+          "translation": "Прибытие ожидается в полдень."
+        }
+      ]
+    },
+    "it": {
+      "word": "arrivo",
+      "transcription": "arˈriːvo",
+      "examples": [
+        {
+          "text": "L'arrivo è previsto per mezzogiorno.",
+          "translation": "Прибытие ожидается в полдень."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "задержка, опоздание": {
+    "en": {
+      "word": "delay",
+      "transcription": "dɪˈleɪ",
+      "examples": [
+        {
+          "text": "Sorry for the delay!",
+          "translation": "Извини за опоздание!"
+        }
+      ]
+    },
+    "it": {
+      "word": "ritardo",
+      "transcription": "riˈtardo",
+      "examples": [
+        {
+          "text": "Scusa per il ritardo!",
+          "translation": "Извини за опоздание!"
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/2/21/Scusate_il_ritardo.jpg/500px-Scusate_il_ritardo.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "обмен": {
+    "en": {
+      "word": "exchange",
+      "transcription": "ɪksˈtʃeɪndʒ",
+      "examples": [
+        {
+          "text": "The exchange is open until six.",
+          "translation": "Обмен открыт до шести."
+        }
+      ]
+    },
+    "it": {
+      "word": "cambio",
+      "transcription": "ˈkambio",
+      "examples": [
+        {
+          "text": "Il cambio è aperto fino alle sei.",
+          "translation": "Обмен открыт до шести."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "направление": {
+    "en": {
+      "word": "direction",
+      "transcription": "dəˈrɛkʃən",
+      "examples": [
+        {
+          "text": "We are going in the wrong direction.",
+          "translation": "Мы идём не в том направлении."
+        }
+      ]
+    },
+    "it": {
+      "word": "direzione",
+      "transcription": "diretˈtsjoːne",
+      "examples": [
+        {
+          "text": "Andiamo nella direzione sbagliata.",
+          "translation": "Мы идём не в том направлении."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "на этой неделе": {
+    "en": {
+      "word": "this week",
+      "transcription": "ðɪs wiːk",
+      "examples": [
+        {
+          "text": "I am travelling this week.",
+          "translation": "Я путешествую на этой неделе."
+        }
+      ]
+    },
+    "it": {
+      "word": "questa settimana",
+      "transcription": "ˈkwesta settiˈmaːna",
+      "examples": [
+        {
+          "text": "Questa settimana vado a Milano.",
+          "translation": "На этой неделе я еду в Милан."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Germanic_deities%2C_associated_with_the_seven_days_of_the_week.png/500px-Germanic_deities%2C_associated_with_the_seven_days_of_the_week.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "где находится…?": {
+    "en": {
+      "word": "Where is…?",
+      "transcription": "wɛr ɪz",
+      "examples": [
+        {
+          "text": "Where is the station, please?",
+          "translation": "Где вокзал, пожалуйста?"
+        }
+      ]
+    },
+    "it": {
+      "word": "dove è…?",
+      "transcription": "ˈdɔːve ɛ",
+      "examples": [
+        {
+          "text": "Dov'è la stazione, per favore?",
+          "translation": "Где вокзал, пожалуйста?"
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/3/34/Labyrinth_-_Dove_tutto_%C3%A8_possibile_1986.png/500px-Labyrinth_-_Dove_tutto_%C3%A8_possibile_1986.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "сколько это стоит?": {
+    "en": {
+      "word": "How much does it cost?",
+      "transcription": "ˌhaʊ ˈmʌtʃ dʌz ɪt kɔːst",
+      "examples": [
+        {
+          "text": "How much does the ticket cost?",
+          "translation": "Сколько стоит билет?"
+        }
+      ]
+    },
+    "it": {
+      "word": "quanto costa?",
+      "transcription": "ˈkwanto ˈkɔsta",
+      "examples": [
+        {
+          "text": "Quanto costa il biglietto?",
+          "translation": "Сколько стоит билет?"
+        }
+      ]
+    },
+    "img": ""
+  },
+  "такси": {
+    "en": {
+      "word": "taxi",
+      "transcription": "ˈtæksi",
+      "examples": [
+        {
+          "text": "I am calling a taxi to the airport.",
+          "translation": "Я вызываю такси в аэропорт."
+        }
+      ]
+    },
+    "it": {
+      "word": "taxi",
+      "transcription": "ˈtaksi",
+      "examples": [
+        {
+          "text": "Il taxi arriva subito.",
+          "translation": "Такси приедет сразу."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Taxi-Tass%C3%AC-Tax%C3%AC_ibrido.jpg/500px-Taxi-Tass%C3%AC-Tax%C3%AC_ibrido.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  }
+}

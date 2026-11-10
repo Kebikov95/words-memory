@@ -1,0 +1,953 @@
+{
+  "_meta": {
+    "id": "adjectives",
+    "name": "Прилагательные",
+    "icon": "📏",
+    "tag": "прилагательные",
+    "desc": "Самые ходовые прилагательные для описаний.",
+    "id-en": "adjectives-en"
+  },
+  "большой": {
+    "en": {
+      "word": "big",
+      "transcription": "bɪɡ",
+      "examples": [
+        {
+          "text": "They have a big house.",
+          "translation": "У них большой дом."
+        }
+      ]
+    },
+    "it": {
+      "word": "grande",
+      "transcription": "ˈɡrande",
+      "examples": [
+        {
+          "text": "Hanno una casa grande.",
+          "translation": "У них большой дом."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "маленький": {
+    "en": {
+      "word": "small",
+      "transcription": "smɔːl",
+      "examples": [
+        {
+          "text": "It is a small and quiet hotel.",
+          "translation": "Это маленький и тихий отель."
+        }
+      ]
+    },
+    "it": {
+      "word": "piccolo",
+      "transcription": "ˈpikkolo",
+      "examples": [
+        {
+          "text": "È un hotel piccolo e tranquillo.",
+          "translation": "Это маленький и тихий отель."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "высокий": {
+    "en": {
+      "word": "tall",
+      "transcription": "tɔːl",
+      "examples": [
+        {
+          "text": "The mountain is two thousand meters high.",
+          "translation": "Гора высотой две тысячи метров."
+        }
+      ]
+    },
+    "it": {
+      "word": "alto",
+      "transcription": "ˈalto",
+      "examples": [
+        {
+          "text": "La montagna è alta duemila metri.",
+          "translation": "Гора высотой две тысячи метров."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "низкий": {
+    "en": {
+      "word": "low",
+      "transcription": "loʊ",
+      "examples": [
+        {
+          "text": "The wall is low.",
+          "translation": "Стена низкая."
+        }
+      ]
+    },
+    "it": {
+      "word": "basso",
+      "transcription": "ˈbasso",
+      "examples": [
+        {
+          "text": "Il prezzo è basso, compriamo!",
+          "translation": "Цена низкая, покупаем!"
+        }
+      ]
+    },
+    "img": ""
+  },
+  "длинный": {
+    "en": {
+      "word": "long",
+      "transcription": "lɔːŋ",
+      "examples": [
+        {
+          "text": "The skirt is too long.",
+          "translation": "Юбка слишком длинная."
+        }
+      ]
+    },
+    "it": {
+      "word": "lungo",
+      "transcription": "ˈluŋɡo",
+      "examples": [
+        {
+          "text": "La gonna è troppo lunga.",
+          "translation": "Юбка слишком длинная."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "короткий": {
+    "en": {
+      "word": "short",
+      "transcription": "ʃɔːrt",
+      "examples": [
+        {
+          "text": "The trousers are too short.",
+          "translation": "Брюки слишком короткие."
+        }
+      ]
+    },
+    "it": {
+      "word": "corto",
+      "transcription": "ˈkorto",
+      "examples": [
+        {
+          "text": "I pantaloni sono troppo corti.",
+          "translation": "Брюки слишком короткие."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Corto_Maltese.JPG/500px-Corto_Maltese.JPG?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "новый": {
+    "en": {
+      "word": "new",
+      "transcription": "nuː",
+      "examples": [
+        {
+          "text": "The new phone costs little.",
+          "translation": "Новый телефон стоит дёшево."
+        }
+      ]
+    },
+    "it": {
+      "word": "nuovo",
+      "transcription": "ˈnwɔːvo",
+      "examples": [
+        {
+          "text": "Il telefono nuovo costa poco.",
+          "translation": "Новый телефон стоит дёшево."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/NSGuida2022.pdf/page1-500px-NSGuida2022.pdf.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "старый": {
+    "en": {
+      "word": "old",
+      "transcription": "oʊld",
+      "examples": [
+        {
+          "text": "The old town is old but beautiful.",
+          "translation": "Старый город старый, но красивый."
+        }
+      ]
+    },
+    "it": {
+      "word": "vecchio",
+      "transcription": "ˈvɛkkjo",
+      "examples": [
+        {
+          "text": "Il centro storico è vecchio ma bello.",
+          "translation": "Старый город старый, но красивый."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "молодой": {
+    "en": {
+      "word": "young",
+      "transcription": "jʌŋ",
+      "examples": [
+        {
+          "text": "The new teacher is very young.",
+          "translation": "Новый учитель очень молодой."
+        }
+      ]
+    },
+    "it": {
+      "word": "giovane",
+      "transcription": "ˈdʒoːvane",
+      "examples": [
+        {
+          "text": "Il nuovo insegnante è molto giovane.",
+          "translation": "Новый учитель очень молодой."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Youth_and_Time_1901.jpg/500px-Youth_and_Time_1901.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "красивый": {
+    "en": {
+      "word": "beautiful",
+      "transcription": "ˈbjuːtɪfəl",
+      "examples": [
+        {
+          "text": "What beautiful weather today!",
+          "translation": "Какая сегодня прекрасная погода!"
+        }
+      ]
+    },
+    "it": {
+      "word": "bello",
+      "transcription": "ˈbɛllo",
+      "examples": [
+        {
+          "text": "Che tempo bello oggi!",
+          "translation": "Какая сегодня прекрасная погода!"
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Parnaso_02.jpg/500px-Parnaso_02.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "некрасивый": {
+    "en": {
+      "word": "ugly",
+      "transcription": "ˈʌɡli",
+      "examples": [
+        {
+          "text": "That building is ugly.",
+          "translation": "То здание некрасивое."
+        }
+      ]
+    },
+    "it": {
+      "word": "brutto",
+      "transcription": "ˈbrutto",
+      "examples": [
+        {
+          "text": "Quell'edificio è brutto.",
+          "translation": "То здание некрасивое."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/d/d8/Il_buono_il_brutto_e_il_cattivo-triello.jpg/500px-Il_buono_il_brutto_e_il_cattivo-triello.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "хороший": {
+    "en": {
+      "word": "good",
+      "transcription": "ɡʊd",
+      "examples": [
+        {
+          "text": "The food here is good and cheap.",
+          "translation": "Еда здесь хорошая и дешёвая."
+        }
+      ]
+    },
+    "it": {
+      "word": "buono",
+      "transcription": "ˈbwɔːno",
+      "examples": [
+        {
+          "text": "Il cibo qui è buono e economico.",
+          "translation": "Еда здесь хорошая и дешёвая."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Stefano_Buono.jpg/500px-Stefano_Buono.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "плохой": {
+    "en": {
+      "word": "bad",
+      "transcription": "bæd",
+      "examples": [
+        {
+          "text": "The big dog is not mean.",
+          "translation": "Большая собака не злая."
+        }
+      ]
+    },
+    "it": {
+      "word": "cattivo",
+      "transcription": "katˈtiːvo",
+      "examples": [
+        {
+          "text": "Il cane grande non è cattivo.",
+          "translation": "Большая собака не злая."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Villainc.svg/500px-Villainc.svg.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "лёгкий, простой": {
+    "en": {
+      "word": "easy",
+      "transcription": "ˈiːzi",
+      "examples": [
+        {
+          "text": "This question is easy.",
+          "translation": "Этот вопрос лёгкий."
+        }
+      ]
+    },
+    "it": {
+      "word": "facile",
+      "transcription": "ˈfaːtʃile",
+      "examples": [
+        {
+          "text": "Questa domanda è facile.",
+          "translation": "Этот вопрос лёгкий."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "трудный": {
+    "en": {
+      "word": "difficult",
+      "transcription": "ˈdɪfɪkəlt",
+      "examples": [
+        {
+          "text": "It is a difficult word to pronounce.",
+          "translation": "Это трудное для произношения слово."
+        }
+      ]
+    },
+    "it": {
+      "word": "difficile",
+      "transcription": "difˈfiːtʃile",
+      "examples": [
+        {
+          "text": "È una parola difficile da pronunciare.",
+          "translation": "Это трудное для произношения слово."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/4/4e/Vitadifficile-1961-Risi-01.png/500px-Vitadifficile-1961-Risi-01.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "горячий": {
+    "en": {
+      "word": "hot",
+      "transcription": "hɑːt",
+      "examples": [
+        {
+          "text": "The tea is still hot.",
+          "translation": "Чай ещё горячий."
+        }
+      ]
+    },
+    "it": {
+      "word": "caldo",
+      "transcription": "ˈkaldo",
+      "examples": [
+        {
+          "text": "Il tè è ancora caldo.",
+          "translation": "Чай ещё горячий."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Hot_Horseshoe_%28stevefe%29.jpg/500px-Hot_Horseshoe_%28stevefe%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "холодный": {
+    "en": {
+      "word": "cold",
+      "transcription": "koʊld",
+      "examples": [
+        {
+          "text": "The hands are cold.",
+          "translation": "Руки холодные."
+        }
+      ]
+    },
+    "it": {
+      "word": "freddo",
+      "transcription": "ˈfreddo",
+      "examples": [
+        {
+          "text": "Le mani sono fredde.",
+          "translation": "Руки холодные."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Antarctic_iceberg%2C_2001_-2.jpg/500px-Antarctic_iceberg%2C_2001_-2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "быстрый": {
+    "en": {
+      "word": "fast",
+      "transcription": "fæst",
+      "examples": [
+        {
+          "text": "My connection is fast.",
+          "translation": "Моё соединение быстрое."
+        }
+      ]
+    },
+    "it": {
+      "word": "veloce",
+      "transcription": "veˈloːtʃe",
+      "examples": [
+        {
+          "text": "La mia connessione è veloce.",
+          "translation": "Моё соединение быстрое."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/8/84/Veloce_come_il_vento.png/500px-Veloce_come_il_vento.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "медленный": {
+    "en": {
+      "word": "slow",
+      "transcription": "sloʊ",
+      "examples": [
+        {
+          "text": "Turtles are slow.",
+          "translation": "Черепахи медленные."
+        }
+      ]
+    },
+    "it": {
+      "word": "lento",
+      "transcription": "ˈlɛnto",
+      "examples": [
+        {
+          "text": "Le tartarughe sono lente.",
+          "translation": "Черепахи медленные."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "сильный": {
+    "en": {
+      "word": "strong",
+      "transcription": "strɔːŋ",
+      "examples": [
+        {
+          "text": "Espresso coffee is very strong.",
+          "translation": "Эспрессо очень крепкий."
+        }
+      ]
+    },
+    "it": {
+      "word": "forte",
+      "transcription": "ˈfɔrte",
+      "examples": [
+        {
+          "text": "Il caffè espresso è molto forte.",
+          "translation": "Эспрессо очень крепкий."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "слабый": {
+    "en": {
+      "word": "weak",
+      "transcription": "wiːk",
+      "examples": [
+        {
+          "text": "The signal is weak here.",
+          "translation": "Здесь слабый сигнал."
+        }
+      ]
+    },
+    "it": {
+      "word": "debole",
+      "transcription": "ˈdeːbole",
+      "examples": [
+        {
+          "text": "Il segnale è debole qui.",
+          "translation": "Здесь слабый сигнал."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "полный": {
+    "en": {
+      "word": "full",
+      "transcription": "fʊl",
+      "examples": [
+        {
+          "text": "The parking lot is full.",
+          "translation": "Парковка заполнена."
+        }
+      ]
+    },
+    "it": {
+      "word": "pieno",
+      "transcription": "ˈpjɛːno",
+      "examples": [
+        {
+          "text": "Il parcheggio è pieno.",
+          "translation": "Парковка заполнена."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/CoA_fam_ITA_Rossi.svg/500px-CoA_fam_ITA_Rossi.svg.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "пустой": {
+    "en": {
+      "word": "empty",
+      "transcription": "ˈɛmpti",
+      "examples": [
+        {
+          "text": "The bottle is empty.",
+          "translation": "Бутылка пустая."
+        }
+      ]
+    },
+    "it": {
+      "word": "vuoto",
+      "transcription": "ˈvwɔːto",
+      "examples": [
+        {
+          "text": "La bottiglia è vuota.",
+          "translation": "Бутылка пустая."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "дорогой": {
+    "en": {
+      "word": "expensive",
+      "transcription": "ɪkˈspɛnsɪv",
+      "examples": [
+        {
+          "text": "The apartments here are expensive.",
+          "translation": "Квартиры здесь дорогие."
+        }
+      ]
+    },
+    "it": {
+      "word": "caro",
+      "transcription": "ˈkaːro",
+      "examples": [
+        {
+          "text": "Gli appartamenti qui sono cari.",
+          "translation": "Квартиры здесь дорогие."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/0/0d/Caro_zio_Joe.png/500px-Caro_zio_Joe.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "дешёвый": {
+    "en": {
+      "word": "cheap",
+      "transcription": "tʃiːp",
+      "examples": [
+        {
+          "text": "This hotel is cheap.",
+          "translation": "Этот отель дешёвый."
+        }
+      ]
+    },
+    "it": {
+      "word": "economico",
+      "transcription": "ekonoˈmiːko",
+      "examples": [
+        {
+          "text": "Questo albergo è economico.",
+          "translation": "Этот отель дешёвый."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Boerse_01_KMJ.jpg/500px-Boerse_01_KMJ.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "богатый": {
+    "en": {
+      "word": "rich",
+      "transcription": "rɪtʃ",
+      "examples": [
+        {
+          "text": "It is a rich and famous family.",
+          "translation": "Это богатая и знаменитая семья."
+        }
+      ]
+    },
+    "it": {
+      "word": "ricco",
+      "transcription": "ˈrikko",
+      "examples": [
+        {
+          "text": "È una famiglia ricca e famosa.",
+          "translation": "Это богатая и знаменитая семья."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "бедный": {
+    "en": {
+      "word": "poor",
+      "transcription": "pʊr",
+      "examples": [
+        {
+          "text": "Look at that poor cat in the rain.",
+          "translation": "Посмотри на того бедного кота под дождём."
+        }
+      ]
+    },
+    "it": {
+      "word": "povero",
+      "transcription": "ˈpɔːvero",
+      "examples": [
+        {
+          "text": "Guarda quel povero gatto sotto la pioggia.",
+          "translation": "Посмотри на того бедного кота под дождём."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Thomas_Benjamin_Kennington_-_Orphans.jpg/500px-Thomas_Benjamin_Kennington_-_Orphans.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "важный": {
+    "en": {
+      "word": "important",
+      "transcription": "ɪmˈpɔːrtənt",
+      "examples": [
+        {
+          "text": "It is an important decision.",
+          "translation": "Это важное решение."
+        }
+      ]
+    },
+    "it": {
+      "word": "importante",
+      "transcription": "importaˈnte",
+      "examples": [
+        {
+          "text": "È una decisione importante.",
+          "translation": "Это важное решение."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/b/ba/Importante.png/500px-Importante.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "интересный": {
+    "en": {
+      "word": "interesting",
+      "transcription": "ˈɪntrəstɪŋ",
+      "examples": [
+        {
+          "text": "The museum is very interesting.",
+          "translation": "Музей очень интересный."
+        }
+      ]
+    },
+    "it": {
+      "word": "interessante",
+      "transcription": "interesˈsante",
+      "examples": [
+        {
+          "text": "Il museo è molto interessante.",
+          "translation": "Музей очень интересный."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/6/61/Stato_interessante_%281977%29_-_Janet_Agren_e_Duilio_Del_Prete.JPG/500px-Stato_interessante_%281977%29_-_Janet_Agren_e_Duilio_Del_Prete.JPG?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "скучный": {
+    "en": {
+      "word": "boring",
+      "transcription": "ˈbɔːrɪŋ",
+      "examples": [
+        {
+          "text": "This morning's lesson was boring.",
+          "translation": "Урок сегодня утром был скучным."
+        }
+      ]
+    },
+    "it": {
+      "word": "noioso",
+      "transcription": "ˈnɔjoːzo",
+      "examples": [
+        {
+          "text": "La lezione di stamattina era noiosa.",
+          "translation": "Урок сегодня утром был скучным."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "чистый": {
+    "en": {
+      "word": "clean",
+      "transcription": "kliːn",
+      "examples": [
+        {
+          "text": "The hotel room is clean.",
+          "translation": "Номер в отеле чистый."
+        }
+      ]
+    },
+    "it": {
+      "word": "pulito",
+      "transcription": "puˈliːto",
+      "examples": [
+        {
+          "text": "La camera dell'albergo è pulita.",
+          "translation": "Номер в отеле чистый."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Palazzo_di_Giustizia_di_Milano.jpg/500px-Palazzo_di_Giustizia_di_Milano.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "грязный": {
+    "en": {
+      "word": "dirty",
+      "transcription": "ˈdɜːrti",
+      "examples": [
+        {
+          "text": "The car is dirty after the trip.",
+          "translation": "Машина грязная после поездки."
+        }
+      ]
+    },
+    "it": {
+      "word": "sporco",
+      "transcription": "ˈsporko",
+      "examples": [
+        {
+          "text": "L'auto è sporca dopo il viaggio.",
+          "translation": "Машина грязная после поездки."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/King%27s_Cross%2C_London%3B_the_Great_Dust-Heap%2C_next_to_Battle_Br_Wellcome_V0013642.jpg/500px-King%27s_Cross%2C_London%3B_the_Great_Dust-Heap%2C_next_to_Battle_Br_Wellcome_V0013642.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "тяжёлый": {
+    "en": {
+      "word": "heavy",
+      "transcription": "ˈhɛvi",
+      "examples": [
+        {
+          "text": "The box is too heavy.",
+          "translation": "Коробка слишком тяжёлая."
+        }
+      ]
+    },
+    "it": {
+      "word": "pesante",
+      "transcription": "peˈzante",
+      "examples": [
+        {
+          "text": "La scatola è troppo pesante.",
+          "translation": "Коробка слишком тяжёлая."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Heavy-water-3D-vdW.svg/500px-Heavy-water-3D-vdW.svg.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "лёгкий": {
+    "en": {
+      "word": "light",
+      "transcription": "laɪt",
+      "examples": [
+        {
+          "text": "This suitcase is light.",
+          "translation": "Этот чемодан лёгкий."
+        }
+      ]
+    },
+    "it": {
+      "word": "leggero",
+      "transcription": "ˈleddʒero",
+      "examples": [
+        {
+          "text": "Questa valigia è leggera.",
+          "translation": "Этот чемодан лёгкий."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Prism_flat_rainbow_%28cropped%29.jpg/500px-Prism_flat_rainbow_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "счастливый": {
+    "en": {
+      "word": "happy",
+      "transcription": "ˈhæpi",
+      "examples": [
+        {
+          "text": "I am happy for you!",
+          "translation": "Я счастлив за тебя!"
+        }
+      ]
+    },
+    "it": {
+      "word": "felice",
+      "transcription": "feˈliːtʃe",
+      "examples": [
+        {
+          "text": "Sono felice per te!",
+          "translation": "Я счастлив за тебя!"
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Girl_of_Vietnam.jpg/500px-Girl_of_Vietnam.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "грустный": {
+    "en": {
+      "word": "sad",
+      "transcription": "sæd",
+      "examples": [
+        {
+          "text": "Why are you sad today?",
+          "translation": "Почему ты сегодня грустный?"
+        }
+      ]
+    },
+    "it": {
+      "word": "triste",
+      "transcription": "ˈtriste",
+      "examples": [
+        {
+          "text": "Perché sei triste oggi?",
+          "translation": "Почему ты сегодня грустный?"
+        }
+      ]
+    },
+    "img": ""
+  },
+  "уставший": {
+    "en": {
+      "word": "tired",
+      "transcription": "ˈtaɪərd",
+      "examples": [
+        {
+          "text": "I am tired after work.",
+          "translation": "Я устал после работы."
+        }
+      ]
+    },
+    "it": {
+      "word": "stanco",
+      "transcription": "ˈstanko",
+      "examples": [
+        {
+          "text": "Sono stanco dopo il lavoro.",
+          "translation": "Я устал после работы."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "голодный": {
+    "en": {
+      "word": "hungry",
+      "transcription": "ˈhʌŋɡri",
+      "examples": [
+        {
+          "text": "The children are hungry after school.",
+          "translation": "Дети голодные после школы."
+        }
+      ]
+    },
+    "it": {
+      "word": "affamato",
+      "transcription": "affaˈmaːto",
+      "examples": [
+        {
+          "text": "I bambini sono affamati dopo la scuola.",
+          "translation": "Дети голодные после школы."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "добрый": {
+    "en": {
+      "word": "kind",
+      "transcription": "kaɪnd",
+      "examples": [
+        {
+          "text": "The hotel staff is very kind.",
+          "translation": "Персонал отеля очень добрый."
+        }
+      ]
+    },
+    "it": {
+      "word": "gentile",
+      "transcription": "dʒenˈtiːle",
+      "examples": [
+        {
+          "text": "Il personale dell'albergo è molto gentile.",
+          "translation": "Персонал отеля очень добрый."
+        }
+      ]
+    },
+    "img": "https://upload.wikimedia.org/wikipedia/commons/1/18/Giovanni_Gentile_sgr.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  "приятный": {
+    "en": {
+      "word": "nice",
+      "transcription": "naɪs",
+      "examples": [
+        {
+          "text": "Your friend is very nice.",
+          "translation": "Твой друг очень приятный."
+        }
+      ]
+    },
+    "it": {
+      "word": "simpatico",
+      "transcription": "simˈpaːtiko",
+      "examples": [
+        {
+          "text": "Il tuo amico è molto simpatico.",
+          "translation": "Твой друг очень приятный."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/1501_Connections_of_the_Sympathetic_Nervous_System.jpg/500px-1501_Connections_of_the_Sympathetic_Nervous_System.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "готовый": {
+    "en": {
+      "word": "ready",
+      "transcription": "ˈrɛdi",
+      "examples": [
+        {
+          "text": "Dinner is ready!",
+          "translation": "Ужин готов!"
+        }
+      ]
+    },
+    "it": {
+      "word": "pronto",
+      "transcription": "ˈprɔnto",
+      "examples": [
+        {
+          "text": "La cena è pronta.",
+          "translation": "Ужин готов!"
+        }
+      ]
+    },
+    "img": ""
+  }
+}

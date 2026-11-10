@@ -1,0 +1,1310 @@
+{
+  "_meta": {
+    "id": "irregular-verbs-en",
+    "name": "100 неправильных глаголов",
+    "icon": "🔤",
+    "tag": "неправильные глаголы",
+    "desc": "Базовые неправильные глаголы: инфинитив — Past Simple — Past Participle на одной карточке.",
+    "size": 100
+  },
+  "быть": {
+    "en": {
+      "word": "be — was/were — been",
+      "transcription": "biː",
+      "examples": [
+        {
+          "text": "I was at home yesterday.",
+          "translation": "Я был дома вчера."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "бить": {
+    "en": {
+      "word": "beat — beat — beaten",
+      "transcription": "biːt",
+      "examples": [
+        {
+          "text": "Our team beat the champions yesterday.",
+          "translation": "Наша команда победила чемпионов вчера."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "становиться": {
+    "en": {
+      "word": "become — became — become",
+      "transcription": "bɪˈkʌm",
+      "examples": [
+        {
+          "text": "She became a doctor two years ago.",
+          "translation": "Она стала врачом два года назад."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "начинать": {
+    "en": {
+      "word": "begin — began — begun",
+      "transcription": "bɪˈɡɪn",
+      "examples": [
+        {
+          "text": "The film began at eight.",
+          "translation": "Фильм начался в восемь."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "гнуть": {
+    "en": {
+      "word": "bend — bent — bent",
+      "transcription": "bɛnd",
+      "examples": [
+        {
+          "text": "He bent the wire with his hands.",
+          "translation": "Он согнул проволоку руками."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "держать пари": {
+    "en": {
+      "word": "bet — bet — bet",
+      "transcription": "bɛt",
+      "examples": [
+        {
+          "text": "I bet ten euros on that game.",
+          "translation": "Я поставил десять евро на ту игру."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "связывать": {
+    "en": {
+      "word": "bind — bound — bound",
+      "transcription": "baɪnd",
+      "examples": [
+        {
+          "text": "They bound the books together.",
+          "translation": "Они связали книги вместе."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "кусать": {
+    "en": {
+      "word": "bite — bit — bitten",
+      "transcription": "baɪt",
+      "examples": [
+        {
+          "text": "The dog bit the ball.",
+          "translation": "Собака укусила мяч."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "кровоточить": {
+    "en": {
+      "word": "bleed — bled — bled",
+      "transcription": "bliːd",
+      "examples": [
+        {
+          "text": "His knee bled after the fall.",
+          "translation": "Его колено кровоточило после падения."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "дуть": {
+    "en": {
+      "word": "blow — blew — blown",
+      "transcription": "bloʊ",
+      "examples": [
+        {
+          "text": "The wind blew all night.",
+          "translation": "Ветер дул всю ночь."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "ломать": {
+    "en": {
+      "word": "break — broke — broken",
+      "transcription": "breɪk",
+      "examples": [
+        {
+          "text": "I broke my phone last week.",
+          "translation": "Я сломал телефон на прошлой неделе."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "приносить": {
+    "en": {
+      "word": "bring — brought — brought",
+      "transcription": "brɪŋ",
+      "examples": [
+        {
+          "text": "She brought a cake to the party.",
+          "translation": "Она принесла торт на вечеринку."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "строить": {
+    "en": {
+      "word": "build — built — built",
+      "transcription": "bɪld",
+      "examples": [
+        {
+          "text": "They built a new house here.",
+          "translation": "Они построили здесь новый дом."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "гореть": {
+    "en": {
+      "word": "burn — burnt/burned — burnt/burned",
+      "transcription": "bɜːrn",
+      "examples": [
+        {
+          "text": "The fire burnt all the papers.",
+          "translation": "Огонь сжёг все бумаги."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "лопаться": {
+    "en": {
+      "word": "burst — burst — burst",
+      "transcription": "bɜːrst",
+      "examples": [
+        {
+          "text": "The balloon burst suddenly.",
+          "translation": "Шарик внезапно лопнул."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "покупать": {
+    "en": {
+      "word": "buy — bought — bought",
+      "transcription": "baɪ",
+      "examples": [
+        {
+          "text": "I bought new shoes yesterday.",
+          "translation": "Вчера я купил новые туфли."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "ловить": {
+    "en": {
+      "word": "catch — caught — caught",
+      "transcription": "kætʃ",
+      "examples": [
+        {
+          "text": "The policeman caught the thief.",
+          "translation": "Полицейский поймал вора."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "выбирать": {
+    "en": {
+      "word": "choose — chose — chosen",
+      "transcription": "tʃuːz",
+      "examples": [
+        {
+          "text": "I chose the red shirt.",
+          "translation": "Я выбрал красную рубашку."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "приходить": {
+    "en": {
+      "word": "come — came — come",
+      "transcription": "kʌm",
+      "examples": [
+        {
+          "text": "He came home late.",
+          "translation": "Он пришёл домой поздно."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "стоить": {
+    "en": {
+      "word": "cost — cost — cost",
+      "transcription": "kɒst",
+      "examples": [
+        {
+          "text": "The ticket cost thirty euros.",
+          "translation": "Билет стоил тридцать евро."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "ползать": {
+    "en": {
+      "word": "creep — crept — crept",
+      "transcription": "kriːp",
+      "examples": [
+        {
+          "text": "The cat crept into the room.",
+          "translation": "Кот прокрался в комнату."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "резать": {
+    "en": {
+      "word": "cut — cut — cut",
+      "transcription": "kʌt",
+      "examples": [
+        {
+          "text": "She cut the bread for dinner.",
+          "translation": "Она нарезала хлеб на ужин."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "иметь дело": {
+    "en": {
+      "word": "deal — dealt — dealt",
+      "transcription": "diːl",
+      "examples": [
+        {
+          "text": "We dealt with the problem quickly.",
+          "translation": "Мы быстро разобрались с проблемой."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "копать": {
+    "en": {
+      "word": "dig — dug — dug",
+      "transcription": "dɪɡ",
+      "examples": [
+        {
+          "text": "They dug a hole in the garden.",
+          "translation": "Они выкопали яму в саду."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "делать": {
+    "en": {
+      "word": "do — did — done",
+      "transcription": "duː",
+      "examples": [
+        {
+          "text": "I did my homework in the evening.",
+          "translation": "Я сделал уроки вечером."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "рисовать": {
+    "en": {
+      "word": "draw — drew — drawn",
+      "transcription": "drɔː",
+      "examples": [
+        {
+          "text": "The child drew a house.",
+          "translation": "Ребёнок нарисовал дом."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "мечтать; видеть сны": {
+    "en": {
+      "word": "dream — dreamt/dreamed — dreamt/dreamed",
+      "transcription": "driːm",
+      "examples": [
+        {
+          "text": "I dreamt about Italy last night.",
+          "translation": "Мне сегодня ночью снилась Италия."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "пить": {
+    "en": {
+      "word": "drink — drank — drunk",
+      "transcription": "drɪŋk",
+      "examples": [
+        {
+          "text": "He drank all the juice.",
+          "translation": "Он выпил весь сок."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "водить машину": {
+    "en": {
+      "word": "drive — drove — driven",
+      "transcription": "draɪv",
+      "examples": [
+        {
+          "text": "She drove to Rome this morning.",
+          "translation": "Она поехала в Рим сегодня утром."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "есть": {
+    "en": {
+      "word": "eat — ate — eaten",
+      "transcription": "iːt",
+      "examples": [
+        {
+          "text": "We ate pizza for dinner.",
+          "translation": "Мы ели пиццу на ужин."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "падать": {
+    "en": {
+      "word": "fall — fell — fallen",
+      "transcription": "fɔːl",
+      "examples": [
+        {
+          "text": "The leaves fell from the tree.",
+          "translation": "Листья упали с дерева."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "кормить": {
+    "en": {
+      "word": "feed — fed — fed",
+      "transcription": "fiːd",
+      "examples": [
+        {
+          "text": "I fed the dog before lunch.",
+          "translation": "Я покормил собаку перед обедом."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "чувствовать": {
+    "en": {
+      "word": "feel — felt — felt",
+      "transcription": "fiːl",
+      "examples": [
+        {
+          "text": "I felt tired after work.",
+          "translation": "Я чувствовал усталость после работы."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "сражаться": {
+    "en": {
+      "word": "fight — fought — fought",
+      "transcription": "faɪt",
+      "examples": [
+        {
+          "text": "The team fought until the end.",
+          "translation": "Команда боролась до конца."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "находить": {
+    "en": {
+      "word": "find — found — found",
+      "transcription": "faɪnd",
+      "examples": [
+        {
+          "text": "I found the keys in the kitchen.",
+          "translation": "Я нашёл ключи на кухне."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "летать": {
+    "en": {
+      "word": "fly — flew — flown",
+      "transcription": "flaɪ",
+      "examples": [
+        {
+          "text": "We flew to London in May.",
+          "translation": "Мы полетели в Лондон в мае."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "забывать": {
+    "en": {
+      "word": "forget — forgot — forgotten",
+      "transcription": "fərˈɡɛt",
+      "examples": [
+        {
+          "text": "She forgot my name.",
+          "translation": "Она забыла моё имя."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "прощать": {
+    "en": {
+      "word": "forgive — forgave — forgiven",
+      "transcription": "fərˈɡɪv",
+      "examples": [
+        {
+          "text": "I forgave him long ago.",
+          "translation": "Я простил его давно."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "замерзать, замораживать": {
+    "en": {
+      "word": "freeze — froze — frozen",
+      "transcription": "friːz",
+      "examples": [
+        {
+          "text": "The lake froze last winter.",
+          "translation": "Озеро замёрзло прошлой зимой."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "получать": {
+    "en": {
+      "word": "get — got — got/gotten",
+      "transcription": "ɡɛt",
+      "examples": [
+        {
+          "text": "I got a new job in May.",
+          "translation": "Я получил новую работу в мае."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "давать": {
+    "en": {
+      "word": "give — gave — given",
+      "transcription": "ɡɪv",
+      "examples": [
+        {
+          "text": "He gave me a book for my birthday.",
+          "translation": "Он подарил мне книгу на день рождения."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "идти, ехать": {
+    "en": {
+      "word": "go — went — gone",
+      "transcription": "ɡoʊ",
+      "examples": [
+        {
+          "text": "We went to the sea in summer.",
+          "translation": "Мы поехали на море летом."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "расти": {
+    "en": {
+      "word": "grow — grew — grown",
+      "transcription": "ɡroʊ",
+      "examples": [
+        {
+          "text": "The plants grew very fast.",
+          "translation": "Растения выросли очень быстро."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "вешать": {
+    "en": {
+      "word": "hang — hung — hung",
+      "transcription": "hæŋ",
+      "examples": [
+        {
+          "text": "I hung the picture on the wall.",
+          "translation": "Я повесил картину на стену."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "иметь": {
+    "en": {
+      "word": "have — had — had",
+      "transcription": "hæv",
+      "examples": [
+        {
+          "text": "They had a big garden.",
+          "translation": "У них был большой сад."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "слышать": {
+    "en": {
+      "word": "hear — heard — heard",
+      "transcription": "hɪr",
+      "examples": [
+        {
+          "text": "I heard a strange noise.",
+          "translation": "Я слышал странный шум."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "прятать": {
+    "en": {
+      "word": "hide — hid — hidden",
+      "transcription": "haɪd",
+      "examples": [
+        {
+          "text": "The cat hid under the bed.",
+          "translation": "Кот спрятался под кроватью."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "ударять": {
+    "en": {
+      "word": "hit — hit — hit",
+      "transcription": "hɪt",
+      "examples": [
+        {
+          "text": "The ball hit the window.",
+          "translation": "Мяч попал в окно."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "держать": {
+    "en": {
+      "word": "hold — held — held",
+      "transcription": "hoʊld",
+      "examples": [
+        {
+          "text": "She held the baby in her arms.",
+          "translation": "Она держала ребёнка на руках."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "ранить; причинять боль": {
+    "en": {
+      "word": "hurt — hurt — hurt",
+      "transcription": "hɜːrt",
+      "examples": [
+        {
+          "text": "I hurt my leg yesterday.",
+          "translation": "Я ушиб ногу вчера."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "держать, хранить": {
+    "en": {
+      "word": "keep — kept — kept",
+      "transcription": "kiːp",
+      "examples": [
+        {
+          "text": "I kept all the old photos.",
+          "translation": "Я сохранил все старые фотографии."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "знать": {
+    "en": {
+      "word": "know — knew — known",
+      "transcription": "noʊ",
+      "examples": [
+        {
+          "text": "I knew the answer immediately.",
+          "translation": "Я сразу узнал ответ."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "класть": {
+    "en": {
+      "word": "lay — laid — laid",
+      "transcription": "leɪ",
+      "examples": [
+        {
+          "text": "She laid the table for dinner.",
+          "translation": "Она накрыла стол на ужин."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "вести": {
+    "en": {
+      "word": "lead — led — led",
+      "transcription": "liːd",
+      "examples": [
+        {
+          "text": "The guide led us to the museum.",
+          "translation": "Гид провёл нас в музей."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "учить, узнавать": {
+    "en": {
+      "word": "learn — learnt/learned — learnt/learned",
+      "transcription": "lɜːrn",
+      "examples": [
+        {
+          "text": "I learnt many new words.",
+          "translation": "Я выучил много новых слов."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "оставлять; уезжать": {
+    "en": {
+      "word": "leave — left — left",
+      "transcription": "liːv",
+      "examples": [
+        {
+          "text": "He left the office at six.",
+          "translation": "Он покинул офис в шесть."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "одалживать": {
+    "en": {
+      "word": "lend — lent — lent",
+      "transcription": "lɛnd",
+      "examples": [
+        {
+          "text": "I lent my pen to Marco.",
+          "translation": "Я одолжил ручку Марко."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "позволять": {
+    "en": {
+      "word": "let — let — let",
+      "transcription": "lɛt",
+      "examples": [
+        {
+          "text": "She let me use her phone.",
+          "translation": "Она позволила мне пользоваться её телефоном."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "лежать": {
+    "en": {
+      "word": "lie — lay — lain",
+      "transcription": "laɪ",
+      "examples": [
+        {
+          "text": "The book lay on the table all day.",
+          "translation": "Книга пролежала на столе весь день."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "зажигать": {
+    "en": {
+      "word": "light — lit/lighted — lit/lighted",
+      "transcription": "laɪt",
+      "examples": [
+        {
+          "text": "He lit a candle in the dark.",
+          "translation": "Он зажёг свечу в темноте."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "терять": {
+    "en": {
+      "word": "lose — lost — lost",
+      "transcription": "luːz",
+      "examples": [
+        {
+          "text": "I lost my keys again.",
+          "translation": "Я снова потерял ключи."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "делать, изготавливать": {
+    "en": {
+      "word": "make — made — made",
+      "transcription": "meɪk",
+      "examples": [
+        {
+          "text": "She made a cake for us.",
+          "translation": "Она сделала для нас торт."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "значить, иметь в виду": {
+    "en": {
+      "word": "mean — meant — meant",
+      "transcription": "miːn",
+      "examples": [
+        {
+          "text": "What did you mean?",
+          "translation": "Что ты имел в виду?"
+        }
+      ]
+    },
+    "img": ""
+  },
+  "встречать, знакомиться": {
+    "en": {
+      "word": "meet — met — met",
+      "transcription": "miːt",
+      "examples": [
+        {
+          "text": "I met Marco at the station.",
+          "translation": "Я встретил Марко на вокзале."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "платить": {
+    "en": {
+      "word": "pay — paid — paid",
+      "transcription": "peɪ",
+      "examples": [
+        {
+          "text": "I paid the bill at the restaurant.",
+          "translation": "Я оплатил счёт в ресторане."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "класть ·2": {
+    "en": {
+      "word": "put — put — put",
+      "transcription": "pʊt",
+      "examples": [
+        {
+          "text": "I put the book on the shelf.",
+          "translation": "Я поставил книгу на полку."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "читать": {
+    "en": {
+      "word": "read — read — read",
+      "transcription": "riːd",
+      "examples": [
+        {
+          "text": "I read two books last month.",
+          "translation": "Я прочитал две книги в прошлом месяце."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "ездить верхом; кататься": {
+    "en": {
+      "word": "ride — rode — ridden",
+      "transcription": "raɪd",
+      "examples": [
+        {
+          "text": "She rode her bike to school.",
+          "translation": "Она поехала в школу на велосипеде."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "звонить (о колоколе)": {
+    "en": {
+      "word": "ring — rang — rung",
+      "transcription": "rɪŋ",
+      "examples": [
+        {
+          "text": "The phone rang all morning.",
+          "translation": "Телефон звонил всё утро."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "подниматься": {
+    "en": {
+      "word": "rise — rose — risen",
+      "transcription": "raɪz",
+      "examples": [
+        {
+          "text": "The sun rose at six.",
+          "translation": "Солнце взошло в шесть."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "бежать": {
+    "en": {
+      "word": "run — ran — run",
+      "transcription": "rʌn",
+      "examples": [
+        {
+          "text": "I ran in the park this morning.",
+          "translation": "Я бегал в парке сегодня утром."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "говорить": {
+    "en": {
+      "word": "say — said — said",
+      "transcription": "sɛ",
+      "examples": [
+        {
+          "text": "He said nothing about it.",
+          "translation": "Он ничего об этом не сказал."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "видеть": {
+    "en": {
+      "word": "see — saw — seen",
+      "transcription": "siː",
+      "examples": [
+        {
+          "text": "I saw a good film yesterday.",
+          "translation": "Вчера я видел хороший фильм."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "продавать": {
+    "en": {
+      "word": "sell — sold — sold",
+      "transcription": "sɛl",
+      "examples": [
+        {
+          "text": "They sold their old car.",
+          "translation": "Они продали свою старую машину."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "отправлять": {
+    "en": {
+      "word": "send — sent — sent",
+      "transcription": "sɛnd",
+      "examples": [
+        {
+          "text": "I sent you an email yesterday.",
+          "translation": "Я отправил тебе письмо вчера."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "ставить, устанавливать": {
+    "en": {
+      "word": "set — set — set",
+      "transcription": "sɛt",
+      "examples": [
+        {
+          "text": "She set the table for two.",
+          "translation": "Она накрыла на двоих."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "трясти": {
+    "en": {
+      "word": "shake — shook — shaken",
+      "transcription": "ʃeɪk",
+      "examples": [
+        {
+          "text": "He shook my hand warmly.",
+          "translation": "Он горячо пожал мне руку."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "светить, сиять": {
+    "en": {
+      "word": "shine — shone — shone",
+      "transcription": "ʃaɪn",
+      "examples": [
+        {
+          "text": "The sun shone all day.",
+          "translation": "Солнце светило весь день."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "стрелять; снимать (фото)": {
+    "en": {
+      "word": "shoot — shot — shot",
+      "transcription": "ʃuːt",
+      "examples": [
+        {
+          "text": "The photographer shot many photos.",
+          "translation": "Фотограф сделал много снимков."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "показывать": {
+    "en": {
+      "word": "show — showed — shown",
+      "transcription": "ʃoʊ",
+      "examples": [
+        {
+          "text": "She showed me her new house.",
+          "translation": "Она показала мне свой новый дом."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "закрывать(ся)": {
+    "en": {
+      "word": "shut — shut — shut",
+      "transcription": "ʃʌt",
+      "examples": [
+        {
+          "text": "He shut the door quietly.",
+          "translation": "Он тихо закрыл дверь."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "петь": {
+    "en": {
+      "word": "sing — sang — sung",
+      "transcription": "sɪŋ",
+      "examples": [
+        {
+          "text": "We sang all evening.",
+          "translation": "Мы пели весь вечер."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "тонуть": {
+    "en": {
+      "word": "sink — sank — sunk",
+      "transcription": "sɪŋk",
+      "examples": [
+        {
+          "text": "The ship sank in the storm.",
+          "translation": "Корабль затонул в шторм."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "сидеть": {
+    "en": {
+      "word": "sit — sat — sat",
+      "transcription": "sɪt",
+      "examples": [
+        {
+          "text": "I sat near the window.",
+          "translation": "Я сел у окна."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "спать": {
+    "en": {
+      "word": "sleep — slept — slept",
+      "transcription": "sliːp",
+      "examples": [
+        {
+          "text": "I slept only five hours last night.",
+          "translation": "Сегодня ночью я спал всего пять часов."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "говорить ·2": {
+    "en": {
+      "word": "speak — spoke — spoken",
+      "transcription": "spiːk",
+      "examples": [
+        {
+          "text": "She spoke to the teacher after class.",
+          "translation": "Она поговорила с учителем после урока."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "тратить": {
+    "en": {
+      "word": "spend — spent — spent",
+      "transcription": "spɛnd",
+      "examples": [
+        {
+          "text": "I spent fifty euros at the market.",
+          "translation": "Я потратил пятьдесят евро на рынке."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "стоять": {
+    "en": {
+      "word": "stand — stood — stood",
+      "transcription": "stænd",
+      "examples": [
+        {
+          "text": "We stood in front of the museum.",
+          "translation": "Мы стояли перед музеем."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "красть": {
+    "en": {
+      "word": "steal — stole — stolen",
+      "transcription": "stiːl",
+      "examples": [
+        {
+          "text": "Someone stole my bike.",
+          "translation": "Кто-то украл мой велосипед."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "плавать": {
+    "en": {
+      "word": "swim — swam — swum",
+      "transcription": "swɪm",
+      "examples": [
+        {
+          "text": "I swam in the sea every day.",
+          "translation": "Я плавал в море каждый день."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "брать, взять": {
+    "en": {
+      "word": "take — took — taken",
+      "transcription": "teɪk",
+      "examples": [
+        {
+          "text": "I took the bus to work.",
+          "translation": "Я поехал на работу на автобусе."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "учить, преподавать": {
+    "en": {
+      "word": "teach — taught — taught",
+      "transcription": "tiːtʃ",
+      "examples": [
+        {
+          "text": "He taught English for ten years.",
+          "translation": "Он преподавал английский десять лет."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "рассказывать": {
+    "en": {
+      "word": "tell — told — told",
+      "transcription": "tɛl",
+      "examples": [
+        {
+          "text": "She told me a funny story.",
+          "translation": "Она рассказала мне смешную историю."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "думать": {
+    "en": {
+      "word": "think — thought — thought",
+      "transcription": "θɪŋk",
+      "examples": [
+        {
+          "text": "I thought about your idea.",
+          "translation": "Я подумал над твоей идеей."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "бросать": {
+    "en": {
+      "word": "throw — threw — thrown",
+      "transcription": "θroʊ",
+      "examples": [
+        {
+          "text": "He threw the ball to me.",
+          "translation": "Он бросил мне мяч."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "понимать": {
+    "en": {
+      "word": "understand — understood — understood",
+      "transcription": "ˌʌndərˈstænd",
+      "examples": [
+        {
+          "text": "I understood the lesson very well.",
+          "translation": "Я очень хорошо понял урок."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "просыпаться": {
+    "en": {
+      "word": "wake — woke — woken",
+      "transcription": "weɪk",
+      "examples": [
+        {
+          "text": "I woke up at seven today.",
+          "translation": "Сегодня я проснулся в семь."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "носить (одежду)": {
+    "en": {
+      "word": "wear — wore — worn",
+      "transcription": "wɛər",
+      "examples": [
+        {
+          "text": "She wore a beautiful dress.",
+          "translation": "Она надела красивое платье."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "побеждать": {
+    "en": {
+      "word": "win — won — won",
+      "transcription": "wɪn",
+      "examples": [
+        {
+          "text": "Our team won the match.",
+          "translation": "Наша команда выиграла матч."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "писать": {
+    "en": {
+      "word": "write — wrote — written",
+      "transcription": "raɪt",
+      "examples": [
+        {
+          "text": "I wrote a letter to my aunt.",
+          "translation": "Я написал письмо тёте."
+        }
+      ]
+    },
+    "img": ""
+  }
+}

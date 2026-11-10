@@ -1,0 +1,270 @@
+{
+  "_meta": {
+    "id": "key-verbs",
+    "name": "20 ключевых глаголов",
+    "icon": "🎯",
+    "tag": "ключевые глаголы",
+    "desc": "Главные глаголы языка: на карточке всё настоящее время (io → loro).",
+    "size": 20
+  },
+  "быть": {
+    "it": {
+      "word": "essere — sono, sei, è, siamo, siete, sono",
+      "transcription": "ˈɛssere",
+      "examples": [
+        {
+          "text": "Siamo amici da molti anni.",
+          "translation": "Мы друзья уже много лет."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "иметь": {
+    "it": {
+      "word": "avere — ho, hai, ha, abbiamo, avete, hanno",
+      "transcription": "aˈveːre",
+      "examples": [
+        {
+          "text": "Ho due fratelli e una sorella.",
+          "translation": "У меня два брата и сестра."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "делать": {
+    "it": {
+      "word": "fare — faccio, fai, fa, facciamo, fate, fanno",
+      "transcription": "ˈfaːre",
+      "examples": [
+        {
+          "text": "Faccio colazione alle sette.",
+          "translation": "Я завтракаю в семь."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "говорить": {
+    "it": {
+      "word": "dire — dico, dici, dice, diciamo, dite, dicono",
+      "transcription": "ˈdiːre",
+      "examples": [
+        {
+          "text": "Dico sempre la verità.",
+          "translation": "Я всегда говорю правду."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "идти, ехать": {
+    "it": {
+      "word": "andare — vado, vai, va, andiamo, andate, vanno",
+      "transcription": "anˈdaːre",
+      "examples": [
+        {
+          "text": "Andiamo al cinema ogni sabato.",
+          "translation": "Мы ходим в кино каждую субботу."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "приходить": {
+    "it": {
+      "word": "venire — vengo, vieni, viene, veniamo, venite, vengono",
+      "transcription": "veˈniːre",
+      "examples": [
+        {
+          "text": "Vieni alla festa stasera?",
+          "translation": "Ты идёшь сегодня на вечеринку?"
+        }
+      ]
+    },
+    "img": ""
+  },
+  "давать": {
+    "it": {
+      "word": "dare — do, dai, dà, diamo, date, danno",
+      "transcription": "ˈdaːre",
+      "examples": [
+        {
+          "text": "Do un libro a Marco.",
+          "translation": "Я даю книгу Марко."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "находиться; быть (о состоянии)": {
+    "it": {
+      "word": "stare — sto, stai, sta, stiamo, state, stanno",
+      "transcription": "ˈstaːre",
+      "examples": [
+        {
+          "text": "Sto bene, grazie.",
+          "translation": "Я хорошо, спасибо."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "мочь": {
+    "it": {
+      "word": "potere — posso, puoi, può, possiamo, potete, possono",
+      "transcription": "poˈteːre",
+      "examples": [
+        {
+          "text": "Non posso venire domani.",
+          "translation": "Я не могу прийти завтра."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "хотеть": {
+    "it": {
+      "word": "volere — voglio, vuoi, vuole, vogliamo, volete, vogliono",
+      "transcription": "voˈleːre",
+      "examples": [
+        {
+          "text": "Voglio imparare l'italiano.",
+          "translation": "Я хочу выучить итальянский."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "быть должным; быть обязанным": {
+    "it": {
+      "word": "dovere — devo, devi, deve, dobbiamo, dovete, devono",
+      "transcription": "doˈveːre",
+      "examples": [
+        {
+          "text": "Devo studiare stasera.",
+          "translation": "Я должен заниматься сегодня вечером."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "знать; уметь": {
+    "it": {
+      "word": "sapere — so, sai, sa, sappiamo, sapete, sanno",
+      "transcription": "saˈpeːre",
+      "examples": [
+        {
+          "text": "So parlare tre lingue.",
+          "translation": "Я умею говорить на трёх языках."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "видеть": {
+    "it": {
+      "word": "vedere — vedo, vedi, vede, vediamo, vedete, vedono",
+      "transcription": "veˈdeːre",
+      "examples": [
+        {
+          "text": "Vediamo il mare dalla finestra.",
+          "translation": "Мы видим море из окна."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "брать; принимать": {
+    "it": {
+      "word": "prendere — prendo, prendi, prende, prendiamo, prendete, prendono",
+      "transcription": "ˈprɛndere",
+      "examples": [
+        {
+          "text": "Prendo il treno delle otto.",
+          "translation": "Я еду восьмичасовым поездом."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "класть; надевать": {
+    "it": {
+      "word": "mettere — metto, metti, mette, mettiamo, mettete, mettono",
+      "transcription": "ˈmettere",
+      "examples": [
+        {
+          "text": "Metto il libro nello zaino.",
+          "translation": "Я кладу книгу в рюкзак."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "выходить": {
+    "it": {
+      "word": "uscire — esco, esci, esce, usciamo, uscite, escono",
+      "transcription": "uʃˈʃiːre",
+      "examples": [
+        {
+          "text": "Usciamo con gli amici la sera.",
+          "translation": "Мы выходим гулять с друзьями вечером."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "оставаться": {
+    "it": {
+      "word": "rimanere — rimango, rimani, rimane, rimaniamo, rimanete, rimangono",
+      "transcription": "rimaˈneːre",
+      "examples": [
+        {
+          "text": "Rimango a casa la domenica.",
+          "translation": "Я остаюсь дома по воскресеньям."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "держать": {
+    "it": {
+      "word": "tenere — tengo, tieni, tiene, teniamo, tenete, tengono",
+      "transcription": "ˈteːnere",
+      "examples": [
+        {
+          "text": "Tengo il gatto in braccio.",
+          "translation": "Я держу кота на руках."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "пить": {
+    "it": {
+      "word": "bere — bevo, bevi, beve, beviamo, bevete, bevono",
+      "transcription": "ˈbeːre",
+      "examples": [
+        {
+          "text": "Beviamo un caffè insieme.",
+          "translation": "Мы пьём кофе вместе."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "писать": {
+    "it": {
+      "word": "scrivere — scrivo, scrivi, scrive, scriviamo, scrivete, scrivono",
+      "transcription": "ˈskriːvere",
+      "examples": [
+        {
+          "text": "Scrivo un messaggio ad Anna.",
+          "translation": "Я пишу сообщение Анне."
+        }
+      ]
+    },
+    "img": ""
+  }
+}

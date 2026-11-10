@@ -1,0 +1,657 @@
+{
+  "_meta": {
+    "id": "clothes",
+    "name": "Одежда",
+    "icon": "👕",
+    "tag": "одежда",
+    "desc": "Гардероб от носков до пальто.",
+    "id-en": "clothes-en"
+  },
+  "рубашка": {
+    "en": {
+      "word": "shirt",
+      "transcription": "ʃɜːrt",
+      "examples": [
+        {
+          "text": "I am wearing a white shirt.",
+          "translation": "Я ношу белую рубашку."
+        }
+      ]
+    },
+    "it": {
+      "word": "camicia",
+      "transcription": "kaˈmiːtʃa",
+      "examples": [
+        {
+          "text": "Indosso una camicia bianca.",
+          "translation": "Я ношу белую рубашку."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Knopfleisten.jpg/500px-Knopfleisten.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "футболка": {
+    "en": {
+      "word": "t-shirt",
+      "transcription": "ˈtiːʃɜːrt",
+      "examples": [
+        {
+          "text": "This t-shirt is too small for me.",
+          "translation": "Эта футболка слишком маленькая для меня."
+        }
+      ]
+    },
+    "it": {
+      "word": "maglietta",
+      "transcription": "maʎˈʎɛtta",
+      "examples": [
+        {
+          "text": "Questa maglietta è troppo piccola per me.",
+          "translation": "Эта футболка слишком маленькая для меня."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/T-shirt_%28drawing%29.jpg/500px-T-shirt_%28drawing%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "свитер": {
+    "en": {
+      "word": "sweater",
+      "transcription": "ˈswɛtər",
+      "examples": [
+        {
+          "text": "In winter I wear a sweater.",
+          "translation": "Зимой я ношу свитер."
+        }
+      ]
+    },
+    "it": {
+      "word": "maglione",
+      "transcription": "maˈʎʎoːne",
+      "examples": [
+        {
+          "text": "In inverno indosso il maglione.",
+          "translation": "Зимой я ношу свитер."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Jersei-coll-alt.jpg/500px-Jersei-coll-alt.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "толстовка": {
+    "en": {
+      "word": "hoodie",
+      "transcription": "ˈhʊdi",
+      "examples": [
+        {
+          "text": "The hoodie is comfortable for sport.",
+          "translation": "Толстовка удобна для спорта."
+        }
+      ]
+    },
+    "it": {
+      "word": "felpa",
+      "transcription": "ˈfelpa",
+      "examples": [
+        {
+          "text": "La felpa è comoda per lo sport.",
+          "translation": "Толстовка удобна для спорта."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Dahmavel_2020_._Zakaria_Dahmani.jpg/500px-Dahmavel_2020_._Zakaria_Dahmani.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "пиджак, куртка": {
+    "it": {
+      "word": "giacca",
+      "transcription": "ˈdʒakka",
+      "examples": [
+        {
+          "text": "Mi metto la giacca, fa freddo.",
+          "translation": "Я надену куртку, холодно."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/DSCN0758bis_%28pin-striped_angled_pockets%29.jpg/500px-DSCN0758bis_%28pin-striped_angled_pockets%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "пальто": {
+    "en": {
+      "word": "coat",
+      "transcription": "koʊt",
+      "examples": [
+        {
+          "text": "The grey coat is mine.",
+          "translation": "Серое пальто — моё."
+        }
+      ]
+    },
+    "it": {
+      "word": "cappotto",
+      "transcription": "kapˈpɔtto",
+      "examples": [
+        {
+          "text": "Il cappotto grigio è mio.",
+          "translation": "Серое пальто — моё."
+        }
+      ]
+    },
+    "img": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Gogol_Palto.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  "брюки": {
+    "en": {
+      "word": "trousers",
+      "transcription": "ˈtraʊzərz",
+      "examples": [
+        {
+          "text": "These trousers are new.",
+          "translation": "Эти брюки новые."
+        }
+      ]
+    },
+    "it": {
+      "word": "pantaloni",
+      "transcription": "pantaˈloːni",
+      "examples": [
+        {
+          "text": "Questi pantaloni sono nuovi.",
+          "translation": "Эти брюки новые."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/SAND_Maurice_Masques_et_bouffons_06.jpg/500px-SAND_Maurice_Masques_et_bouffons_06.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "джинсы": {
+    "en": {
+      "word": "jeans",
+      "transcription": "dʒiːnz",
+      "examples": [
+        {
+          "text": "The blue jeans are Luca's.",
+          "translation": "Синие джинсы — Лука."
+        }
+      ]
+    },
+    "it": {
+      "word": "jeans",
+      "transcription": "dʒins",
+      "examples": [
+        {
+          "text": "I jeans blu sono di Luca.",
+          "translation": "Синие джинсы — Лука."
+        }
+      ]
+    },
+    "img": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Jeans.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  "юбка": {
+    "en": {
+      "word": "skirt",
+      "transcription": "skɜːrt",
+      "examples": [
+        {
+          "text": "My sister is wearing a red skirt.",
+          "translation": "Моя сестра носит красную юбку."
+        }
+      ]
+    },
+    "it": {
+      "word": "gonna",
+      "transcription": "ˈɡonna",
+      "examples": [
+        {
+          "text": "Mia sorella porta una gonna rossa.",
+          "translation": "Моя сестра носит красную юбку."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Bundesarchiv_Bild_183-59393-0002%2C_Zur_Vorbereitung_der_Wahlen%2C_Kleiner_Betrieb_mit_gro%C3%9Fen_Zielen..jpg/500px-Bundesarchiv_Bild_183-59393-0002%2C_Zur_Vorbereitung_der_Wahlen%2C_Kleiner_Betrieb_mit_gro%C3%9Fen_Zielen..jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "платье": {
+    "en": {
+      "word": "dress",
+      "transcription": "drɛs",
+      "examples": [
+        {
+          "text": "The black dress is elegant.",
+          "translation": "Чёрное платье элегантное."
+        }
+      ]
+    },
+    "it": {
+      "word": "abito",
+      "transcription": "ˈaːbito",
+      "examples": [
+        {
+          "text": "L'abito nero è elegante.",
+          "translation": "Чёрное платье элегантное."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Afternoon_ensemble_MET_63.212a-b_CP4.jpg/500px-Afternoon_ensemble_MET_63.212a-b_CP4.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "обувь, туфли": {
+    "en": {
+      "word": "shoes",
+      "transcription": "ʃuːz",
+      "examples": [
+        {
+          "text": "I put on my shoes and go out.",
+          "translation": "Я обуваюсь и выхожу."
+        }
+      ]
+    },
+    "it": {
+      "word": "scarpe",
+      "transcription": "ˈskarpe",
+      "examples": [
+        {
+          "text": "Mi metto le scarpe e esco.",
+          "translation": "Я обуваюсь и выхожу."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Red_High_Heel_Pumps.jpg/500px-Red_High_Heel_Pumps.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "сапоги": {
+    "en": {
+      "word": "boots",
+      "transcription": "buːts",
+      "examples": [
+        {
+          "text": "The boots are for rain.",
+          "translation": "Сапоги — для дождя."
+        }
+      ]
+    },
+    "it": {
+      "word": "stivali",
+      "transcription": "stiˈvaːli",
+      "examples": [
+        {
+          "text": "Gli stivali sono per la pioggia.",
+          "translation": "Сапоги — для дождя."
+        }
+      ]
+    },
+    "img": "https://upload.wikimedia.org/wikipedia/commons/8/84/Gustave_Dore_le_chat_botte.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  "носки": {
+    "en": {
+      "word": "socks",
+      "transcription": "sɑːks",
+      "examples": [
+        {
+          "text": "I have new socks.",
+          "translation": "У меня новые носки."
+        }
+      ]
+    },
+    "it": {
+      "word": "calze",
+      "transcription": "ˈkaltse",
+      "examples": [
+        {
+          "text": "Ho calze nuove.",
+          "translation": "У меня новые носки."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Legs_in_london.jpg/500px-Legs_in_london.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "ремень": {
+    "en": {
+      "word": "belt",
+      "transcription": "bɛlt",
+      "examples": [
+        {
+          "text": "This belt is made of leather.",
+          "translation": "Этот ремень из кожи."
+        }
+      ]
+    },
+    "it": {
+      "word": "cintura",
+      "transcription": "tʃinˈtuːra",
+      "examples": [
+        {
+          "text": "Questa cintura è di pelle.",
+          "translation": "Этот ремень из кожи."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Belts.jpg/500px-Belts.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "шляпа, шапка": {
+    "en": {
+      "word": "hat",
+      "transcription": "hæt",
+      "examples": [
+        {
+          "text": "In summer I wear a hat.",
+          "translation": "Летом я ношу шляпу."
+        }
+      ]
+    },
+    "it": {
+      "word": "cappello",
+      "transcription": "kapˈpɛllo",
+      "examples": [
+        {
+          "text": "In estate porto il cappello.",
+          "translation": "Летом я ношу шляпу."
+        }
+      ]
+    },
+    "img": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Many_hats.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  "шарф": {
+    "en": {
+      "word": "scarf",
+      "transcription": "skɑːrf",
+      "examples": [
+        {
+          "text": "I put on a scarf, it is cold.",
+          "translation": "Я надену шарф, холодно."
+        }
+      ]
+    },
+    "it": {
+      "word": "sciarpa",
+      "transcription": "ˈʃarpa",
+      "examples": [
+        {
+          "text": "Metto la sciarpa, fa freddo.",
+          "translation": "Я надену шарф, холодно."
+        }
+      ]
+    },
+    "img": "https://upload.wikimedia.org/wikipedia/commons/9/98/Cerimonia_Scuola_applicazione.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  "перчатки": {
+    "en": {
+      "word": "gloves",
+      "transcription": "ɡlʌvz",
+      "examples": [
+        {
+          "text": "The gloves keep my hands warm.",
+          "translation": "Перчатки согревают руки."
+        }
+      ]
+    },
+    "it": {
+      "word": "guanti",
+      "transcription": "ˈɡwanti",
+      "examples": [
+        {
+          "text": "I guanti tengono le mani calde.",
+          "translation": "Перчатки согревают руки."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Randers_Handsker_i_lammeskind.JPG/500px-Randers_Handsker_i_lammeskind.JPG?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "очки": {
+    "en": {
+      "word": "glasses",
+      "transcription": "ˈɡlæsɪz",
+      "examples": [
+        {
+          "text": "Without glasses I don't see well.",
+          "translation": "Без очков я плохо вижу."
+        }
+      ]
+    },
+    "it": {
+      "word": "occhiali",
+      "transcription": "okˈkjaːli",
+      "examples": [
+        {
+          "text": "Senza occhiali non vedo bene.",
+          "translation": "Без очков я плохо вижу."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/2023_Okulary_korekcyjne.jpg/500px-2023_Okulary_korekcyjne.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "сумка": {
+    "en": {
+      "word": "bag",
+      "transcription": "bæɡ",
+      "examples": [
+        {
+          "text": "The bag is heavy.",
+          "translation": "Сумка тяжёлая."
+        }
+      ]
+    },
+    "it": {
+      "word": "borsa",
+      "transcription": "ˈborsa",
+      "examples": [
+        {
+          "text": "La borsa è pesante.",
+          "translation": "Сумка тяжёлая."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Bolsas-de-asa-plana-interior-bolsapubli.jpg/500px-Bolsas-de-asa-plana-interior-bolsapubli.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "рюкзак": {
+    "en": {
+      "word": "backpack",
+      "transcription": "ˈbækpæk",
+      "examples": [
+        {
+          "text": "My backpack is full of books.",
+          "translation": "Мой рюкзак полон книг."
+        }
+      ]
+    },
+    "it": {
+      "word": "zaino",
+      "transcription": "ˈdzaino",
+      "examples": [
+        {
+          "text": "Il mio zaino è pieno di libri.",
+          "translation": "Мой рюкзак полон книг."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Rucksack1.jpg/500px-Rucksack1.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "пижама": {
+    "en": {
+      "word": "pajamas",
+      "transcription": "pəˈdʒɑːməz",
+      "examples": [
+        {
+          "text": "The pajamas are on the bed.",
+          "translation": "Пижама на кровати."
+        }
+      ]
+    },
+    "it": {
+      "word": "pigiama",
+      "transcription": "piˈdʒaːma",
+      "examples": [
+        {
+          "text": "Il pigiama è sul letto.",
+          "translation": "Пижама на кровати."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/American_sleepers1.jpg/500px-American_sleepers1.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "купальник, плавки": {
+    "en": {
+      "word": "swimsuit",
+      "transcription": "ˈswɪmsuːt",
+      "examples": [
+        {
+          "text": "I bought a new swimsuit.",
+          "translation": "Я купил новый купальник."
+        }
+      ]
+    },
+    "it": {
+      "word": "costume da bagno",
+      "transcription": "kosˈtuːme da ˈbaɲɲo",
+      "examples": [
+        {
+          "text": "Ho comprato un costume da bagno nuovo.",
+          "translation": "Я купил новый купальник."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/BathingSuit1920s.jpg/500px-BathingSuit1920s.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "полотенце": {
+    "en": {
+      "word": "towel",
+      "transcription": "ˈtaʊəl",
+      "examples": [
+        {
+          "text": "The towel is in the bathroom.",
+          "translation": "Полотенце в ванной."
+        }
+      ]
+    },
+    "it": {
+      "word": "asciugamano",
+      "transcription": "aʃʃuɡaˈmaːno",
+      "examples": [
+        {
+          "text": "L'asciugamano è nel bagno.",
+          "translation": "Полотенце в ванной."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Towel_blue_decorativepattern_closeup.jpg/500px-Towel_blue_decorativepattern_closeup.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "пуговица": {
+    "en": {
+      "word": "button",
+      "transcription": "ˈbʌtən",
+      "examples": [
+        {
+          "text": "A button fell off the shirt.",
+          "translation": "Пуговица оторвалась от рубашки."
+        }
+      ]
+    },
+    "it": {
+      "word": "bottone",
+      "transcription": "botˈtoːne",
+      "examples": [
+        {
+          "text": "Un bottone è caduto dalla camicia.",
+          "translation": "Пуговица оторвалась от рубашки."
+        }
+      ]
+    },
+    "img": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Clothes_button.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  "карман": {
+    "en": {
+      "word": "pocket",
+      "transcription": "ˈpɑːkɪt",
+      "examples": [
+        {
+          "text": "The keys are in the pocket.",
+          "translation": "Ключи в кармане."
+        }
+      ]
+    },
+    "it": {
+      "word": "tasca",
+      "transcription": "ˈtaska",
+      "examples": [
+        {
+          "text": "Le chiavi sono nella tasca.",
+          "translation": "Ключи в кармане."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Blue_jeans_pocket_and_belt_loop.jpg/500px-Blue_jeans_pocket_and_belt_loop.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "размер": {
+    "en": {
+      "word": "size",
+      "transcription": "saɪz",
+      "examples": [
+        {
+          "text": "What size does her son wear?",
+          "translation": "Какой размер носит её сын?"
+        }
+      ]
+    },
+    "it": {
+      "word": "taglia",
+      "transcription": "ˈtaʎʎa",
+      "examples": [
+        {
+          "text": "Che taglia porta suo figlio?",
+          "translation": "Какой размер носит её сын?"
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Megalodon-Carcharodon-Scale-Chart-SVG.svg/500px-Megalodon-Carcharodon-Scale-Chart-SVG.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "примерять": {
+    "en": {
+      "word": "to try on",
+      "transcription": "tuː traɪ ɑːn",
+      "examples": [
+        {
+          "text": "Can I try on this t-shirt?",
+          "translation": "Можно примерить эту футболку?"
+        }
+      ]
+    },
+    "it": {
+      "word": "provare",
+      "transcription": "proˈvaːre",
+      "examples": [
+        {
+          "text": "Posso provare questa maglietta?",
+          "translation": "Можно примерить эту футболку?"
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/f/fb/Provare_per_credere.png/500px-Provare_per_credere.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "носить (одежду)": {
+    "en": {
+      "word": "to wear",
+      "transcription": "tuː wɛr",
+      "examples": [
+        {
+          "text": "He always wears sunglasses.",
+          "translation": "Он всегда носит солнцезащитные очки."
+        }
+      ]
+    },
+    "it": {
+      "word": "indossare",
+      "transcription": "indosˈsaːre",
+      "examples": [
+        {
+          "text": "Indossa sempre gli occhiali da sole.",
+          "translation": "Он всегда носит солнцезащитные очки."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Visit_of_Pope_Francis_to_Kazakhstan-2_%28cropped%29.jpg/500px-Visit_of_Pope_Francis_to_Kazakhstan-2_%28cropped%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "куртка, пиджак": {
+    "en": {
+      "word": "jacket",
+      "transcription": "ˈdʒækɪt",
+      "examples": [
+        {
+          "text": "I put on my jacket, it is cold.",
+          "translation": "Я надену куртку, холодно."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Jacket2-1.jpg/500px-Jacket2-1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  }
+}

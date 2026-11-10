@@ -8,7 +8,8 @@
     "test:ui": "playwright test --ui",
     "test:headed": "playwright test --headed",
     "coverage": "COVERAGE=1 playwright test",
-    "report": "playwright show-report"
+    "report": "playwright show-report",
+    "fetch-images": "node tools/fetch-images.mjs"
   },
   "devDependencies": {
     "@playwright/test": "^1.49.0",
