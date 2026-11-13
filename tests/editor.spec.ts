@@ -101,8 +101,9 @@ test('зеркальная пара («Цвета»): одна строка с �
   await expect(colors).toHaveCount(1);
   await colors.locator('.ed-g-head').click();
 
-  // rosso/red — разные слова одного смысла: одна строка, оба флага и оба слова
-  const row = colors.locator('.ed-row[data-w="rosso"]');
+  // rosso/red — разные слова одного смысла: одна строка, английское слово
+  // первее (data-w), оба слова и оба флага в строке
+  const row = colors.locator('.ed-row[data-w="red"]');
   await expect(row).toHaveCount(1);
   await expect(row).toContainText('rosso');
   await expect(row).toContainText('red');

@@ -9,6 +9,75 @@
     "size-en": 1000,
     "id-en": "top-1000-en"
   },
+  "бабочка": {
+    "it": {
+      "word": "farfalla",
+      "transcription": "farˈfalla",
+      "examples": [
+        {
+          "text": "Una farfalla vola nel giardino.",
+          "translation": "Бабочка летает в саду."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Fesoj_-_Papilio_machaon_%28by%29.jpg/500px-Fesoj_-_Papilio_machaon_%28by%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "en": {
+      "word": "butterfly",
+      "transcription": "ˈbʌtərflaɪ",
+      "examples": [
+        {
+          "text": "A butterfly flies in the garden.",
+          "translation": "Бабочка летает в саду."
+        }
+      ]
+    }
+  },
+  "брать": {
+    "en": {
+      "word": "take",
+      "transcription": "teɪk",
+      "examples": [
+        {
+          "text": "Take an umbrella, it is raining.",
+          "translation": "Возьми зонт, идёт дождь."
+        }
+      ]
+    },
+    "img": "",
+    "it": {
+      "word": "prendere",
+      "transcription": "ˈprendere",
+      "examples": [
+        {
+          "text": "Prendo un caffè al bar.",
+          "translation": "Я беру кофе в баре."
+        }
+      ]
+    }
+  },
+  "даже": {
+    "it": {
+      "word": "addirittura",
+      "transcription": "addiritˈtura",
+      "examples": [
+        {
+          "text": "Ha comprato addirittura una moto.",
+          "translation": "Он даже купил мотоцикл."
+        }
+      ]
+    },
+    "img": "",
+    "en": {
+      "word": "even",
+      "transcription": "ˈiːvən",
+      "examples": [
+        {
+          "text": "He even bought a motorbike.",
+          "translation": "Он даже купил мотоцикл."
+        }
+      ]
+    }
+  },
   "и": {
     "en": {
       "word": "and",
@@ -31,6 +100,167 @@
       ]
     },
     "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Euler%27s_formula.svg/500px-Euler%27s_formula.svg.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "искать": {
+    "it": {
+      "word": "cercare",
+      "transcription": "tʃerˈkaːre",
+      "examples": [
+        {
+          "text": "Cerco un lavoro nuovo.",
+          "translation": "Я ищу новую работу."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/0/03/E_ti_vengo_a_cercare.png/500px-E_ti_vengo_a_cercare.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "en": {
+      "word": "search",
+      "transcription": "sɜːrtʃ",
+      "examples": [
+        {
+          "text": "I search for my keys every morning.",
+          "translation": "Я ищу свои ключи каждое утро."
+        }
+      ]
+    }
+  },
+  "отправлять": {
+    "it": {
+      "word": "mandare",
+      "transcription": "manˈdaːre",
+      "examples": [
+        {
+          "text": "Mando una lettera alla zia.",
+          "translation": "Я отправляю письмо тёте."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/5/50/Mandare_tutto_all%27aria_%28Marco_Mengoni%29.png/500px-Mandare_tutto_all%27aria_%28Marco_Mengoni%29.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "en": {
+      "word": "send",
+      "transcription": "sɛnd",
+      "examples": [
+        {
+          "text": "I send a letter to my aunt.",
+          "translation": "Я отправляю письмо тёте."
+        }
+      ]
+    }
+  },
+  "рецепт": {
+    "it": {
+      "word": "ricetta",
+      "transcription": "riˈtʃetta",
+      "examples": [
+        {
+          "text": "Il dottore scrive una ricetta.",
+          "translation": "Врач выписывает рецепт."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Backzutaten_041.jpg/500px-Backzutaten_041.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "en": {
+      "word": "recipe",
+      "transcription": "ˈrɛsəpi",
+      "examples": [
+        {
+          "text": "This recipe is easy.",
+          "translation": "Этот рецепт простой."
+        }
+      ]
+    }
+  },
+  "секретарь": {
+    "it": {
+      "word": "segretaria",
+      "transcription": "seɡreˈtaːria",
+      "examples": [
+        {
+          "text": "La segretaria risponde al telefono.",
+          "translation": "Секретарь отвечает на телефон."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Secretary_at_work.jpg/500px-Secretary_at_work.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "en": {
+      "word": "secretary",
+      "transcription": "ˈsɛkrəteri",
+      "examples": [
+        {
+          "text": "The secretary answers the phone.",
+          "translation": "Секретарь отвечает на телефон."
+        }
+      ]
+    }
+  },
+  "скала": {
+    "en": {
+      "word": "rock",
+      "transcription": "rɒk",
+      "examples": [
+        {
+          "text": "The old wall is made of stone.",
+          "translation": "Старая стена из камня."
+        }
+      ]
+    },
+    "img": "",
+    "it": {
+      "word": "roccia",
+      "transcription": "ˈrɔtʃa",
+      "examples": [
+        {
+          "text": "La barca passa vicino alla roccia.",
+          "translation": "Лодка проходит рядом со скалой."
+        }
+      ]
+    }
+  },
+  "уже ·2": {
+    "it": {
+      "word": "ormai",
+      "transcription": "ormaˈi",
+      "examples": [
+        {
+          "text": "Ormai è troppo tardi.",
+          "translation": "Уже слишком поздно."
+        }
+      ]
+    },
+    "img": "",
+    "en": {
+      "word": "by now",
+      "transcription": "baɪ naʊ",
+      "examples": [
+        {
+          "text": "By now it is too late.",
+          "translation": "Уже слишком поздно."
+        }
+      ]
+    }
+  },
+  "часы": {
+    "it": {
+      "word": "orologio",
+      "transcription": "oroˈlɔːdʒo",
+      "examples": [
+        {
+          "text": "Il mio orologio va avanti.",
+          "translation": "Мои часы спешат."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Clock_%282525844124%29.jpg/500px-Clock_%282525844124%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "en": {
+      "word": "clock",
+      "transcription": "klɒk",
+      "examples": [
+        {
+          "text": "My watch is fast.",
+          "translation": "Мои часы спешат."
+        }
+      ]
+    }
   },
   "или": {
     "en": {
@@ -135,7 +365,17 @@
         }
       ]
     },
-    "img": ""
+    "img": "",
+    "en": {
+      "word": "how",
+      "transcription": "haʊ",
+      "examples": [
+        {
+          "text": "How are you today?",
+          "translation": "Как ты сегодня?"
+        }
+      ]
+    }
   },
   "когда": {
     "it": {
@@ -148,7 +388,17 @@
         }
       ]
     },
-    "img": ""
+    "img": "",
+    "en": {
+      "word": "when",
+      "transcription": "wɛn",
+      "examples": [
+        {
+          "text": "When does the film start?",
+          "translation": "Когда начинается фильм?"
+        }
+      ]
+    }
   },
   "где, куда": {
     "it": {
@@ -161,7 +411,17 @@
         }
       ]
     },
-    "img": ""
+    "img": "",
+    "en": {
+      "word": "where",
+      "transcription": "wɛr",
+      "examples": [
+        {
+          "text": "Where do you live?",
+          "translation": "Где ты живёшь?"
+        }
+      ]
+    }
   },
   "потому что": {
     "en": {
@@ -289,7 +549,17 @@
         }
       ]
     },
-    "img": ""
+    "img": "",
+    "en": {
+      "word": "hi",
+      "transcription": "haɪ",
+      "examples": [
+        {
+          "text": "Hi, how are you?",
+          "translation": "Привет, как ты?"
+        }
+      ]
+    }
   },
   "добрый день": {
     "it": {
@@ -302,7 +572,17 @@
         }
       ]
     },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Lens_-_Torino_FC_%2802-08-2023%29_47_%28cropped%29.jpg/500px-Lens_-_Torino_FC_%2802-08-2023%29_47_%28cropped%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Lens_-_Torino_FC_%2802-08-2023%29_47_%28cropped%29.jpg/500px-Lens_-_Torino_FC_%2802-08-2023%29_47_%28cropped%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "en": {
+      "word": "good morning",
+      "transcription": "ɡʊd ˈmɔːrnɪŋ",
+      "examples": [
+        {
+          "text": "Good morning! How are you?",
+          "translation": "Доброе утро! Как ты?"
+        }
+      ]
+    }
   },
   "до свидания": {
     "it": {
@@ -315,20 +595,17 @@
         }
       ]
     },
-    "img": ""
-  },
-  "извините": {
-    "it": {
-      "word": "scusi",
-      "transcription": "ˈskuːzi",
+    "img": "",
+    "en": {
+      "word": "goodbye",
+      "transcription": "ɡʊdˈbaɪ",
       "examples": [
         {
-          "text": "Scusi, dov'è la stazione?",
-          "translation": "Извините, где вокзал?"
+          "text": "Goodbye, see you tomorrow!",
+          "translation": "До свидания, увидимся завтра!"
         }
       ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/a/a5/Scusi%2C_dov%27%C3%A8_il_West.jpg/500px-Scusi%2C_dov%27%C3%A8_il_West.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
   },
   "я": {
     "en": {
@@ -456,7 +733,17 @@
         }
       ]
     },
-    "img": ""
+    "img": "",
+    "en": {
+      "word": "you all",
+      "transcription": "juː ɔːl",
+      "examples": [
+        {
+          "text": "You all are my best friends.",
+          "translation": "Вы все — мои лучшие друзья."
+        }
+      ]
+    }
   },
   "они": {
     "en": {
@@ -584,7 +871,17 @@
         }
       ]
     },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Orologio_Santa_Maria_della_Scala_Siena.JPG/500px-Orologio_Santa_Maria_della_Scala_Siena.JPG?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Orologio_Santa_Maria_della_Scala_Siena.JPG/500px-Orologio_Santa_Maria_della_Scala_Siena.JPG?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "en": {
+      "word": "hour",
+      "transcription": "ˈaʊər",
+      "examples": [
+        {
+          "text": "The lesson lasts one hour.",
+          "translation": "Урок длится один час."
+        }
+      ]
+    }
   },
   "сегодня": {
     "en": {
@@ -765,19 +1062,6 @@
         {
           "text": "Ho poco tempo oggi.",
           "translation": "У меня мало времени сегодня."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "всё, весь": {
-    "it": {
-      "word": "tutto",
-      "transcription": "ˈtutto",
-      "examples": [
-        {
-          "text": "Tutto va bene.",
-          "translation": "Всё хорошо."
         }
       ]
     },
@@ -1162,7 +1446,17 @@
         }
       ]
     },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Dawn_on_the_great_alpine_road.jpg/500px-Dawn_on_the_great_alpine_road.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Dawn_on_the_great_alpine_road.jpg/500px-Dawn_on_the_great_alpine_road.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "en": {
+      "word": "road",
+      "transcription": "roʊd",
+      "examples": [
+        {
+          "text": "The road to the sea is long.",
+          "translation": "Дорога к морю длинная."
+        }
+      ]
+    }
   },
   "город": {
     "en": {
@@ -1324,19 +1618,6 @@
       ]
     },
     "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Bs_As_Market_%287630284742%29.jpg/500px-Bs_As_Market_%287630284742%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "рука": {
-    "it": {
-      "word": "mano",
-      "transcription": "ˈmaːno",
-      "examples": [
-        {
-          "text": "Scrivo con la mano destra.",
-          "translation": "Я пишу правой рукой."
-        }
-      ]
-    },
-    "img": ""
   },
   "глаз": {
     "en": {
@@ -1660,29 +1941,6 @@
     },
     "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/BlankMap-World.svg/500px-BlankMap-World.svg.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
-  "роль": {
-    "en": {
-      "word": "role",
-      "transcription": "roʊl",
-      "examples": [
-        {
-          "text": "The main role is difficult.",
-          "translation": "Главная роль трудная."
-        }
-      ]
-    },
-    "it": {
-      "word": "parte",
-      "transcription": "ˈparte",
-      "examples": [
-        {
-          "text": "Questa è la mia parte preferita del film.",
-          "translation": "Это моя любимая часть фильма."
-        }
-      ]
-    },
-    "img": ""
-  },
   "путь, способ": {
     "en": {
       "word": "way",
@@ -1763,7 +2021,17 @@
         }
       ]
     },
-    "img": ""
+    "img": "",
+    "en": {
+      "word": "madam",
+      "transcription": "ˈmædəm",
+      "examples": [
+        {
+          "text": "Madam, your table is ready.",
+          "translation": "Синьора, ваш стол готов."
+        }
+      ]
+    }
   },
   "любовь": {
     "en": {
@@ -1845,7 +2113,17 @@
         }
       ]
     },
-    "img": ""
+    "img": "",
+    "en": {
+      "word": "well",
+      "transcription": "wɛl",
+      "examples": [
+        {
+          "text": "She speaks Italian very well.",
+          "translation": "Она очень хорошо говорит по-итальянски."
+        }
+      ]
+    }
   },
   "плохо": {
     "it": {
@@ -1858,7 +2136,17 @@
         }
       ]
     },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Ary_Scheffer_-_The_Temptation_of_Christ_%281854%29.jpg/500px-Ary_Scheffer_-_The_Temptation_of_Christ_%281854%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Ary_Scheffer_-_The_Temptation_of_Christ_%281854%29.jpg/500px-Ary_Scheffer_-_The_Temptation_of_Christ_%281854%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "en": {
+      "word": "badly",
+      "transcription": "ˈbædli",
+      "examples": [
+        {
+          "text": "He sings badly, but he loves music.",
+          "translation": "Он плохо поёт, но любит музыку."
+        }
+      ]
+    }
   },
   "правда, верный": {
     "en": {
@@ -2009,7 +2297,17 @@
         }
       ]
     },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Leighton-Duty-1883.jpg/500px-Leighton-Duty-1883.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Leighton-Duty-1883.jpg/500px-Leighton-Duty-1883.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "en": {
+      "word": "must",
+      "transcription": "mʌst",
+      "examples": [
+        {
+          "text": "I must study tonight.",
+          "translation": "Я должен заниматься сегодня вечером."
+        }
+      ]
+    }
   },
   "идти, ехать": {
     "en": {
@@ -2206,7 +2504,17 @@
         }
       ]
     },
-    "img": ""
+    "img": "",
+    "en": {
+      "word": "stay",
+      "transcription": "steɪ",
+      "examples": [
+        {
+          "text": "We stay at home in the evening.",
+          "translation": "Мы остаёмся дома вечером."
+        }
+      ]
+    }
   },
   "получать, добираться": {
     "en": {
@@ -2265,7 +2573,17 @@
         }
       ]
     },
-    "img": ""
+    "img": "",
+    "en": {
+      "word": "go out",
+      "transcription": "ɡoʊ aʊt",
+      "examples": [
+        {
+          "text": "They go out every Saturday.",
+          "translation": "Они ходят гулять каждую субботу."
+        }
+      ]
+    }
   },
   "проходить": {
     "en": {
@@ -2313,19 +2631,6 @@
     },
     "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/0/08/La_polizia_sta_a_guardare.jpg/500px-La_polizia_sta_a_guardare.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
-  "искать": {
-    "it": {
-      "word": "cercare",
-      "transcription": "tʃerˈkaːre",
-      "examples": [
-        {
-          "text": "Cerco un lavoro nuovo.",
-          "translation": "Я ищу новую работу."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/0/03/E_ti_vengo_a_cercare.png/500px-E_ti_vengo_a_cercare.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
   "помнить": {
     "en": {
       "word": "remember",
@@ -2360,7 +2665,17 @@
         }
       ]
     },
-    "img": ""
+    "img": "",
+    "en": {
+      "word": "believe",
+      "transcription": "bɪˈliːv",
+      "examples": [
+        {
+          "text": "I believe you.",
+          "translation": "Я верю тебе."
+        }
+      ]
+    }
   },
   "чувствовать": {
     "en": {
@@ -2419,7 +2734,17 @@
         }
       ]
     },
-    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/c/c1/The_Call_-_Non_rispondere.jpg/500px-The_Call_-_Non_rispondere.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/c/c1/The_Call_-_Non_rispondere.jpg/500px-The_Call_-_Non_rispondere.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "en": {
+      "word": "answer",
+      "transcription": "ˈænsər",
+      "examples": [
+        {
+          "text": "I answer the question.",
+          "translation": "Я отвечаю на вопрос."
+        }
+      ]
+    }
   },
   "читать": {
     "en": {
@@ -2478,7 +2803,17 @@
         }
       ]
     },
-    "img": ""
+    "img": "",
+    "en": {
+      "word": "eat",
+      "transcription": "iːt",
+      "examples": [
+        {
+          "text": "We eat pizza on Friday.",
+          "translation": "Мы едим пиццу в пятницу."
+        }
+      ]
+    }
   },
   "пить": {
     "it": {
@@ -2491,7 +2826,17 @@
         }
       ]
     },
-    "img": ""
+    "img": "",
+    "en": {
+      "word": "drink",
+      "transcription": "drɪŋk",
+      "examples": [
+        {
+          "text": "I drink water after sport.",
+          "translation": "Я пью воду после спорта."
+        }
+      ]
+    }
   },
   "спать": {
     "it": {
@@ -2504,7 +2849,17 @@
         }
       ]
     },
-    "img": ""
+    "img": "",
+    "en": {
+      "word": "sleep",
+      "transcription": "sliːp",
+      "examples": [
+        {
+          "text": "I sleep eight hours every night.",
+          "translation": "Я сплю восемь часов каждую ночь."
+        }
+      ]
+    }
   },
   "работать": {
     "it": {
@@ -2517,7 +2872,17 @@
         }
       ]
     },
-    "img": ""
+    "img": "",
+    "en": {
+      "word": "work",
+      "transcription": "wɜːrk",
+      "examples": [
+        {
+          "text": "I work in a big office.",
+          "translation": "Я работаю в большом офисе."
+        }
+      ]
+    }
   },
   "жить": {
     "en": {
@@ -2553,7 +2918,17 @@
         }
       ]
     },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/ToutUniversRouge.jpg/500px-ToutUniversRouge.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/ToutUniversRouge.jpg/500px-ToutUniversRouge.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "en": {
+      "word": "know",
+      "transcription": "noʊ",
+      "examples": [
+        {
+          "text": "I know that man.",
+          "translation": "Я знаю того человека."
+        }
+      ]
+    }
   },
   "думать": {
     "en": {
@@ -2589,7 +2964,17 @@
         }
       ]
     },
-    "img": ""
+    "img": "",
+    "en": {
+      "word": "love",
+      "transcription": "lʌv",
+      "examples": [
+        {
+          "text": "I love my city.",
+          "translation": "Я люблю свой город."
+        }
+      ]
+    }
   },
   "понимать": {
     "en": {
@@ -2625,7 +3010,17 @@
         }
       ]
     },
-    "img": ""
+    "img": "",
+    "en": {
+      "word": "finish",
+      "transcription": "ˈfɪnɪʃ",
+      "examples": [
+        {
+          "text": "The lesson finishes at five.",
+          "translation": "Урок заканчивается в пять."
+        }
+      ]
+    }
   },
   "уезжать, отправляться": {
     "it": {
@@ -2638,30 +3033,17 @@
         }
       ]
     },
-    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/3/3f/Partire_%281938%29.png/500px-Partire_%281938%29.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "прибывать": {
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/3/3f/Partire_%281938%29.png/500px-Partire_%281938%29.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "en": {
-      "word": "arrive",
-      "transcription": "əˈraɪv",
+      "word": "depart",
+      "transcription": "dɪˈpɑːrt",
       "examples": [
         {
-          "text": "The bus arrives at three p.m.",
-          "translation": "Автобус прибывает в пятнадцать ноль-ноль."
+          "text": "The train departs at nine.",
+          "translation": "Поезд отправляется в девять."
         }
       ]
-    },
-    "it": {
-      "word": "arrivare",
-      "transcription": "arriˈvaːre",
-      "examples": [
-        {
-          "text": "Arriviamo domani mattina.",
-          "translation": "Мы приедем завтра утром."
-        }
-      ]
-    },
-    "img": "https://upload.wikimedia.org/wikipedia/it/1/1c/Arrivare_a_te_manga.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+    }
   },
   "оставаться": {
     "en": {
@@ -2755,52 +3137,6 @@
     },
     "img": ""
   },
-  "лезть, взбираться": {
-    "en": {
-      "word": "climb",
-      "transcription": "klaɪm",
-      "examples": [
-        {
-          "text": "We climb the mountain in summer.",
-          "translation": "Мы поднимаемся на гору летом."
-        }
-      ]
-    },
-    "it": {
-      "word": "salire",
-      "transcription": "saˈliːre",
-      "examples": [
-        {
-          "text": "Saliamo in macchina.",
-          "translation": "Давай сядем в машину."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/f/f0/Salir%C3%B2.png/500px-Salir%C3%B2.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "спускаться": {
-    "en": {
-      "word": "go down",
-      "transcription": "ɡoʊ daʊn",
-      "examples": [
-        {
-          "text": "I go down the stairs slowly.",
-          "translation": "Я медленно спускаюсь по лестнице."
-        }
-      ]
-    },
-    "it": {
-      "word": "scendere",
-      "transcription": "ˈʃɛndere",
-      "examples": [
-        {
-          "text": "Scendo alla prossima fermata.",
-          "translation": "Я выхожу на следующей остановке."
-        }
-      ]
-    },
-    "img": ""
-  },
   "учить (кого-то)": {
     "en": {
       "word": "teach",
@@ -2835,7 +3171,17 @@
         }
       ]
     },
-    "img": ""
+    "img": "",
+    "en": {
+      "word": "prefer",
+      "transcription": "prɪˈfɜːr",
+      "examples": [
+        {
+          "text": "I prefer tea to coffee.",
+          "translation": "Я предпочитаю чай кофе."
+        }
+      ]
+    }
   },
   "рассказывать": {
     "en": {
@@ -2871,7 +3217,17 @@
         }
       ]
     },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Plutarch_of_Chaeronea-03.jpg/500px-Plutarch_of_Chaeronea-03.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Plutarch_of_Chaeronea-03.jpg/500px-Plutarch_of_Chaeronea-03.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "en": {
+      "word": "listen",
+      "transcription": "ˈlɪsən",
+      "examples": [
+        {
+          "text": "I listen to music in the car.",
+          "translation": "Я слушаю музыку в машине."
+        }
+      ]
+    }
   },
   "брат": {
     "en": {
@@ -3011,19 +3367,6 @@
     },
     "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Kustodiev_Merchants_Wife.jpg/500px-Kustodiev_Merchants_Wife.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
-  "парень, мальчик": {
-    "it": {
-      "word": "ragazzo",
-      "transcription": "raˈɡattso",
-      "examples": [
-        {
-          "text": "Il ragazzo gioca a calcio.",
-          "translation": "Мальчик играет в футбол."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/%D0%9C%D0%B0%D0%BB%D1%8C%D1%87%D0%B8%D0%BA_%28%D0%BF%D1%80%D0%BE%D1%84%D0%B5%D1%81%D1%81%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5_%D1%84%D0%BE%D1%82%D0%BE%29.jpg/500px-%D0%9C%D0%B0%D0%BB%D1%8C%D1%87%D0%B8%D0%BA_%28%D0%BF%D1%80%D0%BE%D1%84%D0%B5%D1%81%D1%81%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5_%D1%84%D0%BE%D1%82%D0%BE%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
   "девушка": {
     "it": {
       "word": "ragazza",
@@ -3035,7 +3378,17 @@
         }
       ]
     },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Wilhelm_Amberg_Vorlesung_aus_Goethes_Werther.jpg/500px-Wilhelm_Amberg_Vorlesung_aus_Goethes_Werther.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Wilhelm_Amberg_Vorlesung_aus_Goethes_Werther.jpg/500px-Wilhelm_Amberg_Vorlesung_aus_Goethes_Werther.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "en": {
+      "word": "girl",
+      "transcription": "ɡɜːrl",
+      "examples": [
+        {
+          "text": "That girl is my sister.",
+          "translation": "Эта девушка — моя сестра."
+        }
+      ]
+    }
   },
   "люди": {
     "en": {
@@ -3117,7 +3470,17 @@
         }
       ]
     },
-    "img": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Export_hell_seidel_steiner.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+    "img": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Export_hell_seidel_steiner.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "en": {
+      "word": "beer",
+      "transcription": "bɪr",
+      "examples": [
+        {
+          "text": "He drinks a beer with his friends.",
+          "translation": "Он пьёт пиво с друзьями."
+        }
+      ]
+    }
   },
   "чай": {
     "en": {
@@ -3199,7 +3562,17 @@
         }
       ]
     },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/%28Pasta%29_by_David_Adam_Kess_%28pic.2%29.jpg/500px-%28Pasta%29_by_David_Adam_Kess_%28pic.2%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/%28Pasta%29_by_David_Adam_Kess_%28pic.2%29.jpg/500px-%28Pasta%29_by_David_Adam_Kess_%28pic.2%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "en": {
+      "word": "pasta",
+      "transcription": "ˈpɑːstə",
+      "examples": [
+        {
+          "text": "We eat pasta for dinner.",
+          "translation": "Мы едим пасту на ужин."
+        }
+      ]
+    }
   },
   "мясо": {
     "en": {
@@ -3350,7 +3723,17 @@
         }
       ]
     },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Vegetables.jpg/500px-Vegetables.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Vegetables.jpg/500px-Vegetables.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "en": {
+      "word": "vegetables",
+      "transcription": "ˈvɛdʒtəbəlz",
+      "examples": [
+        {
+          "text": "I buy vegetables at the market.",
+          "translation": "Я покупаю овощи на рынке."
+        }
+      ]
+    }
   },
   "ступня": {
     "en": {
@@ -3547,7 +3930,17 @@
         }
       ]
     },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Russia-Aizer_%284%29.jpg/500px-Russia-Aizer_%284%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Russia-Aizer_%284%29.jpg/500px-Russia-Aizer_%284%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "en": {
+      "word": "hair",
+      "transcription": "hɛr",
+      "examples": [
+        {
+          "text": "Her hair is long and dark.",
+          "translation": "У неё длинные тёмные волосы."
+        }
+      ]
+    }
   },
   "комната": {
     "en": {
@@ -4331,29 +4724,6 @@
     },
     "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Cherry_tree_moving_in_the_wind_1.gif/500px-Cherry_tree_moving_in_the_wind_1.gif?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
-  "тёплый": {
-    "en": {
-      "word": "warm",
-      "transcription": "wɔːrm",
-      "examples": [
-        {
-          "text": "The soup is warm.",
-          "translation": "Суп тёплый."
-        }
-      ]
-    },
-    "it": {
-      "word": "caldo",
-      "transcription": "ˈkaldo",
-      "examples": [
-        {
-          "text": "Fa caldo in agosto.",
-          "translation": "В августе жарко."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Hot_Horseshoe_%28stevefe%29.jpg/500px-Hot_Horseshoe_%28stevefe%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
   "холод, холодный": {
     "it": {
       "word": "freddo",
@@ -4365,7 +4735,17 @@
         }
       ]
     },
-    "img": ""
+    "img": "",
+    "en": {
+      "word": "cold",
+      "transcription": "koʊld",
+      "examples": [
+        {
+          "text": "In winter it is very cold.",
+          "translation": "Зимой очень холодно."
+        }
+      ]
+    }
   },
   "газета": {
     "it": {
@@ -4378,7 +4758,17 @@
         }
       ]
     },
-    "img": ""
+    "img": "",
+    "en": {
+      "word": "newspaper",
+      "transcription": "ˈnuːzpeɪpər",
+      "examples": [
+        {
+          "text": "My father reads the newspaper every morning.",
+          "translation": "Мой папа читает газету каждое утро."
+        }
+      ]
+    }
   },
   "ручка": {
     "en": {
@@ -4437,7 +4827,17 @@
         }
       ]
     },
-    "img": ""
+    "img": "",
+    "en": {
+      "word": "sentence",
+      "transcription": "ˈsɛntəns",
+      "examples": [
+        {
+          "text": "Write this sentence in your notebook.",
+          "translation": "Запиши это предложение в тетрадь."
+        }
+      ]
+    }
   },
   "история": {
     "en": {
@@ -4588,7 +4988,17 @@
         }
       ]
     },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Music_present.jpg/500px-Music_present.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Music_present.jpg/500px-Music_present.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "en": {
+      "word": "present",
+      "transcription": "ˈprɛzənt",
+      "examples": [
+        {
+          "text": "She gives me a present for my birthday.",
+          "translation": "Она дарит мне подарок на день рождения."
+        }
+      ]
+    }
   },
   "студент": {
     "en": {
@@ -4624,7 +5034,17 @@
         }
       ]
     },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Ilya_Repin_-_Portrait_of_Mykola_Murashko.jpg/500px-Ilya_Repin_-_Portrait_of_Mykola_Murashko.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Ilya_Repin_-_Portrait_of_Mykola_Murashko.jpg/500px-Ilya_Repin_-_Portrait_of_Mykola_Murashko.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "en": {
+      "word": "professor",
+      "transcription": "prəˈfɛsər",
+      "examples": [
+        {
+          "text": "The professor explains the lesson.",
+          "translation": "Профессор объясняет урок."
+        }
+      ]
+    }
   },
   "урок": {
     "en": {
@@ -4660,7 +5080,17 @@
         }
       ]
     },
-    "img": ""
+    "img": "",
+    "en": {
+      "word": "class",
+      "transcription": "klæs",
+      "examples": [
+        {
+          "text": "There are twenty students in our class.",
+          "translation": "В нашем классе двадцать учеников."
+        }
+      ]
+    }
   },
   "университет": {
     "en": {
@@ -4707,19 +5137,6 @@
       ]
     },
     "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Donboscocambodia0001.JPG/500px-Donboscocambodia0001.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "офис": {
-    "it": {
-      "word": "ufficio",
-      "transcription": "ufˈfiːtʃo",
-      "examples": [
-        {
-          "text": "Il mio ufficio è al terzo piano.",
-          "translation": "Мой офис на третьем этаже."
-        }
-      ]
-    },
-    "img": ""
   },
   "начальник": {
     "en": {
@@ -5008,7 +5425,17 @@
         }
       ]
     },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Numbers_grid_in_NY.jpg/500px-Numbers_grid_in_NY.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Numbers_grid_in_NY.jpg/500px-Numbers_grid_in_NY.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "en": {
+      "word": "number",
+      "transcription": "ˈnʌmbər",
+      "examples": [
+        {
+          "text": "What is your phone number?",
+          "translation": "Какой у тебя номер телефона?"
+        }
+      ]
+    }
   },
   "раз": {
     "it": {
@@ -5021,20 +5448,17 @@
         }
       ]
     },
-    "img": ""
-  },
-  "причина": {
-    "it": {
-      "word": "motivo",
-      "transcription": "moˈtiːvo",
+    "img": "",
+    "en": {
+      "word": "once",
+      "transcription": "wʌns",
       "examples": [
         {
-          "text": "Qual è il motivo del tuo viaggio?",
-          "translation": "Какая причина твоей поездки?"
+          "text": "I go to the cinema once a week.",
+          "translation": "Я хожу в кино раз в неделю."
         }
       ]
-    },
-    "img": ""
+    }
   },
   "идея": {
     "en": {
@@ -5104,6 +5528,29 @@
       ]
     },
     "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Question_in_a_question_in_a_question_in_a_question.gif/500px-Question_in_a_question_in_a_question_in_a_question.gif?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "извините": {
+    "it": {
+      "word": "scusi",
+      "transcription": "ˈskuːzi",
+      "examples": [
+        {
+          "text": "Scusi, dov'è la stazione?",
+          "translation": "Извините, где вокзал?"
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/a/a5/Scusi%2C_dov%27%C3%A8_il_West.jpg/500px-Scusi%2C_dov%27%C3%A8_il_West.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "en": {
+      "word": "sorry",
+      "transcription": "ˈsɑːri",
+      "examples": [
+        {
+          "text": "Sorry, I am late!",
+          "translation": "Извини, я опаздываю!"
+        }
+      ]
+    }
   },
   "конец": {
     "en": {
@@ -5197,6 +5644,29 @@
     },
     "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/d/d8/Il_buono_il_brutto_e_il_cattivo-triello.jpg/500px-Il_buono_il_brutto_e_il_cattivo-triello.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
+  "всё, весь": {
+    "it": {
+      "word": "tutto",
+      "transcription": "ˈtutto",
+      "examples": [
+        {
+          "text": "Tutto va bene.",
+          "translation": "Всё хорошо."
+        }
+      ]
+    },
+    "img": "",
+    "en": {
+      "word": "all",
+      "transcription": "ɔːl",
+      "examples": [
+        {
+          "text": "All my friends are here.",
+          "translation": "Все мои друзья здесь."
+        }
+      ]
+    }
+  },
   "хороший": {
     "en": {
       "word": "good",
@@ -5219,6 +5689,29 @@
       ]
     },
     "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Stefano_Buono.jpg/500px-Stefano_Buono.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "один": {
+    "en": {
+      "word": "one",
+      "transcription": "wʌn",
+      "examples": [
+        {
+          "text": "I have only one euro.",
+          "translation": "У меня всего один евро."
+        }
+      ]
+    },
+    "img": "",
+    "it": {
+      "word": "uno",
+      "transcription": "ˈuno",
+      "examples": [
+        {
+          "text": "Uno, due, tre, via!",
+          "translation": "Раз, два, три, вперёд!"
+        }
+      ]
+    }
   },
   "плохой": {
     "en": {
@@ -5266,6 +5759,29 @@
     },
     "img": ""
   },
+  "рука": {
+    "it": {
+      "word": "mano",
+      "transcription": "ˈmaːno",
+      "examples": [
+        {
+          "text": "Scrivo con la mano destra.",
+          "translation": "Я пишу правой рукой."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Hand%2C_fingers_-_back.jpg/500px-Hand%2C_fingers_-_back.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "en": {
+      "word": "hand",
+      "transcription": "hænd",
+      "examples": [
+        {
+          "text": "I write with my right hand.",
+          "translation": "Я пишу правой рукой."
+        }
+      ]
+    }
+  },
   "маленький": {
     "en": {
       "word": "small",
@@ -5284,6 +5800,29 @@
         {
           "text": "Abito in un appartamento piccolo.",
           "translation": "Я живу в маленькой квартире."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "часть, роль": {
+    "en": {
+      "word": "role",
+      "transcription": "roʊl",
+      "examples": [
+        {
+          "text": "The main role is difficult.",
+          "translation": "Главная роль трудная."
+        }
+      ]
+    },
+    "it": {
+      "word": "parte",
+      "transcription": "ˈparte",
+      "examples": [
+        {
+          "text": "Questa è la mia parte preferita del film.",
+          "translation": "Это моя любимая часть фильма."
         }
       ]
     },
@@ -5323,7 +5862,17 @@
         }
       ]
     },
-    "img": ""
+    "img": "",
+    "en": {
+      "word": "low",
+      "transcription": "loʊ",
+      "examples": [
+        {
+          "text": "The price is very low.",
+          "translation": "Цена очень низкая."
+        }
+      ]
+    }
   },
   "длинный": {
     "en": {
@@ -5359,7 +5908,40 @@
         }
       ]
     },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/NSGuida2022.pdf/page1-500px-NSGuida2022.pdf.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/NSGuida2022.pdf/page1-500px-NSGuida2022.pdf.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "en": {
+      "word": "new",
+      "transcription": "nuː",
+      "examples": [
+        {
+          "text": "They live in a new house.",
+          "translation": "Они живут в новом доме."
+        }
+      ]
+    }
+  },
+  "почему": {
+    "en": {
+      "word": "why",
+      "transcription": "waɪ",
+      "examples": [
+        {
+          "text": "Why do you study Italian?",
+          "translation": "Почему ты учишь итальянский?"
+        }
+      ]
+    },
+    "img": "",
+    "it": {
+      "word": "perché",
+      "transcription": "perˈke",
+      "examples": [
+        {
+          "text": "Perché sei triste oggi?",
+          "translation": "Почему ты сегодня грустный?"
+        }
+      ]
+    }
   },
   "старый": {
     "en": {
@@ -5406,6 +5988,29 @@
       ]
     },
     "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Youth_and_Time_1901.jpg/500px-Youth_and_Time_1901.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "делать": {
+    "en": {
+      "word": "do",
+      "transcription": "duː",
+      "examples": [
+        {
+          "text": "What do you do in the evening?",
+          "translation": "Что ты делаешь вечером?"
+        }
+      ]
+    },
+    "img": "",
+    "it": {
+      "word": "fare",
+      "transcription": "ˈfare",
+      "examples": [
+        {
+          "text": "Cosa fai la domenica?",
+          "translation": "Что ты делаешь в воскресенье?"
+        }
+      ]
+    }
   },
   "лёгкий": {
     "en": {
@@ -5499,29 +6104,6 @@
     },
     "img": ""
   },
-  "громкий": {
-    "en": {
-      "word": "loud",
-      "transcription": "laʊd",
-      "examples": [
-        {
-          "text": "The music is too loud.",
-          "translation": "Музыка слишком громкая."
-        }
-      ]
-    },
-    "it": {
-      "word": "forte",
-      "transcription": "ˈfɔrte",
-      "examples": [
-        {
-          "text": "Il caffè italiano è molto forte.",
-          "translation": "Итальянский кофе очень крепкий."
-        }
-      ]
-    },
-    "img": ""
-  },
   "слабый": {
     "en": {
       "word": "weak",
@@ -5602,7 +6184,17 @@
         }
       ]
     },
-    "img": ""
+    "img": "",
+    "en": {
+      "word": "open",
+      "transcription": "ˈoʊpən",
+      "examples": [
+        {
+          "text": "The shop is open until nine.",
+          "translation": "Магазин открыт до девяти."
+        }
+      ]
+    }
   },
   "закрытый": {
     "it": {
@@ -5615,7 +6207,17 @@
         }
       ]
     },
-    "img": ""
+    "img": "",
+    "en": {
+      "word": "closed",
+      "transcription": "kloʊzd",
+      "examples": [
+        {
+          "text": "The museum is closed on Monday.",
+          "translation": "Музей закрыт в понедельник."
+        }
+      ]
+    }
   },
   "дорогой": {
     "en": {
@@ -5640,6 +6242,29 @@
     },
     "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/0/0d/Caro_zio_Joe.png/500px-Caro_zio_Joe.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
+  "разговаривать": {
+    "en": {
+      "word": "talk",
+      "transcription": "tɔːk",
+      "examples": [
+        {
+          "text": "We talk about work every day.",
+          "translation": "Мы разговариваем о работе каждый день."
+        }
+      ]
+    },
+    "img": "",
+    "it": {
+      "word": "parlare",
+      "transcription": "parˈlare",
+      "examples": [
+        {
+          "text": "Parlo con il mio amico al telefono.",
+          "translation": "Я разговариваю с другом по телефону."
+        }
+      ]
+    }
+  },
   "дешёвый": {
     "en": {
       "word": "cheap",
@@ -5662,6 +6287,29 @@
       ]
     },
     "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Boerse_01_KMJ.jpg/500px-Boerse_01_KMJ.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "начинать ·2": {
+    "en": {
+      "word": "start",
+      "transcription": "stɑːrt",
+      "examples": [
+        {
+          "text": "The film starts at eight.",
+          "translation": "Фильм начинается в восемь."
+        }
+      ]
+    },
+    "img": "",
+    "it": {
+      "word": "cominciare",
+      "transcription": "kominˈtʃare",
+      "examples": [
+        {
+          "text": "Il film comincia alle nove.",
+          "translation": "Фильм начинается в девять."
+        }
+      ]
+    }
   },
   "богатый": {
     "en": {
@@ -5708,6 +6356,29 @@
       ]
     },
     "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Thomas_Benjamin_Kennington_-_Orphans.jpg/500px-Thomas_Benjamin_Kennington_-_Orphans.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "слышать": {
+    "en": {
+      "word": "hear",
+      "transcription": "hɪr",
+      "examples": [
+        {
+          "text": "I hear a strange noise.",
+          "translation": "Я слышу странный шум."
+        }
+      ]
+    },
+    "img": "",
+    "it": {
+      "word": "sentire",
+      "transcription": "senˈtire",
+      "examples": [
+        {
+          "text": "Sento un rumore strano.",
+          "translation": "Я слышу странный шум."
+        }
+      ]
+    }
   },
   "важный": {
     "en": {
@@ -6077,6 +6748,29 @@
     },
     "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Example_of_a_set.svg/500px-Example_of_a_set.svg.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
+  "парень, мальчик": {
+    "it": {
+      "word": "ragazzo",
+      "transcription": "raˈɡattso",
+      "examples": [
+        {
+          "text": "Il ragazzo gioca a calcio.",
+          "translation": "Мальчик играет в футбол."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/%D0%9C%D0%B0%D0%BB%D1%8C%D1%87%D0%B8%D0%BA_%28%D0%BF%D1%80%D0%BE%D1%84%D0%B5%D1%81%D1%81%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5_%D1%84%D0%BE%D1%82%D0%BE%29.jpg/500px-%D0%9C%D0%B0%D0%BB%D1%8C%D1%87%D0%B8%D0%BA_%28%D0%BF%D1%80%D0%BE%D1%84%D0%B5%D1%81%D1%81%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5_%D1%84%D0%BE%D1%82%D0%BE%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "en": {
+      "word": "boy",
+      "transcription": "bɔɪ",
+      "examples": [
+        {
+          "text": "The boy is playing football.",
+          "translation": "Мальчик играет в футбол."
+        }
+      ]
+    }
+  },
   "действительно": {
     "en": {
       "word": "really",
@@ -6180,7 +6874,17 @@
         }
       ]
     },
-    "img": ""
+    "img": "",
+    "en": {
+      "word": "immediately",
+      "transcription": "ɪˈmiːdiətli",
+      "examples": [
+        {
+          "text": "Come here immediately!",
+          "translation": "Подойди сюда немедленно!"
+        }
+      ]
+    }
   },
   "сейчас": {
     "en": {
@@ -6216,7 +6920,17 @@
         }
       ]
     },
-    "img": ""
+    "img": "",
+    "en": {
+      "word": "later",
+      "transcription": "ˈleɪtər",
+      "examples": [
+        {
+          "text": "I will call you later.",
+          "translation": "Я позвоню тебе позже."
+        }
+      ]
+    }
   },
   "после": {
     "en": {
@@ -6287,6 +7001,52 @@
     },
     "img": ""
   },
+  "офис": {
+    "it": {
+      "word": "ufficio",
+      "transcription": "ufˈfiːtʃo",
+      "examples": [
+        {
+          "text": "Il mio ufficio è al terzo piano.",
+          "translation": "Мой офис на третьем этаже."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Cortile_del_Belvedere_2011.jpg/500px-Cortile_del_Belvedere_2011.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "en": {
+      "word": "office",
+      "transcription": "ˈɔːfɪs",
+      "examples": [
+        {
+          "text": "My office is on the third floor.",
+          "translation": "Мой офис на третьем этаже."
+        }
+      ]
+    }
+  },
+  "причина, разум": {
+    "it": {
+      "word": "motivo",
+      "transcription": "moˈtiːvo",
+      "examples": [
+        {
+          "text": "Qual è il motivo del tuo viaggio?",
+          "translation": "Какая причина твоей поездки?"
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Mr_Pipo_Brain_Gears_by_Love.svg/500px-Mr_Pipo_Brain_Gears_by_Love.svg.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "en": {
+      "word": "reason",
+      "transcription": "ˈriːzən",
+      "examples": [
+        {
+          "text": "What is the reason for your trip?",
+          "translation": "Какая причина твоей поездки?"
+        }
+      ]
+    }
+  },
   "снаружи": {
     "en": {
       "word": "outside",
@@ -6321,7 +7081,17 @@
         }
       ]
     },
-    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/a/a9/Fiori_sopra_l%27inferno_-_I_casi_di_Teresa_Battaglia.jpg/500px-Fiori_sopra_l%27inferno_-_I_casi_di_Teresa_Battaglia.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/a/a9/Fiori_sopra_l%27inferno_-_I_casi_di_Teresa_Battaglia.jpg/500px-Fiori_sopra_l%27inferno_-_I_casi_di_Teresa_Battaglia.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "en": {
+      "word": "above",
+      "transcription": "əˈbʌv",
+      "examples": [
+        {
+          "text": "The lamp is above the table.",
+          "translation": "Лампа над столом."
+        }
+      ]
+    }
   },
   "внизу": {
     "it": {
@@ -6334,7 +7104,40 @@
         }
       ]
     },
-    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/5/53/Sotto_copertura.PNG/500px-Sotto_copertura.PNG?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/5/53/Sotto_copertura.PNG/500px-Sotto_copertura.PNG?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "en": {
+      "word": "below",
+      "transcription": "bɪˈloʊ",
+      "examples": [
+        {
+          "text": "The garage is below the house.",
+          "translation": "Гараж под домом."
+        }
+      ]
+    }
+  },
+  "сильный": {
+    "en": {
+      "word": "strong",
+      "transcription": "strɔːŋ",
+      "examples": [
+        {
+          "text": "Italian coffee is very strong.",
+          "translation": "Итальянский кофе очень крепкий."
+        }
+      ]
+    },
+    "img": "",
+    "it": {
+      "word": "forte",
+      "transcription": "ˈforte",
+      "examples": [
+        {
+          "text": "Il caffè è troppo forte.",
+          "translation": "Кофе слишком крепкий."
+        }
+      ]
+    }
   },
   "рядом с": {
     "it": {
@@ -6347,7 +7150,132 @@
         }
       ]
     },
-    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/3/3a/Non_cos%C3%AC_vicino.jpg/500px-Non_cos%C3%AC_vicino.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/3/3a/Non_cos%C3%AC_vicino.jpg/500px-Non_cos%C3%AC_vicino.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "en": {
+      "word": "near",
+      "transcription": "nɪr",
+      "examples": [
+        {
+          "text": "We live near the station.",
+          "translation": "Мы живём рядом с вокзалом."
+        }
+      ]
+    }
+  },
+  "прибывать": {
+    "en": {
+      "word": "arrive",
+      "transcription": "əˈraɪv",
+      "examples": [
+        {
+          "text": "The bus arrives at three p.m.",
+          "translation": "Автобус прибывает в пятнадцать ноль-ноль."
+        }
+      ]
+    },
+    "it": {
+      "word": "arrivare",
+      "transcription": "arriˈvaːre",
+      "examples": [
+        {
+          "text": "Arriviamo domani mattina.",
+          "translation": "Мы приедем завтра утром."
+        }
+      ]
+    },
+    "img": "https://upload.wikimedia.org/wikipedia/it/1/1c/Arrivare_a_te_manga.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  "лезть, взбираться": {
+    "en": {
+      "word": "climb",
+      "transcription": "klaɪm",
+      "examples": [
+        {
+          "text": "We climb the mountain in summer.",
+          "translation": "Мы поднимаемся на гору летом."
+        }
+      ]
+    },
+    "it": {
+      "word": "salire",
+      "transcription": "saˈliːre",
+      "examples": [
+        {
+          "text": "Saliamo in macchina.",
+          "translation": "Давай сядем в машину."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/f/f0/Salir%C3%B2.png/500px-Salir%C3%B2.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "спускаться": {
+    "en": {
+      "word": "go down",
+      "transcription": "ɡoʊ daʊn",
+      "examples": [
+        {
+          "text": "I go down the stairs slowly.",
+          "translation": "Я медленно спускаюсь по лестнице."
+        }
+      ]
+    },
+    "it": {
+      "word": "scendere",
+      "transcription": "ˈʃɛndere",
+      "examples": [
+        {
+          "text": "Scendo alla prossima fermata.",
+          "translation": "Я выхожу на следующей остановке."
+        }
+      ]
+    },
+    "img": ""
+  },
+  "тёплый": {
+    "en": {
+      "word": "warm",
+      "transcription": "wɔːrm",
+      "examples": [
+        {
+          "text": "The soup is warm.",
+          "translation": "Суп тёплый."
+        }
+      ]
+    },
+    "it": {
+      "word": "caldo",
+      "transcription": "ˈkaldo",
+      "examples": [
+        {
+          "text": "Fa caldo in agosto.",
+          "translation": "В августе жарко."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Hot_Horseshoe_%28stevefe%29.jpg/500px-Hot_Horseshoe_%28stevefe%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "громкий": {
+    "en": {
+      "word": "loud",
+      "transcription": "laʊd",
+      "examples": [
+        {
+          "text": "The music is too loud.",
+          "translation": "Музыка слишком громкая."
+        }
+      ]
+    },
+    "it": {
+      "word": "forte",
+      "transcription": "ˈfɔrte",
+      "examples": [
+        {
+          "text": "Il caffè italiano è molto forte.",
+          "translation": "Итальянский кофе очень крепкий."
+        }
+      ]
+    },
+    "img": ""
   },
   "четыре": {
     "en": {
@@ -6924,6 +7852,29 @@
     },
     "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Flag_of_CENTO.svg/500px-Flag_of_CENTO.svg.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
+  "четвёртый": {
+    "it": {
+      "word": "quarto",
+      "transcription": "ˈkwarto",
+      "examples": [
+        {
+          "text": "Vivo al quarto piano.",
+          "translation": "Я живу на четвёртом этаже."
+        }
+      ]
+    },
+    "img": "",
+    "en": {
+      "word": "fourth",
+      "transcription": "fɔːrθ",
+      "examples": [
+        {
+          "text": "April is the fourth month.",
+          "translation": "Апрель — четвёртый месяц."
+        }
+      ]
+    }
+  },
   "тысяча": {
     "en": {
       "word": "thousand",
@@ -7034,19 +7985,6 @@
         {
           "text": "Il terzo piano è sopra.",
           "translation": "Третий этаж выше."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "четвёртый": {
-    "it": {
-      "word": "quarto",
-      "transcription": "ˈkwarto",
-      "examples": [
-        {
-          "text": "Vivo al quarto piano.",
-          "translation": "Я живу на четвёртом этаже."
         }
       ]
     },
@@ -7604,6 +8542,29 @@
     },
     "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Color_icon_red.svg/500px-Color_icon_red.svg.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
+  "оранжевый": {
+    "it": {
+      "word": "arancione",
+      "transcription": "aranˈtʃone",
+      "examples": [
+        {
+          "text": "Il suo zaino è arancione.",
+          "translation": "Его рюкзак оранжевый."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Color_icon_orange.svg/500px-Color_icon_orange.svg.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "en": {
+      "word": "orange",
+      "transcription": "ˈɔːrɪndʒ",
+      "examples": [
+        {
+          "text": "The sunset is orange.",
+          "translation": "Закат оранжевого цвета."
+        }
+      ]
+    }
+  },
   "синий, голубой": {
     "en": {
       "word": "blue",
@@ -7719,19 +8680,6 @@
     },
     "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Dispersion_prism.jpg/500px-Dispersion_prism.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
-  "оранжевый": {
-    "it": {
-      "word": "arancione",
-      "transcription": "aranˈtʃone",
-      "examples": [
-        {
-          "text": "Il suo zaino è arancione.",
-          "translation": "Его рюкзак оранжевый."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Color_icon_orange.svg/500px-Color_icon_orange.svg.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
   "розовый": {
     "en": {
       "word": "pink",
@@ -7754,6 +8702,29 @@
       ]
     },
     "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Pink_sapphire_ring.jpg/500px-Pink_sapphire_ring.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "светлый, ясный": {
+    "it": {
+      "word": "chiaro",
+      "transcription": "ˈkjaːro",
+      "examples": [
+        {
+          "text": "Il cielo è chiaro oggi.",
+          "translation": "Небо сегодня ясное."
+        }
+      ]
+    },
+    "img": "",
+    "en": {
+      "word": "clear",
+      "transcription": "klɪr",
+      "examples": [
+        {
+          "text": "The water in the lake is clear.",
+          "translation": "Вода в озере прозрачная."
+        }
+      ]
+    }
   },
   "серый": {
     "en": {
@@ -7824,19 +8795,6 @@
     },
     "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/5/50/Viola_come_il_mare_logo.png/500px-Viola_come_il_mare_logo.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
-  "светлый, ясный": {
-    "it": {
-      "word": "chiaro",
-      "transcription": "ˈkjaːro",
-      "examples": [
-        {
-          "text": "Il cielo è chiaro oggi.",
-          "translation": "Небо сегодня ясное."
-        }
-      ]
-    },
-    "img": ""
-  },
   "тёмный": {
     "en": {
       "word": "dark",
@@ -7906,6 +8864,29 @@
     },
     "img": "https://upload.wikimedia.org/wikipedia/commons/7/78/Albero_nonni.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
   },
+  "двоюродный брат": {
+    "it": {
+      "word": "cugino",
+      "transcription": "kuˈdʒino",
+      "examples": [
+        {
+          "text": "Il mio cugino studia medicina.",
+          "translation": "Мой двоюродный брат учится на врача."
+        }
+      ]
+    },
+    "img": "",
+    "en": {
+      "word": "cousin",
+      "transcription": "ˈkʌzən",
+      "examples": [
+        {
+          "text": "My cousin lives in Rome.",
+          "translation": "Мой двоюродный брат живёт в Риме."
+        }
+      ]
+    }
+  },
   "дядя": {
     "en": {
       "word": "uncle",
@@ -7952,19 +8933,6 @@
     },
     "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Aunt_%26_Niece_%287936230820%29.jpg/500px-Aunt_%26_Niece_%287936230820%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
-  "двоюродный брат": {
-    "it": {
-      "word": "cugino",
-      "transcription": "kuˈdʒino",
-      "examples": [
-        {
-          "text": "Il mio cugino studia medicina.",
-          "translation": "Мой двоюродный брат учится на врача."
-        }
-      ]
-    },
-    "img": ""
-  },
   "двоюродная сестра": {
     "en": {
       "word": "cousin",
@@ -7988,18 +8956,28 @@
     },
     "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/BalzacCousinBette01.jpg/500px-BalzacCousinBette01.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
-  "внук, племянник": {
-    "it": {
-      "word": "nipote",
-      "transcription": "niˈpɔte",
+  "девочка": {
+    "en": {
+      "word": "girl",
+      "transcription": "ɡɜːrl",
       "examples": [
         {
-          "text": "Il nipote gioca in giardino.",
-          "translation": "Внук играет в саду."
+          "text": "The girl is reading a book.",
+          "translation": "Девочка читает книгу."
         }
       ]
     },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/1897_image_of_David_S._Shellabarger%27s_family.jpg/500px-1897_image_of_David_S._Shellabarger%27s_family.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "it": {
+      "word": "bambina",
+      "transcription": "bamˈbina",
+      "examples": [
+        {
+          "text": "La bambina dorme tranquilla.",
+          "translation": "Девочка спокойно спит."
+        }
+      ]
+    },
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Sebita_P6290063.jpg/500px-Sebita_P6290063.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
   "родители": {
     "en": {
@@ -8023,29 +9001,6 @@
       ]
     },
     "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Parents_with_child_Statue_Hrobakova_street_Bratislava.JPG/500px-Parents_with_child_Statue_Hrobakova_street_Bratislava.JPG?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "девочка": {
-    "en": {
-      "word": "girl",
-      "transcription": "ɡɜːrl",
-      "examples": [
-        {
-          "text": "The girl is reading a book.",
-          "translation": "Девочка читает книгу."
-        }
-      ]
-    },
-    "it": {
-      "word": "bambina",
-      "transcription": "bamˈbina",
-      "examples": [
-        {
-          "text": "La bambina dorme tranquilla.",
-          "translation": "Девочка спокойно спит."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Sebita_P6290063.jpg/500px-Sebita_P6290063.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
   "гость": {
     "en": {
@@ -9277,7 +10232,17 @@
         }
       ]
     },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Chicken_Noodle_Soup.jpg/500px-Chicken_Noodle_Soup.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Chicken_Noodle_Soup.jpg/500px-Chicken_Noodle_Soup.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "en": {
+      "word": "minestrone",
+      "transcription": "ˌmɪnəˈstroʊneɪ",
+      "examples": [
+        {
+          "text": "Minestrone is a thick vegetable soup.",
+          "translation": "Минестроне — густой овощной суп."
+        }
+      ]
+    }
   },
   "бутерброд": {
     "en": {
@@ -9704,7 +10669,17 @@
         }
       ]
     },
-    "img": ""
+    "img": "",
+    "en": {
+      "word": "park",
+      "transcription": "pɑːrk",
+      "examples": [
+        {
+          "text": "We run in the park every morning.",
+          "translation": "Мы бегаем в парке каждое утро."
+        }
+      ]
+    }
   },
   "библиотека": {
     "en": {
@@ -10695,19 +11670,6 @@
     },
     "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Bird_Diversity_2013.png/500px-Bird_Diversity_2013.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
-  "бабочка": {
-    "it": {
-      "word": "farfalla",
-      "transcription": "farˈfalla",
-      "examples": [
-        {
-          "text": "Una farfalla vola nel giardino.",
-          "translation": "Бабочка летает в саду."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Fesoj_-_Papilio_machaon_%28by%29.jpg/500px-Fesoj_-_Papilio_machaon_%28by%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
   "пчела": {
     "en": {
       "word": "bee",
@@ -10777,19 +11739,6 @@
     },
     "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Zinnia_elegans_with_Bombus_01.JPG/500px-Zinnia_elegans_with_Bombus_01.JPG?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
-  "лист": {
-    "it": {
-      "word": "foglia",
-      "transcription": "ˈfoʎʎa",
-      "examples": [
-        {
-          "text": "La foglia è verde d'estate.",
-          "translation": "Лист летом зелёный."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Leaf_1_web.jpg/500px-Leaf_1_web.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
   "лес": {
     "en": {
       "word": "forest",
@@ -10824,7 +11773,17 @@
         }
       ]
     },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Particolare_della_foresta_di_faggi_-_Parco_Naturale_dei_Monti_Aurunci.jpg/500px-Particolare_della_foresta_di_faggi_-_Parco_Naturale_dei_Monti_Aurunci.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Particolare_della_foresta_di_faggi_-_Parco_Naturale_dei_Monti_Aurunci.jpg/500px-Particolare_della_foresta_di_faggi_-_Parco_Naturale_dei_Monti_Aurunci.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "en": {
+      "word": "woods",
+      "transcription": "wʊdz",
+      "examples": [
+        {
+          "text": "The children play in the woods.",
+          "translation": "Дети играют в лесу."
+        }
+      ]
+    }
   },
   "холм": {
     "en": {
@@ -11078,32 +12037,6 @@
       ]
     },
     "img": "https://upload.wikimedia.org/wikipedia/commons/1/15/Clock-pendulum.gif?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
-  },
-  "часы": {
-    "it": {
-      "word": "orologio",
-      "transcription": "oroˈlɔːdʒo",
-      "examples": [
-        {
-          "text": "Il mio orologio va avanti.",
-          "translation": "Мои часы спешат."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Clock_%282525844124%29.jpg/500px-Clock_%282525844124%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "медбрат, медсестра": {
-    "it": {
-      "word": "infermiere",
-      "transcription": "inferˈmjɛːre",
-      "examples": [
-        {
-          "text": "L'infermiere lavora di notte.",
-          "translation": "Медбрат работает ночью."
-        }
-      ]
-    },
-    "img": ""
   },
   "адвокат": {
     "en": {
@@ -13646,7 +14579,17 @@
         }
       ]
     },
-    "img": ""
+    "img": "",
+    "en": {
+      "word": "feel",
+      "transcription": "fiːl",
+      "examples": [
+        {
+          "text": "I feel good today.",
+          "translation": "Я хорошо себя чувствую сегодня."
+        }
+      ]
+    }
   },
   "веселиться": {
     "en": {
@@ -13716,19 +14659,6 @@
       ]
     },
     "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/4/4f/CD_Tenerife_%281992%29.svg/500px-CD_Tenerife_%281992%29.svg.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "отправлять": {
-    "it": {
-      "word": "mandare",
-      "transcription": "manˈdaːre",
-      "examples": [
-        {
-          "text": "Mando una lettera alla zia.",
-          "translation": "Я отправляю письмо тёте."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/5/50/Mandare_tutto_all%27aria_%28Marco_Mengoni%29.png/500px-Mandare_tutto_all%27aria_%28Marco_Mengoni%29.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
   "получать": {
     "en": {
@@ -13914,7 +14844,7 @@
     },
     "img": ""
   },
-  "готовить (еду)": {
+  "готовить": {
     "it": {
       "word": "cucinare",
       "transcription": "kutʃiˈnaːre",
@@ -13925,7 +14855,17 @@
         }
       ]
     },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/17-alimenti%2C_umido%2CTaccuino_Sanitatis%2C_Casanatense_4182..jpg/500px-17-alimenti%2C_umido%2CTaccuino_Sanitatis%2C_Casanatense_4182..jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/17-alimenti%2C_umido%2CTaccuino_Sanitatis%2C_Casanatense_4182..jpg/500px-17-alimenti%2C_umido%2CTaccuino_Sanitatis%2C_Casanatense_4182..jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "en": {
+      "word": "cook",
+      "transcription": "kʊk",
+      "examples": [
+        {
+          "text": "I cook dinner every evening.",
+          "translation": "Я готовлю ужин каждый вечер."
+        }
+      ]
+    }
   },
   "петь": {
     "en": {
@@ -14191,7 +15131,17 @@
         }
       ]
     },
-    "img": ""
+    "img": "",
+    "en": {
+      "word": "promise",
+      "transcription": "ˈprɑmɪs",
+      "examples": [
+        {
+          "text": "I promise to call you tomorrow.",
+          "translation": "Обещаю позвонить тебе завтра."
+        }
+      ]
+    }
   },
   "позволять": {
     "en": {
@@ -14365,7 +15315,17 @@
         }
       ]
     },
-    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/9/99/Diaz_-_Don%27t_Clean_Up_This_Blood.png/500px-Diaz_-_Don%27t_Clean_Up_This_Blood.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/9/99/Diaz_-_Don%27t_Clean_Up_This_Blood.png/500px-Diaz_-_Don%27t_Clean_Up_This_Blood.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "en": {
+      "word": "clean",
+      "transcription": "kliːn",
+      "examples": [
+        {
+          "text": "I clean my room on Saturday.",
+          "translation": "Я убираю свою комнату в субботу."
+        }
+      ]
+    }
   },
   "убирать, приводить в порядок": {
     "en": {
@@ -15402,19 +16362,6 @@
     },
     "img": ""
   },
-  "довольный, радостный": {
-    "it": {
-      "word": "contento",
-      "transcription": "konˈtɛnto",
-      "examples": [
-        {
-          "text": "Sono contento di vederti.",
-          "translation": "Я рад тебя видеть."
-        }
-      ]
-    },
-    "img": ""
-  },
   "злой, сердитый": {
     "en": {
       "word": "angry",
@@ -15978,7 +16925,17 @@
         }
       ]
     },
-    "img": ""
+    "img": "",
+    "en": {
+      "word": "light",
+      "transcription": "laɪt",
+      "examples": [
+        {
+          "text": "This bag is very light.",
+          "translation": "Эта сумка очень лёгкая."
+        }
+      ]
+    }
   },
   "узкий": {
     "en": {
@@ -16601,20 +17558,7 @@
     },
     "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/2/2a/AltroFerragosto.png/500px-AltroFerragosto.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
-  "много (жен. род)": {
-    "it": {
-      "word": "tante",
-      "transcription": "ˈtante",
-      "examples": [
-        {
-          "text": "Ho tante domande.",
-          "translation": "У меня много вопросов."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "много (муж. род)": {
+  "много ·2": {
     "it": {
       "word": "tanti",
       "transcription": "ˈtanti",
@@ -16625,7 +17569,17 @@
         }
       ]
     },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Chorrillos_1.jpg/500px-Chorrillos_1.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Chorrillos_1.jpg/500px-Chorrillos_1.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "en": {
+      "word": "many",
+      "transcription": "ˈmɛni",
+      "examples": [
+        {
+          "text": "There are many people in the city.",
+          "translation": "В городе много людей."
+        }
+      ]
+    }
   },
   "довольно много": {
     "en": {
@@ -17386,19 +18340,6 @@
     },
     "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/VelikiVrag-Medpunkt-1435.jpg/500px-VelikiVrag-Medpunkt-1435.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
-  "рецепт (мед. и кул.)": {
-    "it": {
-      "word": "ricetta",
-      "transcription": "riˈtʃetta",
-      "examples": [
-        {
-          "text": "Il dottore scrive una ricetta.",
-          "translation": "Врач выписывает рецепт."
-        }
-      ]
-    },
-    "img": ""
-  },
   "таблетка": {
     "en": {
       "word": "pill",
@@ -17445,42 +18386,6 @@
     },
     "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Treatment_of_wound_with_lance_grit.jpg/500px-Treatment_of_wound_with_lance_grit.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
-  "приёмная, секретариат": {
-    "en": {
-      "word": "office",
-      "transcription": "ˈɔːfɪs",
-      "examples": [
-        {
-          "text": "My office is on the third floor.",
-          "translation": "Мой офис на третьем этаже."
-        }
-      ]
-    },
-    "it": {
-      "word": "segreteria",
-      "transcription": "seɡreteˈriːa",
-      "examples": [
-        {
-          "text": "Chiamo la segreteria domani.",
-          "translation": "Я позвоню в приёмную завтра."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Cortile_del_Belvedere_2011.jpg/500px-Cortile_del_Belvedere_2011.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "секретарь (жен.)": {
-    "it": {
-      "word": "segretaria",
-      "transcription": "seɡreˈtaːria",
-      "examples": [
-        {
-          "text": "La segretaria risponde al telefono.",
-          "translation": "Секретарь отвечает на телефон."
-        }
-      ]
-    },
-    "img": ""
-  },
   "назначенная встреча": {
     "en": {
       "word": "appointment",
@@ -17526,19 +18431,6 @@
       ]
     },
     "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Hairdryer_20101109.jpg/500px-Hairdryer_20101109.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "ящик (комода)": {
-    "it": {
-      "word": "cassetto",
-      "transcription": "kasˈsɛtto",
-      "examples": [
-        {
-          "text": "Le foto sono nel cassetto.",
-          "translation": "Фотографии в ящике."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Drawer.agr.jpg/500px-Drawer.agr.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
   "инструмент": {
     "en": {
@@ -17804,7 +18696,17 @@
         }
       ]
     },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Planisphere-asia.png/500px-Planisphere-asia.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Planisphere-asia.png/500px-Planisphere-asia.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "en": {
+      "word": "map",
+      "transcription": "mæp",
+      "examples": [
+        {
+          "text": "Look at the map of Italy.",
+          "translation": "Посмотри на карту Италии."
+        }
+      ]
+    }
   },
   "компас": {
     "en": {
@@ -18266,19 +19168,6 @@
     },
     "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Diskflaskor.JPG/500px-Diskflaskor.JPG?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
-  "раковина (кухонная)": {
-    "it": {
-      "word": "lavandino",
-      "transcription": "lavanˈdiːno",
-      "examples": [
-        {
-          "text": "Il piatto è nel lavandino.",
-          "translation": "Тарелка в раковине."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Lavello_ceramica.jpg/500px-Lavello_ceramica.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
   "холодильник": {
     "en": {
       "word": "fridge",
@@ -18646,19 +19535,6 @@
       ]
     },
     "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Masterkeyboard.png/500px-Masterkeyboard.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "мышь (комп.)": {
-    "it": {
-      "word": "mouse",
-      "transcription": "ˈmauz",
-      "examples": [
-        {
-          "text": "Il mouse non funziona.",
-          "translation": "Мышь не работает."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Wheel_mouse.JPG/500px-Wheel_mouse.JPG?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
   "бумага": {
     "en": {
@@ -19637,20 +20513,17 @@
         }
       ]
     },
-    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/0/0a/Magari_-_Rohrwacher_Scamarcio.png/500px-Magari_-_Rohrwacher_Scamarcio.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "даже (усиление)": {
-    "it": {
-      "word": "addirittura",
-      "transcription": "addiritˈtura",
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/0/0a/Magari_-_Rohrwacher_Scamarcio.png/500px-Magari_-_Rohrwacher_Scamarcio.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "en": {
+      "word": "perhaps",
+      "transcription": "pərˈhæps",
       "examples": [
         {
-          "text": "Ha comprato addirittura una moto.",
-          "translation": "Он даже купил мотоцикл."
+          "text": "Perhaps he is at work now.",
+          "translation": "Возможно, он сейчас на работе."
         }
       ]
-    },
-    "img": ""
+    }
   },
   "действительно ·2": {
     "en": {
@@ -19716,19 +20589,6 @@
         {
           "text": "Sono arrivato tardi a scuola.",
           "translation": "Я пришёл в школу поздно."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "уже (о времени)": {
-    "it": {
-      "word": "ormai",
-      "transcription": "ormaˈi",
-      "examples": [
-        {
-          "text": "Ormai è troppo tardi.",
-          "translation": "Уже слишком поздно."
         }
       ]
     },
@@ -20688,7 +21548,17 @@
         }
       ]
     },
-    "img": ""
+    "img": "",
+    "en": {
+      "word": "moment",
+      "transcription": "ˈmoʊmənt",
+      "examples": [
+        {
+          "text": "Wait a moment, please.",
+          "translation": "Подожди минутку, пожалуйста."
+        }
+      ]
+    }
   },
   "ценность; значение": {
     "en": {
@@ -20712,29 +21582,6 @@
       ]
     },
     "img": ""
-  },
-  "правота, разум": {
-    "en": {
-      "word": "reason",
-      "transcription": "ˈriːzən",
-      "examples": [
-        {
-          "text": "What is the reason for your trip?",
-          "translation": "Какая причина твоей поездки?"
-        }
-      ]
-    },
-    "it": {
-      "word": "ragione",
-      "transcription": "raˈdʒoːne",
-      "examples": [
-        {
-          "text": "Hai ragione tu.",
-          "translation": "Прав ты."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Mr_Pipo_Brain_Gears_by_Love.svg/500px-Mr_Pipo_Brain_Gears_by_Love.svg.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
   "система; способ": {
     "en": {
@@ -21069,7 +21916,17 @@
         }
       ]
     },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/JapaneseBouillon_Dashi.jpg/500px-JapaneseBouillon_Dashi.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/JapaneseBouillon_Dashi.jpg/500px-JapaneseBouillon_Dashi.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "en": {
+      "word": "boil",
+      "transcription": "bɔɪl",
+      "examples": [
+        {
+          "text": "The water boils in five minutes.",
+          "translation": "Вода закипает через пять минут."
+        }
+      ]
+    }
   },
   "варить": {
     "en": {
@@ -21738,19 +22595,6 @@
     },
     "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Nokia_office_building_in_Hervanta_Tampere_1.jpg/500px-Nokia_office_building_in_Hervanta_Tampere_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
-  "объявление": {
-    "it": {
-      "word": "annuncio",
-      "transcription": "anˈnuntʃo",
-      "examples": [
-        {
-          "text": "Leggo un annuncio nel giornale.",
-          "translation": "Я читаю объявление в газете."
-        }
-      ]
-    },
-    "img": ""
-  },
   "собеседование": {
     "en": {
       "word": "interview",
@@ -22073,19 +22917,6 @@
     },
     "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Cappuccino_in_original.jpg/500px-Cappuccino_in_original.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
-  "салфетка": {
-    "it": {
-      "word": "tovagliolo",
-      "transcription": "tovaˈʎʎolo",
-      "examples": [
-        {
-          "text": "Il tovagliolo è bianco.",
-          "translation": "Салфетка белая."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Folded_napkin_01.jpg/500px-Folded_napkin_01.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
   "определённый артикль": {
     "en": {
       "word": "the",
@@ -22155,29 +22986,6 @@
     },
     "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/3/32/Mi_fai_un_favore_1996.png/500px-Mi_fai_un_favore_1996.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
-  "извини": {
-    "en": {
-      "word": "sorry",
-      "transcription": "ˈsɑːri",
-      "examples": [
-        {
-          "text": "Sorry, I am late!",
-          "translation": "Извини, я опаздываю!"
-        }
-      ]
-    },
-    "it": {
-      "word": "scusa",
-      "transcription": "ˈskuːza",
-      "examples": [
-        {
-          "text": "Scusa, sono in ritardo!",
-          "translation": "Извини, я опаздываю!"
-        }
-      ]
-    },
-    "img": ""
-  },
   "здравствуй": {
     "en": {
       "word": "hello",
@@ -22200,3152 +23008,5 @@
       ]
     },
     "img": "https://upload.wikimedia.org/wikipedia/commons/b/b3/TelephoneHelloNellie.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
-  },
-  "оно, это": {
-    "en": {
-      "word": "it",
-      "transcription": "ɪt",
-      "examples": [
-        {
-          "text": "It is very hot today.",
-          "translation": "Сегодня очень жарко."
-        }
-      ]
-    },
-    "it": {
-      "word": "ciò",
-      "transcription": "tʃɔ",
-      "examples": [
-        {
-          "text": "Fa molto caldo oggi.",
-          "translation": "Сегодня очень жарко."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/1/10/Tutto_ci%C3%B2_che_siamo.jpg/500px-Tutto_ci%C3%B2_che_siamo.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "ладно": {
-    "en": {
-      "word": "OK",
-      "transcription": "oʊˈkeɪ",
-      "examples": [
-        {
-          "text": "OK, see you tomorrow!",
-          "translation": "Ладно, увидимся завтра!"
-        }
-      ]
-    },
-    "it": {
-      "word": "va bene",
-      "transcription": "va ˈbɛːne",
-      "examples": [
-        {
-          "text": "Va bene, ci vediamo domani!",
-          "translation": "Ладно, увидимся завтра!"
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/OK-button_-_Macro_photography_of_a_remote_control.jpg/500px-OK-button_-_Macro_photography_of_a_remote_control.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "право, направо": {
-    "en": {
-      "word": "right",
-      "transcription": "raɪt",
-      "examples": [
-        {
-          "text": "Turn right at the corner.",
-          "translation": "Поверни направо на углу."
-        }
-      ]
-    },
-    "it": {
-      "word": "destra",
-      "transcription": "ˈdɛstra",
-      "examples": [
-        {
-          "text": "Gira a destra all'angolo.",
-          "translation": "Поверни направо на углу."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/HitlerMussolini1934Venice.jpg/500px-HitlerMussolini1934Venice.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "кто": {
-    "en": {
-      "word": "who",
-      "transcription": "huː",
-      "examples": [
-        {
-          "text": "Who is that woman?",
-          "translation": "Кто та женщина?"
-        }
-      ]
-    },
-    "it": {
-      "word": "chi",
-      "transcription": "ki",
-      "examples": [
-        {
-          "text": "Chi è quella donna?",
-          "translation": "Кто та женщина?"
-        }
-      ]
-    },
-    "img": ""
-  },
-  "использовать": {
-    "en": {
-      "word": "use",
-      "transcription": "juːz",
-      "examples": [
-        {
-          "text": "Can I use your phone?",
-          "translation": "Можно воспользоваться твоим телефоном?"
-        }
-      ]
-    },
-    "it": {
-      "word": "usare",
-      "transcription": "uˈzaːre",
-      "examples": [
-        {
-          "text": "Posso usare il tuo telefono?",
-          "translation": "Можно воспользоваться твоим телефоном?"
-        }
-      ]
-    },
-    "img": "https://upload.wikimedia.org/wikipedia/commons/e/e9/International_Morse_code.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
-  },
-  "звонить, называть": {
-    "en": {
-      "word": "call",
-      "transcription": "kɔːl",
-      "examples": [
-        {
-          "text": "Call me tonight, please.",
-          "translation": "Позвони мне сегодня вечером, пожалуйста."
-        }
-      ]
-    },
-    "it": {
-      "word": "chiamare",
-      "transcription": "kjaˈmaːre",
-      "examples": [
-        {
-          "text": "Chiamami stasera, per favore.",
-          "translation": "Позвони мне сегодня вечером, пожалуйста."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "пытаться": {
-    "en": {
-      "word": "try",
-      "transcription": "traɪ",
-      "examples": [
-        {
-          "text": "I try to learn ten words a day.",
-          "translation": "Я стараюсь учить десять слов в день."
-        }
-      ]
-    },
-    "it": {
-      "word": "provare",
-      "transcription": "proˈvaːre",
-      "examples": [
-        {
-          "text": "Provo a imparare dieci parole al giorno.",
-          "translation": "Я стараюсь учить десять слов в день."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/f/fb/Provare_per_credere.png/500px-Provare_per_credere.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "нужно, требоваться": {
-    "en": {
-      "word": "need",
-      "transcription": "niːd",
-      "examples": [
-        {
-          "text": "I need some help.",
-          "translation": "Мне нужна помощь."
-        }
-      ]
-    },
-    "it": {
-      "word": "avere bisogno",
-      "transcription": "ˈaver biˈzɔɲɲo",
-      "examples": [
-        {
-          "text": "Mi serve un aiuto.",
-          "translation": "Мне нужна помощь."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "играть": {
-    "en": {
-      "word": "play",
-      "transcription": "pleɪ",
-      "examples": [
-        {
-          "text": "I play the guitar.",
-          "translation": "Я играю на гитаре."
-        }
-      ]
-    },
-    "it": {
-      "word": "giocare",
-      "transcription": "dʒoˈkaːre",
-      "examples": [
-        {
-          "text": "Suono la chitarra.",
-          "translation": "Я играю на гитаре."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "двигать(ся)": {
-    "en": {
-      "word": "move",
-      "transcription": "muːv",
-      "examples": [
-        {
-          "text": "We move to a new house.",
-          "translation": "Мы переезжаем в новый дом."
-        }
-      ]
-    },
-    "it": {
-      "word": "muovere",
-      "transcription": "mwɔˈveːre",
-      "examples": [
-        {
-          "text": "Ci trasferiamo in una casa nuova.",
-          "translation": "Мы переезжаем в новый дом."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/a/a5/Non_ti_muovere_%28film%29.png/500px-Non_ti_muovere_%28film%29.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "останавливать(ся)": {
-    "en": {
-      "word": "stop",
-      "transcription": "stɑːp",
-      "examples": [
-        {
-          "text": "The bus stops at the corner.",
-          "translation": "Автобус останавливается на углу."
-        }
-      ]
-    },
-    "it": {
-      "word": "fermare",
-      "transcription": "ferˈmaːre",
-      "examples": [
-        {
-          "text": "L'autobus si ferma all'angolo.",
-          "translation": "Автобус останавливается на углу."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/5/52/Logo_Fare_per_fermare_il_declino.png/500px-Logo_Fare_per_fermare_il_declino.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "создавать": {
-    "en": {
-      "word": "create",
-      "transcription": "kriˈeɪt",
-      "examples": [
-        {
-          "text": "They create a new website.",
-          "translation": "Они создают новый сайт."
-        }
-      ]
-    },
-    "it": {
-      "word": "creare",
-      "transcription": "kreˈaːre",
-      "examples": [
-        {
-          "text": "Creano un sito nuovo.",
-          "translation": "Они создают новый сайт."
-        }
-      ]
-    },
-    "img": "https://upload.wikimedia.org/wikipedia/it/3/3e/Comecreareilragazzoperfetto.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
-  },
-  "апельсин": {
-    "en": {
-      "word": "orange",
-      "transcription": "ˈɔːrɪndʒ",
-      "examples": [
-        {
-          "text": "I drink orange juice.",
-          "translation": "Я пью апельсиновый сок."
-        }
-      ]
-    },
-    "it": {
-      "word": "arancia",
-      "transcription": "aˈrantʃa",
-      "examples": [
-        {
-          "text": "Bevo un succo d'arancia.",
-          "translation": "Я пью апельсиновый сок."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Histoire_et_culture_des_orangers_A._Risso_et_A._Poiteau._--_Paris_Henri_Plon%2C_Editeur%2C_1872.jpg/500px-Histoire_et_culture_des_orangers_A._Risso_et_A._Poiteau._--_Paris_Henri_Plon%2C_Editeur%2C_1872.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "волосы": {
-    "en": {
-      "word": "hair",
-      "transcription": "hɛr",
-      "examples": [
-        {
-          "text": "I have short hair.",
-          "translation": "У меня короткие волосы."
-        }
-      ]
-    },
-    "it": {
-      "word": "capelli",
-      "transcription": "kaˈpɛlli",
-      "examples": [
-        {
-          "text": "Ho i capelli corti.",
-          "translation": "У меня короткие волосы."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Birthday_Hair_%2824589372980%29.jpg/500px-Birthday_Hair_%2824589372980%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "короткий": {
-    "en": {
-      "word": "short",
-      "transcription": "ʃɔːrt",
-      "examples": [
-        {
-          "text": "The trousers are too short.",
-          "translation": "Брюки слишком короткие."
-        }
-      ]
-    },
-    "it": {
-      "word": "corto",
-      "transcription": "ˈkorto",
-      "examples": [
-        {
-          "text": "I pantaloni sono troppo corti.",
-          "translation": "Брюки слишком короткие."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Corto_Maltese.JPG/500px-Corto_Maltese.JPG?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "цвет": {
-    "en": {
-      "word": "colour",
-      "transcription": "ˈkʌlər",
-      "examples": [
-        {
-          "text": "The colours of the house are warm.",
-          "translation": "Цвета дома тёплые."
-        }
-      ]
-    },
-    "it": {
-      "word": "colore",
-      "transcription": "koˈloːre",
-      "examples": [
-        {
-          "text": "I colori della casa sono caldi.",
-          "translation": "Цвета дома тёплые."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Colouring_pencils.jpg/500px-Colouring_pencils.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "доставлять ·2": {
-    "it": {
-      "word": "consegnare",
-      "transcription": "kondeˈɲɲaːre",
-      "examples": [
-        {
-          "text": "Spedisco il pacco domani.",
-          "translation": "Я отправлю посылку завтра."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/0/0a/ResidentEvil2026.png/500px-ResidentEvil2026.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "градус": {
-    "en": {
-      "word": "degree",
-      "transcription": "diˈɡriː",
-      "examples": [
-        {
-          "text": "It is thirty degrees in summer.",
-          "translation": "Летом тридцать градусов."
-        }
-      ]
-    },
-    "it": {
-      "word": "grado",
-      "transcription": "ˈɡraːdo",
-      "examples": [
-        {
-          "text": "Sono trenta gradi in estate.",
-          "translation": "Летом тридцать градусов."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Aerial_image_of_Grado_%28view_from_the_west%29.jpg/500px-Aerial_image_of_Grado_%28view_from_the_west%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "чаевые": {
-    "en": {
-      "word": "tip",
-      "transcription": "tɪp",
-      "examples": [
-        {
-          "text": "Leave a tip for the waiter.",
-          "translation": "Оставь чаевые официанту."
-        }
-      ]
-    },
-    "it": {
-      "word": "mancia",
-      "transcription": "ˈmantʃa",
-      "examples": [
-        {
-          "text": "Lascia una mancia al cameriere.",
-          "translation": "Оставь чаевые официанту."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/2_usd_gratuity.jpg/500px-2_usd_gratuity.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "жарить на гриле": {
-    "en": {
-      "word": "grill",
-      "transcription": "ɡrɪl",
-      "examples": [
-        {
-          "text": "Grill the meat outside.",
-          "translation": "Жарь мясо на открытом воздухе."
-        }
-      ]
-    },
-    "it": {
-      "word": "grigliare",
-      "transcription": "ɡriˈʎʎaːre",
-      "examples": [
-        {
-          "text": "Griglia la carne all'aperto.",
-          "translation": "Жарь мясо на открытом воздухе."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Baba_Ganoush_05of05_%288735238183%29.jpg/500px-Baba_Ganoush_05of05_%288735238183%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "замораживать, замерзать": {
-    "en": {
-      "word": "freeze",
-      "transcription": "friːz",
-      "examples": [
-        {
-          "text": "The water freezes at zero degrees.",
-          "translation": "Вода замерзает при нуле градусов."
-        }
-      ]
-    },
-    "it": {
-      "word": "gelare",
-      "transcription": "dʒeˈlaːre",
-      "examples": [
-        {
-          "text": "L'acqua gela a zero gradi.",
-          "translation": "Вода замерзает при нуле градусов."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Felix_Hecht_von_Eleda_%28tenente_comandante_della_prima_compagnia_esploratori_del_primo_reggimento_Kaiserj%C3%A4ger%29_fonte_Centro_Studi_Judicaria%2C_Fondo_Ongari.jpg/500px-Felix_Hecht_von_Eleda_%28tenente_comandante_della_prima_compagnia_esploratori_del_primo_reggimento_Kaiserj%C3%A4ger%29_fonte_Centro_Studi_Judicaria%2C_Fondo_Ongari.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "пахнуть; нюхать": {
-    "en": {
-      "word": "smell",
-      "transcription": "smɛl",
-      "examples": [
-        {
-          "text": "The flowers smell nice.",
-          "translation": "Цветы приятно пахнут."
-        }
-      ]
-    },
-    "it": {
-      "word": "profumare",
-      "transcription": "profuˈmaːre",
-      "examples": [
-        {
-          "text": "I fiori profumano.",
-          "translation": "Цветы приятно пахнут."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Cydonia_oblonga.jpg/500px-Cydonia_oblonga.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "трогать, трогаться": {
-    "en": {
-      "word": "touch",
-      "transcription": "tʌtʃ",
-      "examples": [
-        {
-          "text": "Don't touch the hot pan.",
-          "translation": "Не трогай горячую сковороду."
-        }
-      ]
-    },
-    "it": {
-      "word": "toccare",
-      "transcription": "tokˈkaːre",
-      "examples": [
-        {
-          "text": "Non toccare la padella calda.",
-          "translation": "Не трогай горячую сковороду."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Non_toccare_la_donna_bianca.png/500px-Non_toccare_la_donna_bianca.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "экономить, сохранять": {
-    "en": {
-      "word": "save",
-      "transcription": "seɪv",
-      "examples": [
-        {
-          "text": "I save money every month.",
-          "translation": "Я экономлю деньги каждый месяц."
-        }
-      ]
-    },
-    "it": {
-      "word": "risparmiare",
-      "transcription": "risparˈmjaːre",
-      "examples": [
-        {
-          "text": "Risparmio denaro ogni mese.",
-          "translation": "Я экономлю деньги каждый месяц."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/WW2Montage.PNG/500px-WW2Montage.PNG?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "путешествовать": {
-    "en": {
-      "word": "travel",
-      "transcription": "ˈtrævəl",
-      "examples": [
-        {
-          "text": "I travel by train often.",
-          "translation": "Я часто путешествую поездом."
-        }
-      ]
-    },
-    "it": {
-      "word": "viaggiare",
-      "transcription": "viadˈdʒaːre",
-      "examples": [
-        {
-          "text": "Viaggio spesso in treno.",
-          "translation": "Я часто путешествую поездом."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Cross_Harbour_Tunnel_%281%29.JPG/500px-Cross_Harbour_Tunnel_%281%29.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "зоопарк": {
-    "en": {
-      "word": "zoo",
-      "transcription": "zuː",
-      "examples": [
-        {
-          "text": "The children visit the zoo.",
-          "translation": "Дети посещают зоопарк."
-        }
-      ]
-    },
-    "it": {
-      "word": "zoo",
-      "transcription": "dzɔː",
-      "examples": [
-        {
-          "text": "I bambini visitano lo zoo.",
-          "translation": "Дети посещают зоопарк."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/World_zoo.png/500px-World_zoo.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "цирк": {
-    "en": {
-      "word": "circus",
-      "transcription": "ˈsɜːrkəs",
-      "examples": [
-        {
-          "text": "The circus arrives in town.",
-          "translation": "Цирк приезжает в город."
-        }
-      ]
-    },
-    "it": {
-      "word": "circo",
-      "transcription": "ˈtʃirko",
-      "examples": [
-        {
-          "text": "Il circo arriva in città.",
-          "translation": "Цирк приезжает в город."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Georges_Seurat_019.jpg/500px-Georges_Seurat_019.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "актриса": {
-    "en": {
-      "word": "actress",
-      "transcription": "ˈæktrəs",
-      "examples": [
-        {
-          "text": "The actress is in the new film.",
-          "translation": "Актриса в новом фильме."
-        }
-      ]
-    },
-    "it": {
-      "word": "attrice",
-      "transcription": "ˈattritʃe",
-      "examples": [
-        {
-          "text": "L'attrice è nel film nuovo.",
-          "translation": "Актриса в новом фильме."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Antoine_Watteau_-_Actors_from_the_Com%C3%A9die_Fran%C3%A7aise_-_WGA25475.jpg/500px-Antoine_Watteau_-_Actors_from_the_Com%C3%A9die_Fran%C3%A7aise_-_WGA25475.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "главный, основной": {
-    "en": {
-      "word": "main",
-      "transcription": "meɪn",
-      "examples": [
-        {
-          "text": "The main character is Luca.",
-          "translation": "Главный персонаж — Лука."
-        }
-      ]
-    },
-    "it": {
-      "word": "principale",
-      "transcription": "prints.iˈpaːle",
-      "examples": [
-        {
-          "text": "Il personaggio principale è Luca.",
-          "translation": "Главный персонаж — Лука."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Francesco_Sforza.jpg/500px-Francesco_Sforza.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "герой": {
-    "en": {
-      "word": "hero",
-      "transcription": "ˈhɪəroʊ",
-      "examples": [
-        {
-          "text": "The hero of the story is brave.",
-          "translation": "Герой истории смелый."
-        }
-      ]
-    },
-    "it": {
-      "word": "eroe",
-      "transcription": "eˈrɔːe",
-      "examples": [
-        {
-          "text": "L'eroe della storia è coraggioso.",
-          "translation": "Герой истории смелый."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Gianicolo_-_Garibaldi.JPG/500px-Gianicolo_-_Garibaldi.JPG?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "увлекательный, волнующий": {
-    "en": {
-      "word": "exciting",
-      "transcription": "ɪkˈsaɪtɪŋ",
-      "examples": [
-        {
-          "text": "The final scene is exciting.",
-          "translation": "Финальная сцена волнующая."
-        }
-      ]
-    },
-    "it": {
-      "word": "emozionante",
-      "transcription": "emotsjoˈnante",
-      "examples": [
-        {
-          "text": "La scena finale è emozionante.",
-          "translation": "Финальная сцена волнующая."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "концовка, финал": {
-    "en": {
-      "word": "ending",
-      "transcription": "ˈɛndɪŋ",
-      "examples": [
-        {
-          "text": "The ending of the film is happy.",
-          "translation": "Финал фильма счастливый."
-        }
-      ]
-    },
-    "it": {
-      "word": "finale",
-      "transcription": "fiˈnaːle",
-      "examples": [
-        {
-          "text": "Il finale del film è felice.",
-          "translation": "Финал фильма счастливый."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "игрок": {
-    "en": {
-      "word": "player",
-      "transcription": "ˈpleɪər",
-      "examples": [
-        {
-          "text": "The player kicks the ball.",
-          "translation": "Игрок бьёт по мячу."
-        }
-      ]
-    },
-    "it": {
-      "word": "giocatore",
-      "transcription": "dʒokaˈtoːre",
-      "examples": [
-        {
-          "text": "Il giocatore calcia la palla.",
-          "translation": "Игрок бьёт по мячу."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "пинать, бить (ногой)": {
-    "en": {
-      "word": "kick",
-      "transcription": "kɪk",
-      "examples": [
-        {
-          "text": "Kick the ball towards the goal.",
-          "translation": "Пни мяч в сторону ворот."
-        }
-      ]
-    },
-    "it": {
-      "word": "calciare",
-      "transcription": "kalˈtʃaːre",
-      "examples": [
-        {
-          "text": "Calcia la palla verso la porta.",
-          "translation": "Пни мяч в сторону ворот."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Francesco_Pio_Esposito_a_La_Spezia.jpg/500px-Francesco_Pio_Esposito_a_La_Spezia.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "в хорошей форме; подходить": {
-    "en": {
-      "word": "fit",
-      "transcription": "fɪt",
-      "examples": [
-        {
-          "text": "I am fit thanks to sport.",
-          "translation": "Я в форме благодаря спорту."
-        }
-      ]
-    },
-    "it": {
-      "word": "in forma",
-      "transcription": "im ˈfɔrma",
-      "examples": [
-        {
-          "text": "Sono in forma grazie allo sport.",
-          "translation": "Я в форме благодаря спорту."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "навык, умение": {
-    "en": {
-      "word": "skill",
-      "transcription": "skɪl",
-      "examples": [
-        {
-          "text": "Cooking is a useful skill.",
-          "translation": "Готовить — полезный навык."
-        }
-      ]
-    },
-    "it": {
-      "word": "abilità",
-      "transcription": "abilitaˈta",
-      "examples": [
-        {
-          "text": "Cucinare è un'abilità utile.",
-          "translation": "Готовить — полезный навык."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "практика, тренировка": {
-    "en": {
-      "word": "practice",
-      "transcription": "ˈpræktɪs",
-      "examples": [
-        {
-          "text": "Practice makes perfect.",
-          "translation": "Практика делает совершенным."
-        }
-      ]
-    },
-    "it": {
-      "word": "pratica",
-      "transcription": "ˈprattika",
-      "examples": [
-        {
-          "text": "La pratica rende perfetti.",
-          "translation": "Практика делает совершенным."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "улучшать, улучшаться": {
-    "en": {
-      "word": "improve",
-      "transcription": "ɪmˈpruːv",
-      "examples": [
-        {
-          "text": "I improve every day.",
-          "translation": "Я улучшаюсь с каждым днём."
-        }
-      ]
-    },
-    "it": {
-      "word": "migliorare",
-      "transcription": "miʎˈʎaːre",
-      "examples": [
-        {
-          "text": "Miglioro ogni giorno.",
-          "translation": "Я улучшаюсь с каждым днём."
-        }
-      ]
-    },
-    "img": "https://upload.wikimedia.org/wikipedia/it/e/ef/TVcom.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
-  },
-  "знание, знания": {
-    "en": {
-      "word": "knowledge",
-      "transcription": "ˈnɒlɪdʒ",
-      "examples": [
-        {
-          "text": "Knowledge is important.",
-          "translation": "Знание важно."
-        }
-      ]
-    },
-    "it": {
-      "word": "conoscenza",
-      "transcription": "konoˈʃʃɛntsa",
-      "examples": [
-        {
-          "text": "La conoscenza è importante.",
-          "translation": "Знание важно."
-        }
-      ]
-    },
-    "img": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Lucas_Cranach_%28I%29_-_Adam_and_Eve-Paradise_-_Kunsthistorisches_Museum_-_Detail_Tree_of_Knowledge.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
-  },
-  "внимание": {
-    "en": {
-      "word": "attention",
-      "transcription": "əˈtɛnʃən",
-      "examples": [
-        {
-          "text": "Pay attention to the teacher.",
-          "translation": "Обрати внимание на учителя."
-        }
-      ]
-    },
-    "it": {
-      "word": "attenzione",
-      "transcription": "attenˈtsjoːne",
-      "examples": [
-        {
-          "text": "Fai attenzione al maestro.",
-          "translation": "Обрати внимание на учителя."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Aufmerksam_Betrachten-1-.jpg/500px-Aufmerksam_Betrachten-1-.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "тишина, молчание": {
-    "en": {
-      "word": "silence",
-      "transcription": "ˈsaɪləns",
-      "examples": [
-        {
-          "text": "The silence of the forest is nice.",
-          "translation": "Тишина леса приятна."
-        }
-      ]
-    },
-    "it": {
-      "word": "silenzio",
-      "transcription": "siˈlɛntsjo",
-      "examples": [
-        {
-          "text": "Il silenzio del bosco è bello.",
-          "translation": "Тишина леса приятна."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Pictogramm_silence.svg/500px-Pictogramm_silence.svg.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "печь": {
-    "en": {
-      "word": "bake",
-      "transcription": "beɪk",
-      "examples": [
-        {
-          "text": "Bake the cake for forty minutes.",
-          "translation": "Пеки торт сорок минут."
-        }
-      ]
-    },
-    "it": {
-      "word": "cuocere al forno",
-      "transcription": "ˈkwɔːtʃere al ˈfɔrno",
-      "examples": [
-        {
-          "text": "Cuoci la torta per quaranta minuti.",
-          "translation": "Пеки торт сорок минут."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Baba_Ganoush_05of05_%288735238183%29.jpg/500px-Baba_Ganoush_05of05_%288735238183%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "сосед": {
-    "en": {
-      "word": "neighbour",
-      "transcription": "ˈneɪbər",
-      "examples": [
-        {
-          "text": "The neighbours are kind.",
-          "translation": "Соседи добрые."
-        }
-      ]
-    },
-    "it": {
-      "word": "vicino di casa",
-      "transcription": "viˈtʃiːno di ˈkaːza",
-      "examples": [
-        {
-          "text": "I vicini di casa sono gentili.",
-          "translation": "Соседи добрые."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "перчатки": {
-    "en": {
-      "word": "gloves",
-      "transcription": "ɡlʌvz",
-      "examples": [
-        {
-          "text": "In winter I wear gloves.",
-          "translation": "Зимой я ношу перчатки."
-        }
-      ]
-    },
-    "it": {
-      "word": "guanti",
-      "transcription": "ˈɡwanti",
-      "examples": [
-        {
-          "text": "In inverno porto i guanti.",
-          "translation": "Зимой я ношу перчатки."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Randers_Handsker_i_lammeskind.JPG/500px-Randers_Handsker_i_lammeskind.JPG?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "парикмахер": {
-    "en": {
-      "word": "hairdresser",
-      "transcription": "ˈhɛərdrɛsər",
-      "examples": [
-        {
-          "text": "The hairdresser cuts the hair.",
-          "translation": "Парикмахер стрижёт волосы."
-        }
-      ]
-    },
-    "it": {
-      "word": "parrucchiere",
-      "transcription": "parrukˈkjeːre",
-      "examples": [
-        {
-          "text": "Il parrucchiere taglia i capelli.",
-          "translation": "Парикмахер стрижёт волосы."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Frisoerin_%28fcm%29.jpg/500px-Frisoerin_%28fcm%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "цель; гол": {
-    "en": {
-      "word": "goal",
-      "transcription": "ɡoʊl",
-      "examples": [
-        {
-          "text": "The destination of the journey is Rome.",
-          "translation": "Цель поездки — Рим."
-        }
-      ]
-    },
-    "it": {
-      "word": "gol",
-      "transcription": "ɡɔl",
-      "examples": [
-        {
-          "text": "La meta del viaggio è Roma.",
-          "translation": "Цель поездки — Рим."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Goal.jpg/500px-Goal.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "невеста": {
-    "en": {
-      "word": "bride",
-      "transcription": "braɪd",
-      "examples": [
-        {
-          "text": "The bride is very beautiful.",
-          "translation": "Невеста очень красивая."
-        }
-      ]
-    },
-    "it": {
-      "word": "sposa",
-      "transcription": "ˈspɔːza",
-      "examples": [
-        {
-          "text": "La sposa è bellissima.",
-          "translation": "Невеста очень красивая."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Boda_principios_S_XX.jpg/500px-Boda_principios_S_XX.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "жених": {
-    "en": {
-      "word": "groom",
-      "transcription": "ɡruːm",
-      "examples": [
-        {
-          "text": "The groom is very nervous.",
-          "translation": "Жених очень волнуется."
-        }
-      ]
-    },
-    "it": {
-      "word": "sposo",
-      "transcription": "ˈspɔːzo",
-      "examples": [
-        {
-          "text": "Lo sposo è molto nervoso.",
-          "translation": "Жених очень волнуется."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Boda_principios_S_XX.jpg/500px-Boda_principios_S_XX.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "вкусный, аппетитный": {
-    "en": {
-      "word": "tasty",
-      "transcription": "ˈteɪsti",
-      "examples": [
-        {
-          "text": "The soup is tasty.",
-          "translation": "Суп аппетитный."
-        }
-      ]
-    },
-    "it": {
-      "word": "gustoso",
-      "transcription": "ɡuˈstoːzo",
-      "examples": [
-        {
-          "text": "La minestra è gustosa.",
-          "translation": "Суп аппетитный."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Goiaba-serrana%2C_ou_guarobi_%28do_guarani_%27fruto_verde%27%29%2C_Feijoa_sellowiana%2C_em_Bag%C3%A9%2C_RS%2C_Brasil_-_55238473195.jpg/500px-Goiaba-serrana%2C_ou_guarobi_%28do_guarani_%27fruto_verde%27%29%2C_Feijoa_sellowiana%2C_em_Bag%C3%A9%2C_RS%2C_Brasil_-_55238473195.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "вежливый": {
-    "en": {
-      "word": "polite",
-      "transcription": "pəˈlaɪt",
-      "examples": [
-        {
-          "text": "The waiter is very polite.",
-          "translation": "Официант очень вежливый."
-        }
-      ]
-    },
-    "it": {
-      "word": "educato",
-      "transcription": "eduˈkaːto",
-      "examples": [
-        {
-          "text": "Il cameriere è molto educato.",
-          "translation": "Официант очень вежливый."
-        }
-      ]
-    },
-    "img": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Arlequin_poli_par_amour.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
-  },
-  "грубый": {
-    "en": {
-      "word": "rude",
-      "transcription": "ruːd",
-      "examples": [
-        {
-          "text": "Don't be rude to the guests.",
-          "translation": "Не будь грубым с гостями."
-        }
-      ]
-    },
-    "it": {
-      "word": "maleducato",
-      "transcription": "maleduˈkaːto",
-      "examples": [
-        {
-          "text": "Non essere maleducato con gli ospiti.",
-          "translation": "Не будь грубым с гостями."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/d/d0/Maleducato.jpg/500px-Maleducato.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "стеснительный": {
-    "en": {
-      "word": "shy",
-      "transcription": "ʃaɪ",
-      "examples": [
-        {
-          "text": "The boy is shy at school.",
-          "translation": "Мальчик стеснительный в школе."
-        }
-      ]
-    },
-    "it": {
-      "word": "timido",
-      "transcription": "ˈtimido",
-      "examples": [
-        {
-          "text": "Il ragazzo è timido a scuola.",
-          "translation": "Мальчик стеснительный в школе."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "смелый": {
-    "en": {
-      "word": "brave",
-      "transcription": "breɪv",
-      "examples": [
-        {
-          "text": "The firefighter is brave.",
-          "translation": "Пожарный смелый."
-        }
-      ]
-    },
-    "it": {
-      "word": "coraggioso",
-      "transcription": "koradˈdʒoːzo",
-      "examples": [
-        {
-          "text": "Il pompiere è coraggioso.",
-          "translation": "Пожарный смелый."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "честный": {
-    "en": {
-      "word": "honest",
-      "transcription": "ˈɒnɪst",
-      "examples": [
-        {
-          "text": "The shopkeeper is honest.",
-          "translation": "Торговец честный."
-        }
-      ]
-    },
-    "it": {
-      "word": "onesto",
-      "transcription": "oˈnɛsto",
-      "examples": [
-        {
-          "text": "Il commerciante è onesto.",
-          "translation": "Торговец честный."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Diogenes_looking_for_a_man_-_attributed_to_JHW_Tischbein.jpg/500px-Diogenes_looking_for_a_man_-_attributed_to_JHW_Tischbein.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "осторожный, внимательный": {
-    "en": {
-      "word": "careful",
-      "transcription": "ˈkɛərfəl",
-      "examples": [
-        {
-          "text": "Be careful with the knife.",
-          "translation": "Будь осторожен с ножом."
-        }
-      ]
-    },
-    "it": {
-      "word": "attento",
-      "transcription": "atˈtɛnto",
-      "examples": [
-        {
-          "text": "Sta attento col coltello.",
-          "translation": "Будь осторожен с ножом."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/5/5c/Super_film.png/500px-Super_film.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "невнимательный, неосторожный": {
-    "en": {
-      "word": "careless",
-      "transcription": "ˈkɛərləs",
-      "examples": [
-        {
-          "text": "A careless driver is dangerous.",
-          "translation": "Невнимательный водитель опасен."
-        }
-      ]
-    },
-    "it": {
-      "word": "imprudente",
-      "transcription": "impruˈdɛnte",
-      "examples": [
-        {
-          "text": "Un guidatore imprudente è pericoloso.",
-          "translation": "Невнимательный водитель опасен."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Luch%C3%A8_-_Conferenza_stampa_Festival_di_Sanremo_2026_03.jpg/500px-Luch%C3%A8_-_Conferenza_stampa_Festival_di_Sanremo_2026_03.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "строгий": {
-    "en": {
-      "word": "strict",
-      "transcription": "strɪkt",
-      "examples": [
-        {
-          "text": "The teacher is strict.",
-          "translation": "Учитель строгий."
-        }
-      ]
-    },
-    "it": {
-      "word": "severo",
-      "transcription": "seˈveːro",
-      "examples": [
-        {
-          "text": "L'insegnante è severo.",
-          "translation": "Учитель строгий."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Septimius_Severus_Glyptothek_Munich_357.jpg/500px-Septimius_Severus_Glyptothek_Munich_357.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "умный, сообразительный": {
-    "en": {
-      "word": "clever",
-      "transcription": "ˈklɛvər",
-      "examples": [
-        {
-          "text": "The student is clever.",
-          "translation": "Студент сообразительный."
-        }
-      ]
-    },
-    "it": {
-      "word": "sveglio",
-      "transcription": "ˈsveʎʎo",
-      "examples": [
-        {
-          "text": "Lo studente è sveglio.",
-          "translation": "Студент сообразительный."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Allegory_of_Vigilance_by_Domenico_Tintoretto.jpg/500px-Allegory_of_Vigilance_by_Domenico_Tintoretto.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "мудрый": {
-    "en": {
-      "word": "wise",
-      "transcription": "waɪz",
-      "examples": [
-        {
-          "text": "The old man is wise.",
-          "translation": "Старик мудрый."
-        }
-      ]
-    },
-    "it": {
-      "word": "saggio",
-      "transcription": "ˈsaddʒo",
-      "examples": [
-        {
-          "text": "Il vecchio è saggio.",
-          "translation": "Старик мудрый."
-        }
-      ]
-    },
-    "img": "https://upload.wikimedia.org/wikipedia/commons/1/18/Locke_Essay_1690.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
-  },
-  "глупый, несерьёзный": {
-    "en": {
-      "word": "silly",
-      "transcription": "ˈsɪli",
-      "examples": [
-        {
-          "text": "It is a silly question.",
-          "translation": "Это глупый вопрос."
-        }
-      ]
-    },
-    "it": {
-      "word": "sciocco",
-      "transcription": "ˈʃɔkko",
-      "examples": [
-        {
-          "text": "È una domanda sciocca.",
-          "translation": "Это глупый вопрос."
-        }
-      ]
-    },
-    "img": "https://upload.wikimedia.org/wikipedia/commons/a/ac/The_Saphead_-_Metro_Pictures%2C_1920.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
-  },
-  "женатый, замужем": {
-    "en": {
-      "word": "married",
-      "transcription": "ˈmærid",
-      "examples": [
-        {
-          "text": "They are married since June.",
-          "translation": "Они женаты с июня."
-        }
-      ]
-    },
-    "it": {
-      "word": "sposato",
-      "transcription": "spoˈzaːto",
-      "examples": [
-        {
-          "text": "Sono sposati da giugno.",
-          "translation": "Они женаты с июня."
-        }
-      ]
-    },
-    "img": "https://upload.wikimedia.org/wikipedia/commons/b/ba/IMarried2.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
-  },
-  "холостой, одинокий": {
-    "en": {
-      "word": "single",
-      "transcription": "ˈsɪŋɡəl",
-      "examples": [
-        {
-          "text": "My cousin is single.",
-          "translation": "Мой двоюродный брат холостой."
-        }
-      ]
-    },
-    "it": {
-      "word": "single",
-      "transcription": "ˈsinɡle",
-      "examples": [
-        {
-          "text": "Mio cugino è single.",
-          "translation": "Мой двоюродный брат холостой."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Singles%27_day_illustration.png/500px-Singles%27_day_illustration.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "мягкий; нежный": {
-    "en": {
-      "word": "soft",
-      "transcription": "sɒft",
-      "examples": [
-        {
-          "text": "The pillow is soft.",
-          "translation": "Подушка мягкая."
-        }
-      ]
-    },
-    "it": {
-      "word": "morbido",
-      "transcription": "ˈmɔrbido",
-      "examples": [
-        {
-          "text": "Il cuscino è morbido.",
-          "translation": "Подушка мягкая."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Morbid_Angel_3.11.2012_Geiselwind_%288176807583%29.jpg/500px-Morbid_Angel_3.11.2012_Geiselwind_%288176807583%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "твёрдый; тяжёлый": {
-    "en": {
-      "word": "hard",
-      "transcription": "hɑːrd",
-      "examples": [
-        {
-          "text": "The bread is hard.",
-          "translation": "Хлеб жёсткий."
-        }
-      ]
-    },
-    "it": {
-      "word": "duro",
-      "transcription": "ˈduːro",
-      "examples": [
-        {
-          "text": "Il pane è duro.",
-          "translation": "Хлеб жёсткий."
-        }
-      ]
-    },
-    "img": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Angelo_Duro_2022_BlogSicilia.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
-  },
-  "солнечный": {
-    "en": {
-      "word": "sunny",
-      "transcription": "ˈsʌni",
-      "examples": [
-        {
-          "text": "It is a sunny day.",
-          "translation": "Это солнечный день."
-        }
-      ]
-    },
-    "it": {
-      "word": "soleggiato",
-      "transcription": "soledˈdʒaːto",
-      "examples": [
-        {
-          "text": "È una giornata soleggiata.",
-          "translation": "Это солнечный день."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Flag_of_Kansas.svg/500px-Flag_of_Kansas.svg.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "облачный": {
-    "en": {
-      "word": "cloudy",
-      "transcription": "ˈklaʊdi",
-      "examples": [
-        {
-          "text": "The sky is cloudy today.",
-          "translation": "Небо сегодня облачное."
-        }
-      ]
-    },
-    "it": {
-      "word": "nuvoloso",
-      "transcription": "nuvoˈloːzo",
-      "examples": [
-        {
-          "text": "Il cielo è nuvoloso oggi.",
-          "translation": "Небо сегодня облачное."
-        }
-      ]
-    },
-    "img": "https://upload.wikimedia.org/wikipedia/it/c/c6/Partlycloudy-ftg.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
-  },
-  "дождливый": {
-    "en": {
-      "word": "rainy",
-      "transcription": "ˈreɪni",
-      "examples": [
-        {
-          "text": "It is a rainy week.",
-          "translation": "Это дождливая неделя."
-        }
-      ]
-    },
-    "it": {
-      "word": "piovoso",
-      "transcription": "pjoˈvoːzo",
-      "examples": [
-        {
-          "text": "È una settimana piovosa.",
-          "translation": "Это дождливая неделя."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Pluviose.jpg/500px-Pluviose.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "ветреный": {
-    "en": {
-      "word": "windy",
-      "transcription": "ˈwɪndi",
-      "examples": [
-        {
-          "text": "It is windy at the sea.",
-          "translation": "У моря ветрено."
-        }
-      ]
-    },
-    "it": {
-      "word": "ventoso",
-      "transcription": "venˈtoːzo",
-      "examples": [
-        {
-          "text": "Al mare tira vento.",
-          "translation": "У моря ветрено."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Ventose.jpg/500px-Ventose.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "левый; налево": {
-    "en": {
-      "word": "left",
-      "transcription": "lɛft",
-      "examples": [
-        {
-          "text": "The shop is on the left.",
-          "translation": "Магазин слева."
-        }
-      ]
-    },
-    "it": {
-      "word": "sinistra",
-      "transcription": "siˈnistra",
-      "examples": [
-        {
-          "text": "Il negozio è a sinistra.",
-          "translation": "Магазин слева."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/5/5b/Logo_Democratici_di_Sinistra.svg/500px-Logo_Democratici_di_Sinistra.svg.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "планета": {
-    "en": {
-      "word": "planet",
-      "transcription": "ˈplænɪt",
-      "examples": [
-        {
-          "text": "The Earth is a planet.",
-          "translation": "Земля — планета."
-        }
-      ]
-    },
-    "it": {
-      "word": "pianeta",
-      "transcription": "pjaˈneːta",
-      "examples": [
-        {
-          "text": "La Terra è un pianeta.",
-          "translation": "Земля — планета."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/500px-The_Earth_seen_from_Apollo_17.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "космос; пространство": {
-    "en": {
-      "word": "space",
-      "transcription": "speɪs",
-      "examples": [
-        {
-          "text": "I dream of space travel.",
-          "translation": "Я мечтаю о космическом путешествии."
-        }
-      ]
-    },
-    "it": {
-      "word": "spazio",
-      "transcription": "ˈspatsjo",
-      "examples": [
-        {
-          "text": "Sogno un viaggio nello spazio.",
-          "translation": "Я мечтаю о космическом путешествии."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/3D_coordinate_system.svg/500px-3D_coordinate_system.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "поднос": {
-    "en": {
-      "word": "tray",
-      "transcription": "treɪ",
-      "examples": [
-        {
-          "text": "The tray is on the table.",
-          "translation": "Поднос на столе."
-        }
-      ]
-    },
-    "it": {
-      "word": "vassoio",
-      "transcription": "vasˈsɔjo",
-      "examples": [
-        {
-          "text": "Il vassoio è sul tavolo.",
-          "translation": "Поднос на столе."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Brass_tray_inlaid_with_silver%2C_Egypt_or_Syria%2C_19th_century%2C_HAA_I.JPG/500px-Brass_tray_inlaid_with_silver%2C_Egypt_or_Syria%2C_19th_century%2C_HAA_I.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "чайник (для кипячения)": {
-    "en": {
-      "word": "kettle",
-      "transcription": "ˈkɛtəl",
-      "examples": [
-        {
-          "text": "The kettle is on the stove.",
-          "translation": "Чайник на плите."
-        }
-      ]
-    },
-    "it": {
-      "word": "bollitore",
-      "transcription": "bollitoˈre",
-      "examples": [
-        {
-          "text": "Il bollitore è sul fornello.",
-          "translation": "Чайник на плите."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Coffee_pot_on_open_fire.jpg/500px-Coffee_pot_on_open_fire.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "шкаф (кухонный)": {
-    "en": {
-      "word": "cupboard",
-      "transcription": "ˈkʌbərd",
-      "examples": [
-        {
-          "text": "The cups are in the cupboard.",
-          "translation": "Чашки в шкафу."
-        }
-      ]
-    },
-    "it": {
-      "word": "armadio",
-      "transcription": "arˈmaːdjo",
-      "examples": [
-        {
-          "text": "Le tazze sono nell'armadio.",
-          "translation": "Чашки в шкафу."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Garda_Wall_cupboard_02.jpg/500px-Garda_Wall_cupboard_02.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "полка": {
-    "en": {
-      "word": "shelf",
-      "transcription": "ʃɛlf",
-      "examples": [
-        {
-          "text": "The book is on the shelf.",
-          "translation": "Книга на полке."
-        }
-      ]
-    },
-    "it": {
-      "word": "scaffale",
-      "transcription": "skafˈfaːle",
-      "examples": [
-        {
-          "text": "Il libro è sullo scaffale.",
-          "translation": "Книга на полке."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Servers_at_LAAS_%28FDLS_2007%29_0392c.jpg/500px-Servers_at_LAAS_%28FDLS_2007%29_0392c.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "кресло": {
-    "en": {
-      "word": "armchair",
-      "transcription": "ˈɑːrmtʃɛər",
-      "examples": [
-        {
-          "text": "The armchair is near the window.",
-          "translation": "Кресло у окна."
-        }
-      ]
-    },
-    "it": {
-      "word": "poltrona",
-      "transcription": "polˈtroːna",
-      "examples": [
-        {
-          "text": "La poltrona è vicino alla finestra.",
-          "translation": "Кресло у окна."
-        }
-      ]
-    },
-    "img": "https://upload.wikimedia.org/wikipedia/it/2/2f/Una_poltrona_per_due.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
-  },
-  "молоток": {
-    "en": {
-      "word": "hammer",
-      "transcription": "ˈhæmər",
-      "examples": [
-        {
-          "text": "The hammer is in the box.",
-          "translation": "Молоток в коробке."
-        }
-      ]
-    },
-    "it": {
-      "word": "martello",
-      "transcription": "marˈtɛllo",
-      "examples": [
-        {
-          "text": "Il martello è nella cassetta.",
-          "translation": "Молоток в коробке."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Hammer2.jpg/500px-Hammer2.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "гвоздь": {
-    "en": {
-      "word": "nail",
-      "transcription": "neɪl",
-      "examples": [
-        {
-          "text": "The nail is in the wall.",
-          "translation": "Гвоздь в стене."
-        }
-      ]
-    },
-    "it": {
-      "word": "chiodo",
-      "transcription": "ˈkjɔːdo",
-      "examples": [
-        {
-          "text": "Il chiodo è nel muro.",
-          "translation": "Гвоздь в стене."
-        }
-      ]
-    },
-    "img": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nails.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
-  },
-  "верёвка": {
-    "en": {
-      "word": "rope",
-      "transcription": "roʊp",
-      "examples": [
-        {
-          "text": "Pull the rope with strength.",
-          "translation": "Тяни верёвку с силой."
-        }
-      ]
-    },
-    "it": {
-      "word": "corda",
-      "transcription": "ˈkɔrda",
-      "examples": [
-        {
-          "text": "Tira la corda con forza.",
-          "translation": "Тяни верёвку с силой."
-        }
-      ]
-    },
-    "img": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Rope.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
-  },
-  "ворота, калитка": {
-    "en": {
-      "word": "gate",
-      "transcription": "ɡeɪt",
-      "examples": [
-        {
-          "text": "The gate is closed.",
-          "translation": "Калитка закрыта."
-        }
-      ]
-    },
-    "it": {
-      "word": "cancello",
-      "transcription": "kanˈtʃɛllo",
-      "examples": [
-        {
-          "text": "Il cancello è chiuso.",
-          "translation": "Калитка закрыта."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Mausoleo_bela_rosin_ingresso.jpg/500px-Mausoleo_bela_rosin_ingresso.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "труба, дымоход": {
-    "en": {
-      "word": "chimney",
-      "transcription": "ˈtʃɪmni",
-      "examples": [
-        {
-          "text": "The smoke comes out of the chimney.",
-          "translation": "Дым выходит из трубы."
-        }
-      ]
-    },
-    "it": {
-      "word": "comignolo",
-      "transcription": "komiˈɲɲolo",
-      "examples": [
-        {
-          "text": "Il fumo esce dal comignolo.",
-          "translation": "Дым выходит из трубы."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Comignolo_Rodi_Garganico.JPG/500px-Comignolo_Rodi_Garganico.JPG?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "волна": {
-    "en": {
-      "word": "wave",
-      "transcription": "weɪv",
-      "examples": [
-        {
-          "text": "The wave is high today.",
-          "translation": "Волна сегодня высокая."
-        }
-      ]
-    },
-    "it": {
-      "word": "onda",
-      "transcription": "ˈɔnda",
-      "examples": [
-        {
-          "text": "L'onda è alta oggi.",
-          "translation": "Волна сегодня высокая."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/2006-01-14_Surface_waves.jpg/500px-2006-01-14_Surface_waves.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "остров": {
-    "en": {
-      "word": "island",
-      "transcription": "ˈaɪlənd",
-      "examples": [
-        {
-          "text": "The island is beautiful in summer.",
-          "translation": "Остров прекрасен летом."
-        }
-      ]
-    },
-    "it": {
-      "word": "isola",
-      "transcription": "ˈiːzola",
-      "examples": [
-        {
-          "text": "L'isola è bella d'estate.",
-          "translation": "Остров прекрасен летом."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Hawaje-NoRedLine.jpg/500px-Hawaje-NoRedLine.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "пустыня": {
-    "en": {
-      "word": "desert",
-      "transcription": "diˈzɜːrt",
-      "examples": [
-        {
-          "text": "The desert is dry and hot.",
-          "translation": "Пустыня сухая и жаркая."
-        }
-      ]
-    },
-    "it": {
-      "word": "deserto",
-      "transcription": "deˈzɛrto",
-      "examples": [
-        {
-          "text": "Il deserto è secco e caldo.",
-          "translation": "Пустыня сухая и жаркая."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Sahara_tunisino.jpg/500px-Sahara_tunisino.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "джунгли": {
-    "en": {
-      "word": "jungle",
-      "transcription": "ˈdʒʌŋɡəl",
-      "examples": [
-        {
-          "text": "The jungle is full of animals.",
-          "translation": "Джунгли полны животных."
-        }
-      ]
-    },
-    "it": {
-      "word": "giungla",
-      "transcription": "ˈdʒuŋɡla",
-      "examples": [
-        {
-          "text": "La giungla è piena di animali.",
-          "translation": "Джунгли полны животных."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Biome_map_02.svg/500px-Biome_map_02.svg.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "пещера": {
-    "en": {
-      "word": "cave",
-      "transcription": "keɪv",
-      "examples": [
-        {
-          "text": "The cave is dark.",
-          "translation": "Пещера тёмная."
-        }
-      ]
-    },
-    "it": {
-      "word": "caverna",
-      "transcription": "kaˈvɛrna",
-      "examples": [
-        {
-          "text": "La caverna è scura.",
-          "translation": "Пещера тёмная."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/An_Illustration_of_The_Allegory_of_the_Cave%2C_from_Plato%E2%80%99s_Republic.jpg/500px-An_Illustration_of_The_Allegory_of_the_Cave%2C_from_Plato%E2%80%99s_Republic.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "гром": {
-    "en": {
-      "word": "thunder",
-      "transcription": "ˈθʌndər",
-      "examples": [
-        {
-          "text": "Thunder frightens the dog.",
-          "translation": "Гром пугает собаку."
-        }
-      ]
-    },
-    "it": {
-      "word": "tuono",
-      "transcription": "ˈtwoːno",
-      "examples": [
-        {
-          "text": "Il tuono spaventa il cane.",
-          "translation": "Гром пугает собаку."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/8/80/The_Place_Beyond_the_Pines.JPG/500px-The_Place_Beyond_the_Pines.JPG?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "молния": {
-    "en": {
-      "word": "lightning",
-      "transcription": "ˈlaɪtnɪŋ",
-      "examples": [
-        {
-          "text": "Lightning illuminates the sky.",
-          "translation": "Молния освещает небо."
-        }
-      ]
-    },
-    "it": {
-      "word": "lampo",
-      "transcription": "ˈlampo",
-      "examples": [
-        {
-          "text": "Il lampo illumina il cielo.",
-          "translation": "Молния освещает небо."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Port_and_lighthouse_overnight_storm_with_lightning_in_Port-la-Nouvelle.jpg/500px-Port_and_lighthouse_overnight_storm_with_lightning_in_Port-la-Nouvelle.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "овца, баран": {
-    "en": {
-      "word": "sheep",
-      "transcription": "ʃiːp",
-      "examples": [
-        {
-          "text": "The sheep are in the meadow.",
-          "translation": "Овцы на лугу."
-        }
-      ]
-    },
-    "it": {
-      "word": "pecora",
-      "transcription": "ˈpeːkora",
-      "examples": [
-        {
-          "text": "Le pecore sono nel prato.",
-          "translation": "Овцы на лугу."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Flock_of_sheep.jpg/500px-Flock_of_sheep.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "коза": {
-    "en": {
-      "word": "goat",
-      "transcription": "ɡoʊt",
-      "examples": [
-        {
-          "text": "The goat eats the grass.",
-          "translation": "Коза ест траву."
-        }
-      ]
-    },
-    "it": {
-      "word": "capra",
-      "transcription": "ˈkaːpra",
-      "examples": [
-        {
-          "text": "La capra mangia l'erba.",
-          "translation": "Коза ест траву."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Irish_Goat.jpg/500px-Irish_Goat.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "свинья": {
-    "en": {
-      "word": "pig",
-      "transcription": "pɪɡ",
-      "examples": [
-        {
-          "text": "The pig is in the sty.",
-          "translation": "Свинья в свинарнике."
-        }
-      ]
-    },
-    "it": {
-      "word": "maiale",
-      "transcription": "maˈjaːle",
-      "examples": [
-        {
-          "text": "Il maiale è nel porcile.",
-          "translation": "Свинья в свинарнике."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Sow_with_piglet.jpg/500px-Sow_with_piglet.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "кролик": {
-    "en": {
-      "word": "rabbit",
-      "transcription": "ˈræbɪt",
-      "examples": [
-        {
-          "text": "The rabbit eats a carrot.",
-          "translation": "Кролик ест морковь."
-        }
-      ]
-    },
-    "it": {
-      "word": "coniglio",
-      "transcription": "koˈniʎʎo",
-      "examples": [
-        {
-          "text": "Il coniglio mangia una carota.",
-          "translation": "Кролик ест морковь."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Kaninchen.jpg/500px-Kaninchen.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "волк": {
-    "en": {
-      "word": "wolf",
-      "transcription": "wʊlf",
-      "examples": [
-        {
-          "text": "The wolf howls at night.",
-          "translation": "Волк воет ночью."
-        }
-      ]
-    },
-    "it": {
-      "word": "lupo",
-      "transcription": "ˈluːpo",
-      "examples": [
-        {
-          "text": "Il lupo urla di notte.",
-          "translation": "Волк воет ночью."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/European_grey_wolf_in_Prague_zoo_2.jpg/500px-European_grey_wolf_in_Prague_zoo_2.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "медведь": {
-    "en": {
-      "word": "bear",
-      "transcription": "bɛər",
-      "examples": [
-        {
-          "text": "The bear sleeps in winter.",
-          "translation": "Медведь спит зимой."
-        }
-      ]
-    },
-    "it": {
-      "word": "orso",
-      "transcription": "ˈɔrso",
-      "examples": [
-        {
-          "text": "L'orso dorme in inverno.",
-          "translation": "Медведь спит зимой."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Ursidae-01.jpg/500px-Ursidae-01.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "лев": {
-    "en": {
-      "word": "lion",
-      "transcription": "ˈlaɪən",
-      "examples": [
-        {
-          "text": "The lion is the king of the animals.",
-          "translation": "Лев — царь зверей."
-        }
-      ]
-    },
-    "it": {
-      "word": "leone",
-      "transcription": "leˈoːne",
-      "examples": [
-        {
-          "text": "Il leone è il re degli animali.",
-          "translation": "Лев — царь зверей."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/002_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg/500px-002_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "утка": {
-    "en": {
-      "word": "duck",
-      "transcription": "dʌk",
-      "examples": [
-        {
-          "text": "The duck swims in the pond.",
-          "translation": "Утка плавает в пруду."
-        }
-      ]
-    },
-    "it": {
-      "word": "papero",
-      "transcription": "paˈpeːro",
-      "examples": [
-        {
-          "text": "Il papero nuota nello stagno.",
-          "translation": "Утка плавает в пруду."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Bucephala-albeola-010.jpg/500px-Bucephala-albeola-010.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "крыло": {
-    "en": {
-      "word": "wing",
-      "transcription": "wɪŋ",
-      "examples": [
-        {
-          "text": "The bird moves its wings.",
-          "translation": "Птица машет крыльями."
-        }
-      ]
-    },
-    "it": {
-      "word": "ala",
-      "transcription": "ˈaːla",
-      "examples": [
-        {
-          "text": "L'uccello muove le ali.",
-          "translation": "Птица машет крыльями."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Wing.two.arp.600pix.jpg/500px-Wing.two.arp.600pix.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "перо": {
-    "en": {
-      "word": "feather",
-      "transcription": "ˈfɛðər",
-      "examples": [
-        {
-          "text": "A feather falls from the sky.",
-          "translation": "Перо падает с неба."
-        }
-      ]
-    },
-    "it": {
-      "word": "piuma",
-      "transcription": "ˈpjuːma",
-      "examples": [
-        {
-          "text": "Una piuma cade dal cielo.",
-          "translation": "Перо падает с неба."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/A_single_white_feather_closeup.jpg/500px-A_single_white_feather_closeup.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "хвост": {
-    "en": {
-      "word": "tail",
-      "transcription": "teɪl",
-      "examples": [
-        {
-          "text": "The dog wags its tail.",
-          "translation": "Собака виляет хвостом."
-        }
-      ]
-    },
-    "it": {
-      "word": "coda",
-      "transcription": "ˈkɔːda",
-      "examples": [
-        {
-          "text": "Il cane scodinzola.",
-          "translation": "Собака виляет хвостом."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/White-tailed_deer%2C_tail_up.jpg/500px-White-tailed_deer%2C_tail_up.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "приём пищи, трапеза": {
-    "en": {
-      "word": "meal",
-      "transcription": "miːl",
-      "examples": [
-        {
-          "text": "The main meal is at one p.m.",
-          "translation": "Основной приём пищи в час дня."
-        }
-      ]
-    },
-    "it": {
-      "word": "pasto",
-      "transcription": "ˈpasto",
-      "examples": [
-        {
-          "text": "Il pasto principale è alle tredici.",
-          "translation": "Основной приём пищи в час дня."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Kr%C3%B6nungsmahl_1558.jpg/500px-Kr%C3%B6nungsmahl_1558.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "ингредиент": {
-    "en": {
-      "word": "ingredient",
-      "transcription": "ɪnˈɡriːdiənt",
-      "examples": [
-        {
-          "text": "Read the ingredients on the pack.",
-          "translation": "Прочитай ингредиенты на упаковке."
-        }
-      ]
-    },
-    "it": {
-      "word": "ingrediente",
-      "transcription": "inɡreˈdjɛnte",
-      "examples": [
-        {
-          "text": "Leggi gli ingredienti sulla confezione.",
-          "translation": "Прочитай ингредиенты на упаковке."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Ingr%C3%A9dients_du_cioppino.jpg/500px-Ingr%C3%A9dients_du_cioppino.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "голод": {
-    "en": {
-      "word": "hunger",
-      "transcription": "ˈhʌŋɡər",
-      "examples": [
-        {
-          "text": "Hunger is stronger than tiredness.",
-          "translation": "Голод сильнее усталости."
-        }
-      ]
-    },
-    "it": {
-      "word": "fame",
-      "transcription": "ˈfaːme",
-      "examples": [
-        {
-          "text": "La fame è più forte della stanchezza.",
-          "translation": "Голод сильнее усталости."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Barlaugsaltini.jpg/500px-Barlaugsaltini.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "жажда": {
-    "en": {
-      "word": "thirst",
-      "transcription": "θɜːrst",
-      "examples": [
-        {
-          "text": "Thirst passes with water.",
-          "translation": "Жажда проходит с водой."
-        }
-      ]
-    },
-    "it": {
-      "word": "sete",
-      "transcription": "ˈseːte",
-      "examples": [
-        {
-          "text": "La sete passa con l'acqua.",
-          "translation": "Жажда проходит с водой."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/William-Adolphe_Bouguereau_%281825-1905%29_-_Thirst_%281886%29.jpg/500px-William-Adolphe_Bouguereau_%281825-1905%29_-_Thirst_%281886%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "меню": {
-    "en": {
-      "word": "menu",
-      "transcription": "ˈmɛnjuː",
-      "examples": [
-        {
-          "text": "Read the menu before ordering.",
-          "translation": "Прочитай меню перед заказом."
-        }
-      ]
-    },
-    "it": {
-      "word": "menù",
-      "transcription": "meˈnu",
-      "examples": [
-        {
-          "text": "Leggi il menu prima di ordinare.",
-          "translation": "Прочитай меню перед заказом."
-        }
-      ]
-    },
-    "img": "https://upload.wikimedia.org/wikipedia/commons/d/d7/The_third_class_menus_of_R.M.S.TITANIC_%28April_14._1912%EF%BC%89.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
-  },
-  "жарить": {
-    "en": {
-      "word": "fry",
-      "transcription": "fraɪ",
-      "examples": [
-        {
-          "text": "Fry the fish in oil.",
-          "translation": "Жарь рыбу в масле."
-        }
-      ]
-    },
-    "it": {
-      "word": "friggere",
-      "transcription": "ˈfriddʒere",
-      "examples": [
-        {
-          "text": "Friggi il pesce nell'olio.",
-          "translation": "Жарь рыбу в масле."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Sciatt_Caldi_su_Letto_di_Rucola_%281%29.jpg/500px-Sciatt_Caldi_su_Letto_di_Rucola_%281%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "таять, плавить": {
-    "en": {
-      "word": "melt",
-      "transcription": "mɛlt",
-      "examples": [
-        {
-          "text": "The snow melts in the sun.",
-          "translation": "Снег тает на солнце."
-        }
-      ]
-    },
-    "it": {
-      "word": "sciogliere",
-      "transcription": "ˈʃoʎʎeːre",
-      "examples": [
-        {
-          "text": "La neve si scioglie al sole.",
-          "translation": "Снег тает на солнце."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "занимать, брать взаймы": {
-    "en": {
-      "word": "borrow",
-      "transcription": "ˈbɒroʊ",
-      "examples": [
-        {
-          "text": "I borrow a book from the library.",
-          "translation": "Я беру книгу в библиотеке."
-        }
-      ]
-    },
-    "it": {
-      "word": "prendere in prestito",
-      "transcription": "ˈprɛndere im presˈtiːto",
-      "examples": [
-        {
-          "text": "Prendo un libro in prestito in biblioteca.",
-          "translation": "Я беру книгу в библиотеке."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/UsuryDurer.jpg/500px-UsuryDurer.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "зарабатывать": {
-    "en": {
-      "word": "earn",
-      "transcription": "ɜːrn",
-      "examples": [
-        {
-          "text": "I earn money with this work.",
-          "translation": "Я зарабатываю деньги этой работой."
-        }
-      ]
-    },
-    "it": {
-      "word": "guadagnare",
-      "transcription": "ɡwadaˈɲɲaːre",
-      "examples": [
-        {
-          "text": "Guadagno denaro con questo lavoro.",
-          "translation": "Я зарабатываю деньги этой работой."
-        }
-      ]
-    },
-    "img": "https://upload.wikimedia.org/wikipedia/commons/5/56/Moatassem_Kadhafi.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
-  },
-  "упаковывать; упаковка": {
-    "en": {
-      "word": "pack",
-      "transcription": "pæk",
-      "examples": [
-        {
-          "text": "I pack the suitcase in the evening.",
-          "translation": "Я собираю чемодан вечером."
-        }
-      ]
-    },
-    "it": {
-      "word": "fare la valigia",
-      "transcription": "ˈfaːre la vaˈliːdʒa",
-      "examples": [
-        {
-          "text": "Faccio la valigia la sera.",
-          "translation": "Я собираю чемодан вечером."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/3/37/Fare_le_valigieLucaCarboni.jpg/500px-Fare_le_valigieLucaCarboni.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "много (с исчисляемыми)": {
-    "en": {
-      "word": "many",
-      "transcription": "ˈmɛni",
-      "examples": [
-        {
-          "text": "There are many people in the city.",
-          "translation": "В городе много людей."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "все": {
-    "en": {
-      "word": "all",
-      "transcription": "ɔːl",
-      "examples": [
-        {
-          "text": "All my friends are here.",
-          "translation": "Все мои друзья здесь."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "один": {
-    "en": {
-      "word": "one",
-      "transcription": "wʌn",
-      "examples": [
-        {
-          "text": "I have only one euro.",
-          "translation": "У меня всего один евро."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "рука (кисть)": {
-    "en": {
-      "word": "hand",
-      "transcription": "hænd",
-      "examples": [
-        {
-          "text": "I write with my right hand.",
-          "translation": "Я пишу правой рукой."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Hand%2C_fingers_-_back.jpg/500px-Hand%2C_fingers_-_back.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "часть": {
-    "en": {
-      "word": "part",
-      "transcription": "pɑːrt",
-      "examples": [
-        {
-          "text": "This is my favorite part of the film.",
-          "translation": "Это моя любимая часть фильма."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "почему": {
-    "en": {
-      "word": "why",
-      "transcription": "waɪ",
-      "examples": [
-        {
-          "text": "Why do you study Italian?",
-          "translation": "Почему ты учишь итальянский?"
-        }
-      ]
-    },
-    "img": ""
-  },
-  "делать": {
-    "en": {
-      "word": "do",
-      "transcription": "duː",
-      "examples": [
-        {
-          "text": "What do you do in the evening?",
-          "translation": "Что ты делаешь вечером?"
-        }
-      ]
-    },
-    "img": ""
-  },
-  "брать": {
-    "en": {
-      "word": "take",
-      "transcription": "teɪk",
-      "examples": [
-        {
-          "text": "Take an umbrella, it is raining.",
-          "translation": "Возьми зонт, идёт дождь."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "разговаривать": {
-    "en": {
-      "word": "talk",
-      "transcription": "tɔːk",
-      "examples": [
-        {
-          "text": "We talk about work every day.",
-          "translation": "Мы разговариваем о работе каждый день."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "начинать ·2": {
-    "en": {
-      "word": "start",
-      "transcription": "stɑːrt",
-      "examples": [
-        {
-          "text": "The film starts at eight.",
-          "translation": "Фильм начинается в восемь."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "слышать": {
-    "en": {
-      "word": "hear",
-      "transcription": "hɪr",
-      "examples": [
-        {
-          "text": "I hear a strange noise.",
-          "translation": "Я слышу странный шум."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "мальчик, парень": {
-    "en": {
-      "word": "boy",
-      "transcription": "bɔɪ",
-      "examples": [
-        {
-          "text": "The boy is playing football.",
-          "translation": "Мальчик играет в футбол."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Smiling_little_boy_of_Laos.jpg/500px-Smiling_little_boy_of_Laos.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "сильный": {
-    "en": {
-      "word": "strong",
-      "transcription": "strɔːŋ",
-      "examples": [
-        {
-          "text": "Italian coffee is very strong.",
-          "translation": "Итальянский кофе очень крепкий."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "племянник, внук": {
-    "en": {
-      "word": "nephew",
-      "transcription": "ˈnɛfjuː",
-      "examples": [
-        {
-          "text": "The grandson plays in the garden.",
-          "translation": "Внук играет в саду."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "десерт": {
-    "en": {
-      "word": "dessert",
-      "transcription": "diˈzɜːrt",
-      "examples": [
-        {
-          "text": "For dessert I have ice cream.",
-          "translation": "На десерт я беру мороженое."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Desserts.jpg/500px-Desserts.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "бабочка (насекомое)": {
-    "en": {
-      "word": "butterfly",
-      "transcription": "ˈbʌtərflaɪ",
-      "examples": [
-        {
-          "text": "A butterfly flies in the garden.",
-          "translation": "Бабочка летает в саду."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Fesoj_-_Papilio_machaon_%28by%29.jpg/500px-Fesoj_-_Papilio_machaon_%28by%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "лист (растения)": {
-    "en": {
-      "word": "leaf",
-      "transcription": "liːf",
-      "examples": [
-        {
-          "text": "The leaf is green in summer.",
-          "translation": "Лист летом зелёный."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Lisc_lipy.jpg/500px-Lisc_lipy.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "часы (настенные)": {
-    "en": {
-      "word": "clock",
-      "transcription": "klɒk",
-      "examples": [
-        {
-          "text": "My watch is fast.",
-          "translation": "Мои часы спешат."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Pendulum_clock_by_Jacob_Kock%2C_antique_furniture_photography%2C_IMG_0931_edit.jpg/500px-Pendulum_clock_by_Jacob_Kock%2C_antique_furniture_photography%2C_IMG_0931_edit.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "медсестра, медбрат": {
-    "en": {
-      "word": "nurse",
-      "transcription": "nɜːrs",
-      "examples": [
-        {
-          "text": "The nurse works at night.",
-          "translation": "Медбрат работает ночью."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Nurse_checks_blood_pressure.jpg/500px-Nurse_checks_blood_pressure.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "поле; площадка": {
-    "en": {
-      "word": "field",
-      "transcription": "fiːld",
-      "examples": [
-        {
-          "text": "The football field is big.",
-          "translation": "Футбольное поле большое."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "рецепт (медицинский)": {
-    "en": {
-      "word": "prescription",
-      "transcription": "priˈskrɪpʃən",
-      "examples": [
-        {
-          "text": "The doctor writes a prescription.",
-          "translation": "Врач выписывает рецепт."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "секретарь": {
-    "en": {
-      "word": "secretary",
-      "transcription": "ˈsɛkrəteri",
-      "examples": [
-        {
-          "text": "The secretary answers the phone.",
-          "translation": "Секретарь отвечает на телефон."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Secretary_at_work.jpg/500px-Secretary_at_work.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "каждый (по отдельности)": {
-    "en": {
-      "word": "each",
-      "transcription": "iːtʃ",
-      "examples": [
-        {
-          "text": "Every morning I drink a coffee.",
-          "translation": "Каждое утро я пью кофе."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "радостный, довольный": {
-    "en": {
-      "word": "glad",
-      "transcription": "ɡlæd",
-      "examples": [
-        {
-          "text": "I am glad to see you.",
-          "translation": "Я рад тебя видеть."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "свежий": {
-    "en": {
-      "word": "fresh",
-      "transcription": "frɛʃ",
-      "examples": [
-        {
-          "text": "The bread is still fresh.",
-          "translation": "Хлеб ещё свежий."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "правильный, верный": {
-    "en": {
-      "word": "correct",
-      "transcription": "kəˈrɛkt",
-      "examples": [
-        {
-          "text": "Your answer is correct.",
-          "translation": "Твой ответ правильный."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "раковина": {
-    "en": {
-      "word": "sink",
-      "transcription": "sɪŋk",
-      "examples": [
-        {
-          "text": "The plate is in the sink.",
-          "translation": "Тарелка в раковине."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Luxury_sink.jpg/500px-Luxury_sink.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "носить": {
-    "en": {
-      "word": "carry",
-      "transcription": "ˈkæri",
-      "examples": [
-        {
-          "text": "I take the book to the library.",
-          "translation": "Я несу книгу в библиотеку."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "держать": {
-    "en": {
-      "word": "hold",
-      "transcription": "hoʊld",
-      "examples": [
-        {
-          "text": "I hold the book in my hand.",
-          "translation": "Я держу книгу в руке."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "отправлять (посылку)": {
-    "en": {
-      "word": "send",
-      "transcription": "sɛnd",
-      "examples": [
-        {
-          "text": "I send a letter to my aunt.",
-          "translation": "Я отправляю письмо тёте."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Paketbana_i_varudistributionen_p%C3%A5_varuhuset_Nordiska_Kompaniet_NMA.0099957.jpg/500px-Paketbana_i_varudistributionen_p%C3%A5_varuhuset_Nordiska_Kompaniet_NMA.0099957.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "резать": {
-    "en": {
-      "word": "cut",
-      "transcription": "kʌt",
-      "examples": [
-        {
-          "text": "I cut the bread for dinner.",
-          "translation": "Я режу хлеб на ужин."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "подниматься": {
-    "en": {
-      "word": "go up",
-      "transcription": "ɡoʊ ʌp",
-      "examples": [
-        {
-          "text": "We go up with the lift.",
-          "translation": "Мы поднимаемся на лифте."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "мешать, размешивать": {
-    "en": {
-      "word": "mix",
-      "transcription": "mɪks",
-      "examples": [
-        {
-          "text": "I mix the pasta on the plate.",
-          "translation": "Я перемешиваю пасту на тарелке."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "объявление (реклама)": {
-    "en": {
-      "word": "advert",
-      "transcription": "ˈædvɜːrt",
-      "examples": [
-        {
-          "text": "I read an advert in the newspaper.",
-          "translation": "Я читаю объявление в газете."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Piccadilly_Circus_2014.jpg/500px-Piccadilly_Circus_2014.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "салфетка (столовая)": {
-    "en": {
-      "word": "napkin",
-      "transcription": "ˈnæpkɪn",
-      "examples": [
-        {
-          "text": "The napkin is white.",
-          "translation": "Салфетка белая."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Napkin_ring.jpg/500px-Napkin_ring.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "уже (к этому времени)": {
-    "en": {
-      "word": "by now",
-      "transcription": "baɪ naʊ",
-      "examples": [
-        {
-          "text": "By now it is too late.",
-          "translation": "Уже слишком поздно."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "даже": {
-    "en": {
-      "word": "even",
-      "transcription": "ˈiːvən",
-      "examples": [
-        {
-          "text": "He even bought a motorbike.",
-          "translation": "Он даже купил мотоцикл."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "ящик (стола)": {
-    "en": {
-      "word": "drawer",
-      "transcription": "drɔːr",
-      "examples": [
-        {
-          "text": "The photos are in the drawer.",
-          "translation": "Фотографии в ящике."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Drawer.agr.jpg/500px-Drawer.agr.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "мышь": {
-    "en": {
-      "word": "mouse",
-      "transcription": "maʊs",
-      "examples": [
-        {
-          "text": "A mouse is in the kitchen.",
-          "translation": "В кухне мышь."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/%D0%9C%D1%8B%D1%88%D1%8C_2.jpg/500px-%D0%9C%D1%8B%D1%88%D1%8C_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "рецепт (кулинарный)": {
-    "en": {
-      "word": "recipe",
-      "transcription": "ˈrɛsəpi",
-      "examples": [
-        {
-          "text": "This recipe is easy.",
-          "translation": "Этот рецепт простой."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Backzutaten_041.jpg/500px-Backzutaten_041.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "счёт (в ресторане)": {
-    "en": {
-      "word": "bill",
-      "transcription": "bɪl",
-      "examples": [
-        {
-          "text": "The waiter brings the bill.",
-          "translation": "Официант приносит счёт."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "чистить (от кожуры)": {
-    "en": {
-      "word": "peel",
-      "transcription": "piːl",
-      "examples": [
-        {
-          "text": "Peel the apple for the child.",
-          "translation": "Почисти яблоко для ребёнка."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "жаркий": {
-    "en": {
-      "word": "hot",
-      "transcription": "hɑːt",
-      "examples": [
-        {
-          "text": "It is hot in August.",
-          "translation": "В августе жарко."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "ещё": {
-    "en": {
-      "word": "more",
-      "transcription": "mɔːr",
-      "examples": [
-        {
-          "text": "Can I have some more tea?",
-          "translation": "Можно ещё немного чая?"
-        }
-      ]
-    },
-    "img": ""
-  },
-  "повар": {
-    "en": {
-      "word": "chef",
-      "transcription": "ʃɛf",
-      "examples": [
-        {
-          "text": "The cook makes dinner.",
-          "translation": "Повар готовит ужин."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Ribot_Theodule_The_Cook_And_The_Cat-1.jpg/500px-Ribot_Theodule_The_Cook_And_The_Cat-1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "сдавать в аренду": {
-    "en": {
-      "word": "rent out",
-      "transcription": "rent aʊt",
-      "examples": [
-        {
-          "text": "I rent out a room in the centre.",
-          "translation": "Я сдаю комнату в центре."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "камень ·2": {
-    "en": {
-      "word": "rock",
-      "transcription": "rɒk",
-      "examples": [
-        {
-          "text": "The old wall is made of stone.",
-          "translation": "Старая стена из камня."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "язык": {
-    "en": {
-      "word": "language",
-      "transcription": "ˈlæŋɡwɪdʒ",
-      "examples": [
-        {
-          "text": "Italian is a beautiful language.",
-          "translation": "Итальянский — красивый язык."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Tepantitla_mural%2C_Ballplayer_A_%28Daquella_manera%29.jpg/500px-Tepantitla_mural%2C_Ballplayer_A_%28Daquella_manera%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "убирать, приводить в порядок ·2": {
-    "en": {
-      "word": "tidy up",
-      "transcription": "ˈtaɪdi ʌp",
-      "examples": [
-        {
-          "text": "I arrange the books on the table.",
-          "translation": "Я расставляю книги на столе."
-        }
-      ]
-    },
-    "img": ""
-  },
-  "простуда": {
-    "en": {
-      "word": "head cold",
-      "transcription": "hed kəʊld",
-      "examples": [
-        {
-          "text": "I have a bad cold.",
-          "translation": "У меня сильная простуда."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Rhinovirus_isosurface.png/500px-Rhinovirus_isosurface.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   }
 }

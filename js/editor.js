@@ -1,6 +1,6 @@
 // Редактор картинок: все группы каталога, открывается из меню аватара.
 // Блоки = файлы data/*.json, строки = записи (ключ — русское слово), поэтому
-// 🇮🇹🇬🇧 общие группы идут первыми и картинка меняется для обоих языков сразу;
+// 🇬🇧🇮🇹 общие группы идут первыми и картинка меняется для обоих языков сразу;
 // одиночные наборы — под 🇬🇧 и 🇮🇹. У слов: «Другая» листает варианты из
 // Википедии, «Своя» — файл, «Убрать» — эмодзи-заглушка. Выбор сохраняется
 // в слове словаря (если оно есть) и в постоянном кеше групп, а img записи —
@@ -47,14 +47,14 @@ WM.editor = (() => {
   }
 
   // строки блока — напрямую из записей JSON: один смысл = одна строка,
-  // слова обоих языков уже спарены русским ключом
+  // слова обоих языков уже спарены русским ключом (🇬🇧 английское слово первым)
   function blockWords(block) {
     const specs = block.entries.map(([k, v]) => ({
       rowKey: `${block.key}:${k}`,
       words: { it: v.it?.word, en: v.en?.word },
-      langs: [v.it ? 'it' : null, v.en ? 'en' : null].filter(Boolean),
+      langs: [v.en ? 'en' : null, v.it ? 'it' : null].filter(Boolean),
       translation: WM.groupsData.stripMarker(k),
-      fetchLang: v.it ? 'it' : 'en',
+      fetchLang: v.en ? 'en' : 'it',
       src: { file: block.fileId, key: k },
     }));
     for (const s of specs) s.primary = s.words[s.langs[0]] ?? Object.values(s.words)[0];
@@ -213,7 +213,7 @@ WM.editor = (() => {
           </button>
         </div>
         <p class="hint">Картинки настраиваются заранее и действуют на карточках, в группах и в тренировке.
-        «Другая» листает варианты из Википедии. В общих группах 🇮🇹🇬🇧 картинка меняется для обоих языков сразу.
+        «Другая» листает варианты из Википедии. В общих группах 🇬🇧🇮🇹 картинка меняется для обоих языков сразу.
         Кнопка «Выгрузить изменения» скачивает обновлённые data/*.json.</p>
         <input type="search" class="select" id="ed-search" placeholder="Поиск по группе или слову…" value="${esc(query)}">
       </div>
@@ -227,7 +227,7 @@ WM.editor = (() => {
   function sectionsHTML(struct) {
     let html = '';
     if (struct.common.length) {
-      html += `<div class="ed-flag-head">🇮🇹🇬🇧 <span>Общие группы · картинка меняется для обоих языков</span></div>`;
+      html += `<div class="ed-flag-head">🇬🇧🇮🇹 <span>Общие группы · картинка меняется для обоих языков</span></div>`;
       html += struct.common.map(blockHTML).join('');
     }
     if (struct.enGroups.length) {
@@ -266,7 +266,7 @@ WM.editor = (() => {
       </div>`;
   }
 
-  // подпись слова строки: у тёзок — «🇮🇹🇬🇧 pasta», у зеркальных — «🇮🇹 forchetta 🇬🇧 fork»
+  // подпись слова строки: у тёзок — «🇬🇧🇮🇹 pasta», у зеркальных — «🇬🇧 fork 🇮🇹 forchetta»
   function wordHTML(spec) {
     if (spec.langs.every(L => norm(spec.words[L]) === norm(spec.primary))) {
       return `<span class="ed-flags">${spec.langs.map(L => FLAG[L]).join('')}</span> <b>${esc(spec.primary)}</b>`;

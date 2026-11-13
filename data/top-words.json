@@ -308,32 +308,6 @@
     },
     "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Parkway_Thank_You_cropped.png/500px-Parkway_Thank_You_cropped.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
-  "пожалуйста (в ответ на спасибо)": {
-    "it": {
-      "word": "prego",
-      "transcription": "ˈprɛːɡo",
-      "examples": [
-        {
-          "text": "Grazie mille! — Prego!",
-          "translation": "Большое спасибо! — Пожалуйста!"
-        }
-      ]
-    },
-    "img": ""
-  },
-  "привет, пока": {
-    "it": {
-      "word": "ciao",
-      "transcription": "tʃao",
-      "examples": [
-        {
-          "text": "Ciao, come va?",
-          "translation": "Привет, как дела?"
-        }
-      ]
-    },
-    "img": ""
-  },
   "добрый день": {
     "en": {
       "word": "good morning",
@@ -1507,19 +1481,6 @@
     },
     "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Bs_As_Market_%287630284742%29.jpg/500px-Bs_As_Market_%287630284742%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
-  "рука": {
-    "it": {
-      "word": "mano",
-      "transcription": "ˈmaːno",
-      "examples": [
-        {
-          "text": "Scrivo con la mano destra.",
-          "translation": "Я пишу правой рукой."
-        }
-      ]
-    },
-    "img": ""
-  },
   "глаз": {
     "en": {
       "word": "eye",
@@ -2290,22 +2251,30 @@
         }
       ]
     },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Southdown_bus_199_%28KUF_199F%29%2C_2009_Amberley_Bus_Day.jpg/500px-Southdown_bus_199_%28KUF_199F%29%2C_2009_Amberley_Bus_Day.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "рука (кисть)": {
-    "en": {
-      "word": "hand",
-      "transcription": "hænd",
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Southdown_bus_199_%28KUF_199F%29%2C_2009_Amberley_Bus_Day.jpg/500px-Southdown_bus_199_%28KUF_199F%29%2C_2009_Amberley_Bus_Day.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "it": {
+      "word": "prego",
+      "transcription": "ˈprɛːɡo",
       "examples": [
         {
-          "text": "I write with my right hand.",
-          "translation": "Я пишу правой рукой."
+          "text": "Grazie mille! — Prego!",
+          "translation": "Большое спасибо! — Пожалуйста!"
+        }
+      ]
+    }
+  },
+  "привет, пока": {
+    "it": {
+      "word": "ciao",
+      "transcription": "tʃao",
+      "examples": [
+        {
+          "text": "Ciao, come va?",
+          "translation": "Привет, как дела?"
         }
       ]
     },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Hand%2C_fingers_-_back.jpg/500px-Hand%2C_fingers_-_back.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "пока, привет": {
+    "img": "",
     "en": {
       "word": "hi",
       "transcription": "haɪ",
@@ -2315,7 +2284,29 @@
           "translation": "Привет, как дела?"
         }
       ]
+    }
+  },
+  "рука": {
+    "it": {
+      "word": "mano",
+      "transcription": "ˈmaːno",
+      "examples": [
+        {
+          "text": "Scrivo con la mano destra.",
+          "translation": "Я пишу правой рукой."
+        }
+      ]
     },
-    "img": ""
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Hand%2C_fingers_-_back.jpg/500px-Hand%2C_fingers_-_back.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "en": {
+      "word": "hand",
+      "transcription": "hænd",
+      "examples": [
+        {
+          "text": "I write with my right hand.",
+          "translation": "Я пишу правой рукой."
+        }
+      ]
+    }
   }
 }

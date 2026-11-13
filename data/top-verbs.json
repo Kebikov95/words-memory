@@ -883,19 +883,6 @@
     },
     "img": ""
   },
-  "уезжать, отправляться": {
-    "it": {
-      "word": "partire",
-      "transcription": "parˈtiːre",
-      "examples": [
-        {
-          "text": "Il treno parte alle nove.",
-          "translation": "Поезд отправляется в девять."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/3/3f/Partire_%281938%29.png/500px-Partire_%281938%29.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
   "прибывать": {
     "en": {
       "word": "arrive",
@@ -1194,19 +1181,6 @@
       ]
     },
     "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/H%C3%A0bit_Saludable.jpg/500px-H%C3%A0bit_Saludable.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "водить (машину)": {
-    "it": {
-      "word": "guidare",
-      "transcription": "ɡwiˈdaːre",
-      "examples": [
-        {
-          "text": "Guido la macchina di mio padre.",
-          "translation": "Я веду машину моего отца."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Alan_Jones_1980_%28cropped%29.jpg/500px-Alan_Jones_1980_%28cropped%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
   "покупать": {
     "en": {
@@ -1898,19 +1872,6 @@
     },
     "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/f/f8/Vincere_Bellocchio.PNG/500px-Vincere_Bellocchio.PNG?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
-  "удаваться, справляться": {
-    "it": {
-      "word": "riuscire",
-      "transcription": "riuʃˈʃiːre",
-      "examples": [
-        {
-          "text": "Non riesco a dormire.",
-          "translation": "Я не могу заснуть."
-        }
-      ]
-    },
-    "img": ""
-  },
   "казаться": {
     "en": {
       "word": "seem",
@@ -2002,19 +1963,6 @@
       ]
     },
     "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Monte_Tagliar%C3%A8_from_SE.png/500px-Monte_Tagliar%C3%A8_from_SE.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  "готовить (еду)": {
-    "it": {
-      "word": "cucinare",
-      "transcription": "kutʃiˈnaːre",
-      "examples": [
-        {
-          "text": "Mio padre cucina molto bene.",
-          "translation": "Мой папа готовит очень хорошо."
-        }
-      ]
-    },
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/17-alimenti%2C_umido%2CTaccuino_Sanitatis%2C_Casanatense_4182..jpg/500px-17-alimenti%2C_umido%2CTaccuino_Sanitatis%2C_Casanatense_4182..jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
   "играть": {
     "en": {
@@ -2280,7 +2228,17 @@
         }
       ]
     },
-    "img": ""
+    "img": "https://thumb.wikimedia.org/wikipedia/it/thumb/3/3f/Partire_%281938%29.png/500px-Partire_%281938%29.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "it": {
+      "word": "partire",
+      "transcription": "parˈtiːre",
+      "examples": [
+        {
+          "text": "Il treno parte alle nove.",
+          "translation": "Поезд отправляется в девять."
+        }
+      ]
+    }
   },
   "водить": {
     "en": {
@@ -2293,7 +2251,17 @@
         }
       ]
     },
-    "img": ""
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Alan_Jones_1980_%28cropped%29.jpg/500px-Alan_Jones_1980_%28cropped%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "it": {
+      "word": "guidare",
+      "transcription": "ɡwiˈdaːre",
+      "examples": [
+        {
+          "text": "Guido la macchina di mio padre.",
+          "translation": "Я веду машину моего отца."
+        }
+      ]
+    }
   },
   "справляться, удаваться": {
     "en": {
@@ -2306,7 +2274,17 @@
         }
       ]
     },
-    "img": ""
+    "img": "",
+    "it": {
+      "word": "riuscire",
+      "transcription": "riuʃˈʃiːre",
+      "examples": [
+        {
+          "text": "Non riesco a dormire.",
+          "translation": "Я не могу заснуть."
+        }
+      ]
+    }
   },
   "готовить": {
     "en": {
@@ -2319,6 +2297,16 @@
         }
       ]
     },
-    "img": ""
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/17-alimenti%2C_umido%2CTaccuino_Sanitatis%2C_Casanatense_4182..jpg/500px-17-alimenti%2C_umido%2CTaccuino_Sanitatis%2C_Casanatense_4182..jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "it": {
+      "word": "cucinare",
+      "transcription": "kutʃiˈnaːre",
+      "examples": [
+        {
+          "text": "Mio padre cucina molto bene.",
+          "translation": "Мой папа готовит очень хорошо."
+        }
+      ]
+    }
   }
 }
