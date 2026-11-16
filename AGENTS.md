@@ -20,7 +20,8 @@
 - Никакой модульной системы: каждый файл вешает один модуль на глобальный
   объект `window.WM` (`WM.app`, `WM.storage`, `WM.words`, `WM.games`,
   `WM.groups`, `WM.groupsData`, `WM.tts`, `WM.images`, `WM.io`,
-  `WM.editor`) либо, как `icons.js`, определяет глобальный `window.ICONS`.
+  `WM.editor`, `WM.srs`, `WM.srsPage`) либо, как `icons.js`, определяет
+  глобальный `window.ICONS`.
 - Скрипты подключаются в `index.html` через `defer` **в строгом порядке
   зависимости** (см. порядок в `<head>`). Точка входа — `WM.app.init()` в
   конце `js/app.js`; она инициализирует все остальные модули.
@@ -48,7 +49,9 @@
   соответствующих `<link>`/`<script>` в `index.html` (комментарий об этом
   есть в `<head>`).
 - Ключи localStorage начинаются с `wm_`; слова пользователя —
-  `wm_words_<uid>`, статистика — `wm_stats_<uid>`.
+  `wm_words_<uid>`, статистика — `wm_stats_<uid>`, интервальное
+  повторение — `wm_srs_<uid>` (состояния слов), `wm_srs_sel_<uid>`
+  (выбранные группы), `wm_srs_swipe` (направление свайпа).
 - PIN профиля хранится как SHA-256-хеш (`crypto.subtle`), не в открытом виде.
 - Тема: `[data-theme="dark"|"light"]` на `<html>`, ключ `wm_theme`
   (пустое значение = следовать системной).

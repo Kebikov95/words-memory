@@ -190,9 +190,12 @@ WM.games = (() => {
         <div class="game-word">${esc(word.translation)}</div>
         <div class="letters-slots" id="as-slots"></div>
         <div class="letters-pool" id="as-pool"></div>
-        <div class="game-actions">
-          <button class="btn btn-ghost" id="as-clear">Очистить</button>
+        <div class="game-actions as-actions">
+          <button class="btn btn-ghost" id="as-skip">Пропустить</button>
           <button class="btn btn-primary" id="as-check" disabled>Проверить</button>
+        </div>
+        <div class="as-clear-row">
+          <button class="btn btn-ghost btn-sm" id="as-clear">Очистить</button>
         </div>
       </div>`;
 
@@ -254,6 +257,14 @@ WM.games = (() => {
       poolState.forEach(p => p.used = false);
       drawPool();
       updateCur();
+    });
+
+    // пропуск: засчитывается как ошибка, слово показывается и озвучивается
+    $('#as-skip').addEventListener('click', () => {
+      answerFeedback(false, `${target} — ${word.translation}`);
+      recordAnswer(word, false);
+      WM.tts.speak(target, session.lang);
+      next(1600);
     });
 
     $('#as-check').addEventListener('click', () => {

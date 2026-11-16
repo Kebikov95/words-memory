@@ -1639,3 +1639,7 @@ details.srs-status-group .srs-group-lang { font-size: 12px; margin-left: 4px; }
   font-weight: 400;
   opacity: .85;
 }
+
+/* Собери слово: Пропустить слева, Проверить справа, Очистить снизу по центру */
+.as-actions { justify-content: center; gap: 12px; }
+.as-clear-row { display: flex; justify-content: center; margin-top: 10px; }

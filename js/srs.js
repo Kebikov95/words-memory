@@ -23,8 +23,8 @@ WM.srs = (() => {
     { ms: 365 * 24 * 60 * 60 * 1000, label: '12 мес' },
   ];
 
-  // выучено = верный ответ на этом шаге или дальше (16 д)
-  const LEARNED_AT = 7;
+  // выучено = верный ответ на последнем шаге (12 мес)
+  const LEARNED_AT = LADDER.length - 1;
 
   const key = (lang, word) => `${lang}:${(word || '').trim().toLowerCase()}`;
 

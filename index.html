@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=29">
+  <link rel="stylesheet" href="css/style.css?v=31">
   <!-- v=2: при изменении js/css повышайте версию — это сбрасывает кеш браузера -->
   <script src="js/icons.js?v=5" defer></script>
   <script src="js/storage.js?v=9" defer></script>
@@ -18,11 +18,11 @@
   <!-- данные наборов: data/*.json, грузятся fetch'ем в js/groups-data.js (нужен http-сервер) -->
   <script src="js/groups-data.js?v=8" defer></script>
   <script src="js/words.js?v=12" defer></script>
-  <script src="js/games.js?v=6" defer></script>
+  <script src="js/games.js?v=7" defer></script>
   <script src="js/groups.js?v=20" defer></script>
   <script src="js/editor.js?v=6" defer></script>
-  <script src="js/srs.js?v=1" defer></script>
-  <script src="js/srs-page.js?v=7" defer></script>
+  <script src="js/srs.js?v=2" defer></script>
+  <script src="js/srs-page.js?v=8" defer></script>
   <script src="js/app.js?v=10" defer></script>
 </head>
 <body>
@@ -369,8 +369,8 @@ biglietto | билет | Compro un biglietto. | Я покупаю билет."><
         <div class="field">
           <label for="train-count">Количество слов</label>
           <select id="train-count" class="select">
-            <option value="5">5 слов</option>
-            <option value="10" selected>10 слов</option>
+            <option value="5" selected>5 слов</option>
+            <option value="10">10 слов</option>
             <option value="15">15 слов</option>
             <option value="30">30 слов</option>
             <option value="50">50 слов</option>

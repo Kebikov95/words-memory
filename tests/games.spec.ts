@@ -36,7 +36,7 @@ test.describe('Игры — настройка', () => {
     for (const name of ['Собери слово', 'Диктант', 'Слово ↔ перевод', 'Картинка ↔ перевод', 'Микс']) {
       await expect(page.locator('.mode-item', { hasText: name })).toBeVisible();
     }
-    await expect(page.locator('#train-count')).toHaveValue('10');
+    await expect(page.locator('#train-count')).toHaveValue('5');
     await expect(page.locator('#train-count')).toContainText('Все слова');
     // лейбл «Доступно слов…» убран: подсказка пуста, пока слова есть
     await expect(page.locator('#train-available')).toHaveText('');

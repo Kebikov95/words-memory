@@ -30,7 +30,9 @@ secure-context, нужен для `crypto.subtle` (хеширование PIN).
 - `helpers/games.ts` — решатели тренировок и синхронизация: `waitForAssembleWord`
   (анаграмма пула), `waitForSpokenWord` (рост числа озвучек), `solveMatchPairs`
   (чанки по 4–5 пар), `solveAllTasks` (драйвер «Микса»);
-- `*.spec.ts` — спеки по экранам: `auth`, `data`, `dictionary`, `groups`, `games`.
+- `*.spec.ts` — спеки по экранам: `auth`, `data`, `dictionary`, `groups`,
+  `games`, `srs` (страница «Повторение»: выбор групп, карточка, свайпы,
+  озвучка, статусы, настройки свайпа).
 
 ## Соглашения (обязательны)
 
