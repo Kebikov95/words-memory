@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=24">
+  <link rel="stylesheet" href="css/style.css?v=29">
   <!-- v=2: при изменении js/css повышайте версию — это сбрасывает кеш браузера -->
   <script src="js/icons.js?v=5" defer></script>
   <script src="js/storage.js?v=9" defer></script>
@@ -21,7 +21,9 @@
   <script src="js/games.js?v=6" defer></script>
   <script src="js/groups.js?v=20" defer></script>
   <script src="js/editor.js?v=6" defer></script>
-  <script src="js/app.js?v=9" defer></script>
+  <script src="js/srs.js?v=1" defer></script>
+  <script src="js/srs-page.js?v=7" defer></script>
+  <script src="js/app.js?v=10" defer></script>
 </head>
 <body>
 
@@ -76,6 +78,7 @@
         <nav class="pages-nav">
           <button class="page-tab active" id="nav-words" data-page="words" aria-label="Словарь" title="Словарь">📖</button>
           <button class="page-tab" id="nav-groups" data-page="groups" aria-label="Группы" title="Группы">🗂️</button>
+          <button class="page-tab" id="nav-srs" data-page="srs" aria-label="Повторение" title="Интервальное повторение">🔄</button>
         </nav>
 
         <nav class="tabs" role="tablist">
@@ -88,6 +91,7 @@
           <div class="profile-menu hidden" id="profile-menu">
             <button class="profile-menu-item" id="menu-stats"><span class="pm-ic"></span>Статистика</button>
             <button class="profile-menu-item" id="menu-images"><span class="pm-ic"></span>Редактор картинок</button>
+            <button class="profile-menu-item" id="menu-settings"><span class="pm-ic"></span>Настройки</button>
             <button class="profile-menu-item" id="menu-theme"></button>
             <div class="profile-menu-sep"></div>
             <button class="profile-menu-item profile-menu-exit" id="menu-logout"><span class="pm-ic"></span>Выйти из профиля</button>
@@ -124,6 +128,9 @@
       </section>
 
       <section id="page-groups" class="hidden"></section>
+
+      <!-- ======== ПОВТОРЕНИЕ (SRS) ======== -->
+      <section id="page-srs" class="hidden"></section>
 
       <!-- ======== РЕДАКТОР КАРТИНОК ======== -->
       <section id="page-images" class="hidden"></section>
@@ -378,6 +385,30 @@ biglietto | билет | Compro un biglietto. | Я покупаю билет."><
       <p class="hint" id="train-available"></p>
       <div class="modal-actions">
         <button class="btn btn-accent btn-block" id="btn-train-start" aria-label="Начать тренировку" title="Начать тренировку"><span id="ic-play2"></span>Начать тренировку</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- ======== МОДАЛКА: НАСТРОЙКИ ======== -->
+  <dialog id="modal-settings" class="modal">
+    <div class="modal-body">
+      <div class="modal-head">
+        <h3>Настройки</h3>
+        <button type="button" class="icon-btn" data-close aria-label="Закрыть"></button>
+      </div>
+      <div class="field">
+        <label>Повторение: направление свайпа</label>
+        <div class="mode-list">
+          <label class="set-item">
+            <input type="radio" name="swipe-dir" value="right" checked>
+            <span class="m-name">Вправо → — помню · влево ← — не помню</span>
+          </label>
+          <label class="set-item">
+            <input type="radio" name="swipe-dir" value="left">
+            <span class="m-name">Влево ← — помню · вправо → — не помню</span>
+          </label>
+        </div>
+        <p class="hint">Свайп «не помню» возвращает слово на первый интервал (15 мин).</p>
       </div>
     </div>
   </dialog>

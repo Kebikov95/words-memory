@@ -141,9 +141,10 @@ WM.app = (() => {
     WM.games.init();
     WM.groups.init();
 
-    // страницы: Словарь / Группы
+    // страницы: Словарь / Группы / Повторение
     $('#nav-words').addEventListener('click', () => showPage('words'));
     $('#nav-groups').addEventListener('click', () => showPage('groups'));
+    $('#nav-srs').addEventListener('click', () => showPage('srs'));
 
     // вкладки
     document.querySelectorAll('.tab').forEach(tab =>
@@ -201,6 +202,8 @@ WM.app = (() => {
     $('#menu-stats').addEventListener('click', () => { closeMenu(); openStats(); });
     $('#menu-images .pm-ic').innerHTML = ICONS.image;
     $('#menu-images').addEventListener('click', () => { closeMenu(); WM.editor.open(); });
+    $('#menu-settings .pm-ic').innerHTML = ICONS.settings;
+    $('#menu-settings').addEventListener('click', () => { closeMenu(); openSettings(); });
     $('#menu-logout .pm-ic').innerHTML = ICONS.logout;
     $('#menu-logout').addEventListener('click', async () => {
       closeMenu();
@@ -237,16 +240,31 @@ WM.app = (() => {
   function showPage(page) {
     $('#page-words').classList.toggle('hidden', page !== 'words');
     $('#page-groups').classList.toggle('hidden', page !== 'groups');
+    $('#page-srs').classList.toggle('hidden', page !== 'srs');
     const pageImages = $('#page-images');
     if (pageImages) pageImages.classList.toggle('hidden', page !== 'images');
-    document.querySelector('.tabs').style.display = page === 'groups' ? 'none' : '';
     document.querySelectorAll('.page-tab').forEach(t =>
       t.classList.toggle('active', t.dataset.page === page));
-    $('#page-images') && $('#page-images').classList.toggle('hidden', page !== 'images');
     document.querySelector('.tabs').style.display = page === 'words' ? '' : 'none';
     if (page === 'groups') WM.groups.render();
+    else if (page === 'srs') WM.srsPage.render();
     else if (page === 'images') WM.editor.render();
     else WM.words.render();
+  }
+
+  // настройки: направление свайпа в повторении (wm_srs_swipe: 'right'|'left', вправо — помню)
+  function openSettings() {
+    const saved = localStorage.getItem('wm_srs_swipe') === 'left' ? 'left' : 'right';
+    const modal = $('#modal-settings');
+    modal.querySelectorAll('input[name="swipe-dir"]').forEach(r => { r.checked = r.value === saved; });
+    if (!modal.dataset.bound) {
+      modal.dataset.bound = '1';
+      modal.querySelectorAll('input[name="swipe-dir"]').forEach(r =>
+        r.addEventListener('change', () => {
+          if (r.checked) localStorage.setItem('wm_srs_swipe', r.value);
+        }));
+    }
+    modal.showModal();
   }
 
   function openStats() {    const stats = WM.storage.getStats(state.uid);

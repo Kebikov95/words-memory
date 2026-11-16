@@ -7,3 +7,4 @@ monocart-report/
 coverage/
 .tmp_shots_tmp/
 .tmp_screenshot.png
+.agents/
