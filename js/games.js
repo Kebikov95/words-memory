@@ -1,4 +1,4 @@
-// Тренировка: 5 режимов (сборка, диктант, 2 сопоставления, микс) + результаты
+// Тренировка: 6 режимов (сборка, диктант, произношение, 2 сопоставления, микс) + результаты
 window.WM = window.WM || {};
 
 WM.games = (() => {
@@ -8,6 +8,7 @@ WM.games = (() => {
   const MODES = [
     { id: 'assemble',    name: 'Собери слово',        desc: 'составьте слово из букв по переводу' },
     { id: 'dictation',   name: 'Диктант',             desc: 'прослушайте слово и напишите его' },
+    { id: 'speak',       name: 'Скажи слово',         desc: 'произнесите перевод вслух на нужном языке' },
     { id: 'match-word',  name: 'Слово ↔ перевод',     desc: 'соедините пары «слово — перевод»' },
     { id: 'match-image', name: 'Картинка ↔ перевод',  desc: 'соедините пары «картинка — перевод»' },
     { id: 'mix',         name: 'Микс',                desc: 'каждое слово проходит все режимы по порядку' },
@@ -31,6 +32,27 @@ WM.games = (() => {
   const norm = s => String(s).toLowerCase().trim()
     .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
     .replace(/\s+/g, ' ');
+
+  const speechSupported = () =>
+    !!(window.SpeechRecognition || window.webkitSpeechRecognition);
+
+  // сказанное vs целое слово: точное совпадение, вхождение или ≥80% по Левенштейну —
+  // распознавание лепит пунктуацию и артикли, это не ошибка произношения
+  const speakMatches = (heard, target) => {
+    const clean = t => norm(String(t).replace(/[.,!?;:'"()\u00ab\u00bb]/g, ' '));
+    const targetN = clean(target);
+    const lev = (a, b) => {
+      const d = Array.from({ length: a.length + 1 }, (_, i) => [i, ...Array(b.length).fill(0)]);
+      for (let j = 1; j <= b.length; j++) d[0][j] = j;
+      for (let i = 1; i <= a.length; i++)
+        for (let j = 1; j <= b.length; j++)
+          d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+      return d[a.length][b.length];
+    };
+    return clean(heard).split(' / ').some(said =>
+      said && (said === targetN || targetN.includes(said) || said.includes(targetN) ||
+        1 - lev(said, targetN) / Math.max(said.length, targetN.length) >= 0.8));
+  };
 
   // у наборов форм («be — was/were — been», «essere — sono, sei…») игра тренирует
   // инфинитив: собирать/писать всю строку форм невозможно и бессмысленно
@@ -166,6 +188,7 @@ WM.games = (() => {
 
     if (t.sub === 'assemble')       renderAssemble(t);
     else if (t.sub === 'dictation') renderDictation(t);
+    else if (t.sub === 'speak')     renderSpeak(t);
     else if (t.sub === 'match-word' || t.sub === 'match-image') renderMatch(t);
 
     // контейнер фидбека — после отрисовки, чтобы не затирался innerHTML
@@ -310,6 +333,75 @@ WM.games = (() => {
     $('#dt-check').addEventListener('click', check);
     $('#dt-input').addEventListener('keydown', e => { if (e.key === 'Enter') check(); });
     $('#dt-input').focus();
+  }
+
+  // 3. Скажи слово: показан русский перевод — произнести слово на языке тренировки
+  function renderSpeak(t) {
+    const { word } = t;
+    const target = headForm(word);
+    const langName = session.lang === 'en' ? 'английском' : 'итальянском';
+    const supported = speechSupported();
+
+    area().innerHTML = `
+      <div class="game-card">
+        <div class="hint">Скажите на ${langName}, что означает:</div>
+        <div class="game-word">${esc(word.translation)}</div>
+        ${supported ? `
+          <button class="speak-mic" id="sp-mic" aria-label="Сказать слово" title="Нажмите и произнесите слово">${ICONS.mic}</button>
+          <div class="speak-state" id="sp-state">Нажмите на микрофон и произнесите слово</div>
+        ` : `
+          <div class="speak-state">🎤 Распознавание речи не поддерживается этим браузером
+          (нужен Chrome, Edge или Safari). Можете нажать «Пропустить».</div>
+        `}
+        <div class="game-actions">
+          <button class="btn btn-ghost" id="sp-skip">Пропустить</button>
+        </div>
+      </div>`;
+
+    const judge = heard => {
+      const ok = speakMatches(heard, target);
+      const said = String(heard).split(' / ')[0].trim();
+      answerFeedback(ok, `${target} — ${word.translation}${!ok && said ? ` · вы сказали: «${said}»` : ''}`);
+      recordAnswer(word, ok);
+      WM.tts.speak(target, session.lang);
+      next(ok ? 1200 : 1800);
+    };
+
+    $('#sp-skip').addEventListener('click', () => {
+      answerFeedback(false, `${target} — ${word.translation}`);
+      recordAnswer(word, false);
+      WM.tts.speak(target, session.lang);
+      next(1600);
+    });
+
+    if (!supported) return;
+
+    const mic = $('#sp-mic');
+    const state = $('#sp-state');
+    mic.addEventListener('click', () => {
+      if (mic.classList.contains('listening')) return;
+      const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+      const rec = new SR();
+      rec.lang = session.lang === 'en' ? 'en-US' : 'it-IT';
+      rec.interimResults = false;
+      rec.maxAlternatives = 5;
+      rec.onresult = e => {
+        // альтернативы распознавания склеиваем « / » — speakMatches проверит каждую
+        const alts = Array.from(e.results[0]).map(r => r.transcript.trim()).filter(Boolean);
+        mic.classList.remove('listening');
+        judge(alts.join(' / '));
+      };
+      rec.onerror = ev => {
+        mic.classList.remove('listening');
+        state.textContent = ev.error === 'not-allowed' || ev.error === 'service-not-allowed'
+          ? 'Нет доступа к микрофону — разрешите его в настройках браузера'
+          : 'Не расслышал. Нажмите ещё раз и говорите чётче';
+      };
+      rec.onend = () => mic.classList.remove('listening');
+      mic.classList.add('listening');
+      state.textContent = 'Слушаю…';
+      try { rec.start(); } catch { /* повторный start() бросает — уже слушаем */ }
+    });
   }
 
   // маленькая картинка для пар «картинка ↔ перевод»

@@ -88,6 +88,39 @@ async function stubTts(page: Page) {
       constructor(text: string) { this.text = text; }
     }
     Object.defineProperty(window, 'SpeechSynthesisUtterance', { configurable: true, value: FakeUtterance });
+
+    // Стаб SpeechRecognition (режим «Скажи слово»): тест кладёт в
+    // window.__speakScript очередь «сказанных» фраз; каждый start() берёт
+    // следующую (или дефолт из __speakDefault) и отдаёт как результат
+    // распознавания с 2 альтернативами.
+    class FakeSpeechRecognition {
+      lang = '';
+      interimResults = false;
+      maxAlternatives = 1;
+      onresult: ((e: any) => void) | null = null;
+      onerror: ((e: any) => void) | null = null;
+      onend: (() => void) | null = null;
+      start() {
+        const w = window as any;
+        const said = (w.__speakScript?.length ? w.__speakScript.shift() : (w.__speakDefault ?? ''));
+        setTimeout(() => {
+          if (said === '__error__') {
+            this.onerror?.({ error: 'not-allowed' });
+          } else {
+            this.onresult?.({
+              results: { 0: { length: 2, [Symbol.iterator]: function* () {
+                yield { transcript: said };
+                yield { transcript: said + '??' };
+              } } },
+            });
+          }
+          this.onend?.();
+        }, 30);
+      }
+      stop() {}
+      abort() {}
+    }
+    Object.defineProperty(window, 'SpeechRecognition', { configurable: true, value: FakeSpeechRecognition });
   });
 }
 

@@ -30,10 +30,10 @@ async function start(page: import('@playwright/test').Page) {
 }
 
 test.describe('Игры — настройка', () => {
-  testWithWords('модалка: 5 режимов, выбор количества слов, опция «Все слова»', async ({ appPage: page }) => {
+  testWithWords('модалка: 6 режимов, выбор количества слов, опция «Все слова»', async ({ appPage: page }) => {
     await openTrainModal(page);
-    await expect(page.locator('.mode-item')).toHaveCount(5);
-    for (const name of ['Собери слово', 'Диктант', 'Слово ↔ перевод', 'Картинка ↔ перевод', 'Микс']) {
+    await expect(page.locator('.mode-item')).toHaveCount(6);
+    for (const name of ['Собери слово', 'Диктант', 'Скажи слово', 'Слово ↔ перевод', 'Картинка ↔ перевод', 'Микс']) {
       await expect(page.locator('.mode-item', { hasText: name })).toBeVisible();
     }
     await expect(page.locator('#train-count')).toHaveValue('5');
