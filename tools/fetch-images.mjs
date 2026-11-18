@@ -1,7 +1,8 @@
 // Пакетная заливка img в data/*.json: для каждой записи без картинки ищет
-// thumbnail первой статьи Википедии (та же логика, что WM.images.fetchImage:
-// it-слово → it.wikipedia, en-слово → en.wikipedia; запись со словами обоих
-// языков получает одну общую картинку — сначала it, при промахе en).
+// thumbnail первой статьи Википедии: запись со словами обоих языков получает
+// одну общую картинку — сначала по английскому слову в en.wikipedia (там
+// больше статей и точнее совпадения), при промахе — по итальянскому слову
+// в it.wikipedia.
 // Повторный запуск безопасен: записи с непустым img не трогаются, прогресс
 // периодически сбрасывается в файлы. Википедия лимитирует частоту — скрипт
 // ходит небыстро (пара воркеров с паузами) и замедляется при 429.
@@ -64,8 +65,8 @@ async function main() {
     for (const [key, entry] of Object.entries(data.get(f))) {
       if (key === '_meta' || entry.img) continue;
       const words = [];
-      if (entry.it?.word && !hasForms(entry.it.word)) words.push({ lang: 'it', word: entry.it.word });
       if (entry.en?.word && !hasForms(entry.en.word)) words.push({ lang: 'en', word: entry.en.word });
+      if (entry.it?.word && !hasForms(entry.it.word)) words.push({ lang: 'it', word: entry.it.word });
       if (!words.length) continue;
       targets++;
       queue.push({ f, key, words });
@@ -91,7 +92,7 @@ async function main() {
           cache.set(k, await fetchThumb(word, lang));
         }
         url = cache.get(k);
-        if (url) break; // сначала it-слово, при промахе — en
+        if (url) break; // сначала en-слово, при промахе — it
       }
       if (url) { data.get(job.f)[job.key].img = url; filled++; }
       else notFound++;
