@@ -526,5 +526,5 @@ WM.groups = (() => {
     applyRoute(); // открываем набор, если hash уже в URL
   }
 
-  return { init, render, updateImageCache, lookupImage };
+  return { init, render, updateImageCache, lookupImage, allGroups };
 })();

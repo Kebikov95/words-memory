@@ -24,21 +24,8 @@ WM.srsPage = (() => {
 
   // ---------- пул слов из выбранных групп ----------
 
-  function allGroups() {
-    const uid = WM.app.state.uid;
-    const overrides = WM.storage.getGroupOverrides(uid);
-    return [
-      ...WM.storage.getUserGroups(uid).map(g => ({ ...g, own: true })),
-      ...WM.groupsData.GROUPS.map(g => {
-        const ov = overrides[g.id] || {};
-        return { ...g, words: g.words.map(w => {
-          const k = w.word.trim().toLowerCase();
-          const patch = ov[k];
-          return patch ? { ...w, ...patch } : w;
-        }) };
-      }),
-    ];
-  }
+  // каталог с пользовательскими правками — общий с группами (dedup по аудиту)
+  const allGroups = () => WM.groups.allGroups();
 
   function buildPool() {
     const sel = new Set(readSel());
