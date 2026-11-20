@@ -72,7 +72,7 @@ test.describe('Повторение — сессия', () => {
       .toContainText('15 мин');
   });
 
-  test('ошибка сбрасывает слово на первый интервал; слово выходит из очереди сессии', async ({ appPage: page }) => {
+  test('ошибка сбрасывает слово на 15 мин и возвращает его в очередь сессии', async ({ appPage: page }) => {
     await openSrs(page);
     await selectGroup(page, 'colors');
     await page.locator('#srs-start').click();
@@ -80,19 +80,34 @@ test.describe('Повторение — сессия', () => {
     const tr1 = await trOf(page, 'colors', word1);
     await page.locator('.srs-opt').filter({ hasNotText: tr1 }).first().click();
     await expect(page.locator('.srs-feedback')).toContainText('✗ Правильно');
-    // сброс на первый интервал — слово «дозреет» через 15 минут и не показывается
-    // повторно в текущей сессии (очередь фиксируется на старте)
+    // сброс на первый интервал — и слово приходит снова в этой же сессии
+    // (добавлено в конец очереди)
+    await expect(page.locator('.game-counter, .srs-session-head')).toBeVisible(); // сессия жива
     const seenAgain = await page.evaluate((w: string) => new Promise<string>(resolve => {
       const started = Date.now();
       const tick = () => {
         const cur = document.querySelector('.srs-w-text')?.textContent;
-        if (cur === w && Date.now() - started < 4000) return resolve('again');
-        if (Date.now() - started >= 4000) return resolve('no');
+        if (cur === w && Date.now() - started < 8000) return resolve('again');
+        if (Date.now() - started >= 8000) return resolve('no');
         setTimeout(tick, 300);
       };
       setTimeout(tick, 1200);
     }), word1);
-    expect(seenAgain).toBe('no');
+    expect(seenAgain).toBe('again');
+  });
+
+  test('после ответа фокус снят: курсор не остаётся на нажатом варианте', async ({ appPage: page }) => {
+    await openSrs(page);
+    await selectGroup(page, 'colors');
+    await page.locator('#srs-start').click();
+    await page.locator('.srs-opt').first().click();
+    await expect(page.locator('.srs-feedback')).toBeVisible();
+    const focused = await page.evaluate(() => ({
+      tag: document.activeElement?.tagName,
+      cls: document.activeElement?.className ?? '',
+    }));
+    // фокус ушёл с кнопки-варианта (ничего не обведено)
+    expect(focused.cls).not.toContain('srs-opt');
   });
 
   test('свайп вправо — «помню» (по умолчанию), влево — «не помню»', async ({ appPage: page }) => {

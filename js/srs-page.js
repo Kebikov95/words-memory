@@ -313,10 +313,14 @@ WM.srsPage = (() => {
     const w = card;
     if (!w) return;
     card = null; // защита от двойного ответа
+    document.activeElement?.blur?.(); // снять фокус/курсор с нажатого варианта
     WM.tts.speak(w.word, w.lang); // озвучка после каждого ответа
     WM.srs[isCorrect ? 'correct' : 'wrong'](w.lang, w.word);
     isCorrect ? session.correct++ : session.wrong++;
     if (!isCorrect) session.mistakes.push(w);
+    // ошибочное слово возвращается в конец очереди — ещё одно повторение в этой же сессии
+    // (стадия при этом сброшена движком на первый интервал — 15 мин)
+    if (!isCorrect) queue.push(w);
 
     const fb = $('#srs-feedback');
     fb.innerHTML = `

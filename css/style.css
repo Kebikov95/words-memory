@@ -1713,3 +1713,6 @@ details.srs-status-group .srs-group-lang { font-size: 12px; margin-left: 4px; }
 }
 .bulk-grid input:focus { background: var(--accent-soft); }
 .bulk-grid tr:hover input:not(:focus) { background: var(--surface-2); }
+
+/* Повторение: варианты без рамки фокуса — выделение только на нажатие */
+.srs-opt:focus, .srs-opt:focus-visible { outline: none; }
