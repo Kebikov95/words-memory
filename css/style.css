@@ -1678,3 +1678,38 @@ details.srs-status-group .srs-group-lang { font-size: 12px; margin-left: 4px; }
   max-width: 420px;
   line-height: 1.5;
 }
+
+/* Модалка «Добавить слова»: редактируемая таблица 4 колонки × 20 строк */
+.bulk-grid-wrap {
+  max-height: 420px;
+  overflow: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+.bulk-grid { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+.bulk-grid th {
+  position: sticky;
+  top: 0;
+  background: var(--surface-2);
+  text-align: left;
+  font-weight: 600;
+  font-size: 12.5px;
+  color: var(--text-2);
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--border);
+  z-index: 1;
+}
+.bulk-grid td { border-bottom: 1px solid var(--border); padding: 0; }
+.bulk-grid td:last-child { border-right: none; }
+.bulk-grid input {
+  width: 100%;
+  border: none;
+  background: transparent;
+  padding: 8px 10px;
+  font: inherit;
+  color: var(--text);
+  outline: none;
+  min-width: 120px;
+}
+.bulk-grid input:focus { background: var(--accent-soft); }
+.bulk-grid tr:hover input:not(:focus) { background: var(--surface-2); }

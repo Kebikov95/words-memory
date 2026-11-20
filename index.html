@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=32">
+  <link rel="stylesheet" href="css/style.css?v=34">
   <!-- v=2: при изменении js/css повышайте версию — это сбрасывает кеш браузера -->
   <script src="js/icons.js?v=6" defer></script>
   <script src="js/storage.js?v=9" defer></script>
@@ -17,7 +17,7 @@
   <script src="js/io.js?v=3" defer></script>
   <!-- данные наборов: data/*.json, грузятся fetch'ем в js/groups-data.js (нужен http-сервер) -->
   <script src="js/groups-data.js?v=8" defer></script>
-  <script src="js/words.js?v=12" defer></script>
+  <script src="js/words.js?v=15" defer></script>
   <script src="js/games.js?v=8" defer></script>
   <script src="js/groups.js?v=21" defer></script>
   <script src="js/editor.js?v=6" defer></script>
@@ -109,7 +109,7 @@
         <select id="sel-tag" class="select" aria-label="Фильтр по тегу">
           <option value="">Все теги</option>
         </select>
-        <button class="btn btn-primary" id="btn-add-word" aria-label="Добавить слово" title="Добавить слово"><span id="ic-add"></span></button>
+        <button class="btn btn-primary" id="btn-add-word" aria-label="Добавить слова" title="Вставить таблицу или список слов"><span id="ic-add"></span></button>
         <button class="btn btn-accent" id="btn-train" aria-label="Тренировка" title="Тренировка"><span id="ic-play"></span></button>
         <button class="icon-btn" id="btn-export" aria-label="Экспорт JSON" title="Экспорт в JSON"></button>
         <button class="icon-btn" id="btn-import" aria-label="Импорт JSON" title="Импорт из JSON"></button>
@@ -220,15 +220,21 @@
   <dialog id="modal-bulk" class="modal">
     <form method="dialog" class="modal-body" id="form-bulk">
       <div class="modal-head">
-        <h3>Добавить списком</h3>
+        <h3>Добавить слова</h3>
         <button type="button" class="icon-btn" data-close aria-label="Закрыть"></button>
       </div>
-      <p class="hint">Одно слово в строке. Формат: <code>слово | перевод</code> или
-        <code>слово | перевод | пример | перевод примера</code>. Разделитель — <code>|</code> или <code> - </code>.</p>
-      <textarea id="bulk-text" rows="10" placeholder="mela | яблоко
-Mangio una mela. | Я ем яблоко."></textarea>
+      <p class="hint">Вставьте скопированную таблицу (Ctrl+V) в любую ячейку — строки разойдутся по колонкам.
+        Можно заполнять и вручную; строка заголовка пропустится автоматически.</p>
+      <div class="bulk-grid-wrap">
+        <table class="bulk-grid" id="bulk-grid">
+          <thead>
+            <tr><th>Слово / Фраза</th><th>Перевод</th><th>Пример</th><th>Перевод примера</th></tr>
+          </thead>
+          <tbody id="bulk-grid-body"></tbody>
+        </table>
+      </div>
       <div class="modal-actions">
-        <button type="button" class="btn btn-ghost" data-close>Отмена</button>
+        <button type="button" class="btn btn-ghost" id="btn-bulk-single">Одно слово с транскрипцией и картинкой</button>
         <button type="submit" class="btn btn-primary">Добавить</button>
       </div>
     </form>

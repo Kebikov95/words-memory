@@ -110,26 +110,73 @@ test.describe('Словарь — редактирование и удалени
   });
 });
 
-test.describe('Словарь — массовое добавление', () => {
-  test('формат «слово|перевод|пример|перевод примера»', async ({ appPage: page }) => {
-    await page.locator('[aria-label="Добавить списком"]').click();
-    await page.locator('#bulk-text').fill([
-      'gatto|кошка|Il gatto dorme.|Кошка спит.',
-      'cane|пёс',
-    ].join('\n'));
+test.describe('Словарь — массовое добавление (таблица «+»)', () => {
+  const cell = (pg: any, r: number, c: number) =>
+    pg.locator(`#bulk-grid-body tr:nth-child(${r}) input[data-col="${c}"]`);
+
+  test('заполнение ячеек вручную: слово, перевод, пример', async ({ appPage: page }) => {
+    await page.locator('#btn-add-word').click(); // большая «+» открывает таблицу 4×20
+    await expect(page.locator('#bulk-grid-body tr')).toHaveCount(20);
+    await cell(page, 1, 0).fill('gatto');
+    await cell(page, 1, 1).fill('кошка');
+    await cell(page, 1, 2).fill('Il gatto dorme.');
+    await cell(page, 1, 3).fill('Кошка спит.');
+    await cell(page, 2, 0).fill('cane');
+    await cell(page, 2, 1).fill('пёс');
     await page.locator('#modal-bulk').getByRole('button', { name: 'Добавить', exact: true }).click();
 
     await expect(page.locator('#toast')).toContainText('Добавлено слов: 2');
     await expect(page.locator('.word-card', { hasText: 'gatto' })).toContainText('Il gatto dorme.');
-    await expect(page.locator('.word-card', { hasText: 'cane' })).toBeVisible();
+    await expect(page.locator('.word-card', { hasText: 'cane' })).toContainText('пёс');
   });
 
-  test('формат «слово - перевод»', async ({ appPage: page }) => {
-    await page.locator('[aria-label="Добавить списком"]').click();
-    await page.locator('#bulk-text').fill('pane - хлеб');
+  test('вставка таблицы из Заметок (Ctrl+V): табы по колонкам, заголовок пропускается', async ({ appPage: page }) => {
+    await page.locator('#btn-add-word').click();
+    // имитируем Ctrl+V в первую ячейку: многострочный TSV в буфере
+    await page.locator('#bulk-grid').evaluate((grid: HTMLElement, tsv: string) => {
+      const dt = new DataTransfer();
+      dt.setData('text/plain', tsv);
+      grid.dispatchEvent(new ClipboardEvent('paste', { clipboardData: dt, bubbles: true }));
+    }, [
+      'Слово / Фраза\tПеревод\tПример\tПеревод примера',
+      'Avere la tosse\tиметь кашель\tHo la tosse da tre giorni.\tУ меня кашель три дня.',
+      'Chiamare\tзвонить\tTi chiamo domani.\tЯ позвоню тебе завтра.',
+      'La tisana\tтравяной чай',
+    ].join('\n'));
+
+    // сетка получила значения по колонкам
+    await expect(cell(page, 1, 0)).toHaveValue('Avere la tosse');
+    await expect(cell(page, 1, 1)).toHaveValue('иметь кашель');
+    await expect(cell(page, 2, 2)).toHaveValue('Ti chiamo domani.');
+    // заголовок не попал в первую строку (saveBulk пропустит его и так)
     await page.locator('#modal-bulk').getByRole('button', { name: 'Добавить', exact: true }).click();
-    await expect(page.locator('#toast')).toContainText('Добавлено слов: 1');
-    await expect(page.locator('.word-card .w')).toHaveText('pane');
+
+    await expect(page.locator('#toast')).toContainText('Добавлено слов: 3');
+    await expect(page.locator('.word-card', { hasText: 'avere la tosse' })).toContainText('Ho la tosse da tre giorni.');
+    await expect(page.locator('.word-card', { hasText: 'la tisana' })).toContainText('травяной чай');
+    await expect(page.locator('.word-card', { hasText: 'Перевод' })).toHaveCount(0);
+  });
+
+  test('вставка длинной таблицы дорастает сетку за 20 строк', async ({ appPage: page }) => {
+    await page.locator('#btn-add-word').click();
+    const rows = Array.from({ length: 25 }, (_, i) => `parola${i + 1}\tслово${i + 1}`);
+    await page.locator('#bulk-grid').evaluate((grid: HTMLElement, tsv: string) => {
+      const dt = new DataTransfer();
+      dt.setData('text/plain', tsv);
+      grid.dispatchEvent(new ClipboardEvent('paste', { clipboardData: dt, bubbles: true }));
+    }, rows.join('\n'));
+    await expect(page.locator('#bulk-grid-body tr')).toHaveCount(25);
+    await expect(page.locator('#bulk-grid-body tr').nth(24).locator('input[data-col="0"]'))
+      .toHaveValue('parola25');
+    await page.locator('#modal-bulk').getByRole('button', { name: 'Добавить', exact: true }).click();
+    await expect(page.locator('#toast')).toContainText('Добавлено слов: 25');
+  });
+
+  test('Enter переходит на строку вниз в той же колонке', async ({ appPage: page }) => {
+    await page.locator('#btn-add-word').click();
+    await cell(page, 1, 0).fill('sole');
+    await cell(page, 1, 0).press('Enter');
+    await expect(cell(page, 2, 0)).toBeFocused();
   });
 });
 

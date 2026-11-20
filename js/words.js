@@ -211,36 +211,134 @@ WM.words = (() => {
 
   // ---------- массовое добавление ----------
 
+  // построчный формат «слово | перевод [| пример | перевод примера]» —
+  // используется созданием набора на странице «Группы» (grid-модалке словаря
+  // не нужен: там значения уже по ячейкам)
   function parseBulkLine(line) {
-    let parts = line.includes('|')
+    const parts = line.includes('|')
       ? line.split('|')
       : line.split(/\s+-\s+/);
-    parts = parts.map(p => p.trim());
-    if (!parts[0]) return null;
+    const cells = parts.map(p => p.trim());
+    if (!cells[0]) return null;
     return {
-      word: parts[0],
-      translation: parts[1] || '',
-      examples: parts[2] ? [{ text: parts[2], translation: parts[3] || '' }] : [],
+      word: cells[0],
+      translation: cells[1] || '',
+      examples: cells[2] ? [{ text: cells[2], translation: cells[3] || '' }] : [],
     };
+  }
+
+  const BULK_COLS = 4;
+
+  // собрать/обновить сетку: 20 строк по умолчанию, дорастает под вставку
+  function buildBulkGrid(rows = 20) {
+    const body = $('#bulk-grid-body');
+    while (body.children.length < rows) {
+      const tr = document.createElement('tr');
+      for (let c = 0; c < BULK_COLS; c++) {
+        const td = document.createElement('td');
+        const inp = document.createElement('input');
+        inp.type = 'text';
+        inp.dataset.col = c;
+        inp.autocomplete = 'off';
+        inp.spellcheck = false;
+        td.appendChild(inp);
+        tr.appendChild(td);
+      }
+      body.appendChild(tr);
+    }
+  }
+
+  // ячейка [строка, колонка] сетки
+  const bulkCell = (r, c) =>
+    $('#bulk-grid-body').children[r]?.children[c]?.querySelector('input');
+
+  // записать значение в ячейку, дорастив сетку
+  function setBulkCell(r, c, value) {
+    buildBulkGrid(r + 1);
+    const inp = bulkCell(r, c);
+    if (inp && !inp.value) inp.value = value;
+  }
+
+  // разбор одной строки буфера в ячейки; «слово | перевод» без табов тоже делится
+  const bulkRowCells = line => {
+    const cells = line.includes('\t')
+      ? line.split('\t').map(s => s.trim())
+      : line.split('|').map(s => s.trim());
+    while (cells.length > 1 && !cells[cells.length - 1]) cells.pop();
+    return cells;
+  };
+
+  // вставка таблицы (Ctrl+V) в любую ячейку: строки буфера — вниз, табы — по колонкам.
+  // Строка заголовка («Слово / Фраза → Перевод …») отсеивается сразу, чтобы не попадала в сетку
+  function bulkPaste(startRow, startCol, text) {
+    let lines = text.replace(/\r/g, '').split('\n').filter(l => l.trim());
+    const first = bulkRowCells(lines[0] ?? '');
+    if (first.length > 1 && /слово|фраза/i.test(first[0]) && /перевод/i.test(first[1])) lines = lines.slice(1);
+    lines.forEach((line, i) => {
+      const cells = bulkRowCells(line);
+      cells.forEach((val, j) => {
+        if (val) setBulkCell(startRow + i, Math.min(startCol + j, BULK_COLS - 1), val);
+      });
+    });
+  }
+
+  // строки из сетки: пустые пропускаются, заголовок таблицы — тоже
+  function collectBulkRows() {
+    const body = $('#bulk-grid-body');
+    const rows = [];
+    for (const tr of body.children) {
+      const cells = [...tr.querySelectorAll('input')].map(i => i.value.trim());
+      if (cells.some(v => v)) rows.push(cells);
+    }
+    // заголовок: «Слово / Фраза» + «Перевод» в первых колонках
+    if (rows.length > 1 && /слово|фраза/i.test(rows[0][0]) && /перевод/i.test(rows[0][1])) rows.shift();
+    return rows;
   }
 
   function saveBulk(e) {
     e.preventDefault();
     const { uid: U, lang } = WM.app.state;
-    const lines = $('#bulk-text').value.split('\n').map(l => l.trim()).filter(Boolean);
-    if (!lines.length) { WM.app.toast('Список пуст', true); return; }
+    const rows = collectBulkRows().filter(cells => cells[0]);
+    if (!rows.length) { WM.app.toast('Таблица пуста — заполните слово хотя бы в одной строке', true); return; }
 
-    let added = 0;
-    for (const line of lines) {
-      const parsed = parseBulkLine(line);
-      if (!parsed) continue;
+    // дедупликация: повторная вставка той же таблицы не плодит копии
+    const existing = new Set(WM.storage.getWords(U)
+      .filter(w => w.lang === lang)
+      .map(w => `${w.word.trim().toLowerCase()}|${(w.translation || '').trim().toLowerCase()}`));
+    const addedWords = [];
+    let skipped = 0;
+    for (const cells of rows) {
+      const key = `${cells[0].toLowerCase()}|${(cells[1] || '').trim().toLowerCase()}`;
+      if (existing.has(key)) { skipped++; continue; }
+      existing.add(key);
+      const parsed = {
+        word: cells[0],
+        translation: cells[1] || '',
+        examples: cells[2] ? [{ text: cells[2], translation: cells[3] || '' }] : [],
+      };
       WM.storage.addWord(U, { lang, ...parsed, image: null, tags: [] });
-      added++;
+      addedWords.push(parsed.word);
     }
     $('#modal-bulk').close();
-    $('#bulk-text').value = '';
+    buildBulkGrid(20);
+    [...$('#bulk-grid-body').querySelectorAll('input')].forEach(i => { i.value = ''; });
     render();
-    WM.app.toast(`Добавлено слов: ${added}`);
+    WM.app.toast(`Добавлено слов: ${addedWords.length}${skipped ? ` · уже были: ${skipped}` : ''}`);
+
+    // фоновый автоподбор картинок для первых 8 слов без картинки — как в группах
+    if (addedWords.length) {
+      (async () => {
+        const fresh = addedWords.slice(0, 8);
+        for (const word of fresh) {
+          const url = await WM.images.fetchImage(word, lang);
+          if (!url) continue;
+          const saved = WM.storage.getWords(U).find(x =>
+            x.lang === lang && x.word.toLowerCase() === word.toLowerCase() && !x.image);
+          if (saved) WM.storage.patchWordField(U, saved.id, { image: { type: 'url', value: url } });
+        }
+        render();
+      })();
+    }
   }
 
   // ---------- инициализация ----------
@@ -252,8 +350,36 @@ WM.words = (() => {
     $('#w-word').addEventListener('input', drawImagePreview);
     $('#inp-search').addEventListener('input', render);
     $('#sel-tag').addEventListener('change', render);
-    $('#btn-add-word').addEventListener('click', () => openWordModal());
-    $('#btn-add-first').addEventListener('click', () => openWordModal());
+    // «+» — вставка таблицы/списка (основной путь добавления);
+    // одиночная форма доступна по ссылке в модалке и маленькой кнопке тулбара
+    $('#btn-add-word').addEventListener('click', () => $('#modal-bulk').showModal());
+    $('#btn-add-first').addEventListener('click', () => $('#modal-bulk').showModal());
+    $('#btn-bulk-single').addEventListener('click', () => {
+      $('#modal-bulk').close();
+      openWordModal();
+    });
+
+    // сетка таблицы: первичная сборка, Ctrl+V и Enter
+    buildBulkGrid(20);
+    $('#bulk-grid').addEventListener('paste', e => {
+      const text = e.clipboardData?.getData('text/plain');
+      if (!text) return;
+      e.preventDefault();
+      const cell = e.target.closest('td')?.querySelector('input');
+      const all = [...$('#bulk-grid-body').querySelectorAll('tr')];
+      const row = cell ? all.indexOf(cell.closest('tr')) : 0;
+      const col = cell ? Number(cell.dataset.col) : 0;
+      bulkPaste(row, col, text);
+    });
+    $('#bulk-grid').addEventListener('keydown', e => {
+      if (e.key !== 'Enter') return;
+      const cell = e.target.closest('td')?.querySelector('input');
+      if (!cell) return;
+      e.preventDefault();
+      const all = [...$('#bulk-grid-body').querySelectorAll('tr')];
+      const below = bulkCell(all.indexOf(cell.closest('tr')) + 1, Number(cell.dataset.col));
+      below?.focus();
+    });
 
     $('#btn-image-upload').addEventListener('click', () => $('#file-image').click());
     $('#file-image').addEventListener('change', async e => {
@@ -286,15 +412,14 @@ WM.words = (() => {
       WM.app.toast('Словарь очищен');
     });
 
-    // кнопка «списком» — добавим в тулбар вторую маленькую кнопку через JS,
-    // чтобы не раздувать index.html
-    const bulk = document.createElement('button');
-    bulk.className = 'icon-btn';
-    bulk.title = 'Добавить списком';
-    bulk.setAttribute('aria-label', 'Добавить списком');
-    bulk.innerHTML = ICONS.plus;
-    bulk.addEventListener('click', () => $('#modal-bulk').showModal());
-    $('#btn-export').before(bulk);
+    // маленькая кнопка тулбара — одиночная форма слова (транскрипция, картинка)
+    const single = document.createElement('button');
+    single.className = 'icon-btn';
+    single.title = 'Добавить слово';
+    single.setAttribute('aria-label', 'Добавить слово');
+    single.innerHTML = ICONS.pencil;
+    single.addEventListener('click', () => openWordModal());
+    $('#btn-export').before(single);
   }
 
   return { init, render, openWordModal, allTags, parseBulkLine, addExampleRow };

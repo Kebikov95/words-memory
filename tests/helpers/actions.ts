@@ -14,7 +14,8 @@ export type NewWord = {
  *  у «Слова в наборе» (#modal-group-word) есть лейблы с теми же именами. */
 export async function addWordViaModal(page: Page, w: NewWord) {
   const modal = page.locator('#modal-word');
-  await page.getByRole('button', { name: /Добавить слово/ }).click();
+  // маленькая кнопка тулбара (большая «+» теперь открывает вставку таблицы)
+  await page.getByRole('button', { name: 'Добавить слово', exact: true }).click();
   await modal.getByLabel('Слово').fill(w.word);
   if (w.transcription) await modal.getByLabel('Транскрипция (МФА)').fill(w.transcription);
   await modal.getByLabel('Перевод (русский)').fill(w.translation);
