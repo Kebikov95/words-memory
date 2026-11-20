@@ -38,20 +38,65 @@ WM.games = (() => {
 
   // сказанное vs целое слово: точное совпадение, вхождение или ≥80% по Левенштейну —
   // распознавание лепит пунктуацию и артикли, это не ошибка произношения
+  // похожесть 0..1 с транспозициями (Дамер–Левенштейн): акцент часто
+  // переставляет/меняет буквы, обычный Левенштейн занижает оценку
+  const similarity = (a, b) => {
+    const d = Array.from({ length: a.length + 1 }, (_, i) => [i, ...Array(b.length).fill(0)]);
+    for (let j = 1; j <= b.length; j++) d[0][j] = j;
+    for (let i = 1; i <= a.length; i++)
+      for (let j = 1; j <= b.length; j++) {
+        const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+        let v = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + cost);
+        if (i > 1 && j > 1 && a[i - 1] === b[j - 2] && a[i - 2] === b[j - 1])
+          v = Math.min(v, d[i - 2][j - 2] + 1); // транспозиция соседних букв
+        d[i][j] = v;
+      }
+    return 1 - d[a.length][b.length] / Math.max(a.length, b.length, 1);
+  };
+
+  // фонетический скелет: гасит типовые акцентные различия — геминаты
+  // («palla»≈«pala»), k/q/y→c, w→v; сравнение идёт по максимуму из
+  // «точной» и «фонетической» похожести
+  const phon = s => s
+    .replace(/(.)\1+/g, '$1')
+    .replace(/[kqy]/g, 'c')
+    .replace(/w/g, 'v');
+
+  const simBest = (said, target) =>
+    Math.max(similarity(said, target), similarity(phon(said), phon(target)));
+
+  // артикли, сказанные лишними, не штрафуются
+  const ARTICLES = new Set(['il', 'lo', "l'", 'la', 'i', 'gli', 'le', 'un', 'uno', 'una', 'the', 'a', 'an']);
+
   const speakMatches = (heard, target) => {
     const clean = t => norm(String(t).replace(/[.,!?;:'"()\u00ab\u00bb]/g, ' '));
-    const targetN = clean(target);
-    const lev = (a, b) => {
-      const d = Array.from({ length: a.length + 1 }, (_, i) => [i, ...Array(b.length).fill(0)]);
-      for (let j = 1; j <= b.length; j++) d[0][j] = j;
-      for (let i = 1; i <= a.length; i++)
-        for (let j = 1; j <= b.length; j++)
-          d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
-      return d[a.length][b.length];
-    };
-    return clean(heard).split(' / ').some(said =>
-      said && (said === targetN || targetN.includes(said) || said.includes(targetN) ||
-        1 - lev(said, targetN) / Math.max(said.length, targetN.length) >= 0.8));
+    const targetTokens = clean(target).split(' ').filter(Boolean);
+
+    return clean(heard).split(' / ').some(said => {
+      if (!said) return false;
+      let saidTokens = clean(said).split(' ').filter(Boolean);
+      if (!saidTokens.length) return false;
+      if (saidTokens.join(' ') === targetTokens.join(' ')) return true;
+
+      saidTokens = saidTokens.filter(t => !ARTICLES.has(t) || targetTokens.includes(t));
+
+      // одно слово: вхождение, порог 0.8 (точный или фонетический),
+      // коротким словом (≤4 букв) — достаточно расхождения в 1 букву
+      if (targetTokens.length === 1) {
+        const t = targetTokens[0];
+        const s = saidTokens.join(' ');
+        if (s.includes(t) || t.includes(s)) return true;
+        const sim = simBest(s, t);
+        if (t.length <= 4) return sim >= 1 - 1 / Math.max(s.length, t.length);
+        return sim >= 0.8;
+      }
+
+      // фраза: каждому слову цели — лучшее совпадение среди сказанных;
+      // порог 0.8 хотя бы на половине слов и средняя похожесть ≥ 0.85
+      const sims = targetTokens.map(t => Math.max(0, ...saidTokens.map(s => simBest(s, t))));
+      const avg = sims.reduce((a, b) => a + b, 0) / sims.length;
+      return sims.filter(x => x >= 0.8).length >= Math.ceil(sims.length / 2) && avg >= 0.85;
+    });
   };
 
   // у наборов форм («be — was/were — been», «essere — sono, sei…») игра тренирует
@@ -384,7 +429,7 @@ WM.games = (() => {
       const rec = new SR();
       rec.lang = session.lang === 'en' ? 'en-US' : 'it-IT';
       rec.interimResults = false;
-      rec.maxAlternatives = 5;
+      rec.maxAlternatives = 8;
       rec.onresult = e => {
         // альтернативы распознавания склеиваем « / » — speakMatches проверит каждую
         const alts = Array.from(e.results[0]).map(r => r.transcript.trim()).filter(Boolean);
